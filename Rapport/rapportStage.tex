@@ -1,0 +1,130 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{appendix}
+\usepackage{enumitem}
+\usepackage{float} 
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{pdfpages}
+\usepackage{gensymb}
+\author{Sébastien Hervieu}
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Université de Rennes 1}\\[1cm] 
+\textsc{\Large }\\[0.5cm] % Major heading such as course name
+\textsc{\large Master 2 Calcul scientifique et modélisation}\\
+\textsc{Rapport de Projet de Préstage}\\
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Etude et développement d’outils mathématiques pour estimer, en temps réel, le tassage et le volume d’un silo de maïs à partir de capteurs embarqués}\\[0.4cm] 
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Auteur:}\\
+Sébastien \textsc{Hervieu}
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+
+\begin{flushright}
+	\emph{Tuteur de Stage:} \\
+	Geoffroy \textsc{Etaix}
+\end{flushright}
+
+\begin{flushright} \large
+	\emph{Tuteur Universitaire:} \\
+	Fabrice \textsc{Mahé} 
+\end{flushright}
+
+\end{minipage}\\[1cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+\includegraphics[height=3cm]{img/logo-tellusenv.png} \\
+\includegraphics[height=3cm]{img/univ.jpeg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter{Introduction}
+\section{Tellus Environment}
+Activité: Géophyisique
+Activité: R\&D: développer des composants qui mettent en oeuvre les expertises de TellusEnvironment pour créer des produits innovants, dont les composants seraient de plus réutilisables pour améliorer la productivité des services Géophysique.
+Note finale: aller sur le terrain
+
+\chapter{Contexte projet}
+Symeter V1: rapide rappel
+Symeter V2: Objectifs
+Symeter V2: Présentation du plan de projet
+- test du simulateur Gazebo pour évaluer son utilité dans le projet Symeter2
+- Simulation couverture lidar
+- Montage des outils nécessaires au développement simulé du projet symeter
+- Mise en place de la localisation: installation et tests
+- Mise en place de l'acquisition des relevés.
+
+
+\chapter{Simulation de couverture d'un faiseau LIDAR orienté vers le sol}
+
+\chapter{Simulation robotique en utilisant ROS/Gazebo}
+
+\chapter{Mise en place du processus de localisation}
+
+\chapter{Processus d'acquisition des relevés à base de LIDAR}
+
+\begin{appendix}
+	\chapter{Géometrie projective, Coordonnées Homogènes}
+	
+	\chapter{Filtres de Kalman}
+	
+	\chapter{ROS: Architecture et Concepts}
+	
+	\chapter{Point Cloud Library}
+
+\end{appendix}
+
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}
