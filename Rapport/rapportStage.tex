@@ -13,6 +13,7 @@
 \usepackage[nottoc, notlof, notlot]{tocbibind}
 \usepackage{pdfpages}
 \usepackage{gensymb}
+\usepackage{lipsum}
 \author{Sébastien Hervieu}
 \begin{document}
 
@@ -93,37 +94,80 @@ Je tiens à remercier les personnes qui m'ont permis de prés ou de loin à acco
 
 T'abord, j'adresse mes remerciements à mes Professeurs, textbf{Monsieur Mahé et Monsier Darrigrand de l'Université de Rennes 1}, qui m'ont permis de de suivre cette formation et qui m'ont accompagné lors de la recherche de stage.
 
+\lipsum[1]
+
 \chapter{Introduction}
 
-J'ai eu la 
-
-\section{Tellus Environment}
+	\section{Tellus Environment}
 Activité: Géophysique
 Activité: R\&D: développer des composants qui mettent en oeuvre les expertises de TellusEnvironment pour créer des produits innovants, dont les composants seraient de plus réutilisables pour améliorer la productivité des services Géophysique.
 Note finale: aller sur le terrain
 
-\section{Contexte projet}
-Symeter V1: rapide rappel
-Symeter V2: Objectifs
-Symeter V2: Présentation du plan de projet
+	\section{Contexte projet}
+	\lipsum[3]
+		\subsection{Symeter V1}
+		
+		Symeter V1: rapide rappel
+		
+		\lipsum[39]
+		
+		\subsection{Symeter V2: Objectifs}
+		Symeter V2: Objectifs
+		Symeter V2: Présentation du plan de projet
 - test du simulateur Gazebo pour évaluer son utilité dans le projet Symeter2
 - Simulation couverture lidar
 - Montage des outils nécessaires au développement simulé du projet symeter
 - Mise en place de la localisation: installation et tests
 - Mise en place de l'acquisition des relevés.
 
+	\section{Les outils à mettre en oeuvre}
+		\subsection{Equipements à mettre en oeuvre}
+Capteurs: IMU, GPS, Lidar
+Environnement d'exploitation: ROS
 
-\chapter{Simulation de couverture d'un faiseau LIDAR orienté vers le sol}
+		\subsection{Les outils mathématiques}
+			\subsubsection{Positionnement en Robotique}
+		Positionnement en Robotique: Géometrie projective, Coordonnées Homogènes, Quaternions
+			
+			\subsubsection{Localisation par fusion de données}
+		Filtres de Kalmans
+		
+			\subsubsection{Traitement des nuages de points}
+			
+		\subsection{Environnement d'exploitation: ROS}
+			\subsubsection{ROS}
+			
+			\subsubsection{Contraintes de développement}
+				Les équipements à mettre en oeuvre sont relativement couteux et leur mise en oeuvre requiert une certaine expertise.
+				
+				De plus la mise en silo du maïs n'intervient qu'à de courtes périodes au cours de l'année. Il est donc nécessaire de pouvoir mettre en oeuvre le développement du système par le biais de mises en oeuvre alternatives, à savoir la simulation et la mise en oeuvre en grandeur des équipements pour effectuer des tests simples de reconstitution du terrain.
+				
+				ROS est fourni avec un environnement de simulation robotique très intégré nommé "Gazebo", qui permet de simuler en temps réel le comportement mécanique de modèles de robots. Ce logiciel est donc utilisé pour simuler un environnement de Silo pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
+				
+				Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
+				
 
 \chapter{Simulation robotique en utilisant ROS/Gazebo}
-\section{}
+	\section{Présentation de ROS}
+		\subsection{Architecture de ROS}
+			Nodes, services, topics, etc, etc
+		\subsection{Gestion des transformation}
+		\subsection{Gestions des Capteurs}
+	\section{Présentation de Gazebo}
+		\subsection{Construction d'un robot virtuel}
+	\section{Mise en Oeuvre: simulation d'un environnement de tassage de silo}
 
 \chapter{Mise en place du processus de localisation}
 
 \chapter{Processus d'acquisition des relevés à base de LIDAR}
 
+
+
 \begin{appendix}
-	\chapter{Géometrie projective, Coordonnées Homogènes}
+	\chapter{Positionnement En Robotique}
+		\section{Géometrie projective, Coordonnées Homogènes}
+		\section{Une autre descriptions des rotations en 3D: Quaternions Unitaires}
+		\section{Application: Simulation de couverture d'un faiseau LIDAR orienté vers le sol}
 	
 	\chapter{Filtres de Kalman}
 	
