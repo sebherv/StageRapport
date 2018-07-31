@@ -1,34 +1,50 @@
 \select@language {french}
-\contentsline {chapter}{\numberline {1}Remerciements}{3}
-\contentsline {chapter}{\numberline {2}Introduction}{4}
-\contentsline {section}{\numberline {2.1}Tellus Environment}{4}
-\contentsline {section}{\numberline {2.2}Contexte projet}{4}
-\contentsline {subsection}{\numberline {2.2.1}Symeter V1}{4}
-\contentsline {subsection}{\numberline {2.2.2}Symeter V2: Objectifs}{5}
-\contentsline {section}{\numberline {2.3}Les outils \IeC {\`a} mettre en oeuvre}{5}
-\contentsline {subsection}{\numberline {2.3.1}Equipements \IeC {\`a} mettre en oeuvre}{5}
-\contentsline {subsection}{\numberline {2.3.2}Les outils math\IeC {\'e}matiques}{5}
-\contentsline {subsubsection}{Positionnement en Robotique}{5}
-\contentsline {subsubsection}{Localisation par fusion de donn\IeC {\'e}es}{5}
-\contentsline {subsubsection}{Traitement des nuages de points}{5}
-\contentsline {subsection}{\numberline {2.3.3}Environnement d'exploitation: ROS}{5}
-\contentsline {subsubsection}{ROS}{5}
-\contentsline {subsubsection}{Contraintes de d\IeC {\'e}veloppement}{5}
-\contentsline {chapter}{\numberline {3}Simulation robotique en utilisant ROS/Gazebo}{7}
-\contentsline {section}{\numberline {3.1}Pr\IeC {\'e}sentation de ROS}{7}
-\contentsline {subsection}{\numberline {3.1.1}Architecture de ROS}{7}
-\contentsline {subsection}{\numberline {3.1.2}Gestion des transformation}{7}
-\contentsline {subsection}{\numberline {3.1.3}Gestions des Capteurs}{7}
-\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}sentation de Gazebo}{7}
-\contentsline {subsection}{\numberline {3.2.1}Construction d'un robot virtuel}{7}
-\contentsline {section}{\numberline {3.3}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{7}
-\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{8}
-\contentsline {chapter}{\numberline {5}Processus d'acquisition des relev\IeC {\'e}s \IeC {\`a} base de LIDAR}{9}
-\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{10}
-\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{10}
-\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{10}
-\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{10}
-\contentsline {chapter}{\numberline {B}Filtres de Kalman}{11}
-\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{12}
-\contentsline {chapter}{\numberline {D}Point Cloud Library}{13}
-\contentsline {chapter}{Bibliographie}{14}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciements}{3}
+\contentsline {chapter}{\numberline {1}Introduction}{6}
+\contentsline {section}{\numberline {1.1}Tellus Environment}{6}
+\contentsline {subsection}{\numberline {1.1.1}G\IeC {\'e}ophysique et cartographie haute-d\IeC {\'e}finition}{6}
+\contentsline {section}{\numberline {1.2}Collecte des donn\IeC {\'e}es g\IeC {\'e}ophysique}{6}
+\contentsline {section}{\numberline {1.3}Contexte projet}{8}
+\contentsline {subsection}{\numberline {1.3.1}Symeter V1}{8}
+\contentsline {subsection}{\numberline {1.3.2}Symeter V2: Objectifs}{8}
+\contentsline {section}{\numberline {1.4}Les outils \IeC {\`a} mettre en oeuvre}{9}
+\contentsline {subsection}{\numberline {1.4.1}Capteurs}{9}
+\contentsline {subsubsection}{\numberline {1.4.1.1}LIDAR Hyukyo Blabla}{9}
+\contentsline {subsection}{\numberline {1.4.2}Environnement de programmation}{9}
+\contentsline {subsection}{\numberline {1.4.3}Les outils math\IeC {\'e}matiques}{9}
+\contentsline {subsubsection}{\numberline {1.4.3.1}Positionnement en Robotique}{9}
+\contentsline {subsubsection}{\numberline {1.4.3.2}Localisation par fusion de donn\IeC {\'e}es}{9}
+\contentsline {subsubsection}{\numberline {1.4.3.3}Traitement des nuages de points}{10}
+\contentsline {subsection}{\numberline {1.4.4}Environnement d'exploitation: ROS}{10}
+\contentsline {subsubsection}{\numberline {1.4.4.1}ROS}{10}
+\contentsline {subsubsection}{\numberline {1.4.4.2}Contraintes de d\IeC {\'e}veloppement}{10}
+\contentsline {chapter}{\numberline {2}Simulation robotique en utilisant ROS/Gazebo}{11}
+\contentsline {section}{\numberline {2.1}Pr\IeC {\'e}sentation de ROS}{11}
+\contentsline {subsection}{\numberline {2.1.1}Architecture de ROS}{11}
+\contentsline {subsection}{\numberline {2.1.2}Gestion des transformations}{11}
+\contentsline {subsection}{\numberline {2.1.3}Gestions des Capteurs}{11}
+\contentsline {section}{\numberline {2.2}Pr\IeC {\'e}sentation de Gazebo}{11}
+\contentsline {subsection}{\numberline {2.2.1}Construction d'un robot virtuel}{11}
+\contentsline {subsection}{\numberline {2.2.2}Int\IeC {\'e}gration des capteurs}{11}
+\contentsline {section}{\numberline {2.3}Contraintes de mise en oeuvre}{11}
+\contentsline {subsection}{\numberline {2.3.1}Quelques bugs g\IeC {\'e}nants}{11}
+\contentsline {subsection}{\numberline {2.3.2}Simulation m\IeC {\'e}canique, frottements, adh\IeC {\'e}rence}{11}
+\contentsline {subsection}{\numberline {2.3.3}Conclusions sur les contraintes}{11}
+\contentsline {section}{\numberline {2.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{12}
+\contentsline {subsection}{\numberline {2.4.1}Montage d'un tracteur simul\IeC {\'e}}{12}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Description Physique}{12}
+\contentsline {paragraph}{\numberline {2.4.1.1.1}Chassis}{12}
+\contentsline {paragraph}{\numberline {2.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{12}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Propulsion et Guidage}{12}
+\contentsline {paragraph}{\numberline {2.4.1.2.1}Algorithme}{12}
+\contentsline {paragraph}{\numberline {2.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{13}
+\contentsline {chapter}{\numberline {3}Mise en place du processus de localisation}{14}
+\contentsline {chapter}{\numberline {4}Processus d'acquisition des relev\IeC {\'e}s \IeC {\`a} base de LIDAR}{15}
+\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{16}
+\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{16}
+\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{16}
+\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{16}
+\contentsline {chapter}{\numberline {B}Filtres de Kalman}{17}
+\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{18}
+\contentsline {chapter}{\numberline {D}Point Cloud Library}{19}
+\contentsline {chapter}{Bibliographie}{20}
