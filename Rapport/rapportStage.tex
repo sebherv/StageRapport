@@ -16,6 +16,7 @@
 \usepackage{gensymb}
 \usepackage{lipsum}
 \usepackage[colorinlistoftodos,textwidth=3.7cm]{todonotes}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \author{Sébastien Hervieu}
 \begin{document}
 	
@@ -25,7 +26,10 @@
 \newcommand{\todoAmeliorer}[1]{\todo{AMELIORER: #1}}
 \newcommand{\todoMiseEnForme}[1]{\todo[color=green,inline]{MISE EN FORME: #1}}
 \newcommand{\todoCheck}[1]{\todo[color=cyan,fancyline]{VERIFIER #1}}
-\newcommand{\todoObjectif}{\todo[color=yellow,inline,size=\Large]}
+\newcommand{\todoAjouterRef}[1]{\todo[color=pink]{AJOUTER REF #1}}
+\newcommand{\todoTrouverRefExt}[1]{\todo[color=red,inline]{TROUVER REF EXTERNE: #1}}
+\newcommand{\todoObjectif}[1]{\todo[color=yellow,inline,size=\Large]{OBJECTIF: #1}}
+\newcommand{\todoPeutEtre}[1]{\todo[color=teal,inline]{PEUT ETRE #1 ?}}
 
 \begin{titlepage}
 
@@ -131,7 +135,7 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 \chapter{Introduction}
 \todoAmeliorer{L'introduction doit-elle être un chapitre ou alors un Abstract?}
 \todoRediger{Introduction du context projet: j'ai effectué le stage blabla au sein de l'entreprise bla etc}
-	\section{Tellus Environment}
+	\section{Tellus Environment - Missions Principales}
 	\todoRediger{Tellus création, mission, activité}
 	
 	\subsection{Géophysique et cartographie haute-définition}
@@ -152,21 +156,24 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 	
 	\paragraph*{} Tellus Environment a accès à de nombreuses bases cartographiques pour compléter les données acquises sous sa supervision pour aider à la mise en oeuvre des équipements ainsi qu'à compléter les données acquises en vue de leur traitement.
 
-\subsection{Traitement des données}
-\todoRediger{Expertise Tellus Traitement des données}
-\todoObjectif{Montrer la pertinance de l'expertise de Tellus pour la cartographie 3D}
+	\subsection{Traitement des données}
+	\todoRediger{Expertise Tellus Traitement des données}
+%	\todoObjectif{Montrer la pertinance de l'expertise de Tellus pour la cartographie 3D}
+
+	\section{Activité R\&D}
+	\todoRediger{Activité R\&D}
+	
+	Activité: R\&D: développer des composants qui mettent en oeuvre les expertises de TellusEnvironment pour créer des produits innovants, dont les composants seraient de plus réutilisables pour améliorer la productivité des services Géophysique.
 
 
-Activité: R\&D: développer des composants qui mettent en oeuvre les expertises de TellusEnvironment pour créer des produits innovants, dont les composants seraient de plus réutilisables pour améliorer la productivité des services Géophysique.
-Note finale: aller sur le terrain
-
-	\section{Contexte projet}
+	\section{Projet Symeter V2}
 	\todoRediger{Context Projet}
 		\subsection{Symeter V1}
 		Symeter V1: rapide rappel
 		\todoRediger{SymeterV1}
 		
 		\subsection{Symeter V2: Objectifs}
+		\todoRediger{Symeter V2: objectifs}
 		Symeter V2: Objectifs
 		Symeter V2: Présentation du plan de projet
 - test du simulateur Gazebo pour évaluer son utilité dans le projet Symeter2
@@ -175,26 +182,64 @@ Note finale: aller sur le terrain
 - Mise en place de la localisation: installation et tests
 - Mise en place de l'acquisition des relevés.
 
-	\section{Les outils à mettre en oeuvre}
-	Cette section énumère les différents capteurs, environnement d'exploitation, outils mathématiques et procédés qui devront être mis en oeuvre pour monter le prototype de Symeter 2.
+\chapter{Les outils à mettre en oeuvre}
+\todoAmeliorer{Trouver un meilleur titre}
+	Ce chapitre présente dans leur grandes lignes les entrants et les contraintes mis en jeu par le projet Symeter V2. On y énumère notament les différents éléments à mettre en oeuvre pour monter le système Symeter V2: les capteurs l'environnement d'exploitation logicielle, les outils mathématiques et procédés à coordonner pour monter le prototype de Symeter 2.
 	
-		\subsection{Capteurs}
-			Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS.
-		\subsubsection{LIDAR Hyukyo Blabla}
-		\todo{Préciser le type exact du Lidar}
-		\todo{Décrire le fonctionnement et les fonctionalités générales d'un lidar}
-		\todo{Décrire les caratéristiques exactes }
+	\section{Capteurs}
+		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS.
+		\subsection{LIDAR Hyukyo Blabla}
+		\todoRediger{Préciser le type exact du Lidar}
+		\todoRediger{Décrire le fonctionnement et les fonctionalités générales d'un lidar}
+		\todoRediger{Décrire les caratéristiques exactes }
 		\missingfigure{Photo du Hukyo}
-		\subsection{Environnement de programmation}
-		Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et 
-		\subsection{Les outils mathématiques}
-			\subsubsection{Positionnement en Robotique}
+		
+		\subsection{IMU}
+		\todoRediger{principe de fonctionnement d'un IMU}
+		\todoRediger{données générées par un IMU}
+		\missingfigure{graphes temporels des données générées par l'IMU}
+		\missingfigure{Photo de l'IMU xsense}
+		
+		\subsection{GPS en mode RTK}
+		
+		\todoRediger{mode de fonctionnement GPS, précision}
+		\todoRediger{précision centimetrique nécessaire pour SymeterV2}
+		\todoRediger{GPS en mode RTK}
+		\todoTrouverRefExt{GPS en mode RTK}
+		
+		\missingfigure{GPS en mode RTK}
+		\missingfigure{Photo base + rover RTK}
+		
+		\todoPeutEtre{caméra video pour odométrie visuelle}
+		
+		\section{Environnement de programmation}
+		Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
+		
+		\paragraph*{} Il s'agit d'un environnement logiciel destiné à la mise en oeuvre de systèmes robotiques qui comporte toutes les briques de bases nécéssaires au montage de tels systèmes.
+		
+		\todoCompleter{modularité, packages, nodes}
+		\todoCompleter{topics, services}
+		\todoCompleter{transformations}
+		
+		\section{Les outils mathématiques}
+		%\todoObjectif{Introduire les concepts, indiquer qu'ils seront approfondis dans la suite du document.}
+			\subsection{Positionnement en Robotique: Poses}
+			\todoRediger{Coordonnées Homogènes}
+			
+			\todoRediger{transformations avec les coordonnées homogènes}
+			
+			\todoRediger{Rotations avec les Quaternions}
+			
+			\todoCompleter{Ros utilise intensivement les coordonnées homogènes et les quaternions dans les transformations -package transformation.py - et expose uniquement des quaternions pour décrire des rotations dans l'espace 3D}.
 		Positionnement en Robotique: Géometrie projective, Coordonnées Homogènes, Quaternions
 			
-			\subsubsection{Localisation par fusion de données}
+			\subsection{Localisation par fusion de données}
+			\todoRediger{Besoin impératif pour le système Symeter V2 de déterminer sa pose dans le chantier en temps réel, pour pouvoir reconstituer la scène à partir du nuage de points}
+			
+			\todoRediger{GPS RTK offre une précision de l'ordre du centimètre mais }
 		Filtres de Kalmans
 		
-			\subsubsection{Traitement des nuages de points}
+			\subsection{Traitement des nuages de points}
 			
 		\subsection{Environnement d'exploitation: ROS}
 			\subsubsection{ROS}
