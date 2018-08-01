@@ -182,9 +182,9 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 - Mise en place de la localisation: installation et tests
 - Mise en place de l'acquisition des relevés.
 
-\chapter{Les outils à mettre en oeuvre}
+\chapter{Technologies, Contraintes et Plan de Projet}
 \todoAmeliorer{Trouver un meilleur titre}
-	Ce chapitre présente dans leur grandes lignes les entrants et les contraintes mis en jeu par le projet Symeter V2. On y énumère notament les différents éléments à mettre en oeuvre pour monter le système Symeter V2: les capteurs l'environnement d'exploitation logicielle, les outils mathématiques et procédés à coordonner pour monter le prototype de Symeter 2.
+	Ce chapitre présente dans leurs grandes lignes les entrants et les contraintes mis en jeu par le projet Symeter V2. On y énumère notament les différents éléments à mettre en oeuvre pour monter le système Symeter V2: les capteurs l'environnement d'exploitation logicielle, les outils mathématiques et procédés à coordonner pour monter le prototype de Symeter 2.
 	
 	\section{Capteurs}
 		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS.
@@ -305,13 +305,24 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		\subsection{Gestion des transformations}
 		\todoRediger{précision d'évolution d'un plateforme robotique dépend de la prise en compte de la position relative de ses différents capteurs et actionneurs}
 		\subsection{Gestions des Capteurs}
+		
+		\todoRediger{un petit laïus surt les capteurs supportés}
 	\section{Présentation de Gazebo}
+	
+	\todoRediger{Qu'est ce que Gazebo, à quoi ça sert}
 		\subsection{Construction d'un robot virtuel}
-		\subsection{Intégration des capteurs}
+		\todoRediger{Décrire les éléments nécessaires à la description du robot}
+		\todoRediger{URDF et SDF, world, contrôleurs}
+		
+		
+		\subsection{Vérification de disponibilité des capteurs}
+		\todoRediger{Besoin de vérifier la disponibilité et la performance des capteurs cibles de Symeter V2}
 		
 	\section{Contraintes de mise en oeuvre}
 		\subsection{Quelques bugs génants}
+		\todoRediger{Lister les problèmes et bugs qui ont nécessité la mise en place de contournements}
 		\subsection{Simulation mécanique, frottements, adhérence}
+		\todoRediger{La nature des "matériaux" utilisés dans gazebo est très "rigide": les chocs ne sont pas amortis.}
 		\subsection{Conclusions sur les contraintes}
 		Eviter à tout prix que le véhicule entre en dérapage: il ne récupère généralement pas.
 		Raisons pour lesquelles le véhicule peut entrer en dérapage:
@@ -324,6 +335,8 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		Conduite en terrain accidenté:
 			- Conserver la directivité
 			- 4 roues motrices et/ou suspension
+			
+			\todoCompleter{Mise en forme}
 		
 	\section{Mise en Oeuvre: simulation d'un environnement de tassage de silo}
 		\subsection{Montage d'un tracteur simulé}

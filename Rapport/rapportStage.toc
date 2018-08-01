@@ -4,12 +4,12 @@
 \contentsline {section}{\numberline {1.1}Tellus Environment - Missions Principales}{7}
 \contentsline {subsection}{\numberline {1.1.1}G\IeC {\'e}ophysique et cartographie haute-d\IeC {\'e}finition}{7}
 \contentsline {subsection}{\numberline {1.1.2}Collecte des donn\IeC {\'e}es g\IeC {\'e}ophysique}{7}
-\contentsline {subsection}{\numberline {1.1.3}Traitement des donn\IeC {\'e}es}{8}
+\contentsline {subsection}{\numberline {1.1.3}Traitement des donn\IeC {\'e}es}{9}
 \contentsline {section}{\numberline {1.2}Activit\IeC {\'e} R\&D}{9}
 \contentsline {section}{\numberline {1.3}Projet Symeter V2}{9}
 \contentsline {subsection}{\numberline {1.3.1}Symeter V1}{9}
 \contentsline {subsection}{\numberline {1.3.2}Symeter V2: Objectifs}{9}
-\contentsline {chapter}{\numberline {2}Les outils \IeC {\`a} mettre en oeuvre}{10}
+\contentsline {chapter}{\numberline {2}Technologies, Contraintes et Plan de Projet}{10}
 \contentsline {section}{\numberline {2.1}Capteurs}{10}
 \contentsline {subsection}{\numberline {2.1.1}LIDAR Hyukyo Blabla}{10}
 \contentsline {subsection}{\numberline {2.1.2}IMU}{10}
@@ -30,28 +30,28 @@
 \contentsline {subsection}{\numberline {3.1.3}Gestions des Capteurs}{16}
 \contentsline {section}{\numberline {3.2}Pr\IeC {\'e}sentation de Gazebo}{16}
 \contentsline {subsection}{\numberline {3.2.1}Construction d'un robot virtuel}{16}
-\contentsline {subsection}{\numberline {3.2.2}Int\IeC {\'e}gration des capteurs}{16}
+\contentsline {subsection}{\numberline {3.2.2}V\IeC {\'e}rification de disponibilit\IeC {\'e} des capteurs}{16}
 \contentsline {section}{\numberline {3.3}Contraintes de mise en oeuvre}{16}
 \contentsline {subsection}{\numberline {3.3.1}Quelques bugs g\IeC {\'e}nants}{16}
 \contentsline {subsection}{\numberline {3.3.2}Simulation m\IeC {\'e}canique, frottements, adh\IeC {\'e}rence}{16}
-\contentsline {subsection}{\numberline {3.3.3}Conclusions sur les contraintes}{16}
-\contentsline {section}{\numberline {3.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{16}
-\contentsline {subsection}{\numberline {3.4.1}Montage d'un tracteur simul\IeC {\'e}}{16}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Description Physique}{16}
-\contentsline {paragraph}{\numberline {3.4.1.1.1}Chassis}{16}
+\contentsline {subsection}{\numberline {3.3.3}Conclusions sur les contraintes}{17}
+\contentsline {section}{\numberline {3.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{17}
+\contentsline {subsection}{\numberline {3.4.1}Montage d'un tracteur simul\IeC {\'e}}{17}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Description Physique}{17}
+\contentsline {paragraph}{\numberline {3.4.1.1.1}Chassis}{17}
 \contentsline {paragraph}{\numberline {3.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{17}
 \contentsline {subsubsection}{\numberline {3.4.1.2}Propulsion et Guidage}{17}
 \contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{17}
 \contentsline {paragraph}{\numberline {3.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{17}
-\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{18}
-\contentsline {chapter}{\numberline {5}Processus d'acquisition des relev\IeC {\'e}s \IeC {\`a} base de LIDAR}{19}
-\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{20}
-\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{21}
-\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{22}
-\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{22}
-\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{22}
-\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{22}
-\contentsline {chapter}{\numberline {B}Filtres de Kalman}{23}
-\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{24}
-\contentsline {chapter}{\numberline {D}Point Cloud Library}{25}
-\contentsline {chapter}{Bibliographie}{26}
+\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{19}
+\contentsline {chapter}{\numberline {5}Processus d'acquisition des relev\IeC {\'e}s \IeC {\`a} base de LIDAR}{20}
+\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{21}
+\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{22}
+\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{23}
+\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{23}
+\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{23}
+\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{23}
+\contentsline {chapter}{\numberline {B}Filtres de Kalman}{24}
+\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{25}
+\contentsline {chapter}{\numberline {D}Point Cloud Library}{26}
+\contentsline {chapter}{Bibliographie}{27}
