@@ -212,53 +212,98 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		
 		\todoPeutEtre{caméra video pour odométrie visuelle}
 		
-		\section{Environnement de programmation}
-		Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
+	\section{Environnement de programmation}
+	Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
 		
-		\paragraph*{} Il s'agit d'un environnement logiciel destiné à la mise en oeuvre de systèmes robotiques qui comporte toutes les briques de bases nécéssaires au montage de tels systèmes.
+	\paragraph*{} Il s'agit d'un environnement logiciel destiné à la mise en oeuvre de systèmes robotiques qui comporte toutes les briques de bases nécéssaires au montage de tels systèmes.
 		
 		\todoCompleter{modularité, packages, nodes}
 		\todoCompleter{topics, services}
 		\todoCompleter{transformations}
+		\todoCompleter{Des modules de références intégrés: PCL et OpenCV entre autre}
 		
-		\section{Les outils mathématiques}
-		%\todoObjectif{Introduire les concepts, indiquer qu'ils seront approfondis dans la suite du document.}
-			\subsection{Positionnement en Robotique: Poses}
-			\todoRediger{Coordonnées Homogènes}
-			
-			\todoRediger{transformations avec les coordonnées homogènes}
-			
-			\todoRediger{Rotations avec les Quaternions}
-			
-			\todoCompleter{Ros utilise intensivement les coordonnées homogènes et les quaternions dans les transformations -package transformation.py - et expose uniquement des quaternions pour décrire des rotations dans l'espace 3D}.
+	\section{Les outils mathématiques}
+	\todoObjectif{Introduire les concepts, indiquer qu'ils seront approfondis dans la suite du document.}
+		\subsection{Positionnement en Robotique: Poses}
+		\todoRediger{Coordonnées Homogènes}
+		\todoRediger{transformations avec les coordonnées homogènes}
+		\todoRediger{Rotations avec les Quaternions}
+		\todoCompleter{Ros utilise intensivement les coordonnées homogènes et les quaternions dans les transformations -package transformation.py - et expose uniquement des quaternions pour décrire des rotations dans l'espace 3D}.
 		Positionnement en Robotique: Géometrie projective, Coordonnées Homogènes, Quaternions
 			
-			\subsection{Localisation par fusion de données}
-			\todoRediger{Besoin impératif pour le système Symeter V2 de déterminer sa pose dans le chantier en temps réel, pour pouvoir reconstituer la scène à partir du nuage de points}
+		\subsection{Localisation par fusion de données}
+		\todoRediger{Besoin impératif pour le système Symeter V2 de déterminer sa pose dans le chantier en temps réel, pour pouvoir reconstituer la scène à partir du nuage de points}
+		\todoRediger{GPS RTK offre une précision de l'ordre du centimètre mais n'est pas continue, et n'offre pas de précision sur l'assiette du véhicule.}
+		\todoRediger{L'IMU peut fournir une information d'accélération linéairen mais bruité, et requiert une double intégration pour obtenir une position: très sensible au bruit et donc imprécise.}
 			
-			\todoRediger{GPS RTK offre une précision de l'ordre du centimètre mais }
-		Filtres de Kalmans
+		\todoRediger{Nous devons donc mettre en place un procédé capable de maintenir un vecteur d'état comportant au moins les positions en $x,y,z$ et en assiette, tangage et lacet.}
+			
+		\todoRediger{introduire les filtres de Kalman}
+		\missingfigure{chaine de traitement de fusion de données}
+			
 		
-			\subsection{Traitement des nuages de points}
+		\subsection{Traitement des nuages de points}
 			
-		\subsection{Environnement d'exploitation: ROS}
-			\subsubsection{ROS}
+		\todoRediger{Reconstituer une scène 3D à partir d'échantillons linéaires}
+		\todoRediger{Le LIDAR que nous utilisons est de type linéaire, et collecte énormement de points.}
+		\todoRediger{Bande passante importante, traitement potentiellement lourd}
+		\todoRediger{Besoin d'accumuler les lignes pour reconstituer un volume}
+		\todoRediger{Structure de stockage de donnée 3D}	
+		\todoRediger{utilisation de Point Cloud Library}
+		\missingfigure{Architecture de traitement des nuages de points}
 			
-			\subsubsection{Contraintes de développement}
-				Les équipements à mettre en oeuvre sont relativement couteux et leur mise en oeuvre requiert une certaine expertise.
+	\section{Contraintes de développement}
+			
+		\subsection{Capacités de tests en grandeur limitées}
+		\todoRediger{pas de silo de test réel à disposition}
+		\todoRediger{pas de tracteur à disposition}
+		\todoRediger{incertitude sur les possibilités d'implantation des capteurs}
+		\todoRediger{incertitude sur le nombre de capteurs nécessaires.}
+		
+		Les équipements à mettre en oeuvre sont relativement couteux et leur mise en oeuvre requiert une certaine expertise.
 				
-				De plus la mise en silo du maïs n'intervient qu'à de courtes périodes au cours de l'année. Il est donc nécessaire de pouvoir mettre en oeuvre le développement du système par le biais de mises en oeuvre alternatives, à savoir la simulation et la mise en oeuvre en grandeur des équipements pour effectuer des tests simples de reconstitution du terrain.
+		De plus la mise en silo du maïs n'intervient qu'à de courtes périodes au cours de l'année. Il est donc nécessaire de pouvoir mettre en oeuvre le développement du système par le biais de mises en oeuvre alternatives, à savoir la simulation et la mise en oeuvre en grandeur des équipements pour effectuer des tests simples de reconstitution du terrain.
+		
+		\subsection{Les plateformes de développement}
+		
+		\todoRediger{Gazebo environnement de simulation très complet, permet de simuler l'environnement physique dans lequel une plateforme semi-robotique peut évoler}
+		
+		\todoRediger{De nombreux capteurs virtuels disponibles, possibilité de faire varier les incertitudes}
+		
+		\missingfigure{Capture d'écran Gazebo avec le tracteur et le silo}
+		
+		\todoRediger{Maquette avec équipements réels montés sur une camionnette.}
 				
-				ROS est fourni avec un environnement de simulation robotique très intégré nommé "Gazebo", qui permet de simuler en temps réel le comportement mécanique de modèles de robots. Ce logiciel est donc utilisé pour simuler un environnement de Silo pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
+		ROS est fourni avec un environnement de simulation robotique très intégré nommé "Gazebo", qui permet de simuler en temps réel le comportement mécanique de modèles de robots. Ce logiciel est donc utilisé pour simuler un environnement de Silo pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
 				
-				Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
+		Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
+		
+	\section{Les grandes étapes du projet}
+	
+	\todoRediger{comme il est apparent, proejt avec de nombreux sujets, et nous partons de zéro.}
+	\todoRediger{objectif est donc de monter une plateforme de base avec dans un premier temps et autant que possible des composants "sur étagère", d'en évaluer les performances et de dégager les axes d'améliorations nécessaires.}
+
+	
+	\todoRediger{Montage de la plateforme simulée ROS + Gazebo}
+	\todoRediger{Elaboration, prototypage et test du processus de localisation}
+	\todoRediger{Elaboration, prototypage et test du procédé de capture de la scène 3D}
+	\todoRediger{Test en grandeur à l'aide d'un équipement monté sur la Tellus Car.}
 				
 
-\chapter{Simulation robotique en utilisant ROS/Gazebo}
+\chapter{Simulation d'un tracteur évoluant sur un chantier d'ensilage à l'aide de ROS/Gazebo}
+
+\todoRediger{introduction du chapitre simulation tracteur}
+
 	\section{Présentation de ROS}
+	\todoRediger{Présenter succinctement ROS, montrer quelques projets, exposer les outils}
+	\missingfigure{Photo d'exemples de robots, roues, bras, humanoides, etc}
 		\subsection{Architecture de ROS}
-			Nodes, services, topics, etc, etc
+		\todoRediger{ROS est un environnement permettant le montage de plateformes robotiques complètes.}
+		\todoRediger{Architecture logicielle très modulaire}
+		\todoRediger{Nodes, services, topics, capteurs, etc}
+		\missingfigure{Exemple de node}
 		\subsection{Gestion des transformations}
+		\todoRediger{précision d'évolution d'un plateforme robotique dépend de la prise en compte de la position relative de ses différents capteurs et actionneurs}
 		\subsection{Gestions des Capteurs}
 	\section{Présentation de Gazebo}
 		\subsection{Construction d'un robot virtuel}
@@ -310,6 +355,9 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 
 \chapter{Processus d'acquisition des relevés à base de LIDAR}
 
+\chapter{Mise en oeuvre à partir de mesures réelles}
+
+\chapter{Reste à faire et Améliorations}
 
 
 \begin{appendix}

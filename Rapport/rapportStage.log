@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  31 JUL 2018 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  1 AUG 2018 08:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,20 +1069,20 @@ Package pdftex.def Info: img/univ.jpeg used on input line 95.
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
 ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdo [1
 
-])
+] [2])
 \tf@tdo=\write4
 \openout4 = `rapportStage.tdo'.
 
- [2] [3
+ [3] [4
 
 
-] (./rapportStage.toc [4
+] (./rapportStage.toc [5
 
 ])
 \tf@toc=\write5
 \openout5 = `rapportStage.toc'.
 
- [5]
+ [6]
 Chapitre 1.
 
 Overfull \hbox (69.77509pt too wide) in paragraph at lines 136--136
@@ -1104,7 +1104,7 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 143--143
 [][][] 
  []
 
-[6
+[7
 
 ]
 Missing character: There is no ; in font nullfont!
@@ -1119,7 +1119,7 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 153--153
 [][][] 
  []
 
-[7] [8]
+[8] [9]
 Chapitre 2.
 
 Overfull \hbox (69.77509pt too wide) in paragraph at lines 186--186
@@ -1131,108 +1131,118 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 186--186
 [][][] 
  []
 
-[9
+[10
 
-] [10] [11] [12]
+] [11] [12] [13] [14]
 Chapitre 3.
-[13
+[15
 
 ]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 289--289
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 332--332
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 289--289
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 332--332
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 296--296
+[16]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 339--339
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 296--296
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 339--339
 [][][] 
  []
 
 
-Overfull \hbox (140.33363pt too wide) in paragraph at lines 300--300
+Overfull \hbox (140.33363pt too wide) in paragraph at lines 343--343
  \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[] [] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 303--303
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 346--346
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 303--303
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 346--346
 [][][] 
  []
 
-[14]
+[17]
 Chapitre 4.
-[15
-
-]
-Chapitre 5.
-[16
-
-]
-Annexe A.
-[17
-
-]
-Annexe B.
 [18
 
 ]
-Annexe C.
+Chapitre 5.
 [19
 
 ]
+Chapitre 6.
+[20
+
+]
+Chapitre 7.
+[21
+
+]
+Annexe A.
+[22
+
+]
+Annexe B.
+[23
+
+]
+Annexe C.
+[24
+
+]
 Annexe D.
-(./rapportStage.bbl [20
+(./rapportStage.bbl [25
 
 ]
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [21
+) [26
 
 ] (./rapportStage.aux) ) 
 Here is how much of TeX's memory you used:
- 16988 strings out of 492995
- 313466 string characters out of 6132704
- 485106 words of memory out of 5000000
- 20163 multiletter control sequences out of 15000+600000
- 18532 words of font info for 46 fonts, out of 8000000 for 9000
+ 17050 strings out of 492995
+ 314779 string characters out of 6132704
+ 485408 words of memory out of 5000000
+ 20223 multiletter control sequences out of 15000+600000
+ 19297 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,80p,495b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-
-super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm
--super/sfbx1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-sup
-er/sfbx1728.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super
-/sfbx2488.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/s
-fcc1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfc
-c1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc2
-074.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm120
-0.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
-
-Output written on rapportStage.pdf (22 pages, 419999 bytes).
+super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-
+super/sfbx1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-su
+per/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx1728.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/
+sfbx2488.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sf
+cc1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc
+1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc20
+74.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0900
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on rapportStage.pdf (27 pages, 465541 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 156 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
