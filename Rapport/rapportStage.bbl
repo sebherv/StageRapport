@@ -1,3 +1,17 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{ZM09}
+
+\bibitem[KH06]{kaplan_understanding_2006}
+Elliott~D. Kaplan and C.~Hegarty, editors.
+\newblock {\em Understanding {GPS}: principles and applications}.
+\newblock Artech {House} mobile communications series. Artech House, Boston,
+  2nd ed edition, 2006.
+\newblock OCLC: ocm62128065.
+
+\bibitem[ZM09]{zarchan_fundamentals_2009}
+Paul Zarchan and Howard Musoff.
+\newblock {\em Fundamentals of {Kalman} filtering: a practical approach}.
+\newblock Number v. 232 in Progress in astronautics and aeronautics. American
+  Institute of Aeronautics and Astronautics, Reston, Va, 3rd ed edition, 2009.
+\newblock OCLC: ocn457170744.
 
 \end{thebibliography}
