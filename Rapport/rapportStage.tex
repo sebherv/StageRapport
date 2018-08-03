@@ -17,7 +17,22 @@
 \usepackage{lipsum}
 \usepackage[colorinlistoftodos,textwidth=3.7cm]{todonotes}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{tocbibind}
 \author{Sébastien Hervieu}
+
+\newcounter{mypagecount}% create a new counter
+\setcounter{mypagecount}{0}% set it to something just in case
+\newenvironment{interlude}{% create a new environment for the unnumbered section(s)
+	\clearpage
+	\setcounter{mypagecount}{\value{page}}% use the new counter we created to hold the page count at the start of the unnumbered section
+	\thispagestyle{empty}% we want this page to be empty (adjust to use a modified page style)
+	\pagestyle{empty}% use the same style for subsequent pages in the unnumbered section
+}{%
+	\clearpage
+	\setcounter{page}{\value{mypagecount}}% restore the incremented value to the official tally of pages so the page numbering continues correctly
+}
+
+
 \begin{document}
 	
 \newcommand{\todoRediger}[1]{\todo[color=red,inline]{REDIGER #1}}
@@ -100,7 +115,10 @@ Sébastien \textsc{Hervieu}
 
 \end{titlepage}
 
+
+\begin{interlude}
 \listoftodos
+\end{interlude}
 
 
 \cleardoublepage% especially in a document where chapters start at right-hand pages
@@ -381,10 +399,99 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 	
 	\section{Mise en oeuvre}
 	
-	\todoRediger{Utilisation du module robot_localization}
+	\todoRediger{Utilisation du module robot\_localization}
 	
-	\
-\chapter{Processus d'acquisition des relevés à base de LIDAR}
+	
+\chapter{Exploitation des données LIDAR}
+
+	\todoRediger{Exposer le plan du chapitre}
+	\todoRediger{quelle est la qualité de mesure d'un LIDAR sur une surface potentiellement inclinée?}
+
+	\section{Présentation de la chaine de traitement des données LIDAR}
+	
+	\missingfigure{Chaine de traitement LIDAR --> Nuage de Point}
+	\missingfigure{Transformer un ensemble de lignes en un nuage de points cohérent}
+	
+	\missingfigure{Inclinaison LIDAR par rapport au tracteur}
+	
+	\todoRediger{Biblio sur l'influence de l'inclinaison du lidar par rapport à la surface}
+	\todoRediger{arg1}
+	
+	\section{Acquisition des données LIDAR}
+	
+
+	\todoRediger{mettre en forme les données lidar de manière à pouvoir les utiliser}
+	\todoRediger{réduire la bande passante, ne garder que les données exploitatables}
+	
+		\subsection{Transformation trame LIDAR en un nuage de points}
+		\todoRediger{LIDAR: ensemble d'angles, temps de vol, puissance reçue}
+		\todoRediger{Nuage de points: positionnement x,y,z dans la scène}
+		\todoRediger{Il est nécessaire de connaitre précisement la pose du LIDAR pour générer le nuage de points.}
+		
+		\missingfigure{Illustration nature donnée LIDAR}
+		\missingfigure{Illustration nature donnée Nuage de Point}
+		\missingfigure{Diagramme fonctionnel LIDAR --> Nuage de Point}
+		
+		\subsection{Filtrage de la ligne par traitement Voxel}
+		\todoRediger{Enjeu: réduite la bande passante, ne pas sur-échantillonner au pied}
+		
+		\missingfigure{suréchantillonage au pied du tracteur, sous-échantillonnage sur les côtés.}
+		
+		\todoRediger{Exposer le principe du filtrage}
+		
+		\todoRediger{mise en oeuvre grace à la point cloud library}
+		
+	\section{Accumulation des nuages de points}
+	\todoRediger{Objectif: reconstituer la scène à partir des nuages de points "ligne" obtenus à partir du processus d'acquisition}
+	
+		\subsection{Le principe de fonctionnement}
+		\todoRediger{Garder en mémoire les nuages de points correspondant à des lignes précédemment acquise}
+		\todoRediger{ne pas dupliquer les informations: éliminer les points doubles}
+		
+		\subsection{Principe de stockage des données 3D}
+		\todoRediger{les structures de données de stockage de l'information 3D}
+		\todoTrouverRefExt{les structures de données 3D}
+		
+		\subsubsection{Les B-Trees}
+		\todoRediger{Les b-trees, principes}
+		\todoRediger{Point forts: calculs performants}
+		\todoRediger{points faible: arbre équilibrés --> difficile d'ajouter de nouveaux points.}
+		
+		\subsubsection{Les Octrees}
+		\todoRediger{Octree, principes}
+		\todoRediger{points forts: structure déséquilibrées sans problème, possibilité d'ajouter de nouveau points avec une bonne performance}
+		\todoRediger{point faible: beaucoup d'overhead de memoire si pas implémenté correctement.}
+		
+		\subsubsection{Le choix: octree correspond à notre besoin.}
+		
+		\subsection{Mise en oeuvre: octomap}
+		\todoRediger{Utilisation d'octomap car composant sur étagère}
+		\todoRediger{permet d'implémenter rapidement la chaine de traitement pour vérifier la validité de la faisaibilité}
+		
+	\section{Mise en oeuvre sous Gazebo}
+	\todoRediger{implémentation d'un monde avec un silo et un tas d'ensilage}
+	\todoRediger{capture à l'aide d'un lidar monté à l'arrière du tracteur}
+	
+		\subsection{test sous gazebo}
+		\todoRediger{Tracteur effectue une acquisition initiale de la scène}
+		\todoRediger{Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}
+		
+		\subsection{Analyse du nuage de point généré}
+		\subsubsection{Outil pour l'analyse de nuage de points}
+		\todoRediger{Outil de visualisation utilisé: Paraview}
+		\todoRediger{besoin de convertir pcd en vtk à l'aide de l'outil approprié}
+		\todoRediger{permet de naviguer de manière efficasse dans le nuage de point, d'effectuer des projections, etc, etc}
+		
+		\todoRediger{Le nuage est épais}
+		
+		\todoRediger{octomap génère un nuage de point basé sur le centre des voxel occupés --> problème de quantification volumique implique perte de précision de la mesure}
+		
+		\todoRediger{Soit réduire la taille du voxel --> augmentation de la taille}
+		
+		\todoRediger{Soit retourne le point moyen de chaque voxel --> non supporté par octomap --> à implémenter nous même.}
+		
+		\todoAjouterRef{octomap}
+		
 
 \chapter{Mise en oeuvre à partir de mesures réelles}
 
