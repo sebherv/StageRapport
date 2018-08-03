@@ -147,6 +147,8 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 \todoCompleter{Completer les remerciements}
 \todoMiseEnForme{Aérer}
 
+
+\setcounter{tocdepth}{5}
 \tableofcontents
 \newpage
 
@@ -230,7 +232,7 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		
 		\todoPeutEtre{caméra video pour odométrie visuelle}
 		
-	\section{Environnement de programmation}
+	\section{Environnement de programmation: ROS}
 	Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
 		
 	\paragraph*{} Il s'agit d'un environnement logiciel destiné à la mise en oeuvre de systèmes robotiques qui comporte toutes les briques de bases nécéssaires au montage de tels systèmes.
@@ -282,21 +284,25 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 				
 		De plus la mise en silo du maïs n'intervient qu'à de courtes périodes au cours de l'année. Il est donc nécessaire de pouvoir mettre en oeuvre le développement du système par le biais de mises en oeuvre alternatives, à savoir la simulation et la mise en oeuvre en grandeur des équipements pour effectuer des tests simples de reconstitution du terrain.
 		
-		\subsection{Les plateformes de développement}
+		\subsection{Plateformes de test disponibles}
+			
+			\subsubsection{Environnement de simulation Gazebo}
+
+			\todoRediger{Gazebo environnement de simulation très complet, permet de simuler l'environnement physique dans lequel une plateforme semi-robotique peut évoler}
 		
-		\todoRediger{Gazebo environnement de simulation très complet, permet de simuler l'environnement physique dans lequel une plateforme semi-robotique peut évoler}
+			\todoRediger{De nombreux capteurs virtuels disponibles, possibilité de faire varier les incertitudes}
 		
-		\todoRediger{De nombreux capteurs virtuels disponibles, possibilité de faire varier les incertitudes}
+			\missingfigure{Capture d'écran Gazebo avec le tracteur et le silo}
 		
-		\missingfigure{Capture d'écran Gazebo avec le tracteur et le silo}
+			\subsubsection{Prototype monté sur Camionnette}
 		
-		\todoRediger{Maquette avec équipements réels montés sur une camionnette.}
+			\todoRediger{Maquette avec équipements réels montés sur une camionnette.}
 				
-		ROS est fourni avec un environnement de simulation robotique très intégré nommé "Gazebo", qui permet de simuler en temps réel le comportement mécanique de modèles de robots. Ce logiciel est donc utilisé pour simuler un environnement de Silo pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
+			ROS est fourni avec un environnement de simulation robotique très intégré nommé "Gazebo", qui permet de simuler en temps réel le comportement mécanique de modèles de robots. Ce logiciel est donc utilisé pour simuler un environnement de Silo pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
 				
-		Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
+			Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
 		
-	\section{Les grandes étapes du projet}
+	\section{Les grandes parties du projet}
 	
 	\todoRediger{comme il est apparent, proejt avec de nombreux sujets, et nous partons de zéro.}
 	\todoRediger{objectif est donc de monter une plateforme de base avec dans un premier temps et autant que possible des composants "sur étagère", d'en évaluer les performances et de dégager les axes d'améliorations nécessaires.}
@@ -472,16 +478,17 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 	\todoRediger{implémentation d'un monde avec un silo et un tas d'ensilage}
 	\todoRediger{capture à l'aide d'un lidar monté à l'arrière du tracteur}
 	
-		\subsection{test sous gazebo}
+		\subsection{Test sous gazebo}
 		\todoRediger{Tracteur effectue une acquisition initiale de la scène}
 		\todoRediger{Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}
 		
 		\subsection{Analyse du nuage de point généré}
-		\subsubsection{Outil pour l'analyse de nuage de points}
+		\subsubsection{Outil pour l'analyse de nuage de points: Paraview}
 		\todoRediger{Outil de visualisation utilisé: Paraview}
 		\todoRediger{besoin de convertir pcd en vtk à l'aide de l'outil approprié}
 		\todoRediger{permet de naviguer de manière efficasse dans le nuage de point, d'effectuer des projections, etc, etc}
 		
+		\subsubsection{Points à améliorer sur le nuage de points}
 		\todoRediger{Le nuage est épais}
 		
 		\todoRediger{octomap génère un nuage de point basé sur le centre des voxel occupés --> problème de quantification volumique implique perte de précision de la mesure}
@@ -494,6 +501,13 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		
 
 \chapter{Mise en oeuvre à partir de mesures réelles}
+
+	\section{Protocol de test}
+	
+	\section{Données générée - visualisation sous google maps}
+	
+	\section{Exploitation des données}
+		\todoRediger{données sans RTK --> besoin d'avoir un}
 
 \chapter{Reste à faire et Améliorations}
 
