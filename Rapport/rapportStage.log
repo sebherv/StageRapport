@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  3 AUG 2018 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  3 AUG 2018 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,7 +1076,7 @@ ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdo [1
 \tf@tdo=\write4
 \openout4 = `rapportStage.tdo'.
 
- [4] [5] [1
+ [4] [1
 
 
 
@@ -1126,111 +1126,111 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 173--173
 [6] [7]
 Chapitre 2.
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 206--206
-[][][] 
- []
+Package frenchb.ldf Warning: Degrees would look better in TS1-encoding:
+(frenchb.ldf)                add \usepackage{textcomp} to the preamble.
+(frenchb.ldf)                Degrees used on input line 213.
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 206--206
-[][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
  []
 
 [8
 
-] [9] [10] [11] [12]
+] [9] [10] [11] [12] [13]
 Chapitre 3.
-[13
+[14
 
-] [14]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 371--371
+] [15]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 371--371
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 378--378
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 395--395
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 378--378
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 395--395
 [][][] 
  []
 
 
-Overfull \hbox (140.33363pt too wide) in paragraph at lines 382--382
+Overfull \hbox (140.33363pt too wide) in paragraph at lines 399--399
  \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[] [] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 385--385
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 402--402
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 385--385
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 402--402
 [][][] 
  []
 
-[15]
+[16]
 Chapitre 4.
-[16
+[17
 
 ]
 Chapitre 5.
-[17
+[18
 
-] [18] [19]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 500--500
+] [19] [20]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 517--517
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 500--500
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 517--517
 [][][] 
  []
 
-[20]
+[21]
 Chapitre 6.
-[21
-
-]
-Chapitre 7.
 [22
 
 ]
-Annexe A.
+Chapitre 7.
 [23
 
 ]
-Annexe B.
+Annexe A.
 [24
 
 ]
-Annexe C.
+Annexe B.
 [25
 
 ]
-Annexe D.
-(./rapportStage.bbl [26
+Annexe C.
+[26
 
-]) [27
+]
+Annexe D.
+(./rapportStage.bbl [27
+
+]) [28
 
 ] (./rapportStage.aux) ) 
 Here is how much of TeX's memory you used:
- 17168 strings out of 492995
- 317496 string characters out of 6132704
- 499658 words of memory out of 5000000
- 20343 multiletter control sequences out of 15000+600000
+ 17162 strings out of 492995
+ 317344 string characters out of 6132704
+ 496041 words of memory out of 5000000
+ 20337 multiletter control sequences out of 15000+600000
  18532 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,80p,495b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1248,7 +1248,7 @@ cc1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on rapportStage.pdf (33 pages, 483458 bytes).
+Output written on rapportStage.pdf (33 pages, 486662 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams

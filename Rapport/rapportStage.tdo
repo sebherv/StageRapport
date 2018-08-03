@@ -20,14 +20,12 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Context Projet}{7}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER SymeterV1}{7}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Symeter V2: objectifs}{7}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ AMELIORER: Trouver un meilleur titre}{8}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Pr\IeC {\'e}ciser le type exact du Lidar}{8}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER D\IeC {\'e}crire le fonctionnement et les fonctionalit\IeC {\'e}s g\IeC {\'e}n\IeC {\'e}rales d'un lidar}{8}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER D\IeC {\'e}crire les carat\IeC {\'e}ristiques exactes }{8}
 \contentsline {todo}{Figure: Photo du Hukyo}{8}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER principe de fonctionnement d'un IMU}{8}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par un IMU}{8}
-\contentsline {todo}{Figure: graphes temporels des donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par l'IMU}{8}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER principe de fonctionnement d'un IMU}{9}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par un IMU}{9}
+\contentsline {todo}{Figure: graphes temporels des donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par l'IMU}{9}
 \contentsline {todo}{Figure: Photo de l'IMU xsense}{9}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER mode de fonctionnement GPS, pr\IeC {\'e}cision}{9}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pr\IeC {\'e}cision centimetrique n\IeC {\'e}cessaire pour SymeterV2}{9}
@@ -35,7 +33,7 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: GPS en mode RTK}{9}
 \contentsline {todo}{Figure: GPS en mode RTK}{9}
 \contentsline {todo}{Figure: Photo base + rover RTK}{9}
-\contentsline {todo}{\color@fb@x {}{black}{}{teal}{\leavevmode {\color {teal}o}}\ PEUT ETRE cam\IeC {\'e}ra video pour odom\IeC {\'e}trie visuelle ?}{9}
+\contentsline {todo}{\color@fb@x {}{black}{}{teal}{\leavevmode {\color {teal}o}}\ PEUT ETRE cam\IeC {\'e}ra video pour odom\IeC {\'e}trie visuelle ?}{10}
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER modularit\IeC {\'e}, packages, nodes}{10}
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER topics, services}{10}
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER transformations}{10}
@@ -45,10 +43,10 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER transformations avec les coordonn\IeC {\'e}es homog\IeC {\`e}nes}{10}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Rotations avec les Quaternions}{10}
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER Ros utilise intensivement les coordonn\IeC {\'e}es homog\IeC {\`e}nes et les quaternions dans les transformations -package transformation.py - et expose uniquement des quaternions pour d\IeC {\'e}crire des rotations dans l'espace 3D}{10}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Besoin imp\IeC {\'e}ratif pour le syst\IeC {\`e}me Symeter V2 de d\IeC {\'e}terminer sa pose dans le chantier en temps r\IeC {\'e}el, pour pouvoir reconstituer la sc\IeC {\`e}ne \IeC {\`a} partir du nuage de points}{10}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER GPS RTK offre une pr\IeC {\'e}cision de l'ordre du centim\IeC {\`e}tre mais n'est pas continue, et n'offre pas de pr\IeC {\'e}cision sur l'assiette du v\IeC {\'e}hicule.}{10}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER L'IMU peut fournir une information d'acc\IeC {\'e}l\IeC {\'e}ration lin\IeC {\'e}airen mais bruit\IeC {\'e}, et requiert une double int\IeC {\'e}gration pour obtenir une position: tr\IeC {\`e}s sensible au bruit et donc impr\IeC {\'e}cise.}{10}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nous devons donc mettre en place un proc\IeC {\'e}d\IeC {\'e} capable de maintenir un vecteur d'\IeC {\'e}tat comportant au moins les positions en $x,y,z$ et en assiette, tangage et lacet.}{10}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Besoin imp\IeC {\'e}ratif pour le syst\IeC {\`e}me Symeter V2 de d\IeC {\'e}terminer sa pose dans le chantier en temps r\IeC {\'e}el, pour pouvoir reconstituer la sc\IeC {\`e}ne \IeC {\`a} partir du nuage de points}{11}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER GPS RTK offre une pr\IeC {\'e}cision de l'ordre du centim\IeC {\`e}tre mais n'est pas continue, et n'offre pas de pr\IeC {\'e}cision sur l'assiette du v\IeC {\'e}hicule.}{11}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER L'IMU peut fournir une information d'acc\IeC {\'e}l\IeC {\'e}ration lin\IeC {\'e}airen mais bruit\IeC {\'e}, et requiert une double int\IeC {\'e}gration pour obtenir une position: tr\IeC {\`e}s sensible au bruit et donc impr\IeC {\'e}cise.}{11}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nous devons donc mettre en place un proc\IeC {\'e}d\IeC {\'e} capable de maintenir un vecteur d'\IeC {\'e}tat comportant au moins les positions en $x,y,z$ et en assiette, tangage et lacet.}{11}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER introduire les filtres de Kalman}{11}
 \contentsline {todo}{Figure: chaine de traitement de fusion de donn\IeC {\'e}es}{11}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Reconstituer une sc\IeC {\`e}ne 3D \IeC {\`a} partir d'\IeC {\'e}chantillons lin\IeC {\'e}aires}{11}
@@ -58,89 +56,89 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Structure de stockage de donn\IeC {\'e}e 3D}{11}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER utilisation de Point Cloud Library}{11}
 \contentsline {todo}{Figure: Architecture de traitement des nuages de points}{11}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pas de silo de test r\IeC {\'e}el \IeC {\`a} disposition}{11}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pas de tracteur \IeC {\`a} disposition}{11}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER incertitude sur les possibilit\IeC {\'e}s d'implantation des capteurs}{11}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER incertitude sur le nombre de capteurs n\IeC {\'e}cessaires.}{11}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pas de silo de test r\IeC {\'e}el \IeC {\`a} disposition}{12}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pas de tracteur \IeC {\`a} disposition}{12}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER incertitude sur les possibilit\IeC {\'e}s d'implantation des capteurs}{12}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER incertitude sur le nombre de capteurs n\IeC {\'e}cessaires.}{12}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Gazebo environnement de simulation tr\IeC {\`e}s complet, permet de simuler l'environnement physique dans lequel une plateforme semi-robotique peut \IeC {\'e}voler}{12}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER De nombreux capteurs virtuels disponibles, possibilit\IeC {\'e} de faire varier les incertitudes}{12}
 \contentsline {todo}{Figure: Capture d'\IeC {\'e}cran Gazebo avec le tracteur et le silo}{12}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Maquette avec \IeC {\'e}quipements r\IeC {\'e}els mont\IeC {\'e}s sur une camionnette.}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER comme il est apparent, proejt avec de nombreux sujets, et nous partons de z\IeC {\'e}ro.}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER objectif est donc de monter une plateforme de base avec dans un premier temps et autant que possible des composants "sur \IeC {\'e}tag\IeC {\`e}re", d'en \IeC {\'e}valuer les performances et de d\IeC {\'e}gager les axes d'am\IeC {\'e}liorations n\IeC {\'e}cessaires.}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Montage de la plateforme simul\IeC {\'e}e ROS + Gazebo}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Elaboration, prototypage et test du processus de localisation}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Elaboration, prototypage et test du proc\IeC {\'e}d\IeC {\'e} de capture de la sc\IeC {\`e}ne 3D}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Test en grandeur \IeC {\`a} l'aide d'un \IeC {\'e}quipement mont\IeC {\'e} sur la Tellus Car.}{12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER introduction du chapitre simulation tracteur}{13}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Pr\IeC {\'e}senter succinctement ROS, montrer quelques projets, exposer les outils}{13}
-\contentsline {todo}{Figure: Photo d'exemples de robots, roues, bras, humanoides, etc}{13}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER ROS est un environnement permettant le montage de plateformes robotiques compl\IeC {\`e}tes.}{13}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Architecture logicielle tr\IeC {\`e}s modulaire}{13}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nodes, services, topics, capteurs, etc}{13}
-\contentsline {todo}{Figure: Exemple de node}{13}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pr\IeC {\'e}cision d'\IeC {\'e}volution d'un plateforme robotique d\IeC {\'e}pend de la prise en compte de la position relative de ses diff\IeC {\'e}rents capteurs et actionneurs}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER un petit la\IeC {\"\i }us surt les capteurs support\IeC {\'e}s}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Qu'est ce que Gazebo, \IeC {\`a} quoi \IeC {\c c}a sert}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER D\IeC {\'e}crire les \IeC {\'e}l\IeC {\'e}ments n\IeC {\'e}cessaires \IeC {\`a} la description du robot}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER URDF et SDF, world, contr\IeC {\^o}leurs}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Besoin de v\IeC {\'e}rifier la disponibilit\IeC {\'e} et la performance des capteurs cibles de Symeter V2}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Lister les probl\IeC {\`e}mes et bugs qui ont n\IeC {\'e}cessit\IeC {\'e} la mise en place de contournements}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER La nature des "mat\IeC {\'e}riaux" utilis\IeC {\'e}s dans gazebo est tr\IeC {\`e}s "rigide": les chocs ne sont pas amortis.}{14}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER Mise en forme}{15}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Ecrire type de tracteur}{15}
-\contentsline {todo}{Figure: Image du tracteur mod\IeC {\'e}lis\IeC {\'e}}{15}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ R\IeC {\'e}diger Actuateur et Contr\IeC {\^o}leurs}{15}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description g\IeC {\'e}om\IeC {\'e}trique du probl\IeC {\`e}me de direction diff\IeC {\'e}rentielle}{15}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description de l'impl\IeC {\'e}mentation sous ROS}{15}
-\contentsline {todo}{Figure: Sch\IeC {\'e}ma des flux topic qui permet de transformer une commande twist en 4 commandes de velocit\IeC {\'e}s.}{15}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Exposer la probl\IeC {\'e}matique: fusionner des donn\IeC {\'e}es avec potentiellement des fr\IeC {\'e}quences d'\IeC {\'e}chantillonnage diff\IeC {\'e}rentes}{16}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER d\IeC {\'e}terminer la pose du tracteur \IeC {\`a} partir des diff\IeC {\'e}rents capteurs}{16}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER th\IeC {\'e}orie des filtres de Kalman}{16}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pour les syst\IeC {\`e}mes dynamiques non lin\IeC {\'e}aires}{16}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation du module robot\_localization}{16}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Exposer le plan du chapitre}{17}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER quelle est la qualit\IeC {\'e} de mesure d'un LIDAR sur une surface potentiellement inclin\IeC {\'e}e?}{17}
-\contentsline {todo}{Figure: Chaine de traitement LIDAR --> Nuage de Point}{17}
-\contentsline {todo}{Figure: Transformer un ensemble de lignes en un nuage de points coh\IeC {\'e}rent}{17}
-\contentsline {todo}{Figure: Inclinaison LIDAR par rapport au tracteur}{17}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Biblio sur l'influence de l'inclinaison du lidar par rapport \IeC {\`a} la surface}{17}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER arg1}{17}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER mettre en forme les donn\IeC {\'e}es lidar de mani\IeC {\`e}re \IeC {\`a} pouvoir les utiliser}{18}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER r\IeC {\'e}duire la bande passante, ne garder que les donn\IeC {\'e}es exploitatables}{18}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER LIDAR: ensemble d'angles, temps de vol, puissance re\IeC {\c c}ue}{18}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nuage de points: positionnement x,y,z dans la sc\IeC {\`e}ne}{18}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il est n\IeC {\'e}cessaire de connaitre pr\IeC {\'e}cisement la pose du LIDAR pour g\IeC {\'e}n\IeC {\'e}rer le nuage de points.}{18}
-\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e LIDAR}{18}
-\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e Nuage de Point}{18}
-\contentsline {todo}{Figure: Diagramme fonctionnel LIDAR --> Nuage de Point}{18}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Enjeu: r\IeC {\'e}duite la bande passante, ne pas sur-\IeC {\'e}chantillonner au pied}{18}
-\contentsline {todo}{Figure: sur\IeC {\'e}chantillonage au pied du tracteur, sous-\IeC {\'e}chantillonnage sur les c\IeC {\^o}t\IeC {\'e}s.}{18}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Exposer le principe du filtrage}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER mise en oeuvre grace \IeC {\`a} la point cloud library}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Objectif: reconstituer la sc\IeC {\`e}ne \IeC {\`a} partir des nuages de points "ligne" obtenus \IeC {\`a} partir du processus d'acquisition}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Garder en m\IeC {\'e}moire les nuages de points correspondant \IeC {\`a} des lignes pr\IeC {\'e}c\IeC {\'e}demment acquise}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER ne pas dupliquer les informations: \IeC {\'e}liminer les points doubles}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER les structures de donn\IeC {\'e}es de stockage de l'information 3D}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: les structures de donn\IeC {\'e}es 3D}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Les b-trees, principes}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Point forts: calculs performants}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points faible: arbre \IeC {\'e}quilibr\IeC {\'e}s --> difficile d'ajouter de nouveaux points.}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Octree, principes}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points forts: structure d\IeC {\'e}s\IeC {\'e}quilibr\IeC {\'e}es sans probl\IeC {\`e}me, possibilit\IeC {\'e} d'ajouter de nouveau points avec une bonne performance}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER impl\IeC {\'e}mentation d'un monde avec un silo et un tas d'ensilage}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER capture \IeC {\`a} l'aide d'un lidar mont\IeC {\'e} \IeC {\`a} l'arri\IeC {\`e}re du tracteur}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Tracteur effectue une acquisition initiale de la sc\IeC {\`e}ne}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF octomap}{20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es sans RTK --> besoin d'avoir un}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER comme il est apparent, proejt avec de nombreux sujets, et nous partons de z\IeC {\'e}ro.}{13}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER objectif est donc de monter une plateforme de base avec dans un premier temps et autant que possible des composants "sur \IeC {\'e}tag\IeC {\`e}re", d'en \IeC {\'e}valuer les performances et de d\IeC {\'e}gager les axes d'am\IeC {\'e}liorations n\IeC {\'e}cessaires.}{13}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Montage de la plateforme simul\IeC {\'e}e ROS + Gazebo}{13}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Elaboration, prototypage et test du processus de localisation}{13}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Elaboration, prototypage et test du proc\IeC {\'e}d\IeC {\'e} de capture de la sc\IeC {\`e}ne 3D}{13}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Test en grandeur \IeC {\`a} l'aide d'un \IeC {\'e}quipement mont\IeC {\'e} sur la Tellus Car.}{13}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER introduction du chapitre simulation tracteur}{14}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Pr\IeC {\'e}senter succinctement ROS, montrer quelques projets, exposer les outils}{14}
+\contentsline {todo}{Figure: Photo d'exemples de robots, roues, bras, humanoides, etc}{14}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER ROS est un environnement permettant le montage de plateformes robotiques compl\IeC {\`e}tes.}{14}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Architecture logicielle tr\IeC {\`e}s modulaire}{14}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nodes, services, topics, capteurs, etc}{14}
+\contentsline {todo}{Figure: Exemple de node}{14}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pr\IeC {\'e}cision d'\IeC {\'e}volution d'un plateforme robotique d\IeC {\'e}pend de la prise en compte de la position relative de ses diff\IeC {\'e}rents capteurs et actionneurs}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER un petit la\IeC {\"\i }us surt les capteurs support\IeC {\'e}s}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Qu'est ce que Gazebo, \IeC {\`a} quoi \IeC {\c c}a sert}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER D\IeC {\'e}crire les \IeC {\'e}l\IeC {\'e}ments n\IeC {\'e}cessaires \IeC {\`a} la description du robot}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER URDF et SDF, world, contr\IeC {\^o}leurs}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Besoin de v\IeC {\'e}rifier la disponibilit\IeC {\'e} et la performance des capteurs cibles de Symeter V2}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Lister les probl\IeC {\`e}mes et bugs qui ont n\IeC {\'e}cessit\IeC {\'e} la mise en place de contournements}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER La nature des "mat\IeC {\'e}riaux" utilis\IeC {\'e}s dans gazebo est tr\IeC {\`e}s "rigide": les chocs ne sont pas amortis.}{15}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER Mise en forme}{16}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Ecrire type de tracteur}{16}
+\contentsline {todo}{Figure: Image du tracteur mod\IeC {\'e}lis\IeC {\'e}}{16}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ R\IeC {\'e}diger Actuateur et Contr\IeC {\^o}leurs}{16}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description g\IeC {\'e}om\IeC {\'e}trique du probl\IeC {\`e}me de direction diff\IeC {\'e}rentielle}{16}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description de l'impl\IeC {\'e}mentation sous ROS}{16}
+\contentsline {todo}{Figure: Sch\IeC {\'e}ma des flux topic qui permet de transformer une commande twist en 4 commandes de velocit\IeC {\'e}s.}{16}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Exposer la probl\IeC {\'e}matique: fusionner des donn\IeC {\'e}es avec potentiellement des fr\IeC {\'e}quences d'\IeC {\'e}chantillonnage diff\IeC {\'e}rentes}{17}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER d\IeC {\'e}terminer la pose du tracteur \IeC {\`a} partir des diff\IeC {\'e}rents capteurs}{17}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER th\IeC {\'e}orie des filtres de Kalman}{17}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pour les syst\IeC {\`e}mes dynamiques non lin\IeC {\'e}aires}{17}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation du module robot\_localization}{17}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Exposer le plan du chapitre}{18}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER quelle est la qualit\IeC {\'e} de mesure d'un LIDAR sur une surface potentiellement inclin\IeC {\'e}e?}{18}
+\contentsline {todo}{Figure: Chaine de traitement LIDAR --> Nuage de Point}{18}
+\contentsline {todo}{Figure: Transformer un ensemble de lignes en un nuage de points coh\IeC {\'e}rent}{18}
+\contentsline {todo}{Figure: Inclinaison LIDAR par rapport au tracteur}{18}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Biblio sur l'influence de l'inclinaison du lidar par rapport \IeC {\`a} la surface}{18}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER arg1}{18}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER mettre en forme les donn\IeC {\'e}es lidar de mani\IeC {\`e}re \IeC {\`a} pouvoir les utiliser}{19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER r\IeC {\'e}duire la bande passante, ne garder que les donn\IeC {\'e}es exploitatables}{19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER LIDAR: ensemble d'angles, temps de vol, puissance re\IeC {\c c}ue}{19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nuage de points: positionnement x,y,z dans la sc\IeC {\`e}ne}{19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il est n\IeC {\'e}cessaire de connaitre pr\IeC {\'e}cisement la pose du LIDAR pour g\IeC {\'e}n\IeC {\'e}rer le nuage de points.}{19}
+\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e LIDAR}{19}
+\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e Nuage de Point}{19}
+\contentsline {todo}{Figure: Diagramme fonctionnel LIDAR --> Nuage de Point}{19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Enjeu: r\IeC {\'e}duite la bande passante, ne pas sur-\IeC {\'e}chantillonner au pied}{19}
+\contentsline {todo}{Figure: sur\IeC {\'e}chantillonage au pied du tracteur, sous-\IeC {\'e}chantillonnage sur les c\IeC {\^o}t\IeC {\'e}s.}{19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Exposer le principe du filtrage}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER mise en oeuvre grace \IeC {\`a} la point cloud library}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Objectif: reconstituer la sc\IeC {\`e}ne \IeC {\`a} partir des nuages de points "ligne" obtenus \IeC {\`a} partir du processus d'acquisition}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Garder en m\IeC {\'e}moire les nuages de points correspondant \IeC {\`a} des lignes pr\IeC {\'e}c\IeC {\'e}demment acquise}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER ne pas dupliquer les informations: \IeC {\'e}liminer les points doubles}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER les structures de donn\IeC {\'e}es de stockage de l'information 3D}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: les structures de donn\IeC {\'e}es 3D}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Les b-trees, principes}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Point forts: calculs performants}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points faible: arbre \IeC {\'e}quilibr\IeC {\'e}s --> difficile d'ajouter de nouveaux points.}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Octree, principes}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points forts: structure d\IeC {\'e}s\IeC {\'e}quilibr\IeC {\'e}es sans probl\IeC {\`e}me, possibilit\IeC {\'e} d'ajouter de nouveau points avec une bonne performance}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER impl\IeC {\'e}mentation d'un monde avec un silo et un tas d'ensilage}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER capture \IeC {\`a} l'aide d'un lidar mont\IeC {\'e} \IeC {\`a} l'arri\IeC {\`e}re du tracteur}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Tracteur effectue une acquisition initiale de la sc\IeC {\`e}ne}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF octomap}{21}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es sans RTK --> besoin d'avoir un}{22}

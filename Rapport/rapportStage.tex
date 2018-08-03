@@ -59,7 +59,7 @@
 \textsc{\LARGE Université de Rennes 1}\\[1cm] 
 \textsc{\Large }\\[0.5cm] % Major heading such as course name
 \textsc{\large Master 2 Calcul scientifique et modélisation}\\
-\textsc{Rapport de Projet de Préstage}\\
+\textsc{Rapport de Stage}\\
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
@@ -203,13 +203,30 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 - Mise en place de l'acquisition des relevés.
 
 \chapter{Technologies, Contraintes et Plan de Projet}
-\todoAmeliorer{Trouver un meilleur titre}
 	Ce chapitre présente dans leurs grandes lignes les entrants et les contraintes mis en jeu par le projet Symeter V2. On y énumère notament les différents éléments à mettre en oeuvre pour monter le système Symeter V2: les capteurs l'environnement d'exploitation logicielle, les outils mathématiques et procédés à coordonner pour monter le prototype de Symeter 2.
 	
 	\section{Capteurs}
-		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS.
-		\subsection{LIDAR Hyukyo Blabla}
-		\todoRediger{Préciser le type exact du Lidar}
+		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS. Cette section décrit les fonctionnalités de ces capteurs de ces capteurs.
+		\subsection{LIDAR Hokuyo UTM-30LX-EW}
+		Le Hokuyo UTM-30-LX-EW est le type de LIDAR qui était utilisé dans Symeter V1, et sera donc ré-utilisé pour Symeter V2. C'est un équipement robuste et précis qui est de plus bien connu par Tellus Environment.
+		
+		\paragraph*{} Cet équipement est basé sur un laser infrarouge (longueur d'onde de 905nm) pour scanner un champ semi-circulaire de 270$\degres$, par pas de 0,25$\degres$. Il mesure la distances des objets à sa portée pour chaque incrément. La distance de détection maximale est de 30m.
+		\newline
+		
+		\begin{tabular}{|c|c|}
+			\hline 
+			Angle de Balayage & 270$\degres$ \\ 
+			\hline 
+			Résolution Angulaire & env. 0,25$\degres$ \\ 
+			\hline
+			Temps de Balayage & 25ms/balayage (40 balayages par seconde) \\
+			\hline
+			Distance de détection & Portée garantie: 0,1 à 30m \\
+			\hline
+			Résolution de la mesure & 1mm \\
+			& $\sigma$ \\
+			\hline
+		\end{tabular} 
 		\todoRediger{Décrire le fonctionnement et les fonctionalités générales d'un lidar}
 		\todoRediger{Décrire les caratéristiques exactes }
 		\missingfigure{Photo du Hukyo}
