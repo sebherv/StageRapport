@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  8 AUG 2018 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  8 AUG 2018 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,137 +1168,163 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
  []
 
 [16]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 419--419
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 420--420
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 419--419
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 420--420
 [][][] 
  []
 
-[17] [18] [19]
+[17] [18] [19] [20]
 Chapitre 3.
-[20
+[21
 
-] [21]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 551--551
+] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+
+ []
+
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 579--579
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 551--551
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 579--579
+[][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 595.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [23]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 627--627
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--553
-
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 558--558
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 627--627
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 558--558
-[][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
+
  []
 
-
-Overfull \hbox (140.33363pt too wide) in paragraph at lines 562--562
+[24]
+Overfull \hbox (140.33363pt too wide) in paragraph at lines 649--649
  \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[] [] 
  []
 
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 565--565
+[25]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 663--663
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 565--565
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 663--663
 [][][] 
  []
 
-[22]
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 667--667
+[][][] 
+ []
+
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 667--667
+[][][] 
+ []
+
+
+LaTeX Warning: Marginpar on page 26 moved.
+
+[26]
 Chapitre 4.
-[23
+[27
 
-]
+] [28]
 Chapitre 5.
-[24
+[29
 
-] [25] [26]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 680--680
+] [30] [31]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 791--791
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 680--680
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 791--791
 [][][] 
  []
 
-[27]
+[32]
 Chapitre 6.
-[28
+[33
 
 ]
 Chapitre 7.
-[29
+[34
 
 ]
 Annexe A.
-[30
+[35
 
 ]
 Annexe B.
-[31
+[36
 
 ]
 Annexe C.
-[32
+[37
 
 ]
 Annexe D.
-(./rapportStage.bbl [33
+(./rapportStage.bbl [38
 
-]) [34
+]) [39
 
 ] (./rapportStage.aux) ) 
 Here is how much of TeX's memory you used:
- 17149 strings out of 492995
- 316944 string characters out of 6132704
- 504275 words of memory out of 5000000
- 20321 multiletter control sequences out of 15000+600000
- 19460 words of font info for 49 fonts, out of 8000000 for 9000
+ 17158 strings out of 492995
+ 317352 string characters out of 6132704
+ 506174 words of memory out of 5000000
+ 20325 multiletter control sequences out of 15000+600000
+ 20537 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,80p,495b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,80p,554b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-
 super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/s
-fbx1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfb
-x1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1
-728.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx248
-8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on rapportStage.pdf (39 pages, 548085 bytes).
+fonts/cm/cmbx8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1
+200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on rapportStage.pdf (44 pages, 612971 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 252 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

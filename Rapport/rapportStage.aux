@@ -111,6 +111,7 @@
 \pgfsyspdfmark {pgfid59}{38510620}{42271172}
 \pgfsyspdfmark {pgfid60}{41943890}{42000356}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Localisation par fusion de donn\IeC {\'e}es}{16}}
+\newlabel{intro-loc-fusion-donnees}{{2.3.2}{16}}
 \@writefile{tdo}{\contentsline {todo}{Figure: Flux de donn\IeC {\'e}es IMU + GPS --> $X$}{16}}
 \@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER introduire les filtres de Kalman}{17}}
 \pgfsyspdfmark {pgfid62}{19562754}{46383903}
@@ -132,239 +133,223 @@
 \@writefile{tdo}{\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran Gazebo avec le tracteur et le silo}{18}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2.2}Prototype mont\IeC {\'e} sur Camionnette}{19}}
 \@writefile{tdo}{\contentsline {todo}{Figure: Maquette avec \IeC {\'e}quipements r\IeC {\'e}els mont\IeC {\'e}s sur une camionnette.}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Les grandes parties du projet}{19}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER comme il est apparent, proejt avec de nombreux sujets, et nous partons de z\IeC {\'e}ro.}{19}}
-\pgfsyspdfmark {pgfid74}{19562754}{18161496}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER objectif est donc de monter une plateforme de base avec dans un premier temps et autant que possible des composants "sur \IeC {\'e}tag\IeC {\`e}re", d'en \IeC {\'e}valuer les performances et de d\IeC {\'e}gager les axes d'am\IeC {\'e}liorations n\IeC {\'e}cessaires.}{19}}
-\pgfsyspdfmark {pgfid75}{19562754}{15478078}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Montage de la plateforme simul\IeC {\'e}e ROS + Gazebo}{19}}
-\pgfsyspdfmark {pgfid76}{19562754}{13193356}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Elaboration, prototypage et test du processus de localisation}{19}}
-\pgfsyspdfmark {pgfid77}{19562754}{11858906}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Elaboration, prototypage et test du proc\IeC {\'e}d\IeC {\'e} de capture de la sc\IeC {\`e}ne 3D}{19}}
-\pgfsyspdfmark {pgfid78}{19562754}{10524456}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Test en grandeur \IeC {\`a} l'aide d'un \IeC {\'e}quipement mont\IeC {\'e} sur la Tellus Car.}{19}}
-\pgfsyspdfmark {pgfid79}{19562754}{9190006}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Simulation d'un tracteur \IeC {\'e}voluant sur un chantier d'ensilage \IeC {\`a} l'aide de ROS/Gazebo}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Les grandes phases du stage}{19}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Simulation d'un tracteur \IeC {\'e}voluant sur un chantier d'ensilage \IeC {\`a} l'aide de ROS/Gazebo}{21}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER introduction du chapitre simulation tracteur}{20}}
-\pgfsyspdfmark {pgfid80}{19562754}{33677463}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Pr\IeC {\'e}sentation de ROS}{20}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Pr\IeC {\'e}senter succinctement ROS, montrer quelques projets, exposer les outils}{20}}
-\pgfsyspdfmark {pgfid81}{19562754}{28937804}
-\@writefile{tdo}{\contentsline {todo}{Figure: Photo d'exemples de robots, roues, bras, humanoides, etc}{20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Architecture de ROS}{20}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER ROS est un environnement permettant le montage de plateformes robotiques compl\IeC {\`e}tes.}{20}}
-\pgfsyspdfmark {pgfid83}{19562754}{16816345}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Architecture logicielle tr\IeC {\`e}s modulaire}{20}}
-\pgfsyspdfmark {pgfid84}{19562754}{15006759}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Nodes, services, topics, capteurs, etc}{20}}
-\pgfsyspdfmark {pgfid85}{19562754}{13672309}
-\@writefile{tdo}{\contentsline {todo}{Figure: Exemple de node}{20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Gestion des transformations}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER pr\IeC {\'e}cision d'\IeC {\'e}volution d'un plateforme robotique d\IeC {\'e}pend de la prise en compte de la position relative de ses diff\IeC {\'e}rents capteurs et actionneurs}{21}}
-\pgfsyspdfmark {pgfid87}{19562754}{48175363}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Gestions des Capteurs}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER un petit la\IeC {\"\i }us surt les capteurs support\IeC {\'e}s}{21}}
-\pgfsyspdfmark {pgfid88}{19562754}{43394704}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}sentation de Gazebo}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Qu'est ce que Gazebo, \IeC {\`a} quoi \IeC {\c c}a sert}{21}}
-\pgfsyspdfmark {pgfid89}{19562754}{38655045}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Construction d'un robot virtuel}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER D\IeC {\'e}crire les \IeC {\'e}l\IeC {\'e}ments n\IeC {\'e}cessaires \IeC {\`a} la description du robot}{21}}
-\pgfsyspdfmark {pgfid90}{19562754}{34532977}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER URDF et SDF, world, contr\IeC {\^o}leurs}{21}}
-\pgfsyspdfmark {pgfid91}{19562754}{33198527}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}V\IeC {\'e}rification de disponibilit\IeC {\'e} des capteurs}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Besoin de v\IeC {\'e}rifier la disponibilit\IeC {\'e} et la performance des capteurs cibles de Symeter V2}{21}}
-\pgfsyspdfmark {pgfid92}{19562754}{28417868}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Contraintes de mise en oeuvre}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Quelques bugs g\IeC {\'e}nants}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Lister les probl\IeC {\`e}mes et bugs qui ont n\IeC {\'e}cessit\IeC {\'e} la mise en place de contournements}{21}}
-\pgfsyspdfmark {pgfid93}{19562754}{20933494}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Simulation m\IeC {\'e}canique, frottements, adh\IeC {\'e}rence}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER La nature des "mat\IeC {\'e}riaux" utilis\IeC {\'e}s dans gazebo est tr\IeC {\`e}s "rigide": les chocs ne sont pas amortis.}{21}}
-\pgfsyspdfmark {pgfid94}{19562754}{15754139}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Conclusions sur les contraintes}{21}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ COMPLETER Mise en forme}{22}}
-\pgfsyspdfmark {pgfid95}{19562754}{48131567}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Montage d'un tracteur simul\IeC {\'e}}{22}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.1}Description Physique}{22}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.1.1}Chassis}{22}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Ecrire type de tracteur}{22}}
-\pgfsyspdfmark {pgfid96}{30169343}{34933681}
-\pgfsyspdfmark {pgfid99}{38510620}{34950607}
-\pgfsyspdfmark {pgfid100}{41943890}{34679791}
-\@writefile{tdo}{\contentsline {todo}{Figure: Image du tracteur mod\IeC {\'e}lis\IeC {\'e}}{22}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ R\IeC {\'e}diger Actuateur et Contr\IeC {\^o}leurs}{22}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{22}}
-\pgfsyspdfmark {pgfid102}{19719248}{21404996}
-\pgfsyspdfmark {pgfid105}{38510620}{21421922}
-\pgfsyspdfmark {pgfid106}{41943890}{21151106}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.2}Propulsion et Guidage}{22}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Description g\IeC {\'e}om\IeC {\'e}trique du probl\IeC {\`e}me de direction diff\IeC {\'e}rentielle}{22}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{22}}
-\pgfsyspdfmark {pgfid107}{28792427}{17739991}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Description de l'impl\IeC {\'e}mentation sous ROS}{22}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{22}}
-\pgfsyspdfmark {pgfid108}{19708786}{15308962}
-\@writefile{tdo}{\contentsline {todo}{Figure: Sch\IeC {\'e}ma des flux topic qui permet de transformer une commande twist en 4 commandes de velocit\IeC {\'e}s.}{22}}
-\pgfsyspdfmark {pgfid111}{38510620}{15325888}
-\pgfsyspdfmark {pgfid112}{41943890}{15055072}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Pr\IeC {\'e}sentation de ROS}{21}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Photo d'exemples de robots, roues, bras, humanoides, etc}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Architecture de ROS}{22}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER ROS est un environnement permettant le montage de plateformes robotiques compl\IeC {\`e}tes.}{22}}
+\pgfsyspdfmark {pgfid75}{19562754}{48175363}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Architecture logicielle tr\IeC {\`e}s modulaire}{22}}
+\pgfsyspdfmark {pgfid76}{19562754}{46365777}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Nodes, services, topics, capteurs, etc}{22}}
+\pgfsyspdfmark {pgfid77}{19562754}{45031327}
+\@writefile{tdo}{\contentsline {todo}{Figure: Exemple de node}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Gestion des transformations}{22}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER pr\IeC {\'e}cision d'\IeC {\'e}volution d'un plateforme robotique d\IeC {\'e}pend de la prise en compte de la position relative de ses diff\IeC {\'e}rents capteurs et actionneurs}{22}}
+\pgfsyspdfmark {pgfid79}{19562754}{32909868}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Gestions des Capteurs}{22}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER un petit la\IeC {\"\i }us surt les capteurs support\IeC {\'e}s}{22}}
+\pgfsyspdfmark {pgfid80}{19562754}{28129209}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}sentation de Gazebo}{22}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran de gazebo}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Construction d'un robot virtuel}{22}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ TROUVER REF EXTERNE: SDF}{23}}
+\pgfsyspdfmark {pgfid82}{19562754}{49081839}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER URDF et SDF, world, contr\IeC {\^o}leurs}{23}}
+\pgfsyspdfmark {pgfid83}{19562754}{47823829}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}V\IeC {\'e}rification de disponibilit\IeC {\'e} des capteurs}{23}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color  {pink}o}}\ AJOUTER REF le tuto de petit robot}{23}}
+\pgfsyspdfmark {pgfid84}{28640435}{30248230}
+\pgfsyspdfmark {pgfid87}{38510620}{30265156}
+\pgfsyspdfmark {pgfid88}{41943890}{29994340}
+\@writefile{tdo}{\contentsline {todo}{Figure: Le petit robot}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Contraintes de mise en oeuvre}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Pas d'adh\IeC {\'e}rence au d\IeC {\'e}marrage de la simulation}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Simulation m\IeC {\'e}canique, frottements, adh\IeC {\'e}rence}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Conclusions sur les contraintes}{24}}
+\newlabel{conc-contrainte-gazebo}{{3.3.3}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Montage d'un tracteur simul\IeC {\'e}}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.1}Description Physique}{25}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.1.1}Chassis}{25}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Ecrire type de tracteur}{25}}
+\pgfsyspdfmark {pgfid90}{30169343}{47703838}
+\pgfsyspdfmark {pgfid93}{38510620}{47720764}
+\pgfsyspdfmark {pgfid94}{41943890}{47449948}
+\@writefile{tdo}{\contentsline {todo}{Figure: Image du tracteur mod\IeC {\'e}lis\IeC {\'e}}{25}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{25}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Tableau avec la correspondance entre vitesse roue et topic, angle direction et roue directionnelle}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1.2}Propulsion et Guidage}{25}}
+\newlabel{algo-steering}{{3.4.1.2.1}{25}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Description g\IeC {\'e}om\IeC {\'e}trique du probl\IeC {\`e}me de direction diff\IeC {\'e}rentielle}{25}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{25}}
+\pgfsyspdfmark {pgfid97}{28792427}{14142261}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {3.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{25}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color  {pink}o}}\ AJOUTER REF tableau avec les topics}{26}}
+\pgfsyspdfmark {pgfid98}{10240784}{43718985}
+\pgfsyspdfmark {pgfid101}{38510620}{43735911}
+\pgfsyspdfmark {pgfid102}{41943890}{43465095}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Description de l'impl\IeC {\'e}mentation sous ROS}{26}}
+\pgfsyspdfmark {pgfid103}{5891346}{42768713}
+\@writefile{tdo}{\contentsline {todo}{Figure: Sch\IeC {\'e}ma des flux topic qui permet de transformer une commande twist en 4 commandes de velocit\IeC {\'e}s.}{26}}
+\pgfsyspdfmark {pgfid106}{38510620}{40107701}
+\pgfsyspdfmark {pgfid107}{41943890}{39836885}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{27}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation du probl\IeC {\`e}me}{23}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Exposer la probl\IeC {\'e}matique: fusionner des donn\IeC {\'e}es avec potentiellement des fr\IeC {\'e}quences d'\IeC {\'e}chantillonnage diff\IeC {\'e}rentes}{23}}
-\pgfsyspdfmark {pgfid114}{19562754}{33135406}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER d\IeC {\'e}terminer la pose du tracteur \IeC {\`a} partir des diff\IeC {\'e}rents capteurs}{23}}
-\pgfsyspdfmark {pgfid115}{19562754}{31325820}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Filtres de Kalman}{23}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER th\IeC {\'e}orie des filtres de Kalman}{23}}
-\pgfsyspdfmark {pgfid116}{19562754}{26662601}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Filtres de Kalman Lin\IeC {\'e}aires}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Filtres de Kalman Etendus}{23}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER pour les syst\IeC {\`e}mes dynamiques non lin\IeC {\'e}aires}{23}}
-\pgfsyspdfmark {pgfid117}{19562754}{20929545}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Mise en oeuvre}{23}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Utilisation du module robot\_localization}{23}}
-\pgfsyspdfmark {pgfid118}{19562754}{16183060}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Exploitation des donn\IeC {\'e}es LIDAR}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation du probl\IeC {\`e}me}{27}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Exposer la probl\IeC {\'e}matique: fusionner des donn\IeC {\'e}es avec potentiellement des fr\IeC {\'e}quences d'\IeC {\'e}chantillonnage diff\IeC {\'e}rentes}{27}}
+\pgfsyspdfmark {pgfid109}{19562754}{21160692}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER d\IeC {\'e}terminer la pose du tracteur \IeC {\`a} partir des diff\IeC {\'e}rents capteurs}{27}}
+\pgfsyspdfmark {pgfid110}{19562754}{19351106}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Filtres de Kalman}{27}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER th\IeC {\'e}orie des filtres de Kalman}{27}}
+\pgfsyspdfmark {pgfid111}{19562754}{14687887}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Filtres de Kalman Lin\IeC {\'e}aires}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Filtres de Kalman Etendus}{27}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER pour les syst\IeC {\`e}mes dynamiques non lin\IeC {\'e}aires}{27}}
+\pgfsyspdfmark {pgfid112}{19562754}{8954831}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Mise en oeuvre}{28}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Utilisation du module robot\_localization}{28}}
+\pgfsyspdfmark {pgfid113}{19562754}{48372856}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Exploitation des donn\IeC {\'e}es LIDAR}{29}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Exposer le plan du chapitre}{24}}
-\pgfsyspdfmark {pgfid119}{19562754}{37700188}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER quelle est la qualit\IeC {\'e} de mesure d'un LIDAR sur une surface potentiellement inclin\IeC {\'e}e?}{24}}
-\pgfsyspdfmark {pgfid120}{19562754}{35967042}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation de la chaine de traitement des donn\IeC {\'e}es LIDAR}{24}}
-\@writefile{tdo}{\contentsline {todo}{Figure: Chaine de traitement LIDAR --> Nuage de Point}{24}}
-\@writefile{tdo}{\contentsline {todo}{Figure: Transformer un ensemble de lignes en un nuage de points coh\IeC {\'e}rent}{24}}
-\@writefile{tdo}{\contentsline {todo}{Figure: Inclinaison LIDAR par rapport au tracteur}{24}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Biblio sur l'influence de l'inclinaison du lidar par rapport \IeC {\`a} la surface}{24}}
-\pgfsyspdfmark {pgfid124}{19562754}{5863858}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER arg1}{24}}
-\pgfsyspdfmark {pgfid125}{19562754}{50010247}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Acquisition des donn\IeC {\'e}es LIDAR}{25}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER mettre en forme les donn\IeC {\'e}es lidar de mani\IeC {\`e}re \IeC {\`a} pouvoir les utiliser}{25}}
-\pgfsyspdfmark {pgfid126}{19562754}{45050440}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER r\IeC {\'e}duire la bande passante, ne garder que les donn\IeC {\'e}es exploitatables}{25}}
-\pgfsyspdfmark {pgfid127}{19562754}{43715990}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Transformation trame LIDAR en un nuage de points}{25}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER LIDAR: ensemble d'angles, temps de vol, puissance re\IeC {\c c}ue}{25}}
-\pgfsyspdfmark {pgfid128}{19562754}{39410467}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Nuage de points: positionnement x,y,z dans la sc\IeC {\`e}ne}{25}}
-\pgfsyspdfmark {pgfid129}{19562754}{38076017}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Il est n\IeC {\'e}cessaire de connaitre pr\IeC {\'e}cisement la pose du LIDAR pour g\IeC {\'e}n\IeC {\'e}rer le nuage de points.}{25}}
-\pgfsyspdfmark {pgfid130}{19562754}{36266431}
-\@writefile{tdo}{\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e LIDAR}{25}}
-\@writefile{tdo}{\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e Nuage de Point}{25}}
-\@writefile{tdo}{\contentsline {todo}{Figure: Diagramme fonctionnel LIDAR --> Nuage de Point}{25}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Filtrage de la ligne par traitement Voxel}{25}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Enjeu: r\IeC {\'e}duite la bande passante, ne pas sur-\IeC {\'e}chantillonner au pied}{25}}
-\pgfsyspdfmark {pgfid134}{19562754}{7012463}
-\@writefile{tdo}{\contentsline {todo}{Figure: sur\IeC {\'e}chantillonage au pied du tracteur, sous-\IeC {\'e}chantillonnage sur les c\IeC {\^o}t\IeC {\'e}s.}{25}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Exposer le principe du filtrage}{26}}
-\pgfsyspdfmark {pgfid136}{19562754}{42485992}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER mise en oeuvre grace \IeC {\`a} la point cloud library}{26}}
-\pgfsyspdfmark {pgfid137}{19562754}{41151542}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Accumulation des nuages de points}{26}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Objectif: reconstituer la sc\IeC {\`e}ne \IeC {\`a} partir des nuages de points "ligne" obtenus \IeC {\`a} partir du processus d'acquisition}{26}}
-\pgfsyspdfmark {pgfid138}{19562754}{35716599}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Le principe de fonctionnement}{26}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Garder en m\IeC {\'e}moire les nuages de points correspondant \IeC {\`a} des lignes pr\IeC {\'e}c\IeC {\'e}demment acquise}{26}}
-\pgfsyspdfmark {pgfid139}{19562754}{30460804}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER ne pas dupliquer les informations: \IeC {\'e}liminer les points doubles}{26}}
-\pgfsyspdfmark {pgfid140}{19562754}{28651218}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Principe de stockage des donn\IeC {\'e}es 3D}{26}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER les structures de donn\IeC {\'e}es de stockage de l'information 3D}{26}}
-\pgfsyspdfmark {pgfid141}{19562754}{24345695}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ TROUVER REF EXTERNE: les structures de donn\IeC {\'e}es 3D}{26}}
-\pgfsyspdfmark {pgfid142}{19562754}{23087685}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.1}Les B-Trees}{26}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Les b-trees, principes}{26}}
-\pgfsyspdfmark {pgfid143}{19562754}{19271433}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Point forts: calculs performants}{26}}
-\pgfsyspdfmark {pgfid144}{19562754}{17936983}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER points faible: arbre \IeC {\'e}quilibr\IeC {\'e}s --> difficile d'ajouter de nouveaux points.}{26}}
-\pgfsyspdfmark {pgfid145}{19562754}{16602533}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.2}Les Octrees}{26}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Octree, principes}{26}}
-\pgfsyspdfmark {pgfid146}{19562754}{12709841}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER points forts: structure d\IeC {\'e}s\IeC {\'e}quilibr\IeC {\'e}es sans probl\IeC {\`e}me, possibilit\IeC {\'e} d'ajouter de nouveau points avec une bonne performance}{26}}
-\pgfsyspdfmark {pgfid147}{19562754}{10900255}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{26}}
-\pgfsyspdfmark {pgfid148}{19562754}{8691973}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.3}Le choix: octree correspond \IeC {\`a} notre besoin.}{27}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{27}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{27}}
-\pgfsyspdfmark {pgfid149}{19562754}{46779616}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{27}}
-\pgfsyspdfmark {pgfid150}{19562754}{45046470}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{27}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER impl\IeC {\'e}mentation d'un monde avec un silo et un tas d'ensilage}{27}}
-\pgfsyspdfmark {pgfid151}{19562754}{39908115}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER capture \IeC {\`a} l'aide d'un lidar mont\IeC {\'e} \IeC {\`a} l'arri\IeC {\`e}re du tracteur}{27}}
-\pgfsyspdfmark {pgfid152}{19562754}{38573665}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Test sous gazebo}{27}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Tracteur effectue une acquisition initiale de la sc\IeC {\`e}ne}{27}}
-\pgfsyspdfmark {pgfid153}{19562754}{34268142}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{27}}
-\pgfsyspdfmark {pgfid154}{19562754}{32458556}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{27}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.1}Outil pour l'analyse de nuage de points: Paraview}{27}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{27}}
-\pgfsyspdfmark {pgfid155}{19562754}{26326860}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{27}}
-\pgfsyspdfmark {pgfid156}{19562754}{25068850}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{27}}
-\pgfsyspdfmark {pgfid157}{19562754}{23259264}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{27}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{27}}
-\pgfsyspdfmark {pgfid158}{19562754}{18738556}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{27}}
-\pgfsyspdfmark {pgfid159}{19562754}{16928970}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{27}}
-\pgfsyspdfmark {pgfid160}{19562754}{15119384}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{27}}
-\pgfsyspdfmark {pgfid161}{19562754}{13309798}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color  {pink}o}}\ AJOUTER REF octomap}{27}}
-\pgfsyspdfmark {pgfid162}{5891346}{11503823}
-\pgfsyspdfmark {pgfid165}{38510620}{11520749}
-\pgfsyspdfmark {pgfid166}{41943890}{11249933}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{28}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Exposer le plan du chapitre}{29}}
+\pgfsyspdfmark {pgfid114}{19562754}{37700188}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER quelle est la qualit\IeC {\'e} de mesure d'un LIDAR sur une surface potentiellement inclin\IeC {\'e}e?}{29}}
+\pgfsyspdfmark {pgfid115}{19562754}{35967042}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation de la chaine de traitement des donn\IeC {\'e}es LIDAR}{29}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Chaine de traitement LIDAR --> Nuage de Point}{29}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Transformer un ensemble de lignes en un nuage de points coh\IeC {\'e}rent}{29}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Inclinaison LIDAR par rapport au tracteur}{29}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Biblio sur l'influence de l'inclinaison du lidar par rapport \IeC {\`a} la surface}{29}}
+\pgfsyspdfmark {pgfid119}{19562754}{5863858}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER arg1}{29}}
+\pgfsyspdfmark {pgfid120}{19562754}{50010247}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Acquisition des donn\IeC {\'e}es LIDAR}{30}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER mettre en forme les donn\IeC {\'e}es lidar de mani\IeC {\`e}re \IeC {\`a} pouvoir les utiliser}{30}}
+\pgfsyspdfmark {pgfid121}{19562754}{45050440}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER r\IeC {\'e}duire la bande passante, ne garder que les donn\IeC {\'e}es exploitatables}{30}}
+\pgfsyspdfmark {pgfid122}{19562754}{43715990}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Transformation trame LIDAR en un nuage de points}{30}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER LIDAR: ensemble d'angles, temps de vol, puissance re\IeC {\c c}ue}{30}}
+\pgfsyspdfmark {pgfid123}{19562754}{39410467}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Nuage de points: positionnement x,y,z dans la sc\IeC {\`e}ne}{30}}
+\pgfsyspdfmark {pgfid124}{19562754}{38076017}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Il est n\IeC {\'e}cessaire de connaitre pr\IeC {\'e}cisement la pose du LIDAR pour g\IeC {\'e}n\IeC {\'e}rer le nuage de points.}{30}}
+\pgfsyspdfmark {pgfid125}{19562754}{36266431}
+\@writefile{tdo}{\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e LIDAR}{30}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e Nuage de Point}{30}}
+\@writefile{tdo}{\contentsline {todo}{Figure: Diagramme fonctionnel LIDAR --> Nuage de Point}{30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Filtrage de la ligne par traitement Voxel}{30}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Enjeu: r\IeC {\'e}duite la bande passante, ne pas sur-\IeC {\'e}chantillonner au pied}{30}}
+\pgfsyspdfmark {pgfid129}{19562754}{7012463}
+\@writefile{tdo}{\contentsline {todo}{Figure: sur\IeC {\'e}chantillonage au pied du tracteur, sous-\IeC {\'e}chantillonnage sur les c\IeC {\^o}t\IeC {\'e}s.}{30}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Exposer le principe du filtrage}{31}}
+\pgfsyspdfmark {pgfid131}{19562754}{42485992}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER mise en oeuvre grace \IeC {\`a} la point cloud library}{31}}
+\pgfsyspdfmark {pgfid132}{19562754}{41151542}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Accumulation des nuages de points}{31}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Objectif: reconstituer la sc\IeC {\`e}ne \IeC {\`a} partir des nuages de points "ligne" obtenus \IeC {\`a} partir du processus d'acquisition}{31}}
+\pgfsyspdfmark {pgfid133}{19562754}{35716599}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Le principe de fonctionnement}{31}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Garder en m\IeC {\'e}moire les nuages de points correspondant \IeC {\`a} des lignes pr\IeC {\'e}c\IeC {\'e}demment acquise}{31}}
+\pgfsyspdfmark {pgfid134}{19562754}{30460804}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER ne pas dupliquer les informations: \IeC {\'e}liminer les points doubles}{31}}
+\pgfsyspdfmark {pgfid135}{19562754}{28651218}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Principe de stockage des donn\IeC {\'e}es 3D}{31}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER les structures de donn\IeC {\'e}es de stockage de l'information 3D}{31}}
+\pgfsyspdfmark {pgfid136}{19562754}{24345695}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ TROUVER REF EXTERNE: les structures de donn\IeC {\'e}es 3D}{31}}
+\pgfsyspdfmark {pgfid137}{19562754}{23087685}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.1}Les B-Trees}{31}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Les b-trees, principes}{31}}
+\pgfsyspdfmark {pgfid138}{19562754}{19271433}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Point forts: calculs performants}{31}}
+\pgfsyspdfmark {pgfid139}{19562754}{17936983}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER points faible: arbre \IeC {\'e}quilibr\IeC {\'e}s --> difficile d'ajouter de nouveaux points.}{31}}
+\pgfsyspdfmark {pgfid140}{19562754}{16602533}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.2}Les Octrees}{31}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Octree, principes}{31}}
+\pgfsyspdfmark {pgfid141}{19562754}{12709841}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER points forts: structure d\IeC {\'e}s\IeC {\'e}quilibr\IeC {\'e}es sans probl\IeC {\`e}me, possibilit\IeC {\'e} d'ajouter de nouveau points avec une bonne performance}{31}}
+\pgfsyspdfmark {pgfid142}{19562754}{10900255}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{31}}
+\pgfsyspdfmark {pgfid143}{19562754}{8691973}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.3}Le choix: octree correspond \IeC {\`a} notre besoin.}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{32}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{32}}
+\pgfsyspdfmark {pgfid144}{19562754}{46779616}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{32}}
+\pgfsyspdfmark {pgfid145}{19562754}{45046470}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{32}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER impl\IeC {\'e}mentation d'un monde avec un silo et un tas d'ensilage}{32}}
+\pgfsyspdfmark {pgfid146}{19562754}{39908115}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER capture \IeC {\`a} l'aide d'un lidar mont\IeC {\'e} \IeC {\`a} l'arri\IeC {\`e}re du tracteur}{32}}
+\pgfsyspdfmark {pgfid147}{19562754}{38573665}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Test sous gazebo}{32}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Tracteur effectue une acquisition initiale de la sc\IeC {\`e}ne}{32}}
+\pgfsyspdfmark {pgfid148}{19562754}{34268142}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{32}}
+\pgfsyspdfmark {pgfid149}{19562754}{32458556}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{32}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.1}Outil pour l'analyse de nuage de points: Paraview}{32}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{32}}
+\pgfsyspdfmark {pgfid150}{19562754}{26326860}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{32}}
+\pgfsyspdfmark {pgfid151}{19562754}{25068850}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{32}}
+\pgfsyspdfmark {pgfid152}{19562754}{23259264}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{32}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{32}}
+\pgfsyspdfmark {pgfid153}{19562754}{18738556}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{32}}
+\pgfsyspdfmark {pgfid154}{19562754}{16928970}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{32}}
+\pgfsyspdfmark {pgfid155}{19562754}{15119384}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{32}}
+\pgfsyspdfmark {pgfid156}{19562754}{13309798}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color  {pink}o}}\ AJOUTER REF octomap}{32}}
+\pgfsyspdfmark {pgfid157}{5891346}{11503823}
+\pgfsyspdfmark {pgfid160}{38510620}{11520749}
+\pgfsyspdfmark {pgfid161}{41943890}{11249933}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{33}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Protocol de test}{28}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{28}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{28}}
-\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER donn\IeC {\'e}es sans RTK --> besoin d'avoir un}{28}}
-\pgfsyspdfmark {pgfid167}{19562754}{29235719}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Protocol de test}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{33}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color  {red}o}}\ REDIGER donn\IeC {\'e}es sans RTK --> besoin d'avoir un}{33}}
+\pgfsyspdfmark {pgfid162}{19562754}{29235719}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{34}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{30}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{35}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{30}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{30}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{30}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Filtres de Kalman}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{35}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{35}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{35}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Filtres de Kalman}{36}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{32}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{37}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \citation{kaplan_understanding_2006}
 \citation{*}
 \bibstyle{alpha}
 \bibdata{biblio}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}Point Cloud Library}{33}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Point Cloud Library}{38}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{kaplan_understanding_2006}{{KH06}{}{{}}{{}}}
+\bibcite{noauthor_ros.org_nodate}{{noa}{}{{}}{{}}}
 \bibcite{rs-_scanning_2012}{{RS12}{}{{}}{{}}}
 \bibcite{zarchan_fundamentals_2009}{{ZM09}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {chapter}{Bibliographie}{34}}
+\@writefile{toc}{\contentsline {chapter}{Bibliographie}{39}}

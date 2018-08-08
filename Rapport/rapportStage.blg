@@ -3,46 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: rapportStage.aux
 The style file: alpha.bst
 Database file #1: biblio.bib
+Warning--to sort, need author or key in noauthor_ros.org_nodate
 Warning--empty journal in rs-_scanning_2012
-You've used 3 entries,
+You've used 4 entries,
             2543 wiz_defined-function locations,
-            582 strings with 4989 characters,
-and the built_in function-call counts, 1069 in all, are:
-= -- 106
-> -- 47
+            584 strings with 5042 characters,
+and the built_in function-call counts, 1267 in all, are:
+= -- 124
+> -- 48
 < -- 3
 + -- 14
 - -- 14
-* -- 71
-:= -- 190
-add.period$ -- 13
-call.type$ -- 3
-change.case$ -- 17
-chr.to.int$ -- 3
-cite$ -- 4
-duplicate$ -- 49
-empty$ -- 77
+* -- 81
+:= -- 209
+add.period$ -- 14
+call.type$ -- 4
+change.case$ -- 21
+chr.to.int$ -- 4
+cite$ -- 7
+duplicate$ -- 59
+empty$ -- 104
 format.name$ -- 18
-if$ -- 221
+if$ -- 268
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 4
-newline$ -- 20
+newline$ -- 23
 num.names$ -- 10
-pop$ -- 15
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 25
 quote$ -- 0
-skip$ -- 37
+skip$ -- 49
 stack$ -- 0
-substring$ -- 23
-swap$ -- 6
+substring$ -- 31
+swap$ -- 7
 text.length$ -- 3
 text.prefix$ -- 1
 top$ -- 0
-type$ -- 16
-warning$ -- 1
+type$ -- 24
+warning$ -- 2
 while$ -- 9
-width$ -- 4
-write$ -- 48
-(There was 1 warning)
+width$ -- 5
+write$ -- 55
+(There were 2 warnings)

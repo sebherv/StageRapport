@@ -389,6 +389,7 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		
 			
 		\subsection{Localisation par fusion de données}
+		\label{intro-loc-fusion-donnees}
 		
 		Afin de pouvoir reconstituer le chantier en une représentation 3D avec une précision centimétrique, il est nécessaire que pour chaque mesure LIDAR le système Symeter V2 aie une estimation suffisamment précise de la pose du véhicule, afin de déterminer la pose du LIDAR et pouvoir situer dans le chantier la position $x,y,z$ de chaque point mesuré.
 		
@@ -482,24 +483,51 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		
 			\para Ce prototype a été utilisé pour effectuer des captures des trois capteur alors que la Tellus Car évoluait dans le parking adjacent aux locaux de Tellus Environnement.
 		
-	\section{Les grandes parties du projet}
+	\section{Les grandes phases du stage}
 	
-	\todoRediger{comme il est apparent, proejt avec de nombreux sujets, et nous partons de zéro.}
-	\todoRediger{objectif est donc de monter une plateforme de base avec dans un premier temps et autant que possible des composants "sur étagère", d'en évaluer les performances et de dégager les axes d'améliorations nécessaires.}
+	Le passage de Symeter V1, où le LIDAR est fixe par rapport au chantier, à Symeter V2 où le LIDAR est monté sur le tracteur et est donc mobile par rapport au chantier, remet tout en question vis-à-vis du travail effectué sur Symeter V1.
+	
+	\para Le fait d'embarquer le système sur un tracteur pose une contrainte très forte sur le projet en forçant l'ajout d'IMU et d'un GPS qui devront être utilisé pour la localisation.
+	
+	\para Donc d'un sujet V1 où nous avions une reconstition du chantier par une accumulation simple de scans LIDAR rectangulaires, nous avons en V2 deux  problèmes complexes interdépendants:
+	\begin{itemize}
+		\item Localisation à partir de fusion de données IMU et GPS
+		\item Reconstition du chantier à partir de scans aléatoires
+	\end{itemize}
 
+	\para Un problème supplémentaire étant l'absence d'un plateforme matérielle de test pour pourvoir tester les solutions de ces deux problèmes.
 	
-	\todoRediger{Montage de la plateforme simulée ROS + Gazebo}
-	\todoRediger{Elaboration, prototypage et test du processus de localisation}
-	\todoRediger{Elaboration, prototypage et test du procédé de capture de la scène 3D}
-	\todoRediger{Test en grandeur à l'aide d'un équipement monté sur la Tellus Car.}
+	\para Comme il était apparent que sur tous ces sujets nous partions de zéros, il a été décidé très tôt dans le projet de monter une plateforme de tracteur simulée sous Gazebo pour effectuer le développement initial de Symeter V2. Cette plateforme simulée nous permettrait dans un premier temps d'effectuer des tests qualitatifs des solutions choisies, pour valider un certain niveau de faisabilité ainsi que faire des essais sur le choix du nombre de capteur et leur disposition.
+	
+	\para A plus long terme, cette plateforme simulée nous permettra d'effectuer des tests quantitatifs de Symeter V2 lorsque de l'implémentation de le mesure de tassage sera complétée, et donc de valider le bon fonctionnement du système avant même de faire des tests sur des chantiers d'ensilage en grandeur.
+	
+	\para Le déroulement du stage a donc été le suivant:
+	\begin{enumerate}
+		\item Vérification des capacités de Gazebo à simuler notre plateforme (capteurs, véhicule)
+		\item Montage de la plateforme Simulée tracteur et capteurs sous ROS / Gazebo
+		\item Montage du processus de localisation par fusion IMU + GPS
+		\item Montage de la chaine de traitement LIDAR pour reconstitution de la représentation 3D du chantier
+		\item Tests des éléments développés ci-dessus sur des captures issues du prototype monté sur la Tellus Car.
+	\end{enumerate}
+
+	\para Les résultats de ces différentes parties du stage sont décrits dans les chapitres suivants de ce rapport.
+	
 				
 
 \chapter{Simulation d'un tracteur évoluant sur un chantier d'ensilage à l'aide de ROS/Gazebo}
 
-\todoRediger{introduction du chapitre simulation tracteur}
+Comme indiqué dans le chapitre précédent, il a été très tôt dans le projet décidé d'utiliser l'environnement logiciel ROS pour implémenter le système Symeter V2. Il avait aussi été décidé de monter un véhicule simulé à l'aide de Gazebo afin d'effectuer le développement initial.
+
+\para Ce chapitre présente en détail l'environnement logiciel ROS et le logiciel de simulation Gazebo. Cette présentation est illustrée par la construction d'un robot virtuel simple, pour lequel un retour d'expérience est effectué en fin de chapitre suite à cette première expérience.
+
+\para L'implémentation du tracteur de test est ensuite présentée en fin de chapitre.
 
 	\section{Présentation de ROS}
-	\todoRediger{Présenter succinctement ROS, montrer quelques projets, exposer les outils}
+	
+	ROS - Robot OS - est un environnement logiciel destiner au pilotage autonome de systèmes robotiques. Ce logiciel Open Source originellement développé conjointement par Willow Garage et l'université de Standford, a été lancé pour sa version 1.0 en janvier 2010 (voir www.ros.org).
+	
+	\para ROS en est maintenant à sa 11\textsuperscript{ème} distribution, dénommée "ROS Lunar Loggerhead", distribution qui sera utilisée pour Symeter V2.
+	
 	\missingfigure{Photo d'exemples de robots, roues, bras, humanoides, etc}
 		\subsection{Architecture de ROS}
 		\todoRediger{ROS est un environnement permettant le montage de plateformes robotiques complètes.}
@@ -513,34 +541,82 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		\todoRediger{un petit laïus surt les capteurs supportés}
 	\section{Présentation de Gazebo}
 	
-	\todoRediger{Qu'est ce que Gazebo, à quoi ça sert}
+	Gazebo est un logiciel qui permet de simuler un "monde" virtuel 3D, dans lequel il est possible de plonger des véhicules robotiques qui seront alors soumis aux lois physiques simulées.
+	
+	\missingfigure{Capture d'écran de gazebo}
 		\subsection{Construction d'un robot virtuel}
-		\todoRediger{Décrire les éléments nécessaires à la description du robot}
+		
+		Un robot virtuel sous Gazebo est décrit par un fichier XML au format SDF. Ce format permet de spécifier un robot en ses éléments constitutifs simplifiés (link) chassis, roue, partie de bras, etc) de décrire comment ces éléments sont placés les uns par rapport au autres.
+		
+		\para Chaque élément  du robot doit comporter 3 parties différentes
+		
+		\para Ce robot doit faire partie d'un monde qui est lui même décrit par un fichier SDF. 
+		
+		\todoTrouverRefExt{SDF}
+
 		\todoRediger{URDF et SDF, world, contrôleurs}
 		
 		
 		\subsection{Vérification de disponibilité des capteurs}
-		\todoRediger{Besoin de vérifier la disponibilité et la performance des capteurs cibles de Symeter V2}
 		
-	\section{Contraintes de mise en oeuvre}
-		\subsection{Quelques bugs génants}
-		\todoRediger{Lister les problèmes et bugs qui ont nécessité la mise en place de contournements}
+		Gazebo propose tout une série de capteurs simulés, disponible nativement ou par l'intermédiaire de module tiers. Ces capteurs simulés génére une donnée en cohérence avec l'environnement simulé qui peut être rendu disponible aux modules ROS par l'intermédiaire de plugins adaptés.
+		
+		\para Pour les besoins du projet Symeter V2, nous avons vérifié et testé la disponibilité des types de capteurs tels que listés dans le tableau suivant.
+		\newline
+		
+		\begin{tabular}{|c|c|c|}
+			\hline 
+			Capteur & Plugin Gazebo & Utilisabilité \\ 
+			\hline 
+			IMU &  &  \\ 
+			\hline 
+			LIDAR &  &  \\ 
+			\hline 
+			GPS &  &  \\ 
+			\hline 
+		\end{tabular} 
+	
+		\para Pour vérifier la disponibilité et le bon fonctionnement de ces capteurs, nous avons utilisé un petit robot basé sur une implémentation pré-existante décrite dans \todoAjouterRef{le tuto de petit robot}.
+		
+		\missingfigure{Le petit robot}
+		
+
+		
+\section{Contraintes de mise en oeuvre}
+	
+	\para La mise en oeuvre de ce petit robot au sein de Gazebo a été riche d'enseignements. Elle a permis notamment de détecter quelques problèmes génant dans l'utilisation de Gazebo.
+	
+		\subsection{Pas d'adhérence au démarrage de la simulation}
+		
+		La mise en oeuvre du robot de base a révélé rapidement révélé que Gazebo comporte quelques problèmes  lié à la simulation de l'adhérence des roues avec les objets environnants, notamment le sol.
+		
+		\para En particulier, les roues d'un robot ROS plongé dans Gazebo n'auront aucune adhérence sur le sol au démarrage de la simulation. Si la propulsion est mise en oeuvre, nous pouvons constater que les roues tournent mais que le robot ne bouge pas, comme si les roues tournaient dans le vide, ou sur de la glace.
+		
+		\para Après avoir changé des réglages dans le moteur physique de Gazebo, dans le réglage du coefficient de frottement des roues et de nombreux autres paramètres sans effet sur le problème, un contournement a été mis en place pour le mitiger: un node ROS a été écrit pour forcer la position du robot à des coordonnées spatiale bien précises, en utilisant le topic \verb|/gazebo/set_model_state|.
+		
+		\para Après ce forçage, Gazebo prend ensuite bien en compte l'adhérence des roues du robot et le robot bouge quand les roues tournent. 
+		
+		\para Cela fait que ce script, dénommé \verb|setpose|, doit être invoqué systématiquement après le démarrage de la simulation pour que l'adhérence des roues soit bien prise en compte par le moteur physique de Gazebo.
+		
 		\subsection{Simulation mécanique, frottements, adhérence}
-		\todoRediger{La nature des "matériaux" utilisés dans gazebo est très "rigide": les chocs ne sont pas amortis.}
+		
+		Simuler un robot avec des points de contact multiples dans Gazebo peut poser parfois problème si les points multiples dérapent. Dans ce cas il est rare que L'adhérence soit récupérée.
+		
+		\para Ceci est exacerbé par le fait que les matériaux simulés par Gazebo sont par défaut infiniment rigides et que le moindre choc se répercute dans les points de contact avec le sol. 
+
+		
 		\subsection{Conclusions sur les contraintes}
-		Eviter à tout prix que le véhicule entre en dérapage: il ne récupère généralement pas.
-		Raisons pour lesquelles le véhicule peut entrer en dérapage:
-			- mauvaise configuration des paramètres de frottement des éléments en contact avec le sol.
-			- vitesses de rotation différentes des roues: 
-				- mauvaise consigne de vitesse sur les roues
-				- différence de vitesse entre roue intérieure et roue extérieure lors d'un virage
-			- en virage: rayons de virages différent entre roue intérieure et roue extérieure
+		\label{conc-contrainte-gazebo}
+		Pour conclure avec les limitations et contraintes de Gazebo, la leçon principale est qu'il faut au maximul éviter que le véhicule entre en dérapage: il ne récupère généralement pas, et devient inutilisable: il faut relancer la simulation.
+		
+		\para Les raisons pour lesquelles le véhicule peut entrer en dérapage sont nombreuse:
+		\begin{itemize}
+			\item Mauvaise configuration des paramètres de frottement des éléments en contact avec le sol.
+			\item  Vitesses de rotation différentes des roues, soit par une mauvaise consigne de vitesse sur l'une des roues, soit une non prise en compte du différentiel de vitesse entre roues intérieur et extérieur dans un virage, etc
 			
-		Conduite en terrain accidenté:
-			- Conserver la directivité
-			- 4 roues motrices et/ou suspension
-			
-			\todoCompleter{Mise en forme}
+			\item En virage, les roues intérieures et extérieures sont soumises à des rayons différents. S'ils ne sont pas pris en compte correctement, une ou plusieurs roues sont succeptible de déraper.
+		\end{itemize}
+
 		
 	\section{Mise en Oeuvre: simulation d'un environnement de tassage de silo}
 		\subsection{Montage d'un tracteur simulé}
@@ -555,13 +631,39 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 			
 			 \missingfigure{Image du tracteur modélisé}
 			\paragraph{Actuateurs et Contrôleurs}
-			\todo{Rédiger Actuateur et Contrôleurs}
+			
+			Pour permettre une conduite en terrain accidenté, le tracteur simulé sera muni de 4 roues motrices, avec 2 roues directrices à l'avant.
+			
+			\para Chacune des roues motrices est commandée en vitesse par son propre topic, telle que décrit dans le tableau suivant, et l'angle de chacune des roues de direction est commandée par un topic dédié.
+			
+			\missingfigure{Tableau avec la correspondance entre vitesse roue et topic, angle direction et roue directionnelle}
 		\subsubsection{Propulsion et Guidage}
+		
+		
+		
+			Du fait des contraintes exposées dans le paragraphe \ref{conc-contrainte-gazebo}, la consigne de vitesse sur chacune des roues doit être cohérente vis-à-vis de la vitesse de consigne, le rayon de chacune des roues ainsi que le rayon de virage imposé.
+			
 			\paragraph{Algorithme}
+			\label{algo-steering}
 			
 			\todo[inline]{Description géométrique du problème de direction différentielle}
 			
 			\paragraph{Implémentation sous ROS}
+			
+			L'implémentation sous ROS de cet algorithme est effectué au moyen d'un node dédié, nommé \verb|tracteur_steering.py|, qui fait partie du package \verb|tracteur_control|.
+			
+			\para Le node \verb|tracteur_steering| prend en entrée le topic \verb|/tracteur/cmd_vel| qui comporte des messages de type \verb|Twist|. Ce message contient deux informations: l'un comporte la consigne de vitesse du tracteur, et l'autre le taux de rotation à gauche ou à droite du tracteur.
+			
+			\para Le node \verb|tracteur_steering| calcule sur la base des consignes données 6 nouveau paramètres, sur la base des algorithmes exposés en \ref{algo-steering}:
+			\begin{itemize}
+				\item les 4 consignes de vitesse pour chacune des roues
+				\item les 2 consignes de direction pour chacune des roues directionnelle.
+			\end{itemize}
+		
+			\para Ces consignes sont soumises à chacun des contrôleur par l'intermediaire des topics qui leur sont dédiés \todoAjouterRef{tableau avec les topics}.
+			
+			
+			
 			\todo{Description de l'implémentation sous ROS}
 			\missingfigure{Schéma des flux topic qui permet de transformer une commande twist en 4 commandes de velocités.}
 			
@@ -570,7 +672,16 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 
 \chapter{Mise en place du processus de localisation}
 
+Ce chapitre présente la problématique de localisation par fusion de données IMU et GPS.
+
 	\section{Présentation du problème}
+	Comme indiqué dans le paragraphe \ref{intro-loc-fusion-donnees}, le but du processus de localisation est d'estimer en temps réel pour chaque instant $t_n$ le vecteur d'état 
+	
+	\begin{equation}
+	\mathbf{X_n} = \begin{bmatrix}
+	x_n \\ y_n \\ z_n \\ \theta_{x_n} \\ \theta_{y_n} \\ \theta_{z_n}
+	\end{bmatrix}
+	\end{equation}
 	\todoRediger{Exposer la problématique: fusionner des données avec potentiellement des fréquences d'échantillonnage différentes}
 	
 	\todoRediger{déterminer la pose du tracteur à partir des différents capteurs}

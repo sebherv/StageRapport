@@ -31,60 +31,60 @@
 \contentsline {subsection}{\numberline {2.4.2}Plateformes de test disponibles}{18}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Environnement de simulation Gazebo}{18}
 \contentsline {subsubsection}{\numberline {2.4.2.2}Prototype mont\IeC {\'e} sur Camionnette}{19}
-\contentsline {section}{\numberline {2.5}Les grandes parties du projet}{19}
-\contentsline {chapter}{\numberline {3}Simulation d'un tracteur \IeC {\'e}voluant sur un chantier d'ensilage \IeC {\`a} l'aide de ROS/Gazebo}{20}
-\contentsline {section}{\numberline {3.1}Pr\IeC {\'e}sentation de ROS}{20}
-\contentsline {subsection}{\numberline {3.1.1}Architecture de ROS}{20}
-\contentsline {subsection}{\numberline {3.1.2}Gestion des transformations}{21}
-\contentsline {subsection}{\numberline {3.1.3}Gestions des Capteurs}{21}
-\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}sentation de Gazebo}{21}
-\contentsline {subsection}{\numberline {3.2.1}Construction d'un robot virtuel}{21}
-\contentsline {subsection}{\numberline {3.2.2}V\IeC {\'e}rification de disponibilit\IeC {\'e} des capteurs}{21}
-\contentsline {section}{\numberline {3.3}Contraintes de mise en oeuvre}{21}
-\contentsline {subsection}{\numberline {3.3.1}Quelques bugs g\IeC {\'e}nants}{21}
-\contentsline {subsection}{\numberline {3.3.2}Simulation m\IeC {\'e}canique, frottements, adh\IeC {\'e}rence}{21}
-\contentsline {subsection}{\numberline {3.3.3}Conclusions sur les contraintes}{21}
-\contentsline {section}{\numberline {3.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{22}
-\contentsline {subsection}{\numberline {3.4.1}Montage d'un tracteur simul\IeC {\'e}}{22}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Description Physique}{22}
-\contentsline {paragraph}{\numberline {3.4.1.1.1}Chassis}{22}
-\contentsline {paragraph}{\numberline {3.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{22}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Propulsion et Guidage}{22}
-\contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{22}
-\contentsline {paragraph}{\numberline {3.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{22}
-\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{23}
-\contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation du probl\IeC {\`e}me}{23}
-\contentsline {section}{\numberline {4.2}Filtres de Kalman}{23}
-\contentsline {subsection}{\numberline {4.2.1}Filtres de Kalman Lin\IeC {\'e}aires}{23}
-\contentsline {subsection}{\numberline {4.2.2}Filtres de Kalman Etendus}{23}
-\contentsline {section}{\numberline {4.3}Mise en oeuvre}{23}
-\contentsline {chapter}{\numberline {5}Exploitation des donn\IeC {\'e}es LIDAR}{24}
-\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation de la chaine de traitement des donn\IeC {\'e}es LIDAR}{24}
-\contentsline {section}{\numberline {5.2}Acquisition des donn\IeC {\'e}es LIDAR}{25}
-\contentsline {subsection}{\numberline {5.2.1}Transformation trame LIDAR en un nuage de points}{25}
-\contentsline {subsection}{\numberline {5.2.2}Filtrage de la ligne par traitement Voxel}{25}
-\contentsline {section}{\numberline {5.3}Accumulation des nuages de points}{26}
-\contentsline {subsection}{\numberline {5.3.1}Le principe de fonctionnement}{26}
-\contentsline {subsection}{\numberline {5.3.2}Principe de stockage des donn\IeC {\'e}es 3D}{26}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Les B-Trees}{26}
-\contentsline {subsubsection}{\numberline {5.3.2.2}Les Octrees}{26}
-\contentsline {subsubsection}{\numberline {5.3.2.3}Le choix: octree correspond \IeC {\`a} notre besoin.}{27}
-\contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{27}
-\contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{27}
-\contentsline {subsection}{\numberline {5.4.1}Test sous gazebo}{27}
-\contentsline {subsection}{\numberline {5.4.2}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{27}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Outil pour l'analyse de nuage de points: Paraview}{27}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{27}
-\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{28}
-\contentsline {section}{\numberline {6.1}Protocol de test}{28}
-\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{28}
-\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{28}
-\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{29}
-\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{30}
-\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{30}
-\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{30}
-\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{30}
-\contentsline {chapter}{\numberline {B}Filtres de Kalman}{31}
-\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{32}
-\contentsline {chapter}{\numberline {D}Point Cloud Library}{33}
-\contentsline {chapter}{Bibliographie}{34}
+\contentsline {section}{\numberline {2.5}Les grandes phases du stage}{19}
+\contentsline {chapter}{\numberline {3}Simulation d'un tracteur \IeC {\'e}voluant sur un chantier d'ensilage \IeC {\`a} l'aide de ROS/Gazebo}{21}
+\contentsline {section}{\numberline {3.1}Pr\IeC {\'e}sentation de ROS}{21}
+\contentsline {subsection}{\numberline {3.1.1}Architecture de ROS}{22}
+\contentsline {subsection}{\numberline {3.1.2}Gestion des transformations}{22}
+\contentsline {subsection}{\numberline {3.1.3}Gestions des Capteurs}{22}
+\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}sentation de Gazebo}{22}
+\contentsline {subsection}{\numberline {3.2.1}Construction d'un robot virtuel}{22}
+\contentsline {subsection}{\numberline {3.2.2}V\IeC {\'e}rification de disponibilit\IeC {\'e} des capteurs}{23}
+\contentsline {section}{\numberline {3.3}Contraintes de mise en oeuvre}{23}
+\contentsline {subsection}{\numberline {3.3.1}Pas d'adh\IeC {\'e}rence au d\IeC {\'e}marrage de la simulation}{23}
+\contentsline {subsection}{\numberline {3.3.2}Simulation m\IeC {\'e}canique, frottements, adh\IeC {\'e}rence}{24}
+\contentsline {subsection}{\numberline {3.3.3}Conclusions sur les contraintes}{24}
+\contentsline {section}{\numberline {3.4}Mise en Oeuvre: simulation d'un environnement de tassage de silo}{24}
+\contentsline {subsection}{\numberline {3.4.1}Montage d'un tracteur simul\IeC {\'e}}{24}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Description Physique}{25}
+\contentsline {paragraph}{\numberline {3.4.1.1.1}Chassis}{25}
+\contentsline {paragraph}{\numberline {3.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{25}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Propulsion et Guidage}{25}
+\contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{25}
+\contentsline {paragraph}{\numberline {3.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{25}
+\contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{27}
+\contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation du probl\IeC {\`e}me}{27}
+\contentsline {section}{\numberline {4.2}Filtres de Kalman}{27}
+\contentsline {subsection}{\numberline {4.2.1}Filtres de Kalman Lin\IeC {\'e}aires}{27}
+\contentsline {subsection}{\numberline {4.2.2}Filtres de Kalman Etendus}{27}
+\contentsline {section}{\numberline {4.3}Mise en oeuvre}{28}
+\contentsline {chapter}{\numberline {5}Exploitation des donn\IeC {\'e}es LIDAR}{29}
+\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation de la chaine de traitement des donn\IeC {\'e}es LIDAR}{29}
+\contentsline {section}{\numberline {5.2}Acquisition des donn\IeC {\'e}es LIDAR}{30}
+\contentsline {subsection}{\numberline {5.2.1}Transformation trame LIDAR en un nuage de points}{30}
+\contentsline {subsection}{\numberline {5.2.2}Filtrage de la ligne par traitement Voxel}{30}
+\contentsline {section}{\numberline {5.3}Accumulation des nuages de points}{31}
+\contentsline {subsection}{\numberline {5.3.1}Le principe de fonctionnement}{31}
+\contentsline {subsection}{\numberline {5.3.2}Principe de stockage des donn\IeC {\'e}es 3D}{31}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Les B-Trees}{31}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Les Octrees}{31}
+\contentsline {subsubsection}{\numberline {5.3.2.3}Le choix: octree correspond \IeC {\`a} notre besoin.}{32}
+\contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{32}
+\contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{32}
+\contentsline {subsection}{\numberline {5.4.1}Test sous gazebo}{32}
+\contentsline {subsection}{\numberline {5.4.2}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{32}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Outil pour l'analyse de nuage de points: Paraview}{32}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{32}
+\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{33}
+\contentsline {section}{\numberline {6.1}Protocol de test}{33}
+\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{33}
+\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{33}
+\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{34}
+\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{35}
+\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{35}
+\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{35}
+\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{35}
+\contentsline {chapter}{\numberline {B}Filtres de Kalman}{36}
+\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{37}
+\contentsline {chapter}{\numberline {D}Point Cloud Library}{38}
+\contentsline {chapter}{Bibliographie}{39}
