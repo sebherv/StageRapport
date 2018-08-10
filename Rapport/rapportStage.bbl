@@ -1,4 +1,9 @@
-\begin{thebibliography}{ZM09}
+\begin{thebibliography}{Gus15}
+
+\bibitem[Gus15]{gustavsson_uav_2015}
+Kenneth Gustavsson.
+\newblock {UAV} {Pose} {Estimation} using {Sensor} {Fusion} of {Inertial},
+  {Sonar} and {Satellite} {Signals}, 2015.
 
 \bibitem[KH06]{kaplan_understanding_2006}
 Elliott~D. Kaplan and C.~Hegarty, editors.
@@ -7,8 +12,19 @@ Elliott~D. Kaplan and C.~Hegarty, editors.
   2nd ed edition, 2006.
 \newblock OCLC: ocm62128065.
 
-\bibitem[noa]{noauthor_ros.org_nodate}
-{ROS}.org {\textbar} {History}.
+\bibitem[ML16]{moreno_comparative_2016}
+Carlos Moreno and Ming Li.
+\newblock A {Comparative} {Study} of {Filtering} {Methods} for {Point} {Clouds}
+  in {Real}-{Time} {Video} {Streaming}.
+\newblock page~5, 2016.
+
+\bibitem[MS16]{menegatti_generalized_2016}
+Thomas Moore and Daniel Stouch.
+\newblock A {Generalized} {Extended} {Kalman} {Filter} {Implementation} for the
+  {Robot} {Operating} {System}.
+\newblock In Emanuele Menegatti, Nathan Michael, Karsten Berns, and Hiroaki
+  Yamaguchi, editors, {\em Intelligent {Autonomous} {Systems} 13}, volume 302,
+  pages 335--348. Springer International Publishing, Cham, 2016.
 
 \bibitem[RS12]{rs-_scanning_2012}
 TAMAKI RS.

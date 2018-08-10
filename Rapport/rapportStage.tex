@@ -18,8 +18,10 @@
 \usepackage[colorinlistoftodos,textwidth=3.7cm]{todonotes}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{tocbibind}
+\usepackage{hyperref}
 \author{Sébastien Hervieu}
 
+\setcounter{MaxMatrixCols}{20}
 \newcounter{mypagecount}% create a new counter
 \setcounter{mypagecount}{0}% set it to something just in case
 \newenvironment{interlude}{% create a new environment for the unnumbered section(s)
@@ -36,6 +38,8 @@
 \begin{document}
 	
 \newcommand{\para}{\paragraph*{}}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
 	
 \newcommand{\todoRediger}[1]{\todo[color=red,inline]{REDIGER #1}}
 \newcommand{\todoARevoir}[1]{\todo[color=red,inline]{A REVOIR #1}}
@@ -323,7 +327,7 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 		
 		\missingfigure{Photo base + rover RTK}
 		
-		\todoPeutEtre{caméra video pour odométrie visuelle}
+		
 		
 	\section{Environnement de programmation: ROS}
 	Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
@@ -515,6 +519,7 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 				
 
 \chapter{Simulation d'un tracteur évoluant sur un chantier d'ensilage à l'aide de ROS/Gazebo}
+\label{chap-simu-ros-gazebo}
 
 Comme indiqué dans le chapitre précédent, il a été très tôt dans le projet décidé d'utiliser l'environnement logiciel ROS pour implémenter le système Symeter V2. Il avait aussi été décidé de monter un véhicule simulé à l'aide de Gazebo afin d'effectuer le développement initial.
 
@@ -666,84 +671,187 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 			
 			\todo{Description de l'implémentation sous ROS}
 			\missingfigure{Schéma des flux topic qui permet de transformer une commande twist en 4 commandes de velocités.}
-			
+		
 		
 		
 
 \chapter{Mise en place du processus de localisation}
 
-Ce chapitre présente la problématique de localisation par fusion de données IMU et GPS.
+Ce chapitre présente la problématique de localisation par fusion de données IMU et GPS. Malgrè l'objectif de mettre en oeuvre des composants disponibles "sur étagère" pour monter la version initiale de Symeter V2, il est quand même nécessaire de comprendre en détail les tenants et les aboutissants du problème de la localisation.
+
+\para Ce problème est complexe et requiert d'en comprendre au moins les bases afin de permettre de configurer les composants correctement.
 
 	\section{Présentation du problème}
-	Comme indiqué dans le paragraphe \ref{intro-loc-fusion-donnees}, le but du processus de localisation est d'estimer en temps réel pour chaque instant $t_n$ le vecteur d'état 
+	Comme indiqué dans le paragraphe \ref{intro-loc-fusion-donnees}, le but du processus de localisation est d'estimer en temps réel pour chaque instant $t_k$ le vecteur d'état 
 	
-	\begin{equation}
-	\mathbf{X_n} = \begin{bmatrix}
-	x_n \\ y_n \\ z_n \\ \theta_{x_n} \\ \theta_{y_n} \\ \theta_{z_n}
+	\begin{equation}	
+	\bs{x}_k = \begin{bmatrix}
+	x_k \\ y_k \\ z_k \\ \theta_{x_k} \\ \theta_{y_k} \\ \theta_{z_k}
 	\end{bmatrix}
 	\end{equation}
-	\todoRediger{Exposer la problématique: fusionner des données avec potentiellement des fréquences d'échantillonnage différentes}
+	\newline
 	
-	\todoRediger{déterminer la pose du tracteur à partir des différents capteurs}
+	sur la base d'informations fournies par l'IMU et le GPS en mode RTK, ce vecteur d'état étant exprimé dans un référentiel fixe par rapport au chantier.
+	
+	\missingfigure{Représentation du vecteur d'état par rapport au chantier}
+	
+	\para Selon \cite{gustavsson_uav_2015}, il est possible de mettre en place un procédé qui maintient ce vecteur d'état sur la base de ces deux instruments.
+	
+	\subsection{Repères}
+	
+	\para L'IMU et le GPS peuvent fournir des informations à certains instant $t_k$ qui permettront de mettre à jour le vecteur d'état pour l'incrément de temps suivant $t_{k+1}$. Cependant, les données exposées par les capteurs ne sont pas toutes dans le référentiel fixe par rapport au chantier.
+	
+	\para L'IMU par exemple expose des composantes d'accélération linéaire qui sont attachées au référentiel de L'IMU lui-même, supposé fixe par rapport au véhicule, mais qui est donc mobile par rapport au chantier.
+	
+	\para Le GPS lui n'est en mesure que de donner des mesures de positions que dans un référentiel lié à la surface de la Terre, en terme de lattitude, longitude et altitude $(\lambda, \phi, h)$ et il faudra donc transformer cette position géocentrique en coordonnées du référentiel de chantier.
+	
+	\para Pour travailler au problème de localisation, nous avons donc besion d'au moins trois référentiels différents pour maintenir le vecteur d'état $\bs{x}_k$ à partir des mesures de l'IMU et du GPS.
+	
+	\para Selon \cite{gustavsson_uav_2015}, nous pouvons donc distinguer les 4 référentiels suivants
+	
+	\subsubsection{Repère Inertiel}
+	
+	\subsubsection{Repère ECEF}
+	
+	\subsubsection{Repère de navigation local}
+	
+	\subsubsection{Repère du véhicule}
+	
+				
+	\subsection{Système de Navigation Inertielle}
+	
+	\para Selon \cite{gustavsson_uav_2015}, les données de l'IMU peuvent être exploitée par un Système de Navigation Inertiel. Un tel 
+	
+	
+	\subsection{Transformation des coordonnées géocentriques en coordonnées locale}
+	
+
 	
 	\section{Filtres de Kalman}
-	\todoRediger{théorie des filtres de Kalman}
+	
+	Selon \cite{gustavsson_uav_2015} et \cite{menegatti_generalized_2016}, a fusion de données IMU et GPS peut être effectuée sur la base d'un filtre de Kalman. Cette section s'attache a décrire les principes de fonctionnement d'un tel filtre pour en permettre l'utilisation pour le projet Symeter V2.
+	
+	Un filtre de Kalman est un algortihme qui permet d'estimer les états d'un système dynamique sur la base  de mesures incomplètes ou bruitée. Il a été développé à la fin des années 50 et comprend de très nombreuses applications dans tous les domaines liés à l'instrumentation.
 	
 	\subsection{Filtres de Kalman Linéaires}
+	Selon \cite{zarchan_fundamentals_2009}, les filtres de Kalman sont applicables sur des systèmes dynamiques linéaires modélisés par un ensemble d'équations différentielles, décrites par la relation suivante:
+	
+	\begin{equation}
+	\boldsymbol{
+		\dot{x} = Fx + Gu + w
+	}
+	\end{equation}
+	\todoCompleter{avec mes notes sur le filtre de Kalman Etendu.}
 	
 	\subsection{Filtres de Kalman Etendus}
 	\todoRediger{pour les systèmes dynamiques non linéaires}
 	
-	\section{Mise en oeuvre}
+	\section{Mise en oeuvre sous ROS.} Comme les sections précédentes le montrent, l'implementation d'un système de localisation sur la base mesure par IMU et GPS ne sont pas une mince affaire et est plus un sujet de thèse qu'une sous partie de stage. 
 	
-	\todoRediger{Utilisation du module robot\_localization}
+	\para L'environnement ROS propose des modules prêts à l'emploi pour implémenter un processus de localisation pour les systèmes de robotique mobile. L'offre est cependant nombreuse et il a fallu vérifier que les solutions proposées répondent bien aux besoins de Symeter V2.
+	
+	\para Le besoin le plus important est que la localisation doit être effectuée sur un vecteur d'état compatible avec une scène 3D. Cela veut dire que le vecteur d'état estimé doit être d'au moins 6 dimensions: 3 pour la position spatiale du véhicule et 3 pour son assiette.
+	
+	\para Il a donc fallu éliminer tous les modules qui se limitaient à des évolutions 2D du système, d'autre qui n'acceptaient qu'un nombre limité de capteurs, ou alors qui ne supportaient pas le GPS, par exemple.
+	
+	\para Le choix final s'est finalement reposé sur le module \verb|robot_localization|, qui est décrit plus en détail dans les sections suivantes.
+	
+	\subsection{Module robot\_localisation}
+	Selon le site internet de \verb|robot_localisation| (\href{http://docs.ros.org/melodic/api/robot_localization/html/index.html}{lien}), ce module est une collection de nodes dédiés à l'estimation d'état. Chacun de ces nodes implémente un estimateur d'état non linéaire pour des véhicules évoluant dans un espace en 3 dimensions.
+	
+	\para Il contient contient notamment le node \verb|ekf_localization_node| qui est une implémentation d'un filtre de Kalman Etendu, et le node \verb|navsat_transform_node| qui aide à l'intégration des données GPS.
+	
+	\para Les caractéristiques principales du node \verb|ekf_localization_node| sont les suivantes:
+	\begin{itemize}
+		\item Possibilité de fusionner un nombre arbitraire de capteurs
+		\item Possibilité de prendre en compte de nombreux types de données différentes: odométrie, IMU, Pose avec covariance, etc.
+		\item Possibilité de régler la configuration du node capteur par capteur
+		\item Estimation en continu: dès que le node reçoit une mesure, il estime en continu le vecteur d'état, même en l'absence prolongée de nouvelle mesure, en utilisant un modèle interne pour la dynamique du véhicule.
+	\end{itemize}
+
+	\para Pour estimer en continu l'état du véhicule, le node \verb|ekf_localization_node| maintient en interne un vecteur d'état à 15 dimensions:
+	
+	\begin{gather}
+		\begin{bmatrix}
+			x&y&z&\theta_x&\theta_y&\theta_z&
+			\dot{x}&\dot{y}&\dot{z}&\dot{\theta_x}&\dot{\theta_y}&\dot{\theta_z} &\ddot{x}&\ddot{y}&\ddot{z}
+		\end{bmatrix}
+	\end{gather}
+	
+	\subsection{navsat\_transformation\_node}
+	\todoRediger{navsat transformation node}
+	
+	\subsection{Configuration des Capteurs}
+	\missingfigure{Architecture des nodes}
+	\todoRediger{Les variables d'état influencées par IMU}
+	\todoRediger{les variables d'état influencées par le GPS}
+	
+	\subsection{Quelques tests}
 	
 	
 \chapter{Exploitation des données LIDAR}
 
-	\todoRediger{Exposer le plan du chapitre}
-	\todoRediger{quelle est la qualité de mesure d'un LIDAR sur une surface potentiellement inclinée?}
+Ce chapitre présente la fonction acquisition et exploitation des données LIDAR pour le projet Symeter V2. 
+
+\para Nous nous attachons à mettre en place les principes de traitement des données LIDAR en vue de construire une représentation 3D du chantier, d'abord en montant le pipeline de traitement du flux de données LIDAR, puis en mettant en oeuvre une structure de données adaptée au stockage d'une scène 3D.
 
 	\section{Présentation de la chaine de traitement des données LIDAR}
+	
+	La chaîne de traitement des données LIDAR est représentée dans la figure \todoAjouterRef{figure} et comporte les éléments suivants:
+	\begin{itemize}
+		\item Une source de données de type \verb|laser|, issue des drivers ROS qui pilotent l'équipement LIDAR
+		
+		\item Un module de mise en forme du signal, qui prend en entrée les données \verb|laser|, les filtre de manière à uniformiser la repartition des points de mesure, à réduire la bande passante et transformer les données laser en un nuage de points.
+		
+		\item Un module d'accumulation de nuages de points, qui prend en entrée les nuages de points issus du module de mise en forme en vue de les aggréger et reconstruire la chaine.
+	\end{itemize}
 	
 	\missingfigure{Chaine de traitement LIDAR --> Nuage de Point}
 	\missingfigure{Transformer un ensemble de lignes en un nuage de points cohérent}
 	
-	\missingfigure{Inclinaison LIDAR par rapport au tracteur}
-	
-	\todoRediger{Biblio sur l'influence de l'inclinaison du lidar par rapport à la surface}
-	\todoRediger{arg1}
-	
-	\section{Acquisition des données LIDAR}
-	
+	\section{Acquisition et mise en forme des données LIDAR}
+	L'acquisistion initiale des données LIDAR est effectuée par un driver approprié, généralement fourni par le constructeur de l'équipement. Les données sont structurée selon un format comportant la distance mesurée jusqu'au premier obstacle pour chaque incrément d'angle du LIDAR.
 
-	\todoRediger{mettre en forme les données lidar de manière à pouvoir les utiliser}
-	\todoRediger{réduire la bande passante, ne garder que les données exploitatables}
 	
 		\subsection{Transformation trame LIDAR en un nuage de points}
+	
+		\para La première étape du traitement est donc de transformer ces données de type \verb|laser| (au sens de l'environnement ROS) pour générer un nuage de points dans le référentiel du chantier.
+	
 		\todoRediger{LIDAR: ensemble d'angles, temps de vol, puissance reçue}
 		\todoRediger{Nuage de points: positionnement x,y,z dans la scène}
+	
+		\subsection{Filtrage de la ligne de point par downsampling}
+	
+		\para A raison de 40 scans par secondes et de 1080 points mesurés par scan, un LIDAR génére 43200 points par secondes, ce qui est beaucoup.
+	
+		\para De plus, du fait que la hauteur du LIDAR monté sur un tracteur sera au maximum d'environ 3 à 4 mètres de hauteur, et que l'acquisition des mesures est effectué sur la base d'un incrément d'angles, la densité des points de mesure sera beaucoup plus hétérogène que pour Symeter V1. Cela veut dire que nous aurons beaucoup plus de points de mesure directement sous le LIDAR que sur les côtés.
+	
+		\para Nous allons donc effectuer un traitement qui permettra de moyenner les mesures de points autour de positions régulièrement réparties tous les 5 cm (par exemple). Cela permettra de réduire le nombre de points à incorporer dans la scène,  tout en régularisant la répartition des points dans l'espace.
+		
+		\para D'aprés \cite{moreno_comparative_2016}, il existe plusieurs méthodes de filtrage de nuages de points. Ceci est effectué en utilisant un procedé basé sur les Voxels
+	
+		\todoCompleter{principe de fonctionnement des Voxels} 
+
+		\para Le résultat final de ce traitement est que d'un nuage de points irrégulièrement espacé et avec beaucoup de bande passante nous obtenons un nombre réduit de points régulièrement espacés, idéalement conditionné pour être pris en compte de manière fiable par l'accumulateur.
+	
+
 		\todoRediger{Il est nécessaire de connaitre précisement la pose du LIDAR pour générer le nuage de points.}
 		
 		\missingfigure{Illustration nature donnée LIDAR}
 		\missingfigure{Illustration nature donnée Nuage de Point}
 		\missingfigure{Diagramme fonctionnel LIDAR --> Nuage de Point}
-		
-		\subsection{Filtrage de la ligne par traitement Voxel}
-		\todoRediger{Enjeu: réduite la bande passante, ne pas sur-échantillonner au pied}
-		
-		\missingfigure{suréchantillonage au pied du tracteur, sous-échantillonnage sur les côtés.}
-		
-		\todoRediger{Exposer le principe du filtrage}
-		
-		\todoRediger{mise en oeuvre grace à la point cloud library}
+
 		
 	\section{Accumulation des nuages de points}
-	\todoRediger{Objectif: reconstituer la scène à partir des nuages de points "ligne" obtenus à partir du processus d'acquisition}
 	
-		\subsection{Le principe de fonctionnement}
-		\todoRediger{Garder en mémoire les nuages de points correspondant à des lignes précédemment acquise}
-		\todoRediger{ne pas dupliquer les informations: éliminer les points doubles}
+	Une fois les données LIDAR mises en forme, il convient maintenant de les exploiter pour reconstituer la représentation 3D du chantier. Cette tâche est effectuée par un module que l'on appelle le \verb|point_cloud_aggregator|. Comme son nom l'indique ce module aggrège et accumule les nuages de points issus de l'aquisition pour générer la représentation 3D du chantier.
+	
+		\subsection{Spécifications pour le point\_cloud\_aggregator}
+		Le \verb|point_cloud_aggregator| dans un premier temps agrège les nuages de points, c'est à dire qu'il prend un nuage de point en entrée, et tente de les ajouter au nuages de points qu'il a déjà en mémoire. 
+		
+		\para S'il tente d'ajouter un point à une position dans l'espace pour laquelle un point existe déjà en mémoire (collision), ce nouveau point n'est pas ajouté. Cela évite ainsi les points doubles.
+		
+		\para Cela met cependant une contrainte forte sur la structure de données stockant les points déjà accumulés: il faut pouvoir identifier de manière unique tous les éléments de volume inclus dans la représentation de la scène afin de pouvoir détecter les collisions.
 		
 		\subsection{Principe de stockage des données 3D}
 		\todoRediger{les structures de données de stockage de l'information 3D}
@@ -766,6 +874,8 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 		\todoRediger{permet d'implémenter rapidement la chaine de traitement pour vérifier la validité de la faisaibilité}
 		
 	\section{Mise en oeuvre sous Gazebo}
+	
+	La section précédente décrivait les principes de traitement des données LIDAR en vu de construire une représentation 3D d'un chantier d'ensilage. La présente section va illustrer la mise en oeuvre de ces principes à l'aide la plateforme de simluation décrite dans le chapitre \
 	\todoRediger{implémentation d'un monde avec un silo et un tas d'ensilage}
 	\todoRediger{capture à l'aide d'un lidar monté à l'arrière du tracteur}
 	
@@ -801,6 +911,8 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 		\todoRediger{données sans RTK --> besoin d'avoir un}
 
 \chapter{Reste à faire et Améliorations}
+
+\todoPeutEtre{caméra video pour odométrie visuelle}
 
 
 \begin{appendix}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  8 AUG 2018 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  10 AUG 2018 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -902,81 +902,166 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen175
 \Gm@dimlist=\toks45
 )
-\c@mypagecount=\count144
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-(./rapportStage.aux)
-\openout1 = `rapportStage.aux'.
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Info: Redefining \degres on input line 36.
-LaTeX Info: Redefining \dots on input line 36.
-Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
-(frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 36.
-Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
-(frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 36.
-LaTeX Info: Redefining \up on input line 36.
 
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
-\scratchdimen=\dimen176
-\scratchbox=\box44
-\nofMPsegments=\count146
-\nofMParguments=\count147
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count148
-\MPscratchDim=\dimen177
-\MPnumerator=\count149
-\makeMPintoPDFobject=\count150
-\everyMPtoPDFconversion=\toks47
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)))
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen176
+\Hy@linkcounter=\count144
+\Hy@pagecounter=\count145
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count146
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count147
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen177
+\Fld@menulength=\count148
+\Field@Width=\dimen178
+\Fld@charsize=\dimen179
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count149
+\c@Item=\count150
+\c@Hfootnote=\count151
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count152
+\c@bookmark@seq@number=\count153
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip57
+)
+\c@mypagecount=\count154
+
+(./rapportStage.aux)
+\openout1 = `rapportStage.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Info: Redefining \degres on input line 38.
+LaTeX Info: Redefining \dots on input line 38.
+Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
+(frenchb.ldf)             compatibility with enumitem package,
+(frenchb.ldf)             reported on input line 38.
+Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
+(frenchb.ldf)             compatibility with enumitem package,
+(frenchb.ldf)             reported on input line 38.
+LaTeX Info: Redefining \up on input line 38.
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count155
+\scratchdimen=\dimen180
+\scratchbox=\box44
+\nofMPsegments=\count156
+\nofMParguments=\count157
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count158
+\MPscratchDim=\dimen181
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
+\everyMPtoPDFconversion=\toks47
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -998,15 +1083,15 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \celsius on input line 36.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 36.
+LaTeX Info: Redefining \celsius on input line 38.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 38.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 36.
-Package gensymb Info: Using \Omega for \ohm on input line 36.
+LaTeX Info: Redefining \ohm on input line 38.
+Package gensymb Info: Using \Omega for \ohm on input line 38.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1045,66 +1130,108 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+Package hyperref Info: Link coloring OFF on input line 38.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count161
+)
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
+
+(./rapportStage.out) (./rapportStage.out)
+\@outlinefile=\write4
+\openout4 = `rapportStage.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<img/logo-tellusenv.png, id=4, 279.0425pt x 86.3225pt>
+<img/logo-tellusenv.png, id=409, 279.0425pt x 86.3225pt>
 File: img/logo-tellusenv.png Graphic file (type png)
 
 <use img/logo-tellusenv.png>
-Package pdftex.def Info: img/logo-tellusenv.png used on input line 111.
+Package pdftex.def Info: img/logo-tellusenv.png used on input line 115.
 (pdftex.def)             Requested size: 275.92932pt x 85.35826pt.
- <img/univ.jpeg, id=6, 304.4976pt x 156.8259pt>
+ <img/univ.jpeg, id=411, 304.4976pt x 156.8259pt>
 File: img/univ.jpeg Graphic file (type jpg)
 
 <use img/univ.jpeg>
-Package pdftex.def Info: img/univ.jpeg used on input line 112.
+Package pdftex.def Info: img/univ.jpeg used on input line 116.
 (pdftex.def)             Requested size: 165.7365pt x 85.35826pt.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdo [1
+ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdopdfTeX warning (ext4):
+ destination with the same identifier (name{page.1}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.39 ...aternions unit\IeC {\'e}}{16}{section*.67}
+                                                   [1
 
 
-] [2] [3])
-\tf@tdo=\write4
-\openout4 = `rapportStage.tdo'.
+] [2])
+\tf@tdo=\write5
+\openout5 = `rapportStage.tdo'.
 
- [4] [1
+ [3]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 145.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.158 \tableofcontents
+                       [1
 
 
 
-] (./rapportStage.toc [2
+] (./rapportStage.tocpdfTeX warning (ext4): destination with the same identifie
+r (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 ...Architecture de ROS}{22}{subsection.3.1.1}
+                                                   [2
 
-] [3])
-\tf@toc=\write5
-\openout5 = `rapportStage.toc'.
+]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 ....2}Les Octrees}{34}{subsubsection.5.3.2.2}
+                                                   [3])
+\tf@toc=\write6
+\openout6 = `rapportStage.toc'.
 
  [4]
 Chapitre 1.
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 158--158
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 162--162
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 158--158
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 162--162
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 165--165
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 169--169
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 165--165
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 169--169
 [][][] 
  []
 
@@ -1113,13 +1240,13 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 165--165
 ]
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 175--175
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 179--179
 [][][] 
  []
 
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 175--175
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 179--179
 [][][] 
  []
 
@@ -1128,7 +1255,7 @@ Chapitre 2.
 [8
 
 ]
-Overfull \hbox (0.75607pt too wide) in paragraph at lines 227--228
+Overfull \hbox (0.75607pt too wide) in paragraph at lines 231--232
 []\T1/cmr/m/n/12 les LI-DAR de ce type émettent un si-gnal pé-rio-dique continu
 
  []
@@ -1136,20 +1263,20 @@ Overfull \hbox (0.75607pt too wide) in paragraph at lines 227--228
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding:
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble.
-(frenchb.ldf)                Degrees used on input line 245.
+(frenchb.ldf)                Degrees used on input line 249.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 [9] [10] [11] [12] [13] [14]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 384--384
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 384--384
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
 [][][] 
  []
 
@@ -1158,22 +1285,22 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 384--384
 LaTeX Warning: Marginpar on page 16 moved.
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 392--392
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 392--392
 [][][] 
  []
 
 [16]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 420--420
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 424--424
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 420--420
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 424--424
 [][][] 
  []
 
@@ -1182,61 +1309,61 @@ Chapitre 3.
 [21
 
 ] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 564--566
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 579--579
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 584--584
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 579--579
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 584--584
 [][][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 595.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 600.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [23]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 627--627
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 632--632
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 627--627
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 632--632
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 632--634
 
  []
 
 [24]
-Overfull \hbox (140.33363pt too wide) in paragraph at lines 649--649
- \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[] [] 
+Overfull \hbox (140.33363pt too wide) in paragraph at lines 654--654
+ \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[][] [] 
  []
 
 [25]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 663--663
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 668--668
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 663--663
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 668--668
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 667--667
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 672--672
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 667--667
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 672--672
 [][][] 
  []
 
@@ -1245,86 +1372,110 @@ LaTeX Warning: Marginpar on page 26 moved.
 
 [26]
 Chapitre 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--693
+
+ []
+
 [27
 
-] [28]
+] [28] [29] [30]
 Chapitre 5.
-[29
 
-] [30] [31]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 791--791
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 800--800
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 791--791
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 800--800
 [][][] 
  []
 
-[32]
+[31
+
+] [32] [33] [34]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 901--901
+[][][] 
+ []
+
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 901--901
+[][][] 
+ []
+
+[35]
 Chapitre 6.
-[33
-
-]
-Chapitre 7.
-[34
-
-]
-Annexe A.
-[35
-
-]
-Annexe B.
 [36
 
 ]
-Annexe C.
+Chapitre 7.
 [37
 
 ]
+Annexe A.
+[38
+
+]
+Annexe B.
+[39
+
+]
+Annexe C.
+[40
+
+]
 Annexe D.
-(./rapportStage.bbl [38
+(./rapportStage.bbl [41
 
-]) [39
+]) [42
 
-] (./rapportStage.aux) ) 
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 937.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 937.
+ (./rapportStage.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 937.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 937.
+Package rerunfilecheck Info: File `rapportStage.out' has not changed.
+(rerunfilecheck)             Checksum: 00797BFEAB5E0936AAEED8E0632A1D66;8301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 937.
+ ) 
 Here is how much of TeX's memory you used:
- 17158 strings out of 492995
- 317352 string characters out of 6132704
- 506174 words of memory out of 5000000
- 20325 multiletter control sequences out of 15000+600000
- 20537 words of font info for 51 fonts, out of 8000000 for 9000
+ 20936 strings out of 492995
+ 374327 string characters out of 6132704
+ 588497 words of memory out of 5000000
+ 23732 multiletter control sequences out of 15000+600000
+ 22378 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,80p,554b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-
-super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1
-200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx144
-0.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on rapportStage.pdf (44 pages, 612971 bytes).
+ 62i,15n,80p,554b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on rapportStage.pdf (46 pages, 653899 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1224 PDF objects out of 1440 (max. 8388607)
+ 1137 compressed objects within 12 object streams
+ 342 named destinations out of 1000 (max. 500000)
+ 823 words of extra memory for PDF output out of 10000 (max. 10000000)
 
