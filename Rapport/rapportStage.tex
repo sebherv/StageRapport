@@ -875,12 +875,24 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 		
 	\section{Mise en oeuvre sous Gazebo}
 	
-	La section précédente décrivait les principes de traitement des données LIDAR en vu de construire une représentation 3D d'un chantier d'ensilage. La présente section va illustrer la mise en oeuvre de ces principes à l'aide la plateforme de simluation décrite dans le chapitre \
-	\todoRediger{implémentation d'un monde avec un silo et un tas d'ensilage}
-	\todoRediger{capture à l'aide d'un lidar monté à l'arrière du tracteur}
+	La section précédente décrivait les principes de traitement des données LIDAR en vu de construire une représentation 3D d'un chantier d'ensilage. La présente section va illustrer la mise en oeuvre de ces principes à l'aide la plateforme de simluation décrite dans le chapitre \ref{chap-simu-ros-gazebo} évoluant dans un chantier d'ensilage simulé.
+	
+		\subsection{Modélisation d'un chantier d'ensilage}
+		Le modèle simulé du chantier d'ensilage est représenté pour 2 murs chacun long de 10 mètres, haut de 3 mètres et d'épaisseur 0,2 mètre, espacés de 9 mètres. Ce modèle est créé en utilisant les primitives XML fournies par le logiciel Gazebo.
+		
+		\missingfigure{Capture d'écran représentant le mur sous Gazebo.}
+		
+		\para Un tas d'ensilage peut aussi être ajouté au chantier. Ce modèle de tas d'ensilage a été contruit en utilisant dans un premier temps le logiciel de modélisation 3D \verb|blender|. Ce modèle 3D est ensuite incorporé dans le chantier simulé en l'important dans la description du world 3D de manière appropriée.
+		
+		\missingfigure{Capture d'écran modèle d'ensilage sous blender + capture d'écran mur et ensilage dans Gazebo}
+		
+	
 	
 		\subsection{Test sous gazebo}
-		\todoRediger{Tracteur effectue une acquisition initiale de la scène}
+		Une fois la simulation de chantier montée, il est possible de faire évoluer le tracteur simulé dans le chantier. L'opérateur peut ainsi diriger le tracteur de manière à ce que le LIDAR monté à l'arrière du tracteur puisse scanner séquentiellement dans son ensemble le silo.
+		
+		\missingfigure{Capture Gazebo du chantier avec tracteur et mur}
+
 		\todoRediger{Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}
 		
 		\subsection{Analyse du nuage de point généré}
@@ -899,21 +911,62 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 		\todoRediger{Soit retourne le point moyen de chaque voxel --> non supporté par octomap --> à implémenter nous même.}
 		
 		\todoAjouterRef{octomap}
-		
-
 \chapter{Mise en oeuvre à partir de mesures réelles}
 
-	\section{Protocol de test}
+Les chapitres précédents ont montrés comment le système Symeter V2 a été initialement conçu et monté à l'aide d'outils de simulation. Après avoir obtenu une première série de résultat par ce biais, quelques questions ont émergé concernant la validité de certains aspects de la simulation, et de savoir si la simulation représentait un chemin réaliste de développement.
+
+\para C'est pour cela qu'une campagne d'acquisation de données réelle, à l'aide des capteurs physiques réels a été effectuée.
+
+
+	\section{Protocole de test}
+	\subsection{Instruments d'acquisition)}
+	\todoRediger{TellusCar avec Instrument montés sur l'arrière}
+	\todoRediger{données GPS, données IMU et données LIDAR, toutes acquises en même temps}
+	\missingfigure{text}
+	
+	\subsection{Exploitation}
+	\todoRediger{Capture Bagfile alors que la TellusCar évolue dans le parking de adjacent à TEllusEnv}
+	\todoRediger{La partie logiciel de Symeter V2 peut exploiter des rejeux des captures pour estimer l'évolution de la TellusCar, et tenter de reconstituer le parking.}
 	
 	\section{Données générée - visualisation sous google maps}
+	En rejouant le bagfile nous pouvons extraire et visualiser les données brutes.
+	\missingfigure{trajectoire sous Googlemap}
+	\missingfigure{graphe des accélerations et de l'assiette issues de l'IMU}
+	\missingfigure{données LIDAR brutes}
 	
 	\section{Exploitation des données}
-		\todoRediger{données sans RTK --> besoin d'avoir un}
+	\subsection{Configuration: description des poses des instruments par rapport au repère du véhicule}
+	
+	\subsection{Intégration des données GPS et IMU pour localisation}
+	\todoRediger{Il a été compliqué de faire fonctionner la partie localisation de Symeter V2 avec les données réelle}
+	\todoRediger{grande sensibilité des données IMU si la pose de l'IMU n'est pas rigoureusement décrite dans la configuration de symeter V2}
+	\todoRediger{Obligé de traiter les données IMU pour rétablir la bonne orientation}
+	\todoRediger{L'imu mesure le cap avec 0 au nord alors que robot\_localization s'attend à un 0 pour un cap à l'Est}
+	
+	\subsection{Reconstitution du parking}
+	
+	\todoRediger{une fois le système de localisation OK, pb avec Octomap qui n'a pas l'air de fonctionner au dela d'une certaine distante}
+	
+	\section{Récapitulation}
+	
+	\todoRediger{Illustre les problématiques du passage de la simulation à un integration en grandeur}
+	\todoRediger{IMU simulé n'est pas fiable: il faudra en trouver un autre}
+	\todoRediger{A l'heure actuelle pas encore terminé}
 
-\chapter{Reste à faire et Améliorations}
+\chapter{Reste à faire et Axes Améliorations}
 
 \todoPeutEtre{caméra video pour odométrie visuelle}
 
+\section{Difficulté de Simulation de l'action de tassage}
+La simulation peut permettre la mise au point de la localization, de l'acquisition initiale du chantier d'ensilage. Mais elle n'est pas directement utilisable pour simuler l'opération du tracteur dans le chantier d'ensilage. En effet pas possible de simuler physiquement le tassage à l'aide de Gazebo.
+
+\para Il est cependant possible de mettre en oeuvre nos outils de manière à simuler logiquement l'évolution du chantier en implémentant un mécanisme de sauvegarde / restauration de l'état du chantier
+
+\todoRediger{Decrire le cycle de simulation}
+\missingfigure{Diagramme d'état simulation de l'acte de tassage.}
+
+
+\chapter{Conclusion}
 
 \begin{appendix}
 	\chapter{Positionnement En Robotique}

@@ -82,20 +82,29 @@
 \contentsline {subsubsection}{\numberline {5.3.2.3}Le choix: octree correspond \IeC {\`a} notre besoin.}{34}{subsubsection.5.3.2.3}
 \contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{34}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{34}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Test sous gazebo}{35}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{35}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Outil pour l'analyse de nuage de points: Paraview}{35}{subsubsection.5.4.2.1}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{35}{subsubsection.5.4.2.2}
-\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{36}{chapter.6}
-\contentsline {section}{\numberline {6.1}Protocol de test}{36}{section.6.1}
-\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{36}{section.6.2}
-\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{36}{section.6.3}
-\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Am\IeC {\'e}liorations}{37}{chapter.7}
-\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{38}{appendix.A}
-\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{38}{section.A.1}
-\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{38}{section.A.2}
-\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{38}{section.A.3}
-\contentsline {chapter}{\numberline {B}Filtres de Kalman}{39}{appendix.B}
-\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{40}{appendix.C}
-\contentsline {chapter}{\numberline {D}Point Cloud Library}{41}{appendix.D}
-\contentsline {chapter}{Bibliographie}{42}{appendix*.183}
+\contentsline {subsection}{\numberline {5.4.1}Mod\IeC {\'e}lisation d'un chantier d'ensilage}{35}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Test sous gazebo}{35}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{36}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Outil pour l'analyse de nuage de points: Paraview}{36}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{36}{subsubsection.5.4.3.2}
+\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Protocole de test}{37}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Instruments d'acquisition)}{37}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Exploitation}{37}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{38}{section.6.2}
+\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{38}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Configuration: description des poses des instruments par rapport au rep\IeC {\`e}re du v\IeC {\'e}hicule}{38}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Int\IeC {\'e}gration des donn\IeC {\'e}es GPS et IMU pour localisation}{38}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Reconstitution du parking}{39}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}R\IeC {\'e}capitulation}{39}{section.6.4}
+\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Axes Am\IeC {\'e}liorations}{40}{chapter.7}
+\contentsline {section}{\numberline {7.1}Difficult\IeC {\'e} de Simulation de l'action de tassage}{40}{section.7.1}
+\contentsline {chapter}{\numberline {8}Conclusion}{41}{chapter.8}
+\contentsline {chapter}{\numberline {A}Positionnement En Robotique}{42}{appendix.A}
+\contentsline {section}{\numberline {A.1}G\IeC {\'e}ometrie projective, Coordonn\IeC {\'e}es Homog\IeC {\`e}nes}{42}{section.A.1}
+\contentsline {section}{\numberline {A.2}Une autre descriptions des rotations en 3D: Quaternions Unitaires}{42}{section.A.2}
+\contentsline {section}{\numberline {A.3}Application: Simulation de couverture d'un faiseau LIDAR orient\IeC {\'e} vers le sol}{42}{section.A.3}
+\contentsline {chapter}{\numberline {B}Filtres de Kalman}{43}{appendix.B}
+\contentsline {chapter}{\numberline {C}ROS: Architecture et Concepts}{44}{appendix.C}
+\contentsline {chapter}{\numberline {D}Point Cloud Library}{45}{appendix.D}
+\contentsline {chapter}{Bibliographie}{46}{appendix*.195}

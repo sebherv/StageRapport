@@ -81,20 +81,29 @@
 \BOOKMARK [3][-]{subsubsection.5.3.2.3}{Le choix: octree correspond \340 notre besoin.}{subsection.5.3.2}% 81
 \BOOKMARK [2][-]{subsection.5.3.3}{Mise en oeuvre: octomap}{section.5.3}% 82
 \BOOKMARK [1][-]{section.5.4}{Mise en oeuvre sous Gazebo}{chapter.5}% 83
-\BOOKMARK [2][-]{subsection.5.4.1}{Test sous gazebo}{section.5.4}% 84
-\BOOKMARK [2][-]{subsection.5.4.2}{Analyse du nuage de point g\351n\351r\351}{section.5.4}% 85
-\BOOKMARK [3][-]{subsubsection.5.4.2.1}{Outil pour l'analyse de nuage de points: Paraview}{subsection.5.4.2}% 86
-\BOOKMARK [3][-]{subsubsection.5.4.2.2}{Points \340 am\351liorer sur le nuage de points}{subsection.5.4.2}% 87
-\BOOKMARK [0][-]{chapter.6}{Mise en oeuvre \340 partir de mesures r\351elles}{}% 88
-\BOOKMARK [1][-]{section.6.1}{Protocol de test}{chapter.6}% 89
-\BOOKMARK [1][-]{section.6.2}{Donn\351es g\351n\351r\351e - visualisation sous google maps}{chapter.6}% 90
-\BOOKMARK [1][-]{section.6.3}{Exploitation des donn\351es}{chapter.6}% 91
-\BOOKMARK [0][-]{chapter.7}{Reste \340 faire et Am\351liorations}{}% 92
-\BOOKMARK [0][-]{appendix.A}{Positionnement En Robotique}{}% 93
-\BOOKMARK [1][-]{section.A.1}{G\351ometrie projective, Coordonn\351es Homog\350nes}{appendix.A}% 94
-\BOOKMARK [1][-]{section.A.2}{Une autre descriptions des rotations en 3D: Quaternions Unitaires}{appendix.A}% 95
-\BOOKMARK [1][-]{section.A.3}{Application: Simulation de couverture d'un faiseau LIDAR orient\351 vers le sol}{appendix.A}% 96
-\BOOKMARK [0][-]{appendix.B}{Filtres de Kalman}{}% 97
-\BOOKMARK [0][-]{appendix.C}{ROS: Architecture et Concepts}{}% 98
-\BOOKMARK [0][-]{appendix.D}{Point Cloud Library}{}% 99
-\BOOKMARK [0][-]{appendix*.183}{Bibliographie}{}% 100
+\BOOKMARK [2][-]{subsection.5.4.1}{Mod\351lisation d'un chantier d'ensilage}{section.5.4}% 84
+\BOOKMARK [2][-]{subsection.5.4.2}{Test sous gazebo}{section.5.4}% 85
+\BOOKMARK [2][-]{subsection.5.4.3}{Analyse du nuage de point g\351n\351r\351}{section.5.4}% 86
+\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Outil pour l'analyse de nuage de points: Paraview}{subsection.5.4.3}% 87
+\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Points \340 am\351liorer sur le nuage de points}{subsection.5.4.3}% 88
+\BOOKMARK [0][-]{chapter.6}{Mise en oeuvre \340 partir de mesures r\351elles}{}% 89
+\BOOKMARK [1][-]{section.6.1}{Protocole de test}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.1.1}{Instruments d'acquisition\)}{section.6.1}% 91
+\BOOKMARK [2][-]{subsection.6.1.2}{Exploitation}{section.6.1}% 92
+\BOOKMARK [1][-]{section.6.2}{Donn\351es g\351n\351r\351e - visualisation sous google maps}{chapter.6}% 93
+\BOOKMARK [1][-]{section.6.3}{Exploitation des donn\351es}{chapter.6}% 94
+\BOOKMARK [2][-]{subsection.6.3.1}{Configuration: description des poses des instruments par rapport au rep\350re du v\351hicule}{section.6.3}% 95
+\BOOKMARK [2][-]{subsection.6.3.2}{Int\351gration des donn\351es GPS et IMU pour localisation}{section.6.3}% 96
+\BOOKMARK [2][-]{subsection.6.3.3}{Reconstitution du parking}{section.6.3}% 97
+\BOOKMARK [1][-]{section.6.4}{R\351capitulation}{chapter.6}% 98
+\BOOKMARK [0][-]{chapter.7}{Reste \340 faire et Axes Am\351liorations}{}% 99
+\BOOKMARK [1][-]{section.7.1}{Difficult\351 de Simulation de l'action de tassage}{chapter.7}% 100
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 101
+\BOOKMARK [0][-]{appendix.A}{Positionnement En Robotique}{}% 102
+\BOOKMARK [1][-]{section.A.1}{G\351ometrie projective, Coordonn\351es Homog\350nes}{appendix.A}% 103
+\BOOKMARK [1][-]{section.A.2}{Une autre descriptions des rotations en 3D: Quaternions Unitaires}{appendix.A}% 104
+\BOOKMARK [1][-]{section.A.3}{Application: Simulation de couverture d'un faiseau LIDAR orient\351 vers le sol}{appendix.A}% 105
+\BOOKMARK [0][-]{appendix.B}{Filtres de Kalman}{}% 106
+\BOOKMARK [0][-]{appendix.C}{ROS: Architecture et Concepts}{}% 107
+\BOOKMARK [0][-]{appendix.D}{Point Cloud Library}{}% 108
+\BOOKMARK [0][-]{appendix*.195}{Bibliographie}{}% 109

@@ -92,17 +92,34 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{34}{section*.166}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{34}{section*.167}
 \contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{34}{section*.168}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER impl\IeC {\'e}mentation d'un monde avec un silo et un tas d'ensilage}{34}{section*.169}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER capture \IeC {\`a} l'aide d'un lidar mont\IeC {\'e} \IeC {\`a} l'arri\IeC {\`e}re du tracteur}{34}{section*.170}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Tracteur effectue une acquisition initiale de la sc\IeC {\`e}ne}{35}{section*.171}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{35}{section*.172}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{35}{section*.173}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{35}{section*.174}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{35}{section*.175}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{35}{section*.176}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{35}{section*.177}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{35}{section*.178}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{35}{section*.179}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF octomap}{35}{section*.180}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es sans RTK --> besoin d'avoir un}{36}{section*.181}
-\contentsline {todo}{\color@fb@x {}{black}{}{teal}{\leavevmode {\color {teal}o}}\ PEUT ETRE cam\IeC {\'e}ra video pour odom\IeC {\'e}trie visuelle ?}{37}{section*.182}
+\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran repr\IeC {\'e}sentant le mur sous Gazebo.}{35}{subsection.5.4.1}
+\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran mod\IeC {\`e}le d'ensilage sous blender + capture d'\IeC {\'e}cran mur et ensilage dans Gazebo}{35}{section*.169}
+\contentsline {todo}{Figure: Capture Gazebo du chantier avec tracteur et mur}{35}{subsection.5.4.2}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{35}{section*.170}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{36}{section*.171}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{36}{section*.172}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{36}{section*.173}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{36}{section*.174}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{36}{section*.175}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{36}{section*.176}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{36}{section*.177}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF octomap}{36}{section*.178}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER TellusCar avec Instrument mont\IeC {\'e}s sur l'arri\IeC {\`e}re}{37}{section*.180}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es GPS, donn\IeC {\'e}es IMU et donn\IeC {\'e}es LIDAR, toutes acquises en m\IeC {\^e}me temps}{37}{section*.181}
+\contentsline {todo}{Figure: text}{37}{section*.181}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Capture Bagfile alors que la TellusCar \IeC {\'e}volue dans le parking de adjacent \IeC {\`a} TEllusEnv}{37}{section*.182}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER La partie logiciel de Symeter V2 peut exploiter des rejeux des captures pour estimer l'\IeC {\'e}volution de la TellusCar, et tenter de reconstituer le parking.}{37}{section*.183}
+\contentsline {todo}{Figure: trajectoire sous Googlemap}{38}{section.6.2}
+\contentsline {todo}{Figure: graphe des acc\IeC {\'e}lerations et de l'assiette issues de l'IMU}{38}{section.6.2}
+\contentsline {todo}{Figure: donn\IeC {\'e}es LIDAR brutes}{38}{section.6.2}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il a \IeC {\'e}t\IeC {\'e} compliqu\IeC {\'e} de faire fonctionner la partie localisation de Symeter V2 avec les donn\IeC {\'e}es r\IeC {\'e}elle}{38}{section*.184}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER grande sensibilit\IeC {\'e} des donn\IeC {\'e}es IMU si la pose de l'IMU n'est pas rigoureusement d\IeC {\'e}crite dans la configuration de symeter V2}{38}{section*.185}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Oblig\IeC {\'e} de traiter les donn\IeC {\'e}es IMU pour r\IeC {\'e}tablir la bonne orientation}{38}{section*.186}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER L'imu mesure le cap avec 0 au nord alors que robot\_localization s'attend \IeC {\`a} un 0 pour un cap \IeC {\`a} l'Est}{38}{section*.187}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER une fois le syst\IeC {\`e}me de localisation OK, pb avec Octomap qui n'a pas l'air de fonctionner au dela d'une certaine distante}{39}{section*.188}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Illustre les probl\IeC {\'e}matiques du passage de la simulation \IeC {\`a} un integration en grandeur}{39}{section*.189}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER IMU simul\IeC {\'e} n'est pas fiable: il faudra en trouver un autre}{39}{section*.190}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER A l'heure actuelle pas encore termin\IeC {\'e}}{39}{section*.191}
+\contentsline {todo}{\color@fb@x {}{black}{}{teal}{\leavevmode {\color {teal}o}}\ PEUT ETRE cam\IeC {\'e}ra video pour odom\IeC {\'e}trie visuelle ?}{40}{section*.192}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Decrire le cycle de simulation}{40}{section*.194}
+\contentsline {todo}{Figure: Diagramme d'\IeC {\'e}tat simulation de l'acte de tassage.}{40}{section*.194}
