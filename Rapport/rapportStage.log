@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  10 AUG 2018 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  21 AUG 2018 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,13 +1157,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<img/logo-tellusenv.png, id=445, 279.0425pt x 86.3225pt>
+<img/logo-tellusenv.png, id=441, 279.0425pt x 86.3225pt>
 File: img/logo-tellusenv.png Graphic file (type png)
 
 <use img/logo-tellusenv.png>
 Package pdftex.def Info: img/logo-tellusenv.png used on input line 115.
 (pdftex.def)             Requested size: 275.92932pt x 85.35826pt.
- <img/univ.jpeg, id=447, 304.4976pt x 156.8259pt>
+ <img/univ.jpeg, id=443, 304.4976pt x 156.8259pt>
 File: img/univ.jpeg Graphic file (type jpg)
 
 <use img/univ.jpeg>
@@ -1177,7 +1177,7 @@ ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdopdfTeX warning (ext4):
 licate ignored
 <to be read again> 
                    \relax 
-l.39 ...aternions unit\IeC {\'e}}{16}{section*.67}
+l.40 ...ion de donn\IeC {\'e}es.}{17}{section*.72}
                                                    [1
 
 
@@ -1208,7 +1208,7 @@ l.37 ...Architecture de ROS}{22}{subsection.3.1.1}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 ....2}Les Octrees}{34}{subsubsection.5.3.2.2}
+l.81 ...\_cloud\_aggregator}{37}{subsection.5.3.1}
                                                    [3])
 \tf@toc=\write6
 \openout6 = `rapportStage.toc'.
@@ -1221,22 +1221,12 @@ l.159 \newpage
                [4]
 Chapitre 1.
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 162--162
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 172--172
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 162--162
-[][][] 
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 169--169
-[][][] 
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 169--169
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 172--172
 [][][] 
  []
 
@@ -1245,13 +1235,13 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 169--169
 ]
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 179--179
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 182--182
 [][][] 
  []
 
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 179--179
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 182--182
 [][][] 
  []
 
@@ -1260,7 +1250,7 @@ Chapitre 2.
 [8
 
 ]
-Overfull \hbox (0.75607pt too wide) in paragraph at lines 231--232
+Overfull \hbox (0.75607pt too wide) in paragraph at lines 234--235
 []\T1/cmr/m/n/12 les LI-DAR de ce type émettent un si-gnal pé-rio-dique continu
 
  []
@@ -1268,20 +1258,20 @@ Overfull \hbox (0.75607pt too wide) in paragraph at lines 231--232
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding:
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble.
-(frenchb.ldf)                Degrees used on input line 249.
+(frenchb.ldf)                Degrees used on input line 252.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
 [9] [10] [11] [12] [13] [14]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 391--391
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 391--391
 [][][] 
  []
 
@@ -1290,22 +1280,22 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 388--388
 LaTeX Warning: Marginpar on page 16 moved.
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 392--392
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 395--395
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 392--392
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 395--395
 [][][] 
  []
 
 [16]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 424--424
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 427--427
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 424--424
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 427--427
 [][][] 
  []
 
@@ -1314,61 +1304,61 @@ Chapitre 3.
 [21
 
 ] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 569--571
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 584--584
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 587--587
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 584--584
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 587--587
 [][][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 600.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 603.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [23]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 632--632
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 635--635
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 632--632
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 635--635
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--634
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
 
  []
 
 [24]
-Overfull \hbox (140.33363pt too wide) in paragraph at lines 654--654
+Overfull \hbox (140.33363pt too wide) in paragraph at lines 657--657
  \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[][] [] 
  []
 
 [25]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 668--668
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 671--671
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 668--668
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 671--671
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 672--672
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 675--675
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 672--672
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 675--675
 [][][] 
  []
 
@@ -1378,113 +1368,106 @@ LaTeX Warning: Marginpar on page 26 moved.
 [26]
 Chapitre 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--693
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 
  []
 
 [27
 
-] [28] [29] [30]
+] [28] [29] [30] [31] [32] [33] [34]
 Chapitre 5.
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 800--800
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 992--992
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 800--800
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 992--992
 [][][] 
  []
 
-[31
+[35
 
-] [32] [33] [34] [35]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 913--913
+] [36] [37] [38] [39]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1105--1105
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 913--913
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1105--1105
 [][][] 
  []
 
-[36]
+[40]
 Chapitre 6.
-[37
-
-] [38] [39]
-Chapitre 7.
-[40
-
-]
-Chapitre 8.
 [41
 
-]
-Annexe A.
-[42
-
-]
-Annexe B.
-[43
-
-]
-Annexe C.
+] [42] [43]
+Chapitre 7.
 [44
 
 ]
-Annexe D.
-(./rapportStage.bbl [45
-
-]) [46
+Chapitre 8.
+[45
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 990.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 990.
+Annexe A.
+[46
+
+] [47] (./rapportStage.bbl [48]) [49
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1258.
  (./rapportStage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 990.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 990.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1258.
+
 Package rerunfilecheck Info: File `rapportStage.out' has not changed.
-(rerunfilecheck)             Checksum: 1A80DC58C570E48F8711FD937EE5D598;9101.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 990.
+(rerunfilecheck)             Checksum: E39FC8E1048E80F15A206B701BFCF28E;9029.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1258.
  ) 
 Here is how much of TeX's memory you used:
- 20988 strings out of 492995
- 375176 string characters out of 6132704
- 590168 words of memory out of 5000000
- 23759 multiletter control sequences out of 15000+600000
+ 21046 strings out of 492995
+ 375920 string characters out of 6132704
+ 589836 words of memory out of 5000000
+ 23761 multiletter control sequences out of 15000+600000
  22378 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,80p,554b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on rapportStage.pdf (51 pages, 667467 bytes).
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on rapportStage.pdf (54 pages, 737465 bytes).
 PDF statistics:
- 1337 PDF objects out of 1440 (max. 8388607)
- 1244 compressed objects within 13 object streams
- 367 named destinations out of 1000 (max. 500000)
- 895 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1450 PDF objects out of 1728 (max. 8388607)
+ 1349 compressed objects within 14 object streams
+ 423 named destinations out of 1000 (max. 500000)
+ 887 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,121 +5,117 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER C\IeC {\'e}line et les filles}{1}{section*.7}
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER Completer les remerciements}{1}{section*.8}
 \contentsline {todo}{\color@fb@x {}{black}{}{green}{\leavevmode {\color {green}o}}\ MISE EN FORME: A\IeC {\'e}rer}{1}{section*.9}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ AMELIORER: L'introduction doit-elle \IeC {\^e}tre un chapitre ou alors un Abstract?}{5}{section*.11}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Introduction du context projet: j'ai effectu\IeC {\'e} le stage blabla au sein de l'entreprise bla etc}{5}{section*.12}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Tellus cr\IeC {\'e}ation, mission, activit\IeC {\'e}}{5}{section*.13}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ AMELIORER: Ce \S $\tmspace +\thickmuskip {.2777em}$peut servir \IeC {\`a} l'intro sur Tellus.}{5}{section*.14}
-\contentsline {todo}{Figure: Georadar}{5}{section*.15}
-\contentsline {todo}{Figure: Magnetom\IeC {\`e}tre}{5}{section*.15}
-\contentsline {todo}{Figure: Radargramme}{6}{section*.15}
-\contentsline {todo}{\color@fb@x {}{black}{}{cyan}{\leavevmode {\color {cyan}o}}\ VERIFIER est-ce le bon terme?}{6}{section*.17}
-\contentsline {todo}{Figure: sonar}{6}{section*.17}
-\contentsline {todo}{Figure: sonargramme}{6}{section*.17}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Expertise Tellus Traitement des donn\IeC {\'e}es}{6}{section*.19}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Activit\IeC {\'e} R\&D}{7}{section*.20}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Context Projet}{7}{section*.21}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER SymeterV1}{7}{section*.22}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Symeter V2: objectifs}{7}{section*.23}
-\contentsline {todo}{Figure: mode 2D vs mode 3D}{9}{section*.28}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER D\IeC {\'e}crire les carat\IeC {\'e}ristiques exactes }{10}{section*.31}
-\contentsline {todo}{Figure: Photo du Hukyo}{10}{section*.31}
-\contentsline {todo}{Figure: Trajectoire et mesures}{10}{section*.34}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par un IMU}{11}{section*.39}
-\contentsline {todo}{Figure: graphes temporels des donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par l'IMU}{11}{section*.39}
-\contentsline {todo}{Figure: Photo de l'IMU xsense}{11}{section*.39}
-\contentsline {todo}{Figure: GPS en mode simple}{12}{section*.43}
-\contentsline {todo}{Figure: GPS en mode RTK}{13}{section*.44}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: GPS en mode RTK}{13}{section*.46}
-\contentsline {todo}{Figure: Photo base + rover RTK}{13}{section*.46}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ AMELIORER: Ce \S $\tmspace +\thickmuskip {.2777em}$peut servir \IeC {\`a} l'intro sur Tellus.}{5}{section*.12}
+\contentsline {todo}{Figure: Georadar}{5}{section*.13}
+\contentsline {todo}{Figure: Magnetom\IeC {\`e}tre}{5}{section*.13}
+\contentsline {todo}{Figure: Radargramme}{6}{section*.13}
+\contentsline {todo}{\color@fb@x {}{black}{}{cyan}{\leavevmode {\color {cyan}o}}\ VERIFIER est-ce le bon terme?}{6}{section*.15}
+\contentsline {todo}{Figure: sonar}{6}{section*.15}
+\contentsline {todo}{Figure: sonargramme}{6}{section*.15}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Expertise Tellus Traitement des donn\IeC {\'e}es}{6}{section*.17}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Activit\IeC {\'e} R\&D}{7}{section*.18}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Context Projet}{7}{section*.19}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER SymeterV1}{7}{section*.20}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Symeter V2: objectifs}{7}{section*.21}
+\contentsline {todo}{Figure: mode 2D vs mode 3D}{9}{section*.26}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER D\IeC {\'e}crire les carat\IeC {\'e}ristiques exactes }{10}{section*.29}
+\contentsline {todo}{Figure: Photo du Hukyo}{10}{section*.29}
+\contentsline {todo}{Figure: Trajectoire et mesures}{10}{section*.32}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par un IMU}{11}{section*.37}
+\contentsline {todo}{Figure: graphes temporels des donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}es par l'IMU}{11}{section*.37}
+\contentsline {todo}{Figure: Photo de l'IMU xsense}{11}{section*.37}
+\contentsline {todo}{Figure: GPS en mode simple}{12}{section*.41}
+\contentsline {todo}{Figure: GPS en mode RTK}{13}{section*.42}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: GPS en mode RTK}{13}{section*.44}
+\contentsline {todo}{Figure: Photo base + rover RTK}{13}{section*.44}
 \contentsline {todo}{Figure: Quelques robots powered by ROS}{13}{section.2.2}
-\contentsline {todo}{Figure: Exemple d'une structure en packages, noden topics et services}{14}{section*.51}
-\contentsline {todo}{\color@fb@x {}{black}{}{yellow}{\leavevmode {\color {yellow}o}}\ OBJECTIF: Introduire les concepts, indiquer qu'ils seront approfondis dans la suite du document.}{14}{section*.55}
-\contentsline {todo}{Figure: Pose 3D d'un objet}{15}{section*.60}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF Lien vers l'annexe}{16}{section*.64}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF Quaternion et quaternions unit\IeC {\'e}}{16}{section*.67}
+\contentsline {todo}{Figure: Exemple d'une structure en packages, noden topics et services}{14}{section*.49}
+\contentsline {todo}{\color@fb@x {}{black}{}{yellow}{\leavevmode {\color {yellow}o}}\ OBJECTIF: Introduire les concepts, indiquer qu'ils seront approfondis dans la suite du document.}{14}{section*.53}
+\contentsline {todo}{Figure: Pose 3D d'un objet}{15}{section*.58}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF Lien vers l'annexe}{16}{section*.62}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF Quaternion et quaternions unit\IeC {\'e}}{16}{section*.65}
 \contentsline {todo}{Figure: Flux de donn\IeC {\'e}es IMU + GPS --> $X$}{16}{equation.2.3.1}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER introduire les filtres de Kalman}{17}{section*.73}
-\contentsline {todo}{Figure: chaine de traitement de fusion de donn\IeC {\'e}es}{17}{section*.73}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF Filter de Kalman pour la fusion de donn\IeC {\'e}es.}{17}{section*.74}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER Comme le GPS fourni une position absolue dans le r\IeC {\'e}f\IeC {\'e}rentiel de la sc\IeC {\`e}ne nous ne sommes pas dans une probl\IeC {\'e}matique SLAM. Le v\IeC {\'e}hicule n'est pas autonome, la navigation est assur\IeC {\'e}e par l'op\IeC {\'e}rateur du tracteur.}{17}{section*.75}
-\contentsline {todo}{Figure: Architecture de traitement des nuages de points}{17}{section*.77}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER De nombreux capteurs virtuels disponibles, possibilit\IeC {\'e} de faire varier les incertitudes}{18}{section*.81}
-\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran Gazebo avec le tracteur et le silo}{18}{section*.83}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER introduire les filtres de Kalman}{17}{section*.71}
+\contentsline {todo}{Figure: chaine de traitement de fusion de donn\IeC {\'e}es}{17}{section*.71}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF Filter de Kalman pour la fusion de donn\IeC {\'e}es.}{17}{section*.72}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER Comme le GPS fourni une position absolue dans le r\IeC {\'e}f\IeC {\'e}rentiel de la sc\IeC {\`e}ne nous ne sommes pas dans une probl\IeC {\'e}matique SLAM. Le v\IeC {\'e}hicule n'est pas autonome, la navigation est assur\IeC {\'e}e par l'op\IeC {\'e}rateur du tracteur.}{17}{section*.73}
+\contentsline {todo}{Figure: Architecture de traitement des nuages de points}{17}{section*.75}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER De nombreux capteurs virtuels disponibles, possibilit\IeC {\'e} de faire varier les incertitudes}{18}{section*.79}
+\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran Gazebo avec le tracteur et le silo}{18}{section*.81}
 \contentsline {todo}{Figure: Maquette avec \IeC {\'e}quipements r\IeC {\'e}els mont\IeC {\'e}s sur une camionnette.}{19}{subsubsection.2.4.2.2}
-\contentsline {todo}{Figure: Photo d'exemples de robots, roues, bras, humanoides, etc}{21}{section*.97}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER ROS est un environnement permettant le montage de plateformes robotiques compl\IeC {\`e}tes.}{22}{section*.98}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Architecture logicielle tr\IeC {\`e}s modulaire}{22}{section*.99}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nodes, services, topics, capteurs, etc}{22}{section*.100}
-\contentsline {todo}{Figure: Exemple de node}{22}{section*.100}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pr\IeC {\'e}cision d'\IeC {\'e}volution d'un plateforme robotique d\IeC {\'e}pend de la prise en compte de la position relative de ses diff\IeC {\'e}rents capteurs et actionneurs}{22}{section*.101}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER un petit la\IeC {\"\i }us surt les capteurs support\IeC {\'e}s}{22}{section*.102}
+\contentsline {todo}{Figure: Photo d'exemples de robots, roues, bras, humanoides, etc}{21}{section*.95}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER ROS est un environnement permettant le montage de plateformes robotiques compl\IeC {\`e}tes.}{22}{section*.96}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Architecture logicielle tr\IeC {\`e}s modulaire}{22}{section*.97}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nodes, services, topics, capteurs, etc}{22}{section*.98}
+\contentsline {todo}{Figure: Exemple de node}{22}{section*.98}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pr\IeC {\'e}cision d'\IeC {\'e}volution d'un plateforme robotique d\IeC {\'e}pend de la prise en compte de la position relative de ses diff\IeC {\'e}rents capteurs et actionneurs}{22}{section*.99}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER un petit la\IeC {\"\i }us surt les capteurs support\IeC {\'e}s}{22}{section*.100}
 \contentsline {todo}{Figure: Capture d'\IeC {\'e}cran de gazebo}{22}{section.3.2}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: SDF}{23}{section*.105}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER URDF et SDF, world, contr\IeC {\^o}leurs}{23}{section*.106}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF le tuto de petit robot}{23}{section*.109}
-\contentsline {todo}{Figure: Le petit robot}{23}{section*.109}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Ecrire type de tracteur}{25}{section*.117}
-\contentsline {todo}{Figure: Image du tracteur mod\IeC {\'e}lis\IeC {\'e}}{25}{section*.117}
-\contentsline {todo}{Figure: Tableau avec la correspondance entre vitesse roue et topic, angle direction et roue directionnelle}{25}{section*.118}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description g\IeC {\'e}om\IeC {\'e}trique du probl\IeC {\`e}me de direction diff\IeC {\'e}rentielle}{25}{section*.119}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF tableau avec les topics}{26}{section*.123}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description de l'impl\IeC {\'e}mentation sous ROS}{26}{section*.124}
-\contentsline {todo}{Figure: Sch\IeC {\'e}ma des flux topic qui permet de transformer une commande twist en 4 commandes de velocit\IeC {\'e}s.}{26}{section*.124}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: SDF}{23}{section*.103}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER URDF et SDF, world, contr\IeC {\^o}leurs}{23}{section*.104}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF le tuto de petit robot}{23}{section*.107}
+\contentsline {todo}{Figure: Le petit robot}{23}{section*.107}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Ecrire type de tracteur}{25}{section*.115}
+\contentsline {todo}{Figure: Image du tracteur mod\IeC {\'e}lis\IeC {\'e}}{25}{section*.115}
+\contentsline {todo}{Figure: Tableau avec la correspondance entre vitesse roue et topic, angle direction et roue directionnelle}{25}{section*.116}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description g\IeC {\'e}om\IeC {\'e}trique du probl\IeC {\`e}me de direction diff\IeC {\'e}rentielle}{25}{section*.117}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF tableau avec les topics}{26}{section*.121}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Description de l'impl\IeC {\'e}mentation sous ROS}{26}{section*.122}
+\contentsline {todo}{Figure: Sch\IeC {\'e}ma des flux topic qui permet de transformer une commande twist en 4 commandes de velocit\IeC {\'e}s.}{26}{section*.122}
 \contentsline {todo}{Figure: Repr\IeC {\'e}sentation du vecteur d'\IeC {\'e}tat par rapport au chantier}{27}{equation.4.1.1}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER avec mes notes sur le filtre de Kalman Etendu.}{29}{section*.133}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pour les syst\IeC {\`e}mes dynamiques non lin\IeC {\'e}aires}{29}{section*.134}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER navsat transformation node}{30}{section*.142}
-\contentsline {todo}{Figure: Architecture des nodes}{30}{subsection.4.3.3}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Les variables d'\IeC {\'e}tat influenc\IeC {\'e}es par IMU}{30}{section*.143}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER les variables d'\IeC {\'e}tat influenc\IeC {\'e}es par le GPS}{30}{section*.144}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF figure}{31}{section*.146}
-\contentsline {todo}{Figure: Chaine de traitement LIDAR --> Nuage de Point}{31}{section*.146}
-\contentsline {todo}{Figure: Transformer un ensemble de lignes en un nuage de points coh\IeC {\'e}rent}{31}{section*.146}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER LIDAR: ensemble d'angles, temps de vol, puissance re\IeC {\c c}ue}{32}{section*.148}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nuage de points: positionnement x,y,z dans la sc\IeC {\`e}ne}{32}{section*.149}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER principe de fonctionnement des Voxels}{32}{section*.154}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il est n\IeC {\'e}cessaire de connaitre pr\IeC {\'e}cisement la pose du LIDAR pour g\IeC {\'e}n\IeC {\'e}rer le nuage de points.}{33}{section*.156}
-\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e LIDAR}{33}{section*.156}
-\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e Nuage de Point}{33}{section*.156}
-\contentsline {todo}{Figure: Diagramme fonctionnel LIDAR --> Nuage de Point}{33}{section*.156}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER les structures de donn\IeC {\'e}es de stockage de l'information 3D}{34}{section*.159}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: les structures de donn\IeC {\'e}es 3D}{34}{section*.160}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Les b-trees, principes}{34}{section*.161}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Point forts: calculs performants}{34}{section*.162}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points faible: arbre \IeC {\'e}quilibr\IeC {\'e}s --> difficile d'ajouter de nouveaux points.}{34}{section*.163}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Octree, principes}{34}{section*.164}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points forts: structure d\IeC {\'e}s\IeC {\'e}quilibr\IeC {\'e}es sans probl\IeC {\`e}me, possibilit\IeC {\'e} d'ajouter de nouveau points avec une bonne performance}{34}{section*.165}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{34}{section*.166}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{34}{section*.167}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{34}{section*.168}
-\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran repr\IeC {\'e}sentant le mur sous Gazebo.}{35}{subsection.5.4.1}
-\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran mod\IeC {\`e}le d'ensilage sous blender + capture d'\IeC {\'e}cran mur et ensilage dans Gazebo}{35}{section*.169}
-\contentsline {todo}{Figure: Capture Gazebo du chantier avec tracteur et mur}{35}{subsection.5.4.2}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{35}{section*.170}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{36}{section*.171}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{36}{section*.172}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{36}{section*.173}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{36}{section*.174}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{36}{section*.175}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{36}{section*.176}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{36}{section*.177}
-\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF octomap}{36}{section*.178}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER TellusCar avec Instrument mont\IeC {\'e}s sur l'arri\IeC {\`e}re}{37}{section*.180}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es GPS, donn\IeC {\'e}es IMU et donn\IeC {\'e}es LIDAR, toutes acquises en m\IeC {\^e}me temps}{37}{section*.181}
-\contentsline {todo}{Figure: text}{37}{section*.181}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Capture Bagfile alors que la TellusCar \IeC {\'e}volue dans le parking de adjacent \IeC {\`a} TEllusEnv}{37}{section*.182}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER La partie logiciel de Symeter V2 peut exploiter des rejeux des captures pour estimer l'\IeC {\'e}volution de la TellusCar, et tenter de reconstituer le parking.}{37}{section*.183}
-\contentsline {todo}{Figure: trajectoire sous Googlemap}{38}{section.6.2}
-\contentsline {todo}{Figure: graphe des acc\IeC {\'e}lerations et de l'assiette issues de l'IMU}{38}{section.6.2}
-\contentsline {todo}{Figure: donn\IeC {\'e}es LIDAR brutes}{38}{section.6.2}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il a \IeC {\'e}t\IeC {\'e} compliqu\IeC {\'e} de faire fonctionner la partie localisation de Symeter V2 avec les donn\IeC {\'e}es r\IeC {\'e}elle}{38}{section*.184}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER grande sensibilit\IeC {\'e} des donn\IeC {\'e}es IMU si la pose de l'IMU n'est pas rigoureusement d\IeC {\'e}crite dans la configuration de symeter V2}{38}{section*.185}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Oblig\IeC {\'e} de traiter les donn\IeC {\'e}es IMU pour r\IeC {\'e}tablir la bonne orientation}{38}{section*.186}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER L'imu mesure le cap avec 0 au nord alors que robot\_localization s'attend \IeC {\`a} un 0 pour un cap \IeC {\`a} l'Est}{38}{section*.187}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER une fois le syst\IeC {\`e}me de localisation OK, pb avec Octomap qui n'a pas l'air de fonctionner au dela d'une certaine distante}{39}{section*.188}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Illustre les probl\IeC {\'e}matiques du passage de la simulation \IeC {\`a} un integration en grandeur}{39}{section*.189}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER IMU simul\IeC {\'e} n'est pas fiable: il faudra en trouver un autre}{39}{section*.190}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER A l'heure actuelle pas encore termin\IeC {\'e}}{39}{section*.191}
-\contentsline {todo}{\color@fb@x {}{black}{}{teal}{\leavevmode {\color {teal}o}}\ PEUT ETRE cam\IeC {\'e}ra video pour odom\IeC {\'e}trie visuelle ?}{40}{section*.192}
-\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Decrire le cycle de simulation}{40}{section*.194}
-\contentsline {todo}{Figure: Diagramme d'\IeC {\'e}tat simulation de l'acte de tassage.}{40}{section*.194}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER pour les syst\IeC {\`e}mes dynamiques non lin\IeC {\'e}aires}{32}{section*.153}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER navsat transformation node}{33}{section*.167}
+\contentsline {todo}{Figure: Architecture des nodes}{34}{subsection.4.3.3}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Les variables d'\IeC {\'e}tat influenc\IeC {\'e}es par IMU}{34}{section*.168}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER les variables d'\IeC {\'e}tat influenc\IeC {\'e}es par le GPS}{34}{section*.169}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF figure}{35}{section*.171}
+\contentsline {todo}{Figure: Chaine de traitement LIDAR --> Nuage de Point}{35}{section*.171}
+\contentsline {todo}{Figure: Transformer un ensemble de lignes en un nuage de points coh\IeC {\'e}rent}{35}{section*.171}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER LIDAR: ensemble d'angles, temps de vol, puissance re\IeC {\c c}ue}{36}{section*.173}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Nuage de points: positionnement x,y,z dans la sc\IeC {\`e}ne}{36}{section*.174}
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ COMPLETER principe de fonctionnement des Voxels}{36}{section*.179}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il est n\IeC {\'e}cessaire de connaitre pr\IeC {\'e}cisement la pose du LIDAR pour g\IeC {\'e}n\IeC {\'e}rer le nuage de points.}{37}{section*.181}
+\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e LIDAR}{37}{section*.181}
+\contentsline {todo}{Figure: Illustration nature donn\IeC {\'e}e Nuage de Point}{37}{section*.181}
+\contentsline {todo}{Figure: Diagramme fonctionnel LIDAR --> Nuage de Point}{37}{section*.181}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER les structures de donn\IeC {\'e}es de stockage de l'information 3D}{38}{section*.184}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ TROUVER REF EXTERNE: les structures de donn\IeC {\'e}es 3D}{38}{section*.185}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Les b-trees, principes}{38}{section*.186}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Point forts: calculs performants}{38}{section*.187}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points faible: arbre \IeC {\'e}quilibr\IeC {\'e}s --> difficile d'ajouter de nouveaux points.}{38}{section*.188}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Octree, principes}{38}{section*.189}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER points forts: structure d\IeC {\'e}s\IeC {\'e}quilibr\IeC {\'e}es sans probl\IeC {\`e}me, possibilit\IeC {\'e} d'ajouter de nouveau points avec une bonne performance}{38}{section*.190}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER point faible: beaucoup d'overhead de memoire si pas impl\IeC {\'e}ment\IeC {\'e} correctement.}{38}{section*.191}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Utilisation d'octomap car composant sur \IeC {\'e}tag\IeC {\`e}re}{38}{section*.192}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet d'impl\IeC {\'e}menter rapidement la chaine de traitement pour v\IeC {\'e}rifier la validit\IeC {\'e} de la faisaibilit\IeC {\'e}}{38}{section*.193}
+\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran repr\IeC {\'e}sentant le mur sous Gazebo.}{39}{subsection.5.4.1}
+\contentsline {todo}{Figure: Capture d'\IeC {\'e}cran mod\IeC {\`e}le d'ensilage sous blender + capture d'\IeC {\'e}cran mur et ensilage dans Gazebo}{39}{section*.194}
+\contentsline {todo}{Figure: Capture Gazebo du chantier avec tracteur et mur}{39}{subsection.5.4.2}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}{39}{section*.195}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Outil de visualisation utilis\IeC {\'e}: Paraview}{40}{section*.196}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER besoin de convertir pcd en vtk \IeC {\`a} l'aide de l'outil appropri\IeC {\'e}}{40}{section*.197}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER permet de naviguer de mani\IeC {\`e}re efficasse dans le nuage de point, d'effectuer des projections, etc, etc}{40}{section*.198}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Le nuage est \IeC {\'e}pais}{40}{section*.199}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER octomap g\IeC {\'e}n\IeC {\`e}re un nuage de point bas\IeC {\'e} sur le centre des voxel occup\IeC {\'e}s --> probl\IeC {\`e}me de quantification volumique implique perte de pr\IeC {\'e}cision de la mesure}{40}{section*.200}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit r\IeC {\'e}duire la taille du voxel --> augmentation de la taille}{40}{section*.201}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Soit retourne le point moyen de chaque voxel --> non support\IeC {\'e} par octomap --> \IeC {\`a} impl\IeC {\'e}menter nous m\IeC {\^e}me.}{40}{section*.202}
+\contentsline {todo}{\color@fb@x {}{black}{}{pink}{\leavevmode {\color {pink}o}}\ AJOUTER REF octomap}{40}{section*.203}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER TellusCar avec Instrument mont\IeC {\'e}s sur l'arri\IeC {\`e}re}{41}{section*.205}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER donn\IeC {\'e}es GPS, donn\IeC {\'e}es IMU et donn\IeC {\'e}es LIDAR, toutes acquises en m\IeC {\^e}me temps}{41}{section*.206}
+\contentsline {todo}{Figure: text}{41}{section*.206}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Capture Bagfile alors que la TellusCar \IeC {\'e}volue dans le parking de adjacent \IeC {\`a} TEllusEnv}{41}{section*.207}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER La partie logiciel de Symeter V2 peut exploiter des rejeux des captures pour estimer l'\IeC {\'e}volution de la TellusCar, et tenter de reconstituer le parking.}{41}{section*.208}
+\contentsline {todo}{Figure: trajectoire sous Googlemap}{42}{section.6.2}
+\contentsline {todo}{Figure: graphe des acc\IeC {\'e}lerations et de l'assiette issues de l'IMU}{42}{section.6.2}
+\contentsline {todo}{Figure: donn\IeC {\'e}es LIDAR brutes}{42}{section.6.2}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Il a \IeC {\'e}t\IeC {\'e} compliqu\IeC {\'e} de faire fonctionner la partie localisation de Symeter V2 avec les donn\IeC {\'e}es r\IeC {\'e}elle}{42}{section*.209}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER grande sensibilit\IeC {\'e} des donn\IeC {\'e}es IMU si la pose de l'IMU n'est pas rigoureusement d\IeC {\'e}crite dans la configuration de symeter V2}{42}{section*.210}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Oblig\IeC {\'e} de traiter les donn\IeC {\'e}es IMU pour r\IeC {\'e}tablir la bonne orientation}{42}{section*.211}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER L'imu mesure le cap avec 0 au nord alors que robot\_localization s'attend \IeC {\`a} un 0 pour un cap \IeC {\`a} l'Est}{42}{section*.212}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER une fois le syst\IeC {\`e}me de localisation OK, pb avec Octomap qui n'a pas l'air de fonctionner au dela d'une certaine distante}{43}{section*.213}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Illustre les probl\IeC {\'e}matiques du passage de la simulation \IeC {\`a} un integration en grandeur}{43}{section*.214}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER IMU simul\IeC {\'e} n'est pas fiable: il faudra en trouver un autre}{43}{section*.215}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER A l'heure actuelle pas encore termin\IeC {\'e}}{43}{section*.216}
+\contentsline {todo}{\color@fb@x {}{black}{}{teal}{\leavevmode {\color {teal}o}}\ PEUT ETRE cam\IeC {\'e}ra video pour odom\IeC {\'e}trie visuelle ?}{44}{section*.217}
+\contentsline {todo}{\color@fb@x {}{black}{}{red}{\leavevmode {\color {red}o}}\ REDIGER Decrire le cycle de simulation}{44}{section*.219}
+\contentsline {todo}{Figure: Diagramme d'\IeC {\'e}tat simulation de l'acte de tassage.}{44}{section*.219}

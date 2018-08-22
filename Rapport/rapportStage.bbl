@@ -26,6 +26,12 @@ Thomas Moore and Daniel Stouch.
   Yamaguchi, editors, {\em Intelligent {Autonomous} {Systems} 13}, volume 302,
   pages 335--348. Springer International Publishing, Cham, 2016.
 
+\bibitem[Nü09]{nuchter_3d_2009}
+Andréas Nüchter.
+\newblock {\em 3D {Robotic} {Mapping}: {The} {Simultaneous} {Localization} and
+  {Mapping} {Problem} with {Six} {Degrees} of {Freedom}}.
+\newblock Springer, 2009.
+
 \bibitem[RS12]{rs-_scanning_2012}
 TAMAKI RS.
 \newblock Scanning {Laser} {Range} {Finder} {UTM}-30lx-{EW} {Specification}.

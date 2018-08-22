@@ -159,12 +159,15 @@ Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux
 \newpage
 
 \chapter{Introduction}
-\todoAmeliorer{L'introduction doit-elle être un chapitre ou alors un Abstract?}
-\todoRediger{Introduction du context projet: j'ai effectué le stage blabla au sein de l'entreprise bla etc}
+
+J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au sein de Tellus Environnement, afin de menu à bien la partie etude et développement du projet appelé en interne "Symeter V2".
+
+\para Cette introduction présente les activités de Tellus Environment et introduit le contexte du projet Symeter V2.
+
 	\section{Tellus Environment - Missions Principales}
-	\todoRediger{Tellus création, mission, activité}
-	
+
 	\subsection{Géophysique et cartographie haute-définition}
+	Tellus Environment a été créée en 2012 et s'est initialement spécialisée dans le traitement de données géophysiques.
 	Tellus Environmenent est une startup spécialisée dans la cartographie haute définition des sous-sols et des fond-marins. Elle propose à ses clients une offre bout en bout d'acquisition et de traitement des données pour permettre à ses clients d'agir en fonction de ces conclusions.
 	\todoAmeliorer{Ce \S $\;$peut servir à l'intro sur Tellus.}
 	
@@ -731,20 +734,209 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	Selon \cite{gustavsson_uav_2015} et \cite{menegatti_generalized_2016}, a fusion de données IMU et GPS peut être effectuée sur la base d'un filtre de Kalman. Cette section s'attache a décrire les principes de fonctionnement d'un tel filtre pour en permettre l'utilisation pour le projet Symeter V2.
 	
-	Un filtre de Kalman est un algortihme qui permet d'estimer les états d'un système dynamique sur la base  de mesures incomplètes ou bruitée. Il a été développé à la fin des années 50 et comprend de très nombreuses applications dans tous les domaines liés à l'instrumentation.
+	\para Un filtre de Kalman est un algortihme qui permet d'estimer les états d'un système dynamique sur la base  de mesures incomplètes ou bruitée. Il a été développé à la fin des années 50 et comprend de très nombreuses applications dans tous les domaines liés à l'instrumentation.
 	
 	\subsection{Filtres de Kalman Linéaires}
 	Selon \cite{zarchan_fundamentals_2009}, les filtres de Kalman sont applicables sur des systèmes dynamiques linéaires modélisés par un ensemble d'équations différentielles, décrites par la relation suivante:
 	
 	\begin{equation}
+		\label{eq:fullmodel}
 	\boldsymbol{
 		\dot{x} = Fx + Gu + w
 	}
 	\end{equation}
-	\todoCompleter{avec mes notes sur le filtre de Kalman Etendu.}
 	
-	\subsection{Filtres de Kalman Etendus}
+	\para où
+
+	\begin{itemize}
+	\item $\boldsymbol{x}$ est le vecteur colonne des états du systèmes, 
+	\item $\boldsymbol{F}$ est la dynamique du système, 
+	\item $\boldsymbol{u}$  un vecteur connu, souvent appelé vecteur de contrôle.
+	\item $\boldsymbol{w}$ est un bruit blanc, lui aussi exprimé sous forme d'un vecteur.
+	\end{itemize}
+
+	La matrice de bruit de process \(\boldsymbol{Q}\) est par définition reliée au vecteur \(\boldsymbol{w}\) selon la formule:
+
+	\begin{equation}
+		\boldsymbol{Q = E[ww^T]}
+	\end{equation}
+
+	($\boldsymbol{E[\bullet]}$ représente la fonction "espérance de \([\bullet]\)".)
+	
+	\para Dans notre cas, le système Symeter V2 n'aura pas accès au contrôle, nous choisissons donc l'intégrer la composante $\bs{Gu}$ dans le bruit de process $\bs{w}$. Le modèle dynamique \ref{eq:fullmodel} devient donc 
+	
+	\begin{equation}
+		\label{eq:actualmodel}
+			\boldsymbol{
+			\dot{x} = Fx + w
+		}
+	\end{equation}
+
+	\para Toujours selon \cite{zarchan_fundamentals_2009}, l'état du système est estimé à partir de mesures $\bs{z}$ dont la formulation de Kalman impose qu'elles soient linéairement liées aux variables d'état par la relation 
+
+	\begin{equation}
+		\label{eq:mesure_cont}
+		\boldsymbol{z=Hx + v}
+	\end{equation}
+
+	où
+
+	\begin{itemize}
+		\item
+		\(\boldsymbol{z}\) est le vecteur des mesures
+		\item
+		\(\boldsymbol{H}\) est la matrice de transfert des mesures
+		\item
+		\(\boldsymbol{v}\) représente le bruit de mesure.
+	\end{itemize}
+
+	La matrice de bruit de mesure \(\boldsymbol{R}\) est reliée au vecteur	de bruit de mesure selon la relation:
+
+	\begin{equation}
+		\label{eq:covmesur_cont}
+		\boldsymbol{R = E[vv^T]}
+	\end{equation}
+	
+	\subsubsection{Discrétisation}
+	Les filtres de Kalman étant des algorithmes discrets, il convient de discrétiser les relations précédentes afin de pouvoir monter les relations de récurrence des filtres.
+	
+	\para Toujours selon \cite{zarchan_fundamentals_2009}, si la période de mesure est $T_s$ nous pouvons discrétiser la dynamique du système en trouvant la matrice fondamentale $\Phi(y)$ de 2 manières équivalentes
+	
+	\paragraph*{Evaluation de $\Phi(t)$ à l'aide de la Transformée de Laplace Inverse}
+	
+	\para Pour un système dynamique invariant dans le temps décrit par une matrice $\bs{F}$ la matrice fondamentale $\Phi(t)$ peut être trouvée à l'aide de la formule suivante:
+	
+	\begin{equation}
+	\boldsymbol \Phi(t) =  \mathcal{L}^{-1}[(s\boldsymbol{I-F})^{-1}]
+	\end{equation}
+	
+	\para où $\bs{I}$ est la matrice identité, $\bs{F}$ est la dynamique du système et $\mathcal{L}^{-1}$ est la transformée de Laplace inverse.
+	
+	\paragraph*{Evaluation de $\Phi(t)$ par expansion en séries de Taylor}
+	\para La matrice fondamentale peut aussi être retrouvée en effectuant l'expansion en série de taylor suivante:
+	
+	\begin{equation}
+	 \Phi(t) = e^{\boldsymbol Ft} = \boldsymbol I + \boldsymbol Ft + \frac{(\boldsymbol Ft)^2}{2!} + \dots + \frac{(\boldsymbol Ft)^n}{n!} + \dots
+	\end{equation}
+	
+	\para Nous pouvons enfin calculer la matrice fondamentale $\Phi_k$ pour une période d'échantillonage $T_s$ en prenant:
+	
+	\begin{equation}
+	\Phi_k = \Phi(T_s)
+	\end{equation}
+	
+	\para La forme discrète de l'équation des mesures \ref{eq:mesure_cont} devient
+	
+	\begin{equation}
+	 \boldsymbol z_k = \boldsymbol H \boldsymbol x_k +\boldsymbol  v_k
+	\end{equation}
+	
+	\para et \ref{eq:covmesur_cont} devient
+	
+	\begin{equation}
+	  \boldsymbol R_k = \boldsymbol{E(v_k v_k^T)}
+	\end{equation}
+
+	\para où $\boldsymbol R_k$ est une matrice composée des variances de chacune des sources de bruits de mesure.
+	
+	\subsubsection{Boucle de Kalman}
+	\label{sec:boucledekalman}
+	
+	Le filtre de Kalman pourrait être écrit en une seule équation mais il est généralement conceptualisé en deux phases distinctes, la \textbf{prédiction} et la \textbf{mise à jour}.
+	
+	\para L'état du filtre de Kalman un instant donné est composé de \begin{itemize}
+		\item $\bs{x}_k$ l'estimation de l'état à l'instant $k$
+		\item $\bs{P}_k$ la matrice de covariance de l'erreur sur les composantes de $\bs{x}_k$.
+	\end{itemize}
+
+	\para Selon \cite{menegatti_generalized_2016} La phase de \textbf{prédiction} utilise l'état estimé de l'instant précédent pour calculer une estimation de l'état actuel, en se basant sur le modèle dynamique. En partant de \ref{eq:actualmodel}, la prédiction utilise les formules \ref{eq:pred_x} et \ref{eq:pred_p} pour déterminer $\bs{\hat{x}}_k$ l'état prédit et $\bs{\hat{P}_k}$ la matrice de covariance prédite.
+	
+	\begin{equation}
+		\label{eq:pred_x}
+		\bs{\hat{x}}_k = \bs{\Phi}_k \bs{x}_{k-1}
+	\end{equation}
+	
+	\begin{equation}
+		\label{eq:pred_p}
+		\bs{\hat{P}_k} = \bs{\Phi}_k \bs{P}_{k-1} \bs{\Phi}_k^T + \bs{Q}_k
+	\end{equation}
+	
+	
+	
+	\para Dans la phase de \textbf{mise à jour}, les observations de l'état courant (c'est à dire les mesures $\bs{z}_n)$ sont incorporées pour corriger l'état prédit dans le but d'obtenir une meilleur précision.
+	
+	\para Tout d'abord le \textbf{gain de Kalman} $\bs{K}$ est calculé selon l'equation \ref{eq:kalmangain}.
+	
+	\begin{equation}
+	\label{eq:kalmangain}
+	\bs{K} = \bs{\hat{P}}_k \bs{H}^T (\bs{H} \bs{\hat{P}}_k \bs{H}^T + \bs{R}_k ) ^{-1}
+	\end{equation}
+	
+	
+	\para Ensuite l'état du filtre, représenté par $\bs{x}_k$, le vecteur d'état et $\bs{P}_k$ la matrice de covariance selon les formules \ref{eq:kalmanupdate_xk} et \ref{eq:kalmanupdate_pk} respectivement.
+	
+	\begin{equation}
+	\label{eq:kalmanupdate_xk}
+	\bs{x}_k = \bs{\hat{x}}_k + \bs{K} (\bs{z}_k - \bs{H \hat{x}}_k)
+	\end{equation}
+	
+	\begin{equation}
+	\label{eq:kalmanupdate_pk}
+	\bs{P}_k = (\bs{I-KH})\bs{\hat{P}}_k(\bs{I-KH})^T + \bs{KRK}^T
+	\end{equation}
+
+
+	\subsubsection{Fonctionnement conceptuel du Filtre de Kalman}
+	Pour comprendre conceptuellement ce qu'accomplit un filtre de Kalman, il suffit d'analyser les formules \ref{eq:kalmangain} du gain de Kalman et \ref{eq:kalmanupdate_xk} de mise à jour du vecteur d'état.
+	
+	\para En effet, dans \ref{eq:kalmangain}, si la matrice de covariance des mesures $\bs{R}_k$ est prépondérante par rapport à $\bs{\hat{P}_k}$, la matrice de covariance de l'erreur du vecteur d'état, la magnitude de $\bs{K}$ sera petite, l'influence des mesures $\bs{z}_k$ dans \ref{eq:kalmanupdate_xk} sera petite, c'est à dire que le filtre fera plus confiance à son estimation du vecteur d'état $\bs{\hat{x}}_n$ qu'aux mesures.
+	
+	\para Par contre, si $\bs{R}_k$ est petite par rapport à $\bs{\hat{P}_k}$, le gain de Kalman aura une grande magnitude, reflétant le fait que la mesure sera plus précise que l'estimation. Et donc $\bs{x}_k$ dans \ref{eq:kalmanupdate_xk} sera plus influencée par $\bs{z}_k$ que par $\bs{\hat{x}}_n$.
+	
+	\para Selon \cite{zarchan_fundamentals_2009}, la formule du gain de Kalman \ref{eq:kalmangain} est en fait appelée \textbf{Gain de Kalman Optimal} et est obtenue par minimisation la variance de l'erreur d'estimation.
+	
+	
+	\subsection{Estimation de Pose 3D: Filtres de Kalman Etendus}
 	\todoRediger{pour les systèmes dynamiques non linéaires}
+	
+	Dans la plupart des applications d'estimation d'état, la dynamique des systèmes à estimer n'est pas linéaire et le filtre de Kalman ne peut pas être appliqué en l'état car toute sa formulation se base sur des hypothèses de linéarités fortes.
+	
+	\para Selon \cite{menegatti_generalized_2016} et \cite{zarchan_fundamentals_2009}, il est possible de de généraliser les filtres de Kalman pour estimer des systèmes dont la dynamique est non-linéaire.
+	
+	\para Selon \cite{menegatti_generalized_2016}, un tel procédé non linéaire peut être décrit par l'équation \ref{eq:nonlinkalman_xk} suivante
+	
+	\begin{equation}
+	\label{eq:nonlinkalman_xk}
+	\bs{x}_k = f(\bs{x}_{k-1}) + \bs{w}_{k-1}
+	\end{equation}
+	
+	où $\bs{x}_k$ est le vecteur d'état, $f$ est une fonction de transistion d'état non linéaire et $\bs{w}_{k-1}$ est le bruit de processus.
+	
+	\para Dans le cas qui nous intéresse où Symeter V2 doit déterminer la pose 3D à 6 degrés de liberté du véhicule, $\bs{x}_k$ représente la dite pose, $f$ sera un modèle cinématique dérivé de la mécanique Newtonienne.
+	
+	\para Selon \cite{zarchan_fundamentals_2009} l'extension des filtres de Kalman à une dynamique non-linéaire est effectuée en calculant à chaque itération $\bs{F}$ le jacobien de $f$ selon la formule \ref{eq:ekfjacobian}
+	
+	\begin{equation}
+	\label{eq:ekfjacobian}
+	\bs{F} = \frac{\partial f(\bs{x})}{\partial \bs{x}} \bigg\rvert_{\bs{x}= \bs{\hat{x}}}
+	\end{equation}
+	
+	\para et en discrétisant ce jacobien en utilisant la formule \ref{eq:ekfjacobdisc}
+	
+	\begin{equation}
+	\label{eq:ekfjacobdisc}
+	\bs{\Phi}_k = e^{\boldsymbol Ft} = \boldsymbol I + \boldsymbol Ft + \frac{(\boldsymbol Ft)^2}{2!} + \dots + \frac{(\boldsymbol Ft)^n}{n!} + \dots
+	\end{equation}
+	
+	\para En pratique l'approximation \ref{eq:efkjacobianapprox} est le plus souvent suffisante
+	
+	\begin{equation}
+	\label{eq:efkjacobianapprox}
+	\bs{\Phi}_k \approx \boldsymbol I + \boldsymbol Ft
+	\end{equation}
+	
+	La boucle de Kalman telle que décrite dans \ref{sec:boucledekalman} peut ensuite être utilisée en remplaçant $\bs{\Phi}$ par $\bs{\Phi}_k$ la matrice fondamentale du jacobien de $f$.
+
 	
 	\section{Mise en oeuvre sous ROS.} Comme les sections précédentes le montrent, l'implementation d'un système de localisation sur la base mesure par IMU et GPS ne sont pas une mince affaire et est plus un sujet de thèse qu'une sous partie de stage. 
 	
@@ -969,17 +1161,93 @@ La simulation peut permettre la mise au point de la localization, de l'acquisiti
 \chapter{Conclusion}
 
 \begin{appendix}
-	\chapter{Positionnement En Robotique}
-		\section{Géometrie projective, Coordonnées Homogènes}
-		\section{Une autre descriptions des rotations en 3D: Quaternions Unitaires}
-		\section{Application: Simulation de couverture d'un faiseau LIDAR orienté vers le sol}
+	\chapter{Représentation de l'Attitude et des Rotations}
+	Selon \cite{gustavsson_uav_2015}, si nous considérons un véhicule mesurant des mouvements par rapport à son propre repère et un autre système mesurant les positions et vitesses etc du même véhicule par rapport à un repère $\{e\}$, et si la navigation est effectuée par rapport à un repère local de navigation ${n}$, il devient très vite apparent qu'un outil pour décrire l'orientation du véhicule par rapport à ces différents repères est nécessaire.
 	
-	\chapter{Filtres de Kalman}
-	
-	\chapter{ROS: Architecture et Concepts}
-	
-	\chapter{Point Cloud Library}
-	Essai de citation \cite{kaplan_understanding_2006}.
+	\para Deux des manières les plus communes de représenter les attitudes et les rotations dans $\mathbb{R}^3$ sont les \textit{Angles d'Euler} et les \textit{quaternions}.
+		\section{Angles d'Euler}
+		Selon \cite{nuchter_3d_2009}, alors que les trois coordonnées Cartesiennes $x,y$ et $z$ représentent la position, les trois angles $\theta_x$, $\theta_y$ et $\theta_z$ décrivent l'orientation dans $\mathbb{R}^3$. L'union de la position et de l'orientation est appelée la \textit{pose}. L'orientation $\theta_x$, $\theta_y$ et $\theta_z$ est la rotation autour des axes principaux du repère orthonormé, c'est à dire $(1,0,0)$, $(0,1,0)$ et $(0,0,1)$. Les matrices de rotation sont les suivantes:
+		
+		\begin{equation*}
+		\bs{R}_x =	\begin{pmatrix}
+		1 & 0 & 0 \\
+		0 & \cos{\theta_x} & -\sin{\theta_x}\\
+		0 & \sin{\theta_x} & \cos{\theta_x}
+		
+		\end{pmatrix}
+		\end{equation*}
+		
+		\begin{equation*}
+		\bs{R}_y = \begin{pmatrix}
+		\cos{\theta_y} & 0 & \sin{\theta_y}\\
+		0 & 1 & 0 \\
+		-\sin{\theta_y} &  0 & \cos{\theta_y}
+		\end{pmatrix}
+		\end{equation*}
+		
+		\begin{equation*}
+		\bs{R}_z = \begin{pmatrix}
+		\cos{\theta_z} & -\sin{\theta_z}& 0 \\
+		\sin{\theta_z} & \cos{\theta_z} & 0 \\
+		0 & 0 & 1
+		\end{pmatrix}
+ 		\end{equation*}
+ 		
+ 		\para La matrice de rotation globale est calculée comme $\bs{R} = \bs{R}_{\theta_x, \theta_y, \theta_z} = \bs{R}_x \bs{R}_y \bs{R}_z$.
+ 		
+ 		\para Note: La matrice ci-dessus dépend de l'ordre de la multiplication. Des matrices de rotation différentes sont obtenues par $\bs{R} = \bs{R}_{\theta_z, \theta_y, \theta_x} = \bs{R}_z \bs{R}_y \bs{R}_x$ ou $\bs{R} = \bs{R}_{\theta_y, \theta_x, \theta_z} = \bs{R}_y \bs{R}_x \bs{R}_z$. De plus un blocage de cardan peut intervenir si les axes 
+		
+		\section{Quaternions Unitaires}
+		Toujours selon \cite{nuchter_3d_2009}, les quaternions sont un nombre complexe à 4 dimensions qui peuvent être utilisés pour représenter des rotations en 3D. Ils sont générés en postulant une racine additionnelle à -1 nommée $j$ qui ne soit pas $i$ ou $-i$. Il existe alors nécessairement un élément $k$ tel que $ij = k$ qui aussi une racine de -1. Les relations suivantes sont aussi vraies:
+		
+
+		\begin{equation*}
+		\begin{aligned}
+			i^2&= j^2 & = k^2 = i&jk &=& -1 \\
+			ij &= k, &           &ji &=& -k \\
+			jk &= i,&            &kj &=& -i \\
+			ki &=j, &            &ik &=& -j
+		\end{aligned}
+		\end{equation*}
+		
+		\para $i,j,k$ et -1 forment la base du quaternion $\mathbb{H}$. Tout quaternion $\bs{\dot{q}}$ peut être représenté sous la forme $\bs{\dot{q}} = q_0 + q_xi + q_yj+q_zk$. Ainsi tout quaternion définit un unique 4-vecteur $(q_0, q_x, q_y, q_z)^T \in \mathbb{R}^4$. 
+		
+		\para Comme pour les nombres complexes, les quaternions possèdent un unique quaternion conjugué. Le quaternion conjugué de $\bs{\dot{q}} = q_0 + q_xi + q_yj+q_zk$ est $\bs{\dot{q}}^\ast = q_0 - q_xi - q_yj-q_zk$.
+		
+		\para En utilisant le quaternion conjugué et le produit scalaire, nous pouvons calculer la norme du quaternion $\bs{\dot{q}}$:
+		
+		\begin{equation*}
+		\|\bs{\dot{q}}\| = \sqrt{\langle \bs{\dot{q}}, \bs{\dot{q}}^{\ast} \rangle} = \sqrt{q_0^2 + q_x^2 + q_y^2 + q_z^2}
+		\end{equation*} 
+		
+		\para Le sous-ensemble des quaternions unité est important car ses éléments peuvent représenter les rotations dans $\mathbb{R}^3$. Un quaternion unité $\bs{\dot{q}}$	vérifie la relation $\|\bs{\dot{q}}\| = 1$. Un quaternion unité a pour propriété que sont inverse $\bs{\dot{q}}^{-1}$ est égal à son conjugué $\bs{\dot{q}}^\ast$.
+		
+		\begin{equation*}
+		\langle \bs{\dot{q}}, \bs{\dot{q}}^{\ast} \rangle = \|\bs{\dot{q}}\|^2 = 1
+		\end{equation*}
+		
+		\para Les rotations utilisant les quaternions sont formalisées comme suit: soit $\bs{\dot{q}}$ tel que $\bs{\dot{q}} = (q_0,q_x,q_y,q_z) = (q_0,\bs{q})$. Pour effectuer la rotation du point 3D $\bs{p}=(p_x,p_y,p_z)^T \in \mathbb{R}^3$, nous écrivons ce point sous la forme d'un quaternion aussi: $\bs{\dot{p}} = (0, p_x,p_y,p_z)^T = (0,\bs{p})$. Alors nous pouvons démontrer que le point $p_{\mathrm{rot}}$ est le résultat d'une rotation du point $\bs{p}$ par la formule
+		
+		\begin{equation*}
+		\bs{p}_{\mathrm{rot}} = \bs{\dot{q}\dot{p}\dot{q}}^{\ast}
+		\end{equation*}
+		
+		\para \cite{nuchter_3d_2009} montre qu'une rotation d'un angle $\theta$ autour d'un vecteur $\bs{n}$ sera représenté par le quaternion 
+		
+		\begin{equation*}
+			\bs{\dot{q}} = \left( \cos{\frac{\theta}{2}}, \sin{\frac{\theta}{2}}\bs{n} \right)
+		\end{equation*}
+		
+		\para Pour passer d'une représentation en quaternion en une représentation de rotation autour d'un axe, il suffit de calculer les composantes suivantes:
+		
+		\begin{equation*}
+		\begin{aligned}
+			\theta 	&= 2 \arccos{q_0} \\
+			n_x 	&= \frac{q_x}{\sin{\theta}} \\
+			n_y		&= \frac{q_y}{\sin{\theta}} \\
+			n_z		&= \frac{q_z}{\sin{\theta}} 
+		\end{aligned}
+		\end{equation*}
 
 \end{appendix}
 
