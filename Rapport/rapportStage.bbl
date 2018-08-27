@@ -1,9 +1,17 @@
-\begin{thebibliography}{Gus15}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{YSA{\etalchar{+}}13}
 
 \bibitem[Gus15]{gustavsson_uav_2015}
 Kenneth Gustavsson.
 \newblock {UAV} {Pose} {Estimation} using {Sensor} {Fusion} of {Inertial},
   {Sonar} and {Satellite} {Signals}, 2015.
+
+\bibitem[Jef10]{jeffrey_introduction_2010}
+Charles Jeffrey.
+\newblock {\em An introduction to {GNSS}: {GPS}, {GLONASS}, {Galileo} and other
+  {Global} {Navigation} {Satellite} {Systems}}.
+\newblock NovAtel, Calgary, 2010.
+\newblock OCLC: 1036065024.
 
 \bibitem[KH06]{kaplan_understanding_2006}
 Elliott~D. Kaplan and C.~Hegarty, editors.
@@ -11,6 +19,14 @@ Elliott~D. Kaplan and C.~Hegarty, editors.
 \newblock Artech {House} mobile communications series. Artech House, Boston,
   2nd ed edition, 2006.
 \newblock OCLC: ocm62128065.
+
+\bibitem[MF13]{martinez_learning_2013}
+Aaron Martinez and Enrique Fernández.
+\newblock {\em Learning {ROS} for robotics programming: a practical,
+  instructive, and comprehensive guide to introduce yourself to {ROS}, the
+  top-notch, leading robotics framework}.
+\newblock Community experience distilled. Packt Publ, Birmingham, 2013.
+\newblock OCLC: 861540246.
 
 \bibitem[ML16]{moreno_comparative_2016}
 Carlos Moreno and Ming Li.
@@ -26,6 +42,12 @@ Thomas Moore and Daniel Stouch.
   Yamaguchi, editors, {\em Intelligent {Autonomous} {Systems} 13}, volume 302,
   pages 335--348. Springer International Publishing, Cham, 2016.
 
+\bibitem[NKG13]{noureldin_fundamentals_2013}
+Aboelmagd Noureldin, Tashfeen~B. Karamat, and Jacques Georgy.
+\newblock {\em Fundamentals of {Inertial} {Navigation}, {Satellite}-based
+  {Positioning} and their {Integration}}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2013.
+
 \bibitem[Nü09]{nuchter_3d_2009}
 Andréas Nüchter.
 \newblock {\em 3D {Robotic} {Mapping}: {The} {Simultaneous} {Localization} and
@@ -36,6 +58,22 @@ Andréas Nüchter.
 TAMAKI RS.
 \newblock Scanning {Laser} {Range} {Finder} {UTM}-30lx-{EW} {Specification}.
 \newblock page~7, December 2012.
+
+\bibitem[Ste14]{steinbauer_tedusar_2014}
+Gerald Steinbauer.
+\newblock {TEDUSAR} {White} {Book} - {State} of the {Art} in {Search} and
+  {Rescue} {Robots}, 2014.
+
+\bibitem[SXZ17]{shekhar_encyclopedia_2017}
+Shashi Shekhar, Hui Xiong, and Xun Zhou, editors.
+\newblock {\em Encyclopedia of {GIS}}.
+\newblock Springer International Publishing, Cham, 2017.
+
+\bibitem[YSA{\etalchar{+}}13]{yalcin_approaches_2013}
+O.~Yalcin, A.~Sayar, O.F. Arar, S.~Akpinar, and S.~Kosunalp.
+\newblock Approaches of {Road} {Boundary} and {Obstacle} {Detection} {Using}
+  {LIDAR}.
+\newblock {\em IFAC Proceedings Volumes}, 46(25):211--215, 2013.
 
 \bibitem[ZM09]{zarchan_fundamentals_2009}
 Paul Zarchan and Howard Musoff.

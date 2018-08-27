@@ -18,7 +18,8 @@
 \usepackage[colorinlistoftodos,textwidth=3.7cm]{todonotes}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{tocbibind}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage[justification=centering]{caption}
 \author{Sébastien Hervieu}
 
 \setcounter{MaxMatrixCols}{20}
@@ -139,16 +140,16 @@ Sébastien \textsc{Hervieu}
 
 Je tiens à remercier les personnes qui m'ont permis de prés ou de loin à accomplir ce stage et qui m'ont aidé lors de la rédaction de ce rapport.
 
-Tout d'abord, j'adresse mes remerciements à Messieurs \textbf{Fabrice Mahé et Eric Darrigrand} profeseurs de l'Université de Rennes 1, qui m'ont permis de suivre cette formation et qui m'ont accompagné lors de la recherche de stage.
+\para Tout d'abord, j'adresse mes remerciements à Messieurs \textbf{Fabrice Mahé et Eric Darrigrand} profeseurs de l'Université de Rennes 1, qui m'ont permis de suivre cette formation et qui m'ont accompagné lors de la recherche de stage.
 
-Je tiens à remercier Monsieur \textbf{Geoffroy ETAIX}, qui m'a accordé sa confiance pour le stage et pour etc 
-\todoCompleter{remercier Goeffroy}
-\todoRediger{Remercier Fongecif}
-\todoRediger{Remercier Ingeus}
-\todoRediger{Remercier IDApps, Yann, Stéphane, et surtout Laila!}
+\para Je tiens à remercier Monsieur \textbf{Geoffroy ETAIX}, qui m'a accordé sa confiance pour le stage et pour etc 
 
-Enfin, last but not least, je tiens à remercier mon épouse Céline et mes deux filles pour leur encouragments, leurs soutient et leur patience.
-\todoCompleter{Céline et les filles}
+\para Remercier Fongecif
+
+\para Remercier IDApps, Yann, Stéphane, et surtout Laila!
+
+\para Enfin je remercie mon épouse Céline et mes deux filles pour leur encouragments, leurs soutient et leur patience.
+
 
 \todoCompleter{Completer les remerciements}
 \todoMiseEnForme{Aérer}
@@ -167,23 +168,47 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	\section{Tellus Environment - Missions Principales}
 
 	\subsection{Géophysique et cartographie haute-définition}
-	Tellus Environment a été créée en 2012 et s'est initialement spécialisée dans le traitement de données géophysiques.
-	Tellus Environmenent est une startup spécialisée dans la cartographie haute définition des sous-sols et des fond-marins. Elle propose à ses clients une offre bout en bout d'acquisition et de traitement des données pour permettre à ses clients d'agir en fonction de ces conclusions.
+	Tellus Environment a été créée en 2012 et s'est initialement spécialisée dans le traitement de données géophysiques, la cartographie haute définition des sous-sols et des fond-marins. Elle propose à ses clients une offre bout en bout d'acquisition et de traitement des données pour permettre à ses clients d'agir en fonction de ces conclusions.
 	\todoAmeliorer{Ce \S $\;$peut servir à l'intro sur Tellus.}
 	
 	\subsection{Collecte des données géophysique}
 	
-	\paragraph*{} Tellus Environment met en oeuvre ses propres équipements géoradar et magnetomètre pour l'acquisition de données sur le sous-sol sur des surfaces de quelques mètres-carré à quelque hectares. Elle est aussi en mesure de planifier et coordonner la mise en oeuvre d'équipements plus lourds - LIDAR, géoradar, magnétomètres aéroporté - pour obtenir des données sur des surfaces beaucoup plus importantes, de l'ordre du kilomètre carré.
+	\para Tellus Environment met en oeuvre ses propres équipements géoradar et magnetomètre pour l'acquisition de données sur le sous-sol sur des surfaces de quelques mètres-carré à quelque hectares. Elle est aussi en mesure de planifier et coordonner la mise en oeuvre d'équipements plus lourds - LIDAR, géoradar, magnétomètres aéroporté - pour obtenir des données sur des surfaces beaucoup plus importantes, de l'ordre du kilomètre carré.
 	
-	\missingfigure{Georadar}
-	\missingfigure{Magnetomètre}
-	\missingfigure{Radargramme}
+	\begin{figure}
+		\centering
+		
+		\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/IMG_0332}
+			\caption[Géoradar]{Géoradar ZOND}
+			\label{fig:georadar}
+		\end{minipage}%
+		\begin{minipage}{.5\textwidth}
+				\centering
+			\includegraphics[width=0.7\linewidth]{img/sonar}
+			\caption[sonar]{Sonar (en cours d'utilisation)}
+			\label{fig:sonar}
+		\end{minipage}
+	\end{figure}
 	
-	\paragraph*{} Tellus Environment peut aussi coordonner la mise en oeuvre d'équipements d'acquisition marins - sonar, multibeam, \underline{percuteur} \todoCheck{est-ce le bon terme?} - pour permettre la cartographie des fonds marins et des sous-sols aquatiques, que ce soit en environnement eau douce - rivières, lacs étangs - ou marins. 
-	\missingfigure{sonar}
-	\missingfigure{sonargramme}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/radargram}
+		\caption[radargramme]{Exemple d'un radargramme d'une détection \hspace{\textwidth} de réseaux enterrés. (Image Tellus Environment)}
+		\label{fig:radargram}
+	\end{figure}
 	
-	\paragraph*{} Tellus Environment a accès à de nombreuses bases cartographiques pour compléter les données acquises sous sa supervision pour aider à la mise en oeuvre des équipements ainsi qu'à compléter les données acquises en vue de leur traitement.
+	\para Tellus Environment peut aussi coordonner la mise en oeuvre d'équipements d'acquisition marins - sonar, multibeam, \underline{percuteur} \todoCheck{est-ce le bon terme?} - pour permettre la cartographie des fonds marins et des sous-sols aquatiques, que ce soit en environnement eau douce - rivières, lacs étangs - ou marins. 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/E1790}
+		\caption[sonargramme]{Exemple d'un sonargramme généré par un sonar sub-bottom (Image Tellus Envirinment)}
+		\label{fig:e1790}
+	\end{figure}
+	
+	\para Tellus Environment a accès à de nombreuses bases cartographiques pour compléter les données acquises sous sa supervision pour aider à la mise en oeuvre des équipements ainsi qu'à compléter les données acquises en vue de leur traitement.
 
 	\subsection{Traitement des données}
 	\todoRediger{Expertise Tellus Traitement des données}
@@ -192,15 +217,20 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	\section{Activité R\&D}
 	\todoRediger{Activité R\&D}
 	
-	Activité: R\&D: développer des composants qui mettent en oeuvre les expertises de TellusEnvironment pour créer des produits innovants, dont les composants seraient de plus réutilisables pour améliorer la productivité des services Géophysique.
+	Tellus Environment met aussi en oeuvre une activité R\&D qui lui permet de développer des composants mettant en oeuvre les expertises de Tellus Environment pour créer des produits innovants. Les objectifs sont d'augmenter la productivité de ses activités services, ou alors répondre à des besoins  exprimés par des partenaires sur des projets spécifiques.
 
 
 	\section{Projet Symeter V2}
+	Je prends part depuis le début de mon stage au projet Symeter V2, qui vise a améliorer un produit existant, Symeter V1.
 	\todoRediger{Context Projet}
 		\subsection{Symeter V1}
-		Symeter V1: rapide rappel
-		\todoRediger{SymeterV1}
+		Symeter V1 est un équipement qui permet de mesurer en temps réel l'état de tassage d'un silo de fourrage (maïs, herbe, ...) en vue d'augmenter la qualité des silos générés. Il est basé sur un équipement de mesure Laser, le LIDAR, qui permet de collecter très rapidement de nombreux points de mesure de position d'objets. 
 		
+		\para Ce LIDAR est placé à l'aplomb du silo au sommet d'une perche de 7m de hauteur, stabilisée par un trepied. 
+		
+		\para Ce produit avait été mis en oeuvre dans le courant de l'année 2017, avait démontré que la mesure de tassage était possible et précise, mais avait mis en évidence des points d'amélioration.
+		
+
 		\subsection{Symeter V2: Objectifs}
 		\todoRediger{Symeter V2: objectifs}
 		Symeter V2: Objectifs
@@ -211,11 +241,13 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 - Mise en place de la localisation: installation et tests
 - Mise en place de l'acquisition des relevés.
 
-\chapter{Technologies, Contraintes et Plan de Projet}
-	Ce chapitre présente dans leurs grandes lignes les entrants et les contraintes mis en jeu par le projet Symeter V2. On y énumère notament les différents éléments à mettre en oeuvre pour monter le système Symeter V2: les capteurs l'environnement d'exploitation logicielle, les outils mathématiques et procédés à coordonner pour monter le prototype de Symeter 2.
+\chapter{Capteurs, Modélisation, Contraintes}
+	Ce chapitre présente dans leurs grandes lignes les capteurs cibles du projet Symeter V2, les outils de modélistation qui seront utilisés pour les mettre en oeuvre et les contraintes qui en découlent.c Les grandes étapes du projet sont enfin élaborées à la lumière de ces informations.
 	
 	\section{Capteurs}
-		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS. Cette section décrit les fonctionnalités de ces capteurs de ces capteurs.
+		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS. Cette section décrit les fonctionnalités de ces capteurs et les données qu'ils génèrent et comment ils sont mis en oeuvre dans le projet Symeter V2.
+		
+		\missingfigure{Architecture capteurs --> flux de données.}
 			
 		\subsection{LIDAR}
 		Un LIDAR est un équipement qui permet de prendre de nombreuses mesures de l'environnement à partir d'un laser. En exploitant les informations d'angle de pointage et en observant les caractéristiques du signal réfléchin tant du point de vu temporel (temps de vol, phase) que du point de vue de la forme du signal (puissance réfléchie, déphasage, distorsion, effet Doppler , ...), il est possible de mesurer de nombreuses caractéristiques de l'environnement.
@@ -240,19 +272,32 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\paragraph*{Deux grands modes de scan de l'environnement:} Il existe deux grands modes de scan de l'environnement pour un LIDAR
 		
 		\begin{description}
-			\item[Mode 2D ou  "planar":] Dans ce mode le LIDAR mesure l'environnement dans un plan unique, généralement en faisant tourner le faiseau de manière circulaire autour d'un axe.
-			\item[Mode 3D:] Dans ce mode le LIDAR mesure des portions d'espace, généralement en combinant deux rotations simulatées du faiseau, soit en faisant tourner sur un même axe de révolution plusieurs faiseaux.
+			\item[Mode 2D ou  "planar":] Dans ce mode le LIDAR mesure l'environnement dans un plan unique, généralement en faisant tourner le faiseau de manière circulaire autour d'un axe, comme illustré figure \ref{fig:lidar2d},
+			\item[Mode 3D:] Dans ce mode le LIDAR mesure des portions d'espace, généralement en combinant deux rotations simulatées du faiseau, soit en faisant tourner sur un même axe de révolution plusieurs faiseaux ayant des inclinaisons différentes (voir).
 		\end{description}
 	
-	\missingfigure{mode 2D vs mode 3D}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/lidar2d}
+		\caption[Lidar 2D]{Plan de détection d'un lidar 2D (\cite{yalcin_approaches_2013})}
+		\label{fig:lidar2d}
+	\end{figure}
+
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/lidar3d}
+	\caption[lidar3d]{Scan laser 3D (gauche) acquis au moyen d'un LIDAR \hspace{\textwidth} HDL-64E de Velodyne (droite) - Image \cite{steinbauer_tedusar_2014}}
+	\label{fig:lidar3d}
+	\end{figure}
+
+	
 		
 		\subsubsection{LIDAR Hokuyo UTM-30LX-EW}
-		Le projet Symeter V2 met en oeuvre un LIDAR de type Hokuyo UTM-30-LX-EW, le même que celui utilisépar Symeter V1. C'est un équipement robuste et précis qui est de plus bien connu par Tellus Environment.
+		Le projet Symeter V2 met en oeuvre un LIDAR de type Hokuyo UTM-30-LX-EW (figure), le même que celui utilisépar Symeter V1. C'est un équipement robuste et précis qui est de plus bien connu par Tellus Environment.
 		
-		\para Cet équipement est basé sur un laser infrarouge (longueur d'onde de 905nm) pour scanner un champ semi-circulaire de 270$\degres$. C'est un LIDAR de type "planar, temps de vol".
-		
-		\para Il mesure la distances des objets à sa portée par pas de 0,25$\degres$. La distance de détection maximale est de 30m.
+		\para Cet équipement est comporte un laser infrarouge (longueur d'onde de 905nm) pour scanner un champ semi-circulaire de 270$\degres$. C'est un LIDAR de type "planar, temps de vol". Il mesure la distances des objets à sa portée par pas de 0,25$\degres$. La distance de détection maximale est de 30m.
 		\newline
+		
 		
 		\begin{tabular}{|c|c|}
 			\hline 
@@ -269,8 +314,14 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			\hline
 		\end{tabular} 
 	
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.3\linewidth]{img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder}
+			\caption[hokuyo]{LIDAR Hokuyo UTM-30LX-EW (roboshop.com)}
+			\label{fig:hokuyo-utm-30lx-ew-scanning-laser-rangefinder}
+		\end{figure}
+	
 		\todoRediger{Décrire les caratéristiques exactes }
-		\missingfigure{Photo du Hukyo}
 		
 		\subsection{IMU}
 		Un IMU - Inertial Mesurement Unit - est un equipement comportant plusieurs capteurs inertiels, d'accélération et d'angles qui permettent avec un traitement des données approprié d'établir de suivre la pose du véhicule sur lequel il est monté.
@@ -282,9 +333,15 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Les \textbf{accéléromètres} mesurent en continu les accélérations linéaires de la partie du véhicule sur lequel l'IMU est fixé, dans trois directions différentes. Ces directions sont généralement dénotées $x,y,z$, par analogie avec le repère cartésien. Simplement, les accélérations sont mesurées dans le repère du véhicule, mobile et variable et non dans un repère absolu immobile.
 		
-		\para En combinant les variations d'inclinaison et les mesures d'accélérations linéaires dans le repère mobile du véhicule, il est possible de reconstruire avec une certaine certitude la trajectoire du véhicule dans le repère absolu, en utilisant les équations de dynamique Newtonnienne.
+		\para En combinant les variations d'inclinaison et les mesures d'accélérations linéaires dans le repère mobile du véhicule, il est possible de reconstruire avec une certaine certitude la trajectoire du véhicule dans le repère absolu, en utilisant les équations de dynamique Newtonnienne (fing \ref{fig:navinertial}).
 		
-		\missingfigure{Trajectoire et mesures}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/navinertial}
+			\caption[Navigation Inertielle]{Principe de la Navigation Inertielle}
+			\label{fig:navinertial}
+		\end{figure}
+		
 		
 		\para Comme indiqué ci-dessus, un IMU possède souvent un \textbf{magnétomètre}. Celui-ci permet de mesurer la direction et l'intensité du champ magnétique terrestre par rapport à l'IMU et permet d'en dériver le cap, la direction vers lequel le véhicule pointe sur la surface de la Terre. 
 		
@@ -294,10 +351,16 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Par contre, un IMU peut fournir ses informations avec un très haut taux de rafraichissement, sans nécessiter d'information extérieure au véhicule. Il peut donc se révéler indispensable lorsqu'aucune autre nouvelle information sur la position du véhicule n'est disponible sur des périodes de temps plus ou moins longue.
 		
-		\subsubsection{IMU XSense}
+		\subsubsection{IMU XSense MTi 28A53G35}
 		\todoRediger{données générées par un IMU}
-		\missingfigure{graphes temporels des données générées par l'IMU}
-		\missingfigure{Photo de l'IMU xsense}
+		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.3\linewidth]{img/150px-Mti}
+			\caption[mti]{IMU Xsens MTi-28A53G35}
+			\label{fig:150px-mti}
+		\end{figure}
+		
 		
 		\subsection{GPS en mode RTK}
 		
@@ -310,122 +373,61 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Le principe de base est celui de la triangulation: les satellites GPS émettent en permanence un signal comportant une horloge (temps GPS). En connaissant les éphémérides des satellites et en écoutant les signaux de plusieurs de ces satellites, notamment leur signal d'horloge respectif, un récepteur GPS peut calculer avec une grande précision la position de chacun des satellites émetteurs dans le référentiel géocentrique.
 		
-		\para Une fois le positionnement des satellites établi, une simple triangulation permet de calculer avec une grande précision du récepteur sur la surface de la Terre.
+		\para Une fois le positionnement des satellites établi, une simple triangulation permet de calculer avec une grande précision du récepteur sur la surface de la Terre (voir \ref{fig:gnss}).
 		
 		\para Pour obtenir une précision suffisante, un récepteur doit écouter au moins 4 satellites en même temps.
 		
-		\missingfigure{GPS en mode simple}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/gnss}
+			\caption[gpssimple]{Principe de fonctionnement du GPS simple (image \cite{jeffrey_introduction_2010})}
+			\label{fig:gnss}
+		\end{figure}
 		
 		\subsubsection{Principe du mode RTK}
-		Le mode RTK du système GPS est un mode de fonctionnement qui permet de mesurer avec une très grande précision la position relative de deux récepteurs GPS distincts. L'un, dénommé \textbf{la base} est un récepteur fixe, dont la position GPS est connue avec une grande précision. L'autre dénommé \textbf{le rover} est en communication constante avec la base au moyen d'un liaison radio adaptée.
+		Le mode RTK du système GPS est un mode de fonctionnement qui permet de mesurer avec une très grande précision la position relative de deux récepteurs GPS distincts. L'un, dénommé \textbf{la base} est un récepteur fixe, dont la position GPS est connue avec une grande précision. L'autre dénommé \textbf{le rover} est en communication constante avec la base au moyen d'un liaison radio adaptée (voir \ref{fig:rtk})
 		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/rtk}
+			\caption[gpsrtk]{Principe de fonctionnement GPS RTK (image \cite{jeffrey_introduction_2010}) }
+			\label{fig:rtk}
+		\end{figure}
+	
 		\para Les deux récepteurs étant présents sur le même site à la surface de la Terre, ils seront à l'écoute tous les deux mêmes satellites. En comparant les signaux reçus d'un même satellite par la base et le rover, le rover est en mesure de calculer avec une très grande précision - de l'ordre du centimetre - la différence de distante entre la base et le satellite d'une part, et le rover et le satellite de l'autre part. 
 		
-		\missingfigure{GPS en mode RTK}
-		
+
 		\para En combinant ces différences de distance à partir de plusieurs satellites, le rover est donc capable de calculer très précisément sa position relativement à la base.
-	
-		\todoTrouverRefExt{GPS en mode RTK}
-		
-		
-		\missingfigure{Photo base + rover RTK}
-		
+		\newpage
 		
 		
 	\section{Environnement de programmation: ROS}
 	Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
-	
-	\missingfigure{Quelques robots powered by ROS}
-	
-	\para ROS est un environnement logiciel destiné à la mise en oeuvre de plateforme robotique. Cet environnement très modulaire permet de programmer et de déployer de nombreux modules interdépendants, appelés \textbf{packages}, constitués eux de noeuds exécutables appelés \textbf{nodes}.
-	
-	\para Ces nodes peuvent communiquer entre eux aux moyens de deux mécanismes principaux: \begin{itemize}
-		\item les services
-		\item les topics
-	\end{itemize}
 
-	\para Ces deux mécanismes permettent l'échange de données entre nodes selon des messages de la structure peut être spécifiée par le développeur du système.
 	
-	\para Les \textbf{services} sont mis à disposition chacun par un node. Ils peuvent être invoqués par d'autre node en effectuant une transaction explicite: le node appelant fourni une donnée d'entrée au node mettant à disposition le service. Ce dernier traite la donnée entrante puis génére une donnée de sortie qui est enfin renvoyée au node, terminant ainsi la transaction.
-	
-	\para Les \textbf{topics} sont des canaux de diffusion d'information similaire à une autoroute: tout node peut diffuser un message vers un topic et tout node peut écouter un topic pour recevoir et traiter les messages qui y sont émis.
-	
-	\missingfigure{Exemple d'une structure en packages, noden topics et services}
-	
-	\para Ces topics pourvoient des données que l'on pourrait qualifier de "sensorielle", dont la durée de vie est courte, telle que les données générées par un capteur fournissant des données en continu. 
-	
-	\para Ils sont aussi le support de diffusion des \textbf{transformations}, qui permettent de décrire l'état de \textbf{pose} de chacuns des composants mécaniques d'un véhicule autonome, ainsi que la pose du véhicule dans son environnement.
-	
-	\para ROS est un environnement fourni sous une licence Open Source et propose des drivers pour de très nombreux capteurs et actionneurs de tous types. Il intègre aussi des composants logiciels tiers spécialisés tels que, entre autre, la Point Cloud Library pour le traitement des nuages de points et la librairie OpenCV pour le traitement de la vision par ordinateur.
 	
 		
-	\section{Les outils mathématiques}
+	\section{Modélisation}
 	\todoObjectif{Introduire les concepts, indiquer qu'ils seront approfondis dans la suite du document.}
 	
 	\para Comme indiqué en introduction, le système Symeter V2 sera une plateforme semi-autonome, qui devra être en mesure de fournir une aide à la décision à partir de mesures effectuées depuis une plateforme mobile, et ceux avec une intervention humaine minimale.
 	
 	\para Symeter V2 devra donc estimer en temps réel sa pose, afin de pouvoir intégrer une représentation 3D du chantier afin de pouvoir effectuer son service.
 	
-	\para Les outils mathématiques qui devront être mis en oeuvres sont essentiellement ceux mis en oeuvre dans les systèmes robotiques:
+	\para Les outils de modélisation qui devront être mis en oeuvres sont essentiellement ceux mis en oeuvre dans les systèmes robotiques:
 	 \begin{itemize}
-	 	\item Les \textbf{poses}, c'est à dire la représentation de la position des capteurs et des éléments mécaniques du véhicule les uns par rapport aux autres, et celle du véhicule par rapport à son environnement.
-	 	\item L'estimation de paramètres à partir d'un ensemble de mesures issues de différents capteurs, au moyen de la \textbf{fusion de données}
-	 	\item Reconstruction d'une scène 3D à partir de nuages de points
+	 	\item Les \textit{poses}et les \textit{transformation}: La pose des capteurs et des éléments mécaniques du véhicule les uns par rapport aux autres, et celle du véhicule par rapport à son environnement.
+	 	\item L'estimation de paramètres à partir d'un ensemble de mesures issues de différents capteurs, au moyen de la \textit{fusion de données}
+	 	\item Reconstruction d'une scène 3D à partir de \textit{nuages de points}.
 	 \end{itemize} 
  
-   \para Ces outils sont décrits plus en détail dans les section suivants.
-	
-	
-		\subsection{Positionnement en Robotique: Poses}
-		
-		La robotique à pour enjeu de permettre la mise en oeuvre de systèmes mécaniques autonomes, mobiles ou non, qui mettent en oeuvre une série de capteurs et d'actionneurs pour agir sur leur environnement avec une interaction humaine très limitées.
-		
-		\para La capacité de représenter de manière fine la position des différents éléments d'un tel système les uns par rapport aux autres, que ce soit en position $x,y,z$, mais aussi en inclinaison - $\theta_x$ (tanguage), $\theta_y$ (roulis), $\theta_z$ (lacet) - est donc primordiale. L'état de l'élément décrit par ce vecteur $x,y,z, \theta_x, \theta_y, \theta_z$ est appelé sa \textbf{pose}.
-		
-		\missingfigure{Pose 3D d'un objet}
-				
-		\para Les outils mathématiques de prédilection pour décrire une pose sont bien sur les transformations dans $\mathbb{R}^3$, translations et rotations. Cependant le système de coordonnées classique à 3 dimensions spatiales $x,y,z$ ne permet pas de combiner simplement les transformation 3D, ce qui est un besoin de base pour passer d'un réferentiel à un autre.
-		
-		\para C'est pour cela que la robotique fait une utilisation intensive des \textbf{Coordonnées Homogènes}, issues de la géométrie projective, qui permettent de combiner les transformation 3D en passant par un espace à 4 dimensions approprié. Les transformations y sont représentées par des matrices de $\mathbb{R}^{4 \times 4}$, ce qui permet de combiner les transformations par simple multiplication de matrices.
-		
-		\para Les principes de base des coordonnées homogènes sont décrites en Annexe XXX \todoAjouterRef{Lien vers l'annexe}
-		
-		\para Les rotations dans l'espace sont aussi représentables par des quaternions de norme unitée. Cette représentation est souvent préférées par la robotique par rapport à une représentation basée sur les rotations eulériennes car elle permet de combiner les rotations sans rentrer dans un "gimbal lock". 
-		
-		\para ROS utilise les quaternions de manière native dans la description de ses transformations. \todoAjouterRef{Quaternion et quaternions unité}
-		
-			
-		\subsection{Localisation par fusion de données}
-		\label{intro-loc-fusion-donnees}
-		
-		Afin de pouvoir reconstituer le chantier en une représentation 3D avec une précision centimétrique, il est nécessaire que pour chaque mesure LIDAR le système Symeter V2 aie une estimation suffisamment précise de la pose du véhicule, afin de déterminer la pose du LIDAR et pouvoir situer dans le chantier la position $x,y,z$ de chaque point mesuré.
-		
-		\para Le problème de la localisation du véhicule est donc le suivant:
-		\para Estimer à chaque instant $t_n$ le vecteur d'état:
-		\begin{equation}
-		\mathbf{X} = \begin{bmatrix}
-			x_n \\ y \\ z \\ \theta_x \\ \theta_y \\ \theta_z
-		\end{bmatrix}
-		\end{equation}
-		du véhicule à partir des données disponibles.
-		
-		\missingfigure{Flux de données IMU + GPS --> $X$}
-		
-		\para Les sources de données disponibles pour estimer la pose du véhicule à chaque instant sont:
-		\begin{itemize}
-			\item L'IMU,
-			\item Le GPS en mode RTK.
-		\end{itemize}
-		
-		\para L'IMU fourni des informations sur l'inclinaison du véhicule, ainsi que les accélérations linéaires qu'il subit à une fréquence de l'ordre de 30 Hz. Cependant comme indiqué ci-dessus, calculer la position du véhicule à partir de la mesure des accélérations subies requiert une double intégration, sur un signal d'accélération qui estgénéralement très biruité. Ces éléments impliquent une forte probabilité de dérive dans le temps.
-		
-		\para Le GPS en mode RTK peut fournir une mesure de la position du véhicule dans la scène avec une précision de l'ordre de quelques centimètres, mais à un taux de rafraichissement beaucoup plus bas, de l'ordre de 2 à 5 Hz. De plus le GPS ne fournit aucune information sur l'assiette du véhicule.
+   \para Ces outils sont décrits plus en détail dans les chapitres suivants.
 		
 			
 		\todoRediger{introduire les filtres de Kalman}
 		\missingfigure{chaine de traitement de fusion de données}
 		\todoAjouterRef{Filter de Kalman pour la fusion de données.}
-		\todoCompleter{Comme le GPS fourni une position absolue dans le référentiel de la scène nous ne sommes pas dans une problématique SLAM. Le véhicule n'est pas autonome, la navigation est assurée par l'opérateur du tracteur.}
+		
 			
 		
 		\subsection{Traitement des nuages de points}
@@ -460,24 +462,20 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			\subsubsection{Environnement de simulation Gazebo}
 			
 			Gazebo est un environnement de simulation très complet, qui permet de simuler un environnement physique dans lequel une plateforme semi-robotique simulée peut évoluer. 
-		
-			\todoRediger{De nombreux capteurs virtuels disponibles, possibilité de faire varier les incertitudes}
+			
+			\para Cette plateforme simulée peut mettre en oeuvre un grand nombre de capteurs et actuateurs virtuel et ainsi offrir une grande fidélité dans le mise en oeuvre logicielle de la plateforme robotique.
 			
 			\para Gazebo est un logiciel intégré à ROS. Sa mise en oeuvre requiert de programmer un véhicule virtuel similaire à la plateforme cible du système (dans notre cas un tracteur avec les capteurs listés dans les sections précédentes), puis de déployer le logiciel ROS pour Symeter V2 sur ce véhicule simulé. 
 			
 			\para Il est aussi possible de spécifier le "monde" dans lequel le tracteur simulé évoluera, en y ajoutant des murs, du relief, voire une butte en guise de tas d'ensilage.
-		
-			\missingfigure{Capture d'écran Gazebo avec le tracteur et le silo}
+
 			
-			\para Gazebo est donc utilisé pour simuler un chantier d'ensilage pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
+			\para Il est donc envisageable d'utiliser Gazebo pour simuler un chantier d'ensilage pour tester la localisation, l'acquisition du terrain, la mesure d'un modèle de Silo.
 			
 			\subsubsection{Prototype monté sur Camionnette}
 			
 			Une simulation n'étant jamais parfaite (comme nous le verrons par la suite), il est quand même nécessaire d'effectuer des certains tests avec des instruments réels, lors de tests en grandeur.
 		
-			\missingfigure{Maquette avec équipements réels montés sur une camionnette.}
-	
-				
 			\para Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
 			
 			\para Le prototype comporte:
@@ -488,7 +486,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 				\item Un IMU de type XSense
 			\end{itemize}
 		
-			\para Ce prototype a été utilisé pour effectuer des captures des trois capteur alors que la Tellus Car évoluait dans le parking adjacent aux locaux de Tellus Environnement.
+			\para Ce prototype a été utilisé pour effectuer des captures des trois capteurs alors que la Tellus Car évoluait dans le parking adjacent aux locaux de Tellus Environnement.
 		
 	\section{Les grandes phases du stage}
 	
@@ -526,6 +524,8 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 
 Comme indiqué dans le chapitre précédent, il a été très tôt dans le projet décidé d'utiliser l'environnement logiciel ROS pour implémenter le système Symeter V2. Il avait aussi été décidé de monter un véhicule simulé à l'aide de Gazebo afin d'effectuer le développement initial.
 
+
+
 \para Ce chapitre présente en détail l'environnement logiciel ROS et le logiciel de simulation Gazebo. Cette présentation est illustrée par la construction d'un robot virtuel simple, pour lequel un retour d'expérience est effectué en fin de chapitre suite à cette première expérience.
 
 \para L'implémentation du tracteur de test est ensuite présentée en fin de chapitre.
@@ -536,29 +536,79 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 	
 	\para ROS en est maintenant à sa 11\textsuperscript{ème} distribution, dénommée "ROS Lunar Loggerhead", distribution qui sera utilisée pour Symeter V2.
 	
-	\missingfigure{Photo d'exemples de robots, roues, bras, humanoides, etc}
-		\subsection{Architecture de ROS}
-		\todoRediger{ROS est un environnement permettant le montage de plateformes robotiques complètes.}
-		\todoRediger{Architecture logicielle très modulaire}
-		\todoRediger{Nodes, services, topics, capteurs, etc}
-		\missingfigure{Exemple de node}
-		\subsection{Gestion des transformations}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/robotsros}
+		\caption[robotsros]{Quelques exemples de robots utilisant ROS (image \cite{martinez_learning_2013})}
+		\label{fig:robotsros}
+	\end{figure}
+	
+	
+	\para ROS est un environnement logiciel destiné à la mise en oeuvre de plateforme robotique. Cet environnement très modulaire permet de programmer et de déployer de nombreux modules interdépendants, appelés \textbf{packages}, constitués eux de noeuds exécutables appelés \textbf{nodes}.
+	
+	\para Ces nodes peuvent communiquer entre eux aux moyens de deux mécanismes principaux: \begin{itemize}
+		\item les services
+		\item les topics
+	\end{itemize}
+	
+	\para Ces deux mécanismes permettent l'échange de données entre nodes selon des messages de la structure peut être spécifiée par le développeur du système.
+	
+	\para Les \textbf{services} sont mis à disposition chacun par un node. Ils peuvent être invoqués par d'autre node en effectuant une transaction explicite: le node appelant fourni une donnée d'entrée au node mettant à disposition le service. Ce dernier traite la donnée entrante puis génére une donnée de sortie qui est enfin renvoyée au node, terminant ainsi la transaction.
+	
+	\para Les \textbf{topics} sont des canaux de diffusion d'information similaire à une autoroute: tout node peut diffuser un message vers un topic et tout node peut écouter un topic pour recevoir et traiter les messages qui y sont émis.
+	
+	\para Ces topics pourvoient des données que l'on pourrait qualifier de "sensorielle", dont la durée de vie est courte, telle que les données générées par un capteur fournissant des données en continu. 
+	
+	\para Ils sont aussi le support de diffusion des \textbf{transformations}, qui permettent de décrire l'état de \textbf{pose} de chacuns des composants mécaniques d'un véhicule autonome, ainsi que la pose du véhicule dans son environnement.
+	
+	\para ROS est un environnement fourni sous une licence Open Source et propose des drivers pour de très nombreux capteurs et actionneurs de tous types. Il intègre aussi des composants logiciels tiers spécialisés tels que, entre autre, la Point Cloud Library pour le traitement des nuages de points et la librairie OpenCV pour le traitement de la vision par ordinateur.
+	
+
+	\subsection{Gestion des transformations}
+		
+			\subsubsection{Poses}
+		
+		La robotique à pour enjeu de permettre la mise en oeuvre de systèmes mécaniques autonomes, mobiles ou non, qui mettent en oeuvre une série de capteurs et d'actionneurs pour agir sur leur environnement avec une interaction humaine très limitées.
+		
+		\para La capacité de représenter de manière fine la position des différents éléments d'un tel système les uns par rapport aux autres, que ce soit en position $x,y,z$, mais aussi en inclinaison - $\theta_x$ (tanguage), $\theta_y$ (roulis), $\theta_z$ (lacet) - est donc primordiale. L'état de l'élément décrit par ce vecteur $x,y,z, \theta_x, \theta_y, \theta_z$ est appelé sa \textbf{pose}.
+		
+		\missingfigure{Pose 3D d'un objet}
+		
+		\para Les outils mathématiques de prédilection pour décrire une pose sont bien sur les transformations dans $\mathbb{R}^3$, translations et rotations. 
+		
+		
+		\para ROS utilise les quaternions de manière native dans la description de ses transformations. \todoAjouterRef{Quaternion et quaternions unité}
+		
+		
+		
 		\todoRediger{précision d'évolution d'un plateforme robotique dépend de la prise en compte de la position relative de ses différents capteurs et actionneurs}
 		\subsection{Gestions des Capteurs}
 		
 		\todoRediger{un petit laïus surt les capteurs supportés}
+		\newpage
 	\section{Présentation de Gazebo}
 	
 	Gazebo est un logiciel qui permet de simuler un "monde" virtuel 3D, dans lequel il est possible de plonger des véhicules robotiques qui seront alors soumis aux lois physiques simulées.
+		
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/gazebo}
+		\caption[gazebo]{Capture d'écran de l'interface graphique de Gazebo}
+		\label{fig:gazebo}
+	\end{figure}
 	
-	\missingfigure{Capture d'écran de gazebo}
 		\subsection{Construction d'un robot virtuel}
 		
-		Un robot virtuel sous Gazebo est décrit par un fichier XML au format SDF. Ce format permet de spécifier un robot en ses éléments constitutifs simplifiés (link) chassis, roue, partie de bras, etc) de décrire comment ces éléments sont placés les uns par rapport au autres.
+		Un robot virtuel sous Gazebo est décrit par un fichier XML au format URDF. Ce format permet de spécifier un robot en ses éléments constitutifs simplifiés (chassis, roue, partie de bras, etc) de décrire comment ces éléments sont placés les uns par rapport au autres.
 		
-		\para Chaque élément  du robot doit comporter 3 parties différentes
+		\para Chaque élément  du robot doit comporter 3 parties différentes:
+		\begin{itemize}
+			\item un tag \verb|<collision>| qui décrit le modèle 3D avec lequel le simulateur doit calculer les collisions de l'élément avec d'autre objets,
+			\item un tag \verb|<visual>| qui décrit le modèle 3D de l'apparence visuelle de l'élément (pour affichage dans le simulateur),
+			\item un tag \verb|<inertial>| qui décrit les caractéristiques intertielles de l'élement.
+		\end{itemize}
 		
-		\para Ce robot doit faire partie d'un monde qui est lui même décrit par un fichier SDF. 
+		\para Ce robot doit faire partie d'un monde qui est lui même décrit par un fichier URDF. 
 		
 		\todoTrouverRefExt{SDF}
 
@@ -647,14 +697,66 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 			\missingfigure{Tableau avec la correspondance entre vitesse roue et topic, angle direction et roue directionnelle}
 		\subsubsection{Propulsion et Guidage}
 		
-		
-		
-			Du fait des contraintes exposées dans le paragraphe \ref{conc-contrainte-gazebo}, la consigne de vitesse sur chacune des roues doit être cohérente vis-à-vis de la vitesse de consigne, le rayon de chacune des roues ainsi que le rayon de virage imposé.
+			Du fait des contraintes exposées dans le paragraphe \ref{conc-contrainte-gazebo}, la consigne de vitesse sur chacune des roues doit être cohérente vis-à-vis de la vitesse de consigne, vis-à-vis du rayon de chacune des roues, ainsi qu'avec le rayon de virage imposé. De plus l'angle de chacune des roues directrices doit être réglé de manière différentielle en fonction de l'angle de direction donné en consigne.
 			
 			\paragraph{Algorithme}
 			\label{algo-steering}
 			
-			\todo[inline]{Description géométrique du problème de direction différentielle}
+			\begin{figure}[!]
+				\centering
+				\includegraphics[width=0.7\linewidth]{img/ackermann}
+				\caption[Géométrie Différentiel]{Géométrie du différentiel de direction}
+				\label{fig:ackermann}
+			\end{figure}
+		
+			\para La problématique de la direction est illustrée par la figure \ref{fig:ackermann}: si l'on donne une consigne d'angle de direction générale $\phi$, quels doivent être les angles $\phi_l$, pour la roue avant gauche, et $\phi_r$, pour la roue avant droite, pour que ces deux roues restent tangentes à leur trajectoire propre?.
+			
+			\para Les données d'entrée sont les suivantes:
+			\begin{itemize}
+				\item $L$ l'empattement du tracteur, c'est à dire la distance entre les deux essieux,
+				\item $l$ la distance entre l'axe avant/arrière du tracteur et le centre d'une roue avant (les roues sont supposées disposées de manière symétrique),
+				\item $\phi$ l'angle de consigne.
+			\end{itemize}
+		
+			\para Pour déterminer tous ces angles, nous d'abord devons déterminer $R$ le rayon de courbure de la trajectoire du point central B de l'essieu arrière. Si nous considérons le triangle rectangle (OAB), nous constatons que l'angle (OA,OB) est le même que $\phi$. Nous pouvons donc écrire, en posant $L=$ AB et $R=$ OB 
+			
+			\begin{equation}
+			\tan{\phi} = \frac{L}{R} \\
+			\end{equation}
+			
+			d'où
+			
+			\begin{equation}
+			\label{eq:diff_r}
+			R = \frac{L}{\tan{\phi}}
+			\end{equation}
+			
+			\para Par un raisonnement similaire nous pouvons trouver une formule pour $\phi_l$ et $\phi_r$:
+			
+			\begin{gather}
+			\label{eq:phi_l}
+			\tan{\phi_l} = \frac{L}{R+l} \Longleftrightarrow \phi_l = \arctan{\frac{L}{R+l}} \\[2ex]
+			\tan{\phi_r} = \frac{L}{R-l} \Longleftrightarrow \phi_r = \arctan{\frac{L}{R-l}}
+			\end{gather}
+			
+			En incorporant \ref{eq:diff_r} dans \ref{eq:phi_l}, nous obtenons
+			
+			\begin{equation}
+			\phi_l = \arctan{\frac{L}{\frac{L}{\tan{\phi}} + l}} = \arctan{\frac{L}{\frac{L + l\tan{\phi}}{tan{\phi}}}} = \arctan{\frac{L \tan{\phi}}{L+l \tan{\phi}}}
+			\end{equation}
+			
+			\para De manière équivalente, 
+			
+			\begin{equation}
+			\phi_r = \arctan{\frac{L\tan{\phi}}{L - l \tan{\phi}}}
+			\end{equation}
+			
+			\paragraph*{Réglage des vitesses de rotation:} En plus du différentiel d'angle des roues directionnelles, la vitesse de rotation de toutes les roues doit être précisément réglée lors un virage pour éviter tout dérapage.
+			
+			\para Toujours selon la figure \ref{fig:ackermann}, nous constatons que, lors d'un virage à angle constant, chacunes des roues parcourt son propre cercle de centre O. 
+			
+			\para Si la vitesse de consigne $v$ est donnée pour le milieu de l'essieu arrière (point B), quelle doit être la vitesse de rotation des roues pour que la vitesse de consigne soit suivie par le point B?
+			
 			
 			\paragraph{Implémentation sous ROS}
 			
@@ -670,7 +772,7 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 		
 			\para Ces consignes sont soumises à chacun des contrôleur par l'intermediaire des topics qui leur sont dédiés \todoAjouterRef{tableau avec les topics}.
 			
-			
+			\todoCompleter{Calcul des vitesses de rotation}
 			
 			\todo{Description de l'implémentation sous ROS}
 			\missingfigure{Schéma des flux topic qui permet de transformer une commande twist en 4 commandes de velocités.}
@@ -696,9 +798,16 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	sur la base d'informations fournies par l'IMU et le GPS en mode RTK, ce vecteur d'état étant exprimé dans un référentiel fixe par rapport au chantier.
 	
+	\para L'IMU fourni des informations sur l'inclinaison du véhicule, ainsi que les accélérations linéaires qu'il subit à une fréquence de l'ordre de 30 Hz. Cependant comme indiqué ci-dessus, calculer la position du véhicule à partir de la mesure des accélérations subies requiert une double intégration, sur un signal d'accélération qui estgénéralement très biruité. Ces éléments impliquent une forte probabilité de dérive dans le temps.
+	
+	\para Le GPS en mode RTK peut fournir une mesure de la position du véhicule dans la scène avec une précision de l'ordre de quelques centimètres, mais à un taux de rafraichissement beaucoup plus bas, de l'ordre de 2 à 5 Hz. De plus le GPS ne fournit aucune information sur l'assiette du véhicule.
+	
+	
 	\missingfigure{Représentation du vecteur d'état par rapport au chantier}
 	
-	\para Selon \cite{gustavsson_uav_2015}, il est possible de mettre en place un procédé qui maintient ce vecteur d'état sur la base de ces deux instruments.
+	\para Selon \cite{gustavsson_uav_2015}, il est possible de mettre en place un procédé qui maintient ce vecteur d'état sur la base de ces deux instruments, communément appelé la "fusion de capteurs". Nous mettrons en oeuvre un tel procédé.
+	
+	\textit{Note} Comme le GPS fourni une position absolue dans le référentiel de la scène nous ne sommes pas dans une problématique SLAM, où l'on tente de déterminer de manière imbriquée la position et l'environnement du véhicule. Dans notre cas, les deux problèmes sont décorrélés: d'abord nous déterminons la localisation et ensuite nous déterminons l'environnement. 
 	
 	\subsection{Repères}
 	
@@ -897,7 +1006,6 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	
 	\subsection{Estimation de Pose 3D: Filtres de Kalman Etendus}
-	\todoRediger{pour les systèmes dynamiques non linéaires}
 	
 	Dans la plupart des applications d'estimation d'état, la dynamique des systèmes à estimer n'est pas linéaire et le filtre de Kalman ne peut pas être appliqué en l'état car toute sa formulation se base sur des hypothèses de linéarités fortes.
 	
@@ -1045,6 +1153,8 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 		
 		\para Cela met cependant une contrainte forte sur la structure de données stockant les points déjà accumulés: il faut pouvoir identifier de manière unique tous les éléments de volume inclus dans la représentation de la scène afin de pouvoir détecter les collisions.
 		
+		\cite{shekhar_encyclopedia_2017}
+		
 		\subsection{Principe de stockage des données 3D}
 		\todoRediger{les structures de données de stockage de l'information 3D}
 		\todoTrouverRefExt{les structures de données 3D}
@@ -1159,6 +1269,22 @@ La simulation peut permettre la mise au point de la localization, de l'acquisiti
 
 
 \chapter{Conclusion}
+
+A l'issue de se stage 
+
+Confirmé que la simulation pouvait permettre le développement du produit symeter2,
+
+nous avons implémenté une plateforme de test simulé sous Gazebo,
+
+nous avons mis en place le système de localisation à partir en mettant en oeuvre un composant pré-éxistant de fusion de capteurs à partir des signaux de l'IMU et du GPS.
+
+nous avons mis en place la chaine de traitement des données Lidar en utilisant principalement les composants "sur étagère" Point Cloud Library et Octomap.
+
+nous avons généré un nuage de points 3D d'un chantier d'ensilage simulé, validant ainsi la faisabilité de Symeter V2.
+
+Nous avons aussi tenté d'utiliser le prototype de Symeter V2 pour exploiter des captures réelles.
+
+Nous avons ainsi pu dégager des axes d'améliorations pour parvenir à améliorer la localisation des points, et ainsi améliorer la qualité du nuage de point.
 
 \begin{appendix}
 	\chapter{Représentation de l'Attitude et des Rotations}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  21 AUG 2018 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  27 AUG 2018 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,47 +1014,65 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip57
 )
-\c@mypagecount=\count154
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen180
+\captionmargin@=\dimen181
+\captionwidth=\dimen182
+\caption@tempdima=\dimen183
+\caption@indent=\dimen184
+\caption@parindent=\dimen185
+\caption@hangindent=\dimen186
+)
+\c@ContinuedFloat=\count154
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@mypagecount=\count155
 
 (./rapportStage.aux)
 \openout1 = `rapportStage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Info: Redefining \degres on input line 38.
-LaTeX Info: Redefining \dots on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Info: Redefining \degres on input line 39.
+LaTeX Info: Redefining \dots on input line 39.
 Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 38.
+(frenchb.ldf)             reported on input line 39.
 Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)             reported on input line 38.
-LaTeX Info: Redefining \up on input line 38.
+(frenchb.ldf)             reported on input line 39.
+LaTeX Info: Redefining \up on input line 39.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count155
-\scratchdimen=\dimen180
+\scratchcounter=\count156
+\scratchdimen=\dimen187
 \scratchbox=\box44
-\nofMPsegments=\count156
-\nofMParguments=\count157
+\nofMPsegments=\count157
+\nofMParguments=\count158
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count158
-\MPscratchDim=\dimen181
-\MPnumerator=\count159
-\makeMPintoPDFobject=\count160
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen188
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
 \everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1083,15 +1101,15 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \celsius on input line 38.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 38.
+LaTeX Info: Redefining \celsius on input line 39.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 39.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 38.
-Package gensymb Info: Using \Omega for \ohm on input line 38.
+LaTeX Info: Redefining \ohm on input line 39.
+Package gensymb Info: Using \Omega for \ohm on input line 39.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1130,44 +1148,46 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 39.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count161
+\c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (./rapportStage.out) (./rapportStage.out)
 \@outlinefile=\write4
 \openout4 = `rapportStage.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 86.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 86.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<img/logo-tellusenv.png, id=441, 279.0425pt x 86.3225pt>
+<img/logo-tellusenv.png, id=433, 279.0425pt x 86.3225pt>
 File: img/logo-tellusenv.png Graphic file (type png)
 
 <use img/logo-tellusenv.png>
-Package pdftex.def Info: img/logo-tellusenv.png used on input line 115.
+Package pdftex.def Info: img/logo-tellusenv.png used on input line 116.
 (pdftex.def)             Requested size: 275.92932pt x 85.35826pt.
- <img/univ.jpeg, id=443, 304.4976pt x 156.8259pt>
+ <img/univ.jpeg, id=435, 304.4976pt x 156.8259pt>
 File: img/univ.jpeg Graphic file (type jpg)
 
 <use img/univ.jpeg>
-Package pdftex.def Info: img/univ.jpeg used on input line 116.
+Package pdftex.def Info: img/univ.jpeg used on input line 117.
 (pdftex.def)             Requested size: 165.7365pt x 85.35826pt.
  [1
 
@@ -1177,22 +1197,22 @@ ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdopdfTeX warning (ext4):
 licate ignored
 <to be read again> 
                    \relax 
-l.40 ...ion de donn\IeC {\'e}es.}{17}{section*.72}
+l.37 ...o}}\ AJOUTER REF figure}{38}{section*.179}
                                                    [1
 
 
-] [2] [3])
+] [2])
 \tf@tdo=\write5
 \openout5 = `rapportStage.tdo'.
 
- [4]
+ [3]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 145.
+ine 154.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \tableofcontents
+l.159 \tableofcontents
                        [1
 
 
@@ -1201,24 +1221,19 @@ l.158 \tableofcontents
 r (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...Architecture de ROS}{22}{subsection.3.1.1}
+l.37 ...stions des Capteurs}{22}{subsection.3.1.2}
                                                    [2
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 ...\_cloud\_aggregator}{37}{subsection.5.3.1}
+l.83 ... notre besoin.}{41}{subsubsection.5.3.2.3}
                                                    [3])
 \tf@toc=\write6
 \openout6 = `rapportStage.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \newpage
-               [4]
+ [4]
 Chapitre 1.
 
 Overfull \hbox (69.77509pt too wide) in paragraph at lines 172--172
@@ -1230,211 +1245,306 @@ Overfull \hbox (69.77509pt too wide) in paragraph at lines 172--172
 [][][] 
  []
 
-[5
+<img/IMG_0332.jpg, id=773, 797.98125pt x 1316.92pt>
+File: img/IMG_0332.jpg Graphic file (type jpg)
+ <use img/IMG_0332.jpg>
+Package pdftex.def Info: img/IMG_0332.jpg used on input line 183.
+(pdftex.def)             Requested size: 158.53807pt x 261.6311pt.
+
+<img/sonar.png, id=774, 549.55313pt x 770.88pt>
+File: img/sonar.png Graphic file (type png)
+ <use img/sonar.png>
+Package pdftex.def Info: img/sonar.png used on input line 189.
+(pdftex.def)             Requested size: 158.53807pt x 222.38496pt.
+
+<img/radargram.png, id=775, 1371.1225pt x 704.6325pt>
+File: img/radargram.png Graphic file (type png)
+ <use img/radargram.png>
+Package pdftex.def Info: img/radargram.png used on input line 197.
+(pdftex.def)             Requested size: 317.07614pt x 162.94371pt.
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 202--202
+[][][] 
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 202--202
+[][][] 
+ []
+
+<img/E1790.png, id=776, 1028.34187pt x 578.16pt>
+File: img/E1790.png Graphic file (type png)
+ <use img/E1790.png>
+Package pdftex.def Info: img/E1790.png used on input line 206.
+(pdftex.def)             Requested size: 317.07614pt x 178.26614pt.
+ [5
 
 ]
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 182--182
-[][][] 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 182--182
-[][][] 
- []
-
-[6] [7]
+[6 <./img/IMG_0332.jpg> <./img/sonar.png> <./img/radargram.png (PNG copy)>]
+[7 <./img/E1790.png (PNG copy)>] [8]
 Chapitre 2.
-[8
+[9
 
 ]
-Overfull \hbox (0.75607pt too wide) in paragraph at lines 234--235
+Overfull \hbox (0.75607pt too wide) in paragraph at lines 266--267
 []\T1/cmr/m/n/12 les LI-DAR de ce type émettent un si-gnal pé-rio-dique continu
 
  []
 
+<img/lidar2d.png, id=813, 516.93124pt x 287.0725pt>
+File: img/lidar2d.png Graphic file (type png)
+ <use img/lidar2d.png>
+Package pdftex.def Info: img/lidar2d.png used on input line 281.
+(pdftex.def)             Requested size: 317.07614pt x 176.09079pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/lidar3d.png, id=816, 820.06375pt x 384.43625pt>
+File: img/lidar3d.png Graphic file (type png)
+ <use img/lidar3d.png>
+Package pdftex.def Info: img/lidar3d.png used on input line 288.
+(pdftex.def)             Requested size: 317.07614pt x 148.64487pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding:
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble.
-(frenchb.ldf)                Degrees used on input line 252.
+(frenchb.ldf)                Degrees used on input line 298.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 298--300
 
  []
 
-[9] [10] [11] [12] [13] [14]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 391--391
+
+<img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg, id=819, 481.8pt x 481.8
+pt>
+File: img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg Graphic file (type 
+jpg)
+ <use img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg>
+Package pdftex.def Info: img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg 
+used on input line 319.
+(pdftex.def)             Requested size: 135.89174pt x 135.8882pt.
+ [10] [11 <./img/lidar2d.png> <./img/lidar3d.png> <./img/hokuyo-utm-30lx-ew-sca
+nning-laser-rangefinder.jpg>] <img/navinertial.png, id=843, 698.61pt x 383.4325
+pt>
+File: img/navinertial.png Graphic file (type png)
+
+<use img/navinertial.png>
+Package pdftex.def Info: img/navinertial.png used on input line 340.
+(pdftex.def)             Requested size: 317.07614pt x 174.0291pt.
+ [12 <./img/navinertial.png>]
+<img/150px-Mti.png, id=854, 150.5625pt x 136.51pt>
+File: img/150px-Mti.png Graphic file (type png)
+ <use img/150px-Mti.png>
+Package pdftex.def Info: img/150px-Mti.png used on input line 359.
+(pdftex.def)             Requested size: 135.89174pt x 123.22029pt.
+
+[13 <./img/150px-Mti.png>] <img/gnss.png, id=866, 803.0pt x 602.25pt>
+File: img/gnss.png Graphic file (type png)
+
+<use img/gnss.png>
+Package pdftex.def Info: img/gnss.png used on input line 382.
+(pdftex.def)             Requested size: 317.07614pt x 237.80803pt.
+ <img/rtk.png, id=870, 803.0pt x 602.25pt>
+File: img/rtk.png Graphic file (type png)
+ <use img/rtk.png>
+Package pdftex.def Info: img/rtk.png used on input line 392.
+(pdftex.def)             Requested size: 317.07614pt x 237.80803pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./img/gnss.png>] [15 <./img/rtk.png (PNG copy)>]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 429--429
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 391--391
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 429--429
 [][][] 
  []
 
-[15]
-
-LaTeX Warning: Marginpar on page 16 moved.
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 395--395
-[][][] 
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 395--395
-[][][] 
- []
-
-[16]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 427--427
-[][][] 
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 427--427
-[][][] 
- []
-
-[17] [18] [19] [20]
+[16] [17] [18] [19]
 Chapitre 3.
-[21
+<img/robotsros.png, id=940, 886.31125pt x 275.0275pt>
+File: img/robotsros.png Graphic file (type png)
+ <use img/robotsros.png>
+Package pdftex.def Info: img/robotsros.png used on input line 541.
+(pdftex.def)             Requested size: 317.07614pt x 98.39291pt.
 
-] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[20
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 587--587
+] [21 <./img/robotsros.png>]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 580--580
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 587--587
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 580--580
 [][][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 603.
+[22] <img/gazebo.png, id=974, 1227.58624pt x 919.435pt>
+File: img/gazebo.png Graphic file (type png)
+ <use img/gazebo.png>
+Package pdftex.def Info: img/gazebo.png used on input line 595.
+(pdftex.def)             Requested size: 317.07614pt x 237.47617pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 606.
+
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [23]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 635--635
+) [23 <./img/gazebo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 622--624
+
+ []
+
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 637--637
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 635--635
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 637--637
 [][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--637
-
  []
 
 [24]
-Overfull \hbox (140.33363pt too wide) in paragraph at lines 657--657
- \T1/cmr/bx/n/12 3.4.1.2.1 Al-go-rithme[][] [] 
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 685--685
+[][][] 
+ []
+
+
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 685--685
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--687
+
  []
 
 [25]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 671--671
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 705.
+
+<img/ackermann.png, id=1002, 483.4863pt x 692.3466pt>
+File: img/ackermann.png Graphic file (type png)
+ <use img/ackermann.png>
+Package pdftex.def Info: img/ackermann.png used on input line 707.
+(pdftex.def)             Requested size: 317.07614pt x 454.05554pt.
+
+[26] [27 <./img/ackermann.png>] [28]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 773--773
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 671--671
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 773--773
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 675--675
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 777--777
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 675--675
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 777--777
 [][][] 
  []
 
 
-LaTeX Warning: Marginpar on page 26 moved.
+LaTeX Warning: Marginpar on page 29 moved.
 
-[26]
+[29]
 Chapitre 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--696
+LaTeX Warning: Reference `intro-loc-fusion-donnees' on page 30 undefined on inp
+ut line 790.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--798
 
  []
 
-[27
+[30
 
-] [28] [29] [30] [31] [32] [33] [34]
+] [31] [32] [33] [34] [35] [36] [37]
 Chapitre 5.
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 992--992
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1100--1100
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 992--992
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1100--1100
 [][][] 
  []
 
-[35
+[38
 
-] [36] [37] [38] [39]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 1105--1105
+] [39] [40] [41] [42]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1215--1215
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 1105--1105
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1215--1215
 [][][] 
  []
 
-[40]
+[43]
 Chapitre 6.
-[41
-
-] [42] [43]
-Chapitre 7.
 [44
+
+] [45] [46]
+Chapitre 7.
+[47
 
 ]
 Chapitre 8.
-[45
+[48
 
 ]
 Annexe A.
-[46
+[49
 
-] [47] (./rapportStage.bbl [48]) [49
+] [50] (./rapportStage.bbl [51] [52
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1258.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1258.
+]) [53]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1384.
  (./rapportStage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1258.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1258.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1384.
 
 Package rerunfilecheck Info: File `rapportStage.out' has not changed.
-(rerunfilecheck)             Checksum: E39FC8E1048E80F15A206B701BFCF28E;9029.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1258.
+(rerunfilecheck)             Checksum: 8DCA6281EA2D49AED159606EC0017399;8846.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1384.
  ) 
 Here is how much of TeX's memory you used:
- 21046 strings out of 492995
- 375920 string characters out of 6132704
- 589836 words of memory out of 5000000
- 23761 multiletter control sequences out of 15000+600000
+ 22160 strings out of 492995
+ 396603 string characters out of 6132704
+ 596099 words of memory out of 5000000
+ 24833 multiletter control sequences out of 15000+600000
  22378 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,80p,554b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,92p,540b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1464,10 +1574,10 @@ f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on rapportStage.pdf (54 pages, 737465 bytes).
+Output written on rapportStage.pdf (57 pages, 3716274 bytes).
 PDF statistics:
- 1450 PDF objects out of 1728 (max. 8388607)
+ 1481 PDF objects out of 1728 (max. 8388607)
  1349 compressed objects within 14 object streams
- 423 named destinations out of 1000 (max. 500000)
- 887 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 444 named destinations out of 1000 (max. 500000)
+ 941 words of extra memory for PDF output out of 10000 (max. 10000000)
 
