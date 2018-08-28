@@ -1,9 +1,9 @@
-\BOOKMARK [0][-]{chapter*.2}{Remerciements}{}% 1
+\BOOKMARK [0][-]{chapter*.1}{Remerciements}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Tellus Environment - Missions Principales}{chapter.1}% 3
 \BOOKMARK [2][-]{subsection.1.1.1}{G\351ophysique et cartographie haute-d\351finition}{section.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.2}{Collecte des donn\351es g\351ophysique}{section.1.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.3}{Traitement des donn\351es}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.2}{Traitement des donn\351es}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.3}{Collecte des donn\351es g\351ophysique}{section.1.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Activit\351 R\046D}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.3}{Projet Symeter V2}{chapter.1}% 8
 \BOOKMARK [2][-]{subsection.1.3.1}{Symeter V1}{section.1.3}% 9
@@ -29,78 +29,79 @@
 \BOOKMARK [3][-]{subsubsection.2.4.2.1}{Environnement de simulation Gazebo}{subsection.2.4.2}% 29
 \BOOKMARK [3][-]{subsubsection.2.4.2.2}{Prototype mont\351 sur Camionnette}{subsection.2.4.2}% 30
 \BOOKMARK [1][-]{section.2.5}{Les grandes phases du stage}{chapter.2}% 31
-\BOOKMARK [0][-]{chapter.3}{Simulation d'un tracteur \351voluant sur un chantier d'ensilage \340 l'aide de ROS/Gazebo}{}% 32
-\BOOKMARK [1][-]{section.3.1}{Pr\351sentation de ROS}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.1.1}{Gestion des transformations}{section.3.1}% 34
-\BOOKMARK [3][-]{subsubsection.3.1.1.1}{Poses}{subsection.3.1.1}% 35
-\BOOKMARK [2][-]{subsection.3.1.2}{Gestions des Capteurs}{section.3.1}% 36
-\BOOKMARK [1][-]{section.3.2}{Pr\351sentation de Gazebo}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.2.1}{Construction d'un robot virtuel}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.2}{V\351rification de disponibilit\351 des capteurs}{section.3.2}% 39
-\BOOKMARK [1][-]{section.3.3}{Contraintes de mise en oeuvre}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.1}{Pas d'adh\351rence au d\351marrage de la simulation}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.2}{Simulation m\351canique, frottements, adh\351rence}{section.3.3}% 42
-\BOOKMARK [2][-]{subsection.3.3.3}{Conclusions sur les contraintes}{section.3.3}% 43
-\BOOKMARK [1][-]{section.3.4}{Mise en Oeuvre: simulation d'un environnement de tassage de silo}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.4.1}{Montage d'un tracteur simul\351}{section.3.4}% 45
-\BOOKMARK [3][-]{subsubsection.3.4.1.1}{Description Physique}{subsection.3.4.1}% 46
-\BOOKMARK [4][-]{paragraph.3.4.1.1.1}{Chassis}{subsubsection.3.4.1.1}% 47
-\BOOKMARK [4][-]{paragraph.3.4.1.1.2}{Actuateurs et Contr\364leurs}{subsubsection.3.4.1.1}% 48
-\BOOKMARK [3][-]{subsubsection.3.4.1.2}{Propulsion et Guidage}{subsection.3.4.1}% 49
-\BOOKMARK [4][-]{figure.caption.115}{Algorithme}{subsubsection.3.4.1.2}% 50
-\BOOKMARK [4][-]{paragraph.3.4.1.2.2}{Impl\351mentation sous ROS}{subsubsection.3.4.1.2}% 51
-\BOOKMARK [0][-]{chapter.4}{Mise en place du processus de localisation}{}% 52
-\BOOKMARK [1][-]{section.4.1}{Pr\351sentation du probl\350me}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.1.1}{Rep\350res}{section.4.1}% 54
-\BOOKMARK [3][-]{subsubsection.4.1.1.1}{Rep\350re Inertiel}{subsection.4.1.1}% 55
-\BOOKMARK [3][-]{subsubsection.4.1.1.2}{Rep\350re ECEF}{subsection.4.1.1}% 56
-\BOOKMARK [3][-]{subsubsection.4.1.1.3}{Rep\350re de navigation local}{subsection.4.1.1}% 57
-\BOOKMARK [3][-]{subsubsection.4.1.1.4}{Rep\350re du v\351hicule}{subsection.4.1.1}% 58
-\BOOKMARK [2][-]{subsection.4.1.2}{Syst\350me de Navigation Inertielle}{section.4.1}% 59
-\BOOKMARK [2][-]{subsection.4.1.3}{Transformation des coordonn\351es g\351ocentriques en coordonn\351es locale}{section.4.1}% 60
-\BOOKMARK [1][-]{section.4.2}{Filtres de Kalman}{chapter.4}% 61
-\BOOKMARK [2][-]{subsection.4.2.1}{Filtres de Kalman Lin\351aires}{section.4.2}% 62
-\BOOKMARK [3][-]{subsubsection.4.2.1.1}{Discr\351tisation}{subsection.4.2.1}% 63
-\BOOKMARK [3][-]{subsubsection.4.2.1.2}{Boucle de Kalman}{subsection.4.2.1}% 64
-\BOOKMARK [3][-]{subsubsection.4.2.1.3}{Fonctionnement conceptuel du Filtre de Kalman}{subsection.4.2.1}% 65
-\BOOKMARK [2][-]{subsection.4.2.2}{Estimation de Pose 3D: Filtres de Kalman Etendus}{section.4.2}% 66
-\BOOKMARK [1][-]{section.4.3}{Mise en oeuvre sous ROS.}{chapter.4}% 67
-\BOOKMARK [2][-]{subsection.4.3.1}{Module robot\137localisation}{section.4.3}% 68
-\BOOKMARK [2][-]{subsection.4.3.2}{navsat\137transformation\137node}{section.4.3}% 69
-\BOOKMARK [2][-]{subsection.4.3.3}{Configuration des Capteurs}{section.4.3}% 70
-\BOOKMARK [2][-]{subsection.4.3.4}{Quelques tests}{section.4.3}% 71
-\BOOKMARK [0][-]{chapter.5}{Exploitation des donn\351es LIDAR}{}% 72
-\BOOKMARK [1][-]{section.5.1}{Pr\351sentation de la chaine de traitement des donn\351es LIDAR}{chapter.5}% 73
-\BOOKMARK [1][-]{section.5.2}{Acquisition et mise en forme des donn\351es LIDAR}{chapter.5}% 74
-\BOOKMARK [2][-]{subsection.5.2.1}{Transformation trame LIDAR en un nuage de points}{section.5.2}% 75
-\BOOKMARK [2][-]{subsection.5.2.2}{Filtrage de la ligne de point par downsampling}{section.5.2}% 76
-\BOOKMARK [1][-]{section.5.3}{Accumulation des nuages de points}{chapter.5}% 77
-\BOOKMARK [2][-]{subsection.5.3.1}{Sp\351cifications pour le point\137cloud\137aggregator}{section.5.3}% 78
-\BOOKMARK [2][-]{subsection.5.3.2}{Principe de stockage des donn\351es 3D}{section.5.3}% 79
-\BOOKMARK [3][-]{subsubsection.5.3.2.1}{Les B-Trees}{subsection.5.3.2}% 80
-\BOOKMARK [3][-]{subsubsection.5.3.2.2}{Les Octrees}{subsection.5.3.2}% 81
-\BOOKMARK [3][-]{subsubsection.5.3.2.3}{Le choix: octree correspond \340 notre besoin.}{subsection.5.3.2}% 82
-\BOOKMARK [2][-]{subsection.5.3.3}{Mise en oeuvre: octomap}{section.5.3}% 83
-\BOOKMARK [1][-]{section.5.4}{Mise en oeuvre sous Gazebo}{chapter.5}% 84
-\BOOKMARK [2][-]{subsection.5.4.1}{Mod\351lisation d'un chantier d'ensilage}{section.5.4}% 85
-\BOOKMARK [2][-]{subsection.5.4.2}{Test sous gazebo}{section.5.4}% 86
-\BOOKMARK [2][-]{subsection.5.4.3}{Analyse du nuage de point g\351n\351r\351}{section.5.4}% 87
-\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Outil pour l'analyse de nuage de points: Paraview}{subsection.5.4.3}% 88
-\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Points \340 am\351liorer sur le nuage de points}{subsection.5.4.3}% 89
-\BOOKMARK [0][-]{chapter.6}{Mise en oeuvre \340 partir de mesures r\351elles}{}% 90
-\BOOKMARK [1][-]{section.6.1}{Protocole de test}{chapter.6}% 91
-\BOOKMARK [2][-]{subsection.6.1.1}{Instruments d'acquisition\)}{section.6.1}% 92
-\BOOKMARK [2][-]{subsection.6.1.2}{Exploitation}{section.6.1}% 93
-\BOOKMARK [1][-]{section.6.2}{Donn\351es g\351n\351r\351e - visualisation sous google maps}{chapter.6}% 94
-\BOOKMARK [1][-]{section.6.3}{Exploitation des donn\351es}{chapter.6}% 95
-\BOOKMARK [2][-]{subsection.6.3.1}{Configuration: description des poses des instruments par rapport au rep\350re du v\351hicule}{section.6.3}% 96
-\BOOKMARK [2][-]{subsection.6.3.2}{Int\351gration des donn\351es GPS et IMU pour localisation}{section.6.3}% 97
-\BOOKMARK [2][-]{subsection.6.3.3}{Reconstitution du parking}{section.6.3}% 98
-\BOOKMARK [1][-]{section.6.4}{R\351capitulation}{chapter.6}% 99
-\BOOKMARK [0][-]{chapter.7}{Reste \340 faire et Axes Am\351liorations}{}% 100
-\BOOKMARK [1][-]{section.7.1}{Difficult\351 de Simulation de l'action de tassage}{chapter.7}% 101
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 102
-\BOOKMARK [0][-]{appendix.A}{Repr\351sentation de l'Attitude et des Rotations}{}% 103
-\BOOKMARK [1][-]{section.A.1}{Angles d'Euler}{appendix.A}% 104
-\BOOKMARK [1][-]{section.A.2}{Quaternions Unitaires}{appendix.A}% 105
-\BOOKMARK [0][-]{appendix*.238}{Bibliographie}{}% 106
+\BOOKMARK [1][-]{section.2.6}{R\351capilitation}{chapter.2}% 32
+\BOOKMARK [0][-]{chapter.3}{Simulation d'un tracteur \351voluant sur un chantier d'ensilage \340 l'aide de ROS/Gazebo}{}% 33
+\BOOKMARK [1][-]{section.3.1}{Pr\351sentation de ROS}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.1.1}{Gestion des transformations}{section.3.1}% 35
+\BOOKMARK [3][-]{subsubsection.3.1.1.1}{Poses}{subsection.3.1.1}% 36
+\BOOKMARK [2][-]{subsection.3.1.2}{Gestions des Capteurs}{section.3.1}% 37
+\BOOKMARK [1][-]{section.3.2}{Pr\351sentation de Gazebo}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.2.1}{Construction d'un robot virtuel}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.2}{V\351rification de disponibilit\351 des capteurs}{section.3.2}% 40
+\BOOKMARK [1][-]{section.3.3}{Contraintes de mise en oeuvre}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.1}{Pas d'adh\351rence au d\351marrage de la simulation}{section.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.2}{Simulation m\351canique, frottements, adh\351rence}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.3}{Conclusions sur les contraintes}{section.3.3}% 44
+\BOOKMARK [1][-]{section.3.4}{Mise en Oeuvre: simulation d'un environnement de tassage de silo}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.4.1}{Montage d'un tracteur simul\351}{section.3.4}% 46
+\BOOKMARK [3][-]{subsubsection.3.4.1.1}{Mod\351lisation du tracteur}{subsection.3.4.1}% 47
+\BOOKMARK [4][-]{paragraph.3.4.1.1.1}{Mod\351lisation physique}{subsubsection.3.4.1.1}% 48
+\BOOKMARK [4][-]{paragraph.3.4.1.1.2}{Actuateurs et Contr\364leurs}{subsubsection.3.4.1.1}% 49
+\BOOKMARK [3][-]{subsubsection.3.4.1.2}{Propulsion et Guidage}{subsection.3.4.1}% 50
+\BOOKMARK [4][-]{figure.caption.122}{Algorithme}{subsubsection.3.4.1.2}% 51
+\BOOKMARK [4][-]{paragraph.3.4.1.2.2}{Impl\351mentation sous ROS}{subsubsection.3.4.1.2}% 52
+\BOOKMARK [0][-]{chapter.4}{Mise en place du processus de localisation}{}% 53
+\BOOKMARK [1][-]{section.4.1}{Pr\351sentation du probl\350me}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.1.1}{Rep\350res}{section.4.1}% 55
+\BOOKMARK [3][-]{subsubsection.4.1.1.1}{Rep\350re Inertiel}{subsection.4.1.1}% 56
+\BOOKMARK [3][-]{subsubsection.4.1.1.2}{Rep\350re ECEF}{subsection.4.1.1}% 57
+\BOOKMARK [3][-]{subsubsection.4.1.1.3}{Rep\350re de navigation local}{subsection.4.1.1}% 58
+\BOOKMARK [3][-]{subsubsection.4.1.1.4}{Rep\350re du v\351hicule}{subsection.4.1.1}% 59
+\BOOKMARK [2][-]{subsection.4.1.2}{Syst\350me de Navigation Inertielle}{section.4.1}% 60
+\BOOKMARK [2][-]{subsection.4.1.3}{Transformation des coordonn\351es g\351ocentriques en coordonn\351es locale}{section.4.1}% 61
+\BOOKMARK [1][-]{section.4.2}{Filtres de Kalman}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.2.1}{Filtres de Kalman Lin\351aires}{section.4.2}% 63
+\BOOKMARK [3][-]{subsubsection.4.2.1.1}{Discr\351tisation}{subsection.4.2.1}% 64
+\BOOKMARK [3][-]{subsubsection.4.2.1.2}{Boucle de Kalman}{subsection.4.2.1}% 65
+\BOOKMARK [3][-]{subsubsection.4.2.1.3}{Fonctionnement conceptuel du Filtre de Kalman}{subsection.4.2.1}% 66
+\BOOKMARK [2][-]{subsection.4.2.2}{Estimation de Pose 3D: Filtres de Kalman Etendus}{section.4.2}% 67
+\BOOKMARK [1][-]{section.4.3}{Mise en oeuvre sous ROS.}{chapter.4}% 68
+\BOOKMARK [2][-]{subsection.4.3.1}{Module robot\137localisation}{section.4.3}% 69
+\BOOKMARK [2][-]{subsection.4.3.2}{navsat\137transformation\137node}{section.4.3}% 70
+\BOOKMARK [2][-]{subsection.4.3.3}{Configuration des Capteurs}{section.4.3}% 71
+\BOOKMARK [2][-]{subsection.4.3.4}{Quelques tests}{section.4.3}% 72
+\BOOKMARK [0][-]{chapter.5}{Exploitation des donn\351es LIDAR}{}% 73
+\BOOKMARK [1][-]{section.5.1}{Pr\351sentation de la chaine de traitement des donn\351es LIDAR}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.2}{Acquisition et mise en forme des donn\351es LIDAR}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.2.1}{Transformation trame LIDAR en un nuage de points}{section.5.2}% 76
+\BOOKMARK [2][-]{subsection.5.2.2}{Filtrage de la ligne de point par downsampling}{section.5.2}% 77
+\BOOKMARK [1][-]{section.5.3}{Accumulation des nuages de points}{chapter.5}% 78
+\BOOKMARK [2][-]{subsection.5.3.1}{Sp\351cifications pour le point\137cloud\137aggregator}{section.5.3}% 79
+\BOOKMARK [2][-]{subsection.5.3.2}{Principe de stockage des donn\351es 3D}{section.5.3}% 80
+\BOOKMARK [3][-]{subsubsection.5.3.2.1}{Les B-Trees}{subsection.5.3.2}% 81
+\BOOKMARK [3][-]{subsubsection.5.3.2.2}{Les Octrees}{subsection.5.3.2}% 82
+\BOOKMARK [3][-]{subsubsection.5.3.2.3}{Le choix: octree correspond \340 notre besoin.}{subsection.5.3.2}% 83
+\BOOKMARK [2][-]{subsection.5.3.3}{Mise en oeuvre: octomap}{section.5.3}% 84
+\BOOKMARK [1][-]{section.5.4}{Mise en oeuvre sous Gazebo}{chapter.5}% 85
+\BOOKMARK [2][-]{subsection.5.4.1}{Mod\351lisation d'un chantier d'ensilage}{section.5.4}% 86
+\BOOKMARK [2][-]{subsection.5.4.2}{Test sous gazebo}{section.5.4}% 87
+\BOOKMARK [2][-]{subsection.5.4.3}{Analyse du nuage de point g\351n\351r\351}{section.5.4}% 88
+\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Outil pour l'analyse de nuage de points: Paraview}{subsection.5.4.3}% 89
+\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Points \340 am\351liorer sur le nuage de points}{subsection.5.4.3}% 90
+\BOOKMARK [0][-]{chapter.6}{Mise en oeuvre \340 partir de mesures r\351elles}{}% 91
+\BOOKMARK [1][-]{section.6.1}{Protocole de test}{chapter.6}% 92
+\BOOKMARK [2][-]{subsection.6.1.1}{Instruments d'acquisition\)}{section.6.1}% 93
+\BOOKMARK [2][-]{subsection.6.1.2}{Exploitation}{section.6.1}% 94
+\BOOKMARK [1][-]{section.6.2}{Donn\351es g\351n\351r\351e - visualisation sous google maps}{chapter.6}% 95
+\BOOKMARK [1][-]{section.6.3}{Exploitation des donn\351es}{chapter.6}% 96
+\BOOKMARK [2][-]{subsection.6.3.1}{Configuration: description des poses des instruments par rapport au rep\350re du v\351hicule}{section.6.3}% 97
+\BOOKMARK [2][-]{subsection.6.3.2}{Int\351gration des donn\351es GPS et IMU pour localisation}{section.6.3}% 98
+\BOOKMARK [2][-]{subsection.6.3.3}{Reconstitution du parking}{section.6.3}% 99
+\BOOKMARK [1][-]{section.6.4}{R\351capitulation}{chapter.6}% 100
+\BOOKMARK [0][-]{chapter.7}{Reste \340 faire et Axes Am\351liorations}{}% 101
+\BOOKMARK [1][-]{section.7.1}{Difficult\351 de Simulation de l'action de tassage}{chapter.7}% 102
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 103
+\BOOKMARK [0][-]{appendix.A}{Repr\351sentation de l'Attitude et des Rotations}{}% 104
+\BOOKMARK [1][-]{section.A.1}{Angles d'Euler}{appendix.A}% 105
+\BOOKMARK [1][-]{section.A.2}{Quaternions Unitaires}{appendix.A}% 106
+\BOOKMARK [0][-]{appendix*.253}{Bibliographie}{}% 107

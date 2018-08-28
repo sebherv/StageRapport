@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  27 AUG 2018 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.15)  28 AUG 2018 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,13 +1177,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<img/logo-tellusenv.png, id=433, 279.0425pt x 86.3225pt>
+<img/logo-tellusenv.png, id=437, 279.0425pt x 86.3225pt>
 File: img/logo-tellusenv.png Graphic file (type png)
 
 <use img/logo-tellusenv.png>
 Package pdftex.def Info: img/logo-tellusenv.png used on input line 116.
 (pdftex.def)             Requested size: 275.92932pt x 85.35826pt.
- <img/univ.jpeg, id=435, 304.4976pt x 156.8259pt>
+ <img/univ.jpeg, id=439, 304.4976pt x 156.8259pt>
 File: img/univ.jpeg Graphic file (type jpg)
 
 <use img/univ.jpeg>
@@ -1192,120 +1192,93 @@ Package pdftex.def Info: img/univ.jpeg used on input line 117.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogo-tellusenv.png> <./img/univ.jpeg>] (./rapportStage.tdopdfTeX warning (ext4):
- destination with the same identifier (name{page.1}) has been already used, dup
-licate ignored
+ogo-tellusenv.png> <./img/univ.jpeg>]pdfTeX warning (ext4): destination with th
+e same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...o}}\ AJOUTER REF figure}{38}{section*.179}
-                                                   [1
-
-
-] [2])
-\tf@tdo=\write5
-\openout5 = `rapportStage.tdo'.
-
- [3]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 154.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \tableofcontents
+l.152 \tableofcontents
                        [1
 
 
+] (./rapportStage.toc [2
 
-] (./rapportStage.tocpdfTeX warning (ext4): destination with the same identifie
-r (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.37 ...stions des Capteurs}{22}{subsection.3.1.2}
-                                                   [2
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.83 ... notre besoin.}{41}{subsubsection.5.3.2.3}
-                                                   [3])
-\tf@toc=\write6
-\openout6 = `rapportStage.toc'.
+] [3])
+\tf@toc=\write5
+\openout5 = `rapportStage.toc'.
 
  [4]
 Chapitre 1.
+[5
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 172--172
-[][][] 
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 172--172
-[][][] 
- []
-
-<img/IMG_0332.jpg, id=773, 797.98125pt x 1316.92pt>
+] <img/IMG_0332.jpg, id=597, 797.98125pt x 1316.92pt>
 File: img/IMG_0332.jpg Graphic file (type jpg)
  <use img/IMG_0332.jpg>
-Package pdftex.def Info: img/IMG_0332.jpg used on input line 183.
+Package pdftex.def Info: img/IMG_0332.jpg used on input line 182.
 (pdftex.def)             Requested size: 158.53807pt x 261.6311pt.
 
-<img/sonar.png, id=774, 549.55313pt x 770.88pt>
+<img/sonar.png, id=598, 549.55313pt x 770.88pt>
 File: img/sonar.png Graphic file (type png)
  <use img/sonar.png>
-Package pdftex.def Info: img/sonar.png used on input line 189.
+Package pdftex.def Info: img/sonar.png used on input line 188.
 (pdftex.def)             Requested size: 158.53807pt x 222.38496pt.
 
-<img/radargram.png, id=775, 1371.1225pt x 704.6325pt>
+<img/radargram.png, id=599, 1371.1225pt x 704.6325pt>
 File: img/radargram.png Graphic file (type png)
  <use img/radargram.png>
-Package pdftex.def Info: img/radargram.png used on input line 197.
+Package pdftex.def Info: img/radargram.png used on input line 196.
 (pdftex.def)             Requested size: 317.07614pt x 162.94371pt.
-Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 202--202
-[][][] 
- []
-
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 202--202
-[][][] 
- []
-
-<img/E1790.png, id=776, 1028.34187pt x 578.16pt>
+<img/E1790.png, id=602, 1028.34187pt x 578.16pt>
 File: img/E1790.png Graphic file (type png)
  <use img/E1790.png>
-Package pdftex.def Info: img/E1790.png used on input line 206.
+Package pdftex.def Info: img/E1790.png used on input line 205.
 (pdftex.def)             Requested size: 317.07614pt x 178.26614pt.
- [5
+ [6 <./img/IMG_0332.jpg> <./img/sonar.png> <./img/radargram.png (PNG copy)>]
+<img/ArchiGenV1.png, id=616, 380.8629pt x 228.1323pt>
+File: img/ArchiGenV1.png Graphic file (type png)
+ <use img/ArchiGenV1.png>
+Package pdftex.def Info: img/ArchiGenV1.png used on input line 231.
+(pdftex.def)             Requested size: 271.7835pt x 162.80005pt.
 
-]
-[6 <./img/IMG_0332.jpg> <./img/sonar.png> <./img/radargram.png (PNG copy)>]
-[7 <./img/E1790.png (PNG copy)>] [8]
+[7 <./img/E1790.png (PNG copy)>]
+<img/symeterv1.png, id=623, 1027.84pt x 791.95876pt>
+File: img/symeterv1.png Graphic file (type png)
+ <use img/symeterv1.png>
+Package pdftex.def Info: img/symeterv1.png used on input line 239.
+(pdftex.def)             Requested size: 271.7835pt x 209.40886pt.
+
+[8 <./img/ArchiGenV1.png> <./img/symeterv1.png>]
+<img/LidarMobile.png, id=639, 162.6075pt x 115.8729pt>
+File: img/LidarMobile.png Graphic file (type png)
+
+<use img/LidarMobile.png>
+Package pdftex.def Info: img/LidarMobile.png used on input line 272.
+(pdftex.def)             Requested size: 271.7835pt x 193.68561pt.
+ [9] [10 <./img/LidarMobile.png>]
 Chapitre 2.
-[9
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 285.
+[11
 
 ]
-Overfull \hbox (0.75607pt too wide) in paragraph at lines 266--267
+Overfull \hbox (0.75607pt too wide) in paragraph at lines 301--302
 []\T1/cmr/m/n/12 les LI-DAR de ce type émettent un si-gnal pé-rio-dique continu
 
  []
 
-<img/lidar2d.png, id=813, 516.93124pt x 287.0725pt>
+<img/lidar2d.png, id=666, 516.93124pt x 287.0725pt>
 File: img/lidar2d.png Graphic file (type png)
  <use img/lidar2d.png>
-Package pdftex.def Info: img/lidar2d.png used on input line 281.
+Package pdftex.def Info: img/lidar2d.png used on input line 316.
 (pdftex.def)             Requested size: 317.07614pt x 176.09079pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/lidar3d.png, id=816, 820.06375pt x 384.43625pt>
+<img/lidar3d.png, id=669, 820.06375pt x 384.43625pt>
 File: img/lidar3d.png Graphic file (type png)
  <use img/lidar3d.png>
-Package pdftex.def Info: img/lidar3d.png used on input line 288.
+Package pdftex.def Info: img/lidar3d.png used on input line 323.
 (pdftex.def)             Requested size: 317.07614pt x 148.64487pt.
 
 
@@ -1314,237 +1287,226 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding:
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble.
-(frenchb.ldf)                Degrees used on input line 298.
+(frenchb.ldf)                Degrees used on input line 333.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
 
-<img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg, id=819, 481.8pt x 481.8
+<img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg, id=672, 481.8pt x 481.8
 pt>
 File: img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg Graphic file (type 
 jpg)
  <use img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg>
 Package pdftex.def Info: img/hokuyo-utm-30lx-ew-scanning-laser-rangefinder.jpg 
-used on input line 319.
+used on input line 354.
 (pdftex.def)             Requested size: 135.89174pt x 135.8882pt.
- [10] [11 <./img/lidar2d.png> <./img/lidar3d.png> <./img/hokuyo-utm-30lx-ew-sca
-nning-laser-rangefinder.jpg>] <img/navinertial.png, id=843, 698.61pt x 383.4325
+ [12] [13 <./img/lidar2d.png> <./img/lidar3d.png> <./img/hokuyo-utm-30lx-ew-sca
+nning-laser-rangefinder.jpg>] <img/navinertial.png, id=697, 698.61pt x 383.4325
 pt>
 File: img/navinertial.png Graphic file (type png)
 
 <use img/navinertial.png>
-Package pdftex.def Info: img/navinertial.png used on input line 340.
+Package pdftex.def Info: img/navinertial.png used on input line 375.
 (pdftex.def)             Requested size: 317.07614pt x 174.0291pt.
- [12 <./img/navinertial.png>]
-<img/150px-Mti.png, id=854, 150.5625pt x 136.51pt>
+ [14 <./img/navinertial.png>]
+<img/150px-Mti.png, id=708, 150.5625pt x 136.51pt>
 File: img/150px-Mti.png Graphic file (type png)
  <use img/150px-Mti.png>
-Package pdftex.def Info: img/150px-Mti.png used on input line 359.
+Package pdftex.def Info: img/150px-Mti.png used on input line 394.
 (pdftex.def)             Requested size: 135.89174pt x 123.22029pt.
 
-[13 <./img/150px-Mti.png>] <img/gnss.png, id=866, 803.0pt x 602.25pt>
+[15 <./img/150px-Mti.png>] <img/gnss.png, id=721, 803.0pt x 602.25pt>
 File: img/gnss.png Graphic file (type png)
 
 <use img/gnss.png>
-Package pdftex.def Info: img/gnss.png used on input line 382.
+Package pdftex.def Info: img/gnss.png used on input line 417.
 (pdftex.def)             Requested size: 317.07614pt x 237.80803pt.
- <img/rtk.png, id=870, 803.0pt x 602.25pt>
+ <img/rtk.png, id=725, 803.0pt x 602.25pt>
 File: img/rtk.png Graphic file (type png)
  <use img/rtk.png>
-Package pdftex.def Info: img/rtk.png used on input line 392.
+Package pdftex.def Info: img/rtk.png used on input line 427.
 (pdftex.def)             Requested size: 317.07614pt x 237.80803pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14 <./img/gnss.png>] [15 <./img/rtk.png (PNG copy)>]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 429--429
+[16 <./img/gnss.png>]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 463--463
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 429--429
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 463--463
 [][][] 
  []
 
-[16] [17] [18] [19]
+[17 <./img/rtk.png (PNG copy)>] [18] [19] [20] [21]
 Chapitre 3.
-<img/robotsros.png, id=940, 886.31125pt x 275.0275pt>
+<img/robotsros.png, id=799, 886.31125pt x 275.0275pt>
 File: img/robotsros.png Graphic file (type png)
  <use img/robotsros.png>
-Package pdftex.def Info: img/robotsros.png used on input line 541.
+Package pdftex.def Info: img/robotsros.png used on input line 581.
 (pdftex.def)             Requested size: 317.07614pt x 98.39291pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20
+[22
 
-] [21 <./img/robotsros.png>]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 580--580
+] [23 <./img/robotsros.png>]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 620--620
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 580--580
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 620--620
 [][][] 
  []
 
-[22] <img/gazebo.png, id=974, 1227.58624pt x 919.435pt>
+[24] <img/gazebo.png, id=837, 1227.58624pt x 919.435pt>
 File: img/gazebo.png Graphic file (type png)
  <use img/gazebo.png>
-Package pdftex.def Info: img/gazebo.png used on input line 595.
+Package pdftex.def Info: img/gazebo.png used on input line 635.
 (pdftex.def)             Requested size: 317.07614pt x 237.47617pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 606.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 646.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [23 <./img/gazebo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 622--624
+) [25 <./img/gazebo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 662--664
 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 637--637
-[][][] 
- []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 678.
+See the caption package documentation for explanation.
 
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 637--637
-[][][] 
- []
-
-[24]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 685--685
-[][][] 
- []
-
-
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 685--685
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 685--687
+<img/image.png, id=850, 499.8675pt x 429.605pt>
+File: img/image.png Graphic file (type png)
+ <use img/image.png>
+Package pdftex.def Info: img/image.png used on input line 685.
+(pdftex.def)             Requested size: 181.18439pt x 155.71307pt.
+ [26 <./img/image.png (PNG copy)>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 735--737
 
  []
 
-[25]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 705.
+               Default added (so using `!tbp') on input line 755.
 
-<img/ackermann.png, id=1002, 483.4863pt x 692.3466pt>
+<img/ackermann.png, id=871, 483.4863pt x 692.3466pt>
 File: img/ackermann.png Graphic file (type png)
  <use img/ackermann.png>
-Package pdftex.def Info: img/ackermann.png used on input line 707.
+Package pdftex.def Info: img/ackermann.png used on input line 757.
 (pdftex.def)             Requested size: 317.07614pt x 454.05554pt.
 
-[26] [27 <./img/ackermann.png>] [28]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 773--773
+[28] [29 <./img/ackermann.png>] [30]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 823--823
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 773--773
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 823--823
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 777--777
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 827--827
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 777--777
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 827--827
 [][][] 
  []
 
 
-LaTeX Warning: Marginpar on page 29 moved.
+LaTeX Warning: Marginpar on page 31 moved.
 
-[29]
+[31]
 Chapitre 4.
 
-LaTeX Warning: Reference `intro-loc-fusion-donnees' on page 30 undefined on inp
-ut line 790.
+LaTeX Warning: Reference `intro-loc-fusion-donnees' on page 32 undefined on inp
+ut line 840.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 796--798
+Underfull \hbox (badness 10000) in paragraph at lines 846--848
 
  []
 
-[30
+[32
 
-] [31] [32] [33] [34] [35] [36] [37]
+] [33] [34] [35] [36] [37] [38] [39]
 Chapitre 5.
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 1100--1100
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1150--1150
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 1100--1100
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1150--1150
 [][][] 
  []
 
-[38
+[40
 
-] [39] [40] [41] [42]
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 1215--1215
+] [41] [42] [43] [44]
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1265--1265
 [][][] 
  []
 
 
-Overfull \hbox (69.77509pt too wide) in paragraph at lines 1215--1215
+Overfull \hbox (69.77509pt too wide) in paragraph at lines 1265--1265
 [][][] 
  []
 
-[43]
+[45]
 Chapitre 6.
-[44
+[46
 
-] [45] [46]
+] [47] [48]
 Chapitre 7.
-[47
+[49
 
 ]
 Chapitre 8.
-[48
+[50
 
-]
+] [51]
 Annexe A.
-[49
+[52
 
-] [50] (./rapportStage.bbl [51] [52
+] [53] (./rapportStage.bbl [54] [55
 
-]) [53]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1384.
+]) [56]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1438.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1438.
  (./rapportStage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1438.
 
 Package rerunfilecheck Info: File `rapportStage.out' has not changed.
-(rerunfilecheck)             Checksum: 8DCA6281EA2D49AED159606EC0017399;8846.
+(rerunfilecheck)             Checksum: F25828A36F2AEC5973A9969B77C9F238;8935.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1384.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1438.
  ) 
 Here is how much of TeX's memory you used:
- 22160 strings out of 492995
- 396603 string characters out of 6132704
- 596099 words of memory out of 5000000
- 24833 multiletter control sequences out of 15000+600000
+ 22133 strings out of 492995
+ 395722 string characters out of 6132704
+ 578505 words of memory out of 5000000
+ 24785 multiletter control sequences out of 15000+600000
  22378 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,92p,540b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,92p,552b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1570,14 +1532,13 @@ ve/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive
 7/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on rapportStage.pdf (57 pages, 3716274 bytes).
+f-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on rapportStage.pdf (57 pages, 4545262 bytes).
 PDF statistics:
- 1481 PDF objects out of 1728 (max. 8388607)
- 1349 compressed objects within 14 object streams
- 444 named destinations out of 1000 (max. 500000)
- 941 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1410 PDF objects out of 1440 (max. 8388607)
+ 1273 compressed objects within 13 object streams
+ 464 named destinations out of 1000 (max. 500000)
+ 969 words of extra memory for PDF output out of 10000 (max. 10000000)
 
