@@ -20,6 +20,8 @@
 \usepackage{tocbibind}
 \usepackage[hidelinks]{hyperref}
 \usepackage[justification=centering]{caption}
+\usepackage[acronym]{glossaries}
+\usepackage{listings}
 \author{Sébastien Hervieu}
 
 \setcounter{MaxMatrixCols}{20}
@@ -34,6 +36,36 @@
 	\clearpage
 	\setcounter{page}{\value{mypagecount}}% restore the incremented value to the official tally of pages so the page numbering continues correctly
 }
+
+\newglossaryentry{utc}{name=utc,description={Coordinated Universal Time}}
+\newglossaryentry{adt}{name=adt,description={Atlantic Daylight Time}}
+\newglossaryentry{est}{name=est,description={Eastern Standard Time}}
+\newacronym{cd}{CD}{compact disk}
+
+\makeglossaries
+
+\lstset{
+	numbers=left, 
+	numberstyle=\small, 
+	numbersep=8pt, 
+	frame = single,  
+	framexleftmargin=15pt}
+
+%from documentation
+%\newacronym[⟨key-val list⟩]{⟨label ⟩}{⟨abbrv ⟩}{⟨long⟩}
+%above is short version of this
+% \newglossaryentry{⟨label ⟩}{type=\acronymtype,
+% name={⟨abbrv ⟩},
+% description={⟨long⟩},
+% text={⟨abbrv ⟩},
+% first={⟨long⟩ (⟨abbrv ⟩)},
+% plural={⟨abbrv ⟩\glspluralsuffix},
+% firstplural={⟨long⟩\glspluralsuffix\space (⟨abbrv ⟩\glspluralsuffix)},
+% ⟨key-val list⟩}
+
+
+
+%\newglossaryentry{tree}{name={tree},description={trees are the better humans}}
 
 
 \begin{document}
@@ -123,10 +155,9 @@ Sébastien \textsc{Hervieu}
 \end{titlepage}
 
 
-%\begin{interlude}
-%\listoftodos
-%\end{interlude}
-
+\begin{interlude}
+\listoftodos
+\end{interlude}
 
 \cleardoublepage% especially in a document where chapters start at right-hand pages
 %\phantomsection% for an anchor if you use hyperref
@@ -148,9 +179,16 @@ Sébastien \textsc{Hervieu}
 \para Je remercie enfin ma petite famille, mon épouse Céline et mes deux filles, Clémentine et Angèle, pour leurs encouragements, leur soutien et leur patience tout au long de ces deux dernières années. Nous sommes sur un beau chemin.
 
 
+\glsaddall
+\para First use \gls{cd}\\
+subsequent \gls{cd}
+
+
+
 \setcounter{tocdepth}{5}
 \tableofcontents
-\newpage
+
+\printglossaries
 
 \chapter{Introduction}
 
@@ -254,6 +292,13 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\subsection{Symeter V2: Objectifs}
 		Le projet Symeter V2 a donc été lancé pour améliorer Symeter V1 en prenant en compte des retours d'expérience exposés dans la section \ref{sec:symeterv1}. Un choix radical était nécessaire pour permettre à la fois la simplicité de mise en oeuvre, réduire le nombre de composants en interaction et limiter le besoin de liaisons sans fil. 
 		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.6\linewidth]{img/LidarMobile}
+			\caption[archiv2]{Architecture de Symeter V2}
+			\label{fig:lidarmobile}
+		\end{figure}
+		
 		\para Il a donc été décidé de baser Symeter V2 sur le montage de l'équipement directement sur le tracteur de tassage, comme indiqué dans la figure \ref{fig:lidarmobile}. Cette configuration a pour avantage qu'elle supprime complètement le besoin d'une liaison sans fil. Tous les composants étant montés sur le tracteur, ils peuvent tous étre interconnectés au moyen de connections filaires.
 		
 		\para Le fait de monter une bonne fois pour toute l'équipement sur le tracteur permet d'avoir un déploiement sur chantier grandement simplifié, la calibration et la configuration étant effectuée en atelier lors du montage sur le tracteur. La mise en oeuvre de Symeter V2 par un simple appui sur un bouton au début du chantier d'ensilage est donc envisageable.
@@ -267,29 +312,27 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\para Mais si ces difficultés peuvent être levées, il peut être envisagé que Symeter V2 soit à la fois simple d'emploi, fiable et très utile.
 
 		
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.6\linewidth]{img/LidarMobile}
-			\caption[archiv2]{Architecture de Symeter V2}
-			\label{fig:lidarmobile}
-		\end{figure}
-		
 
 
 \chapter{Capteurs, Modélisation, Contraintes}
 	Ce chapitre présente dans leurs grandes lignes les capteurs cibles du projet Symeter V2, les outils de modélistation qui seront utilisés pour les mettre en oeuvre et les contraintes qui en découlent.c Les grandes étapes du projet sont enfin élaborées à la lumière de ces informations.
 	
 	\section{Capteurs}
-		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS. Cette section décrit les fonctionnalités de ces capteurs et les données qu'ils génèrent et comment ils sont mis en oeuvre dans le projet Symeter V2.
+		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS, selon un flux de données illustré par la figure \ref{}.Cette section décrit les fonctionnalités de ces capteurs et les données qu'ils génèrent et comment ils sont mis en oeuvre dans le projet Symeter V2.
 		
-		\missingfigure{Architecture capteurs --> flux de données.}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.9\linewidth]{img/fluxdonneeSymeterV2}
+			\caption[fluxdonnéesymv2]{Flux de données de système Symeter V2}
+			\label{fig:fluxdonneesymeterv2}
+		\end{figure}
 			
 		\subsection{LIDAR}
 		Un LIDAR est un équipement qui permet de prendre de nombreuses mesures de l'environnement à partir d'un laser. En exploitant les informations d'angle de pointage et en observant les caractéristiques du signal réfléchin tant du point de vu temporel (temps de vol, phase) que du point de vue de la forme du signal (puissance réfléchie, déphasage, distorsion, effet Doppler , ...), il est possible de mesurer de nombreuses caractéristiques de l'environnement.
 		
-		\paragraph*{} Le LIDAR est utilisé par Symeter V2 pour détecter la forme précise du chantier d'ensilage.
+		\para Le LIDAR est utilisé par Symeter V2 pour détecter la forme précise du chantier d'ensilage.
 		
-		\subsubsection{Détecteur Actif:}
+		\subsubsection{Détecteur Actif}
 		Le LIDAR est essentiellement un détecteur actif dont de le principe est identique à celui du radar: un pulse electromagnétique est émis dans une direction privilégiée par une partie émettrice, constituant un signal incident. 
 		
 		\para Ce signal incident est réfléchi par un object de l'environnement, générant un signal réfléchi qui retourne en direction du LIDAR. Ce signal réfléchi est reçu par un détecteur. 
@@ -297,18 +340,18 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\para En comparant le signal émis et le signal reçu nous pouvons en déduire certaine caractéristiques de l'environnement.
 		
 		\paragraph*{Différents types de mesure: } Il existe deux grands types de LIDAR: \begin{description}
-			\item[LIDAR  à "temps de vol":] les lidars de ce type déterminent la distance de la cible en mesurant le temps écoulé par entre le moment de l'émission du pulse et la réception du signal réfléchi par la cible.
-			\item[LIDAR  "full waveform":] les LIDAR de ce type émettent un signal périodique continu et mesurent la distance de l'object détecté essentiellement par mesure de déphasage du signal réfléchi par rapport au signal émis. Les modifications de la forme du signal réfléchi et de son intensité permettent d'extraire d'autre informations à propos de la cible. 
+			\item[LIDAR  à "temps de vol":] les LIDARs de ce type déterminent la distance de la cible en mesurant le temps écoulé entre le moment de l'émission du pulse et la réception du signal réfléchi par la cible.
+			\item[LIDAR  "full waveform":] les LIDARs de ce type émettent un signal périodique continu et mesurent la distance de l'object détecté essentiellement par mesure de déphasage du signal réfléchi par rapport au signal émis. Les modifications de la forme du signal réfléchi et de son intensité permettent d'extraire d'autres informations à propos de la cible. 
 		\end{description} 
 		
 		\subsubsection{Scan de l'environnement}
 		En faisant varier la direction du bloc émetteur/récepteur du LIDAR, il est possible de faire plusieurs mesures de l'environnement. Le LIDAR mettant en oeuvre des procédés optiques, il est possbile de faire varier très rapidement son pointage et ainsi d'obtenir de très nombreux relevés de l'environnement.
 		
-		\paragraph*{Deux grands modes de scan de l'environnement:} Il existe deux grands modes de scan de l'environnement pour un LIDAR
+		\paragraph*{Modes de scan de l'environnement:} Il existe deux grands modes de scan de l'environnement pour un LIDAR
 		
 		\begin{description}
 			\item[Mode 2D ou  "planar":] Dans ce mode le LIDAR mesure l'environnement dans un plan unique, généralement en faisant tourner le faiseau de manière circulaire autour d'un axe, comme illustré figure \ref{fig:lidar2d},
-			\item[Mode 3D:] Dans ce mode le LIDAR mesure des portions d'espace, généralement en combinant deux rotations simulatées du faiseau, soit en faisant tourner sur un même axe de révolution plusieurs faiseaux ayant des inclinaisons différentes (voir).
+			\item[Mode 3D:] Dans ce mode le LIDAR mesure des portions d'espace, généralement en combinant deux rotations simulatées du faiseau, soit en faisant tourner sur un même axe de révolution plusieurs faiseaux ayant des inclinaisons différentes (voir fig. \ref{fig:lidar3d}).
 		\end{description}
 	
 	\begin{figure}[h!]
@@ -333,7 +376,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\para Cet équipement est comporte un laser infrarouge (longueur d'onde de 905nm) pour scanner un champ semi-circulaire de 270$\degres$. C'est un LIDAR de type "planar, temps de vol". Il mesure la distances des objets à sa portée par pas de 0,25$\degres$. La distance de détection maximale est de 30m.
 		\newline
 		
-		
+		\begin{center}
 		\begin{tabular}{|c|c|}
 			\hline 
 			Angle de Balayage & 270$\degres$ \\ 
@@ -344,10 +387,9 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			\hline
 			Distance de détection & Portée garantie: 0,1 à 30m \\
 			\hline
-			Résolution de la mesure & 1mm \\
-			& $\sigma$ \\
-			\hline
 		\end{tabular} 
+			\captionof{table}{Caractéristiques principales du Hokuyo UTM-30LX-EW}
+		\end{center}
 	
 		\begin{figure}[h!]
 			\centering
@@ -456,15 +498,11 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	 \end{itemize} 
  
    \para Ces outils sont décrits plus en détail dans les chapitres suivants.
-		
 			
-		\todoRediger{introduire les filtres de Kalman}
-		\missingfigure{chaine de traitement de fusion de données}
-		\todoAjouterRef{Filter de Kalman pour la fusion de données.}
-		
-			
-		
 		\subsection{Traitement des nuages de points}
+		
+		\todoARevoir{Virer cette partie, pas à cet endroit}
+		
 		Le LIDAR utilisé par le système Symeter V2 étant de type "2D planar", les points retournés lors d'une unique mesure feront tous partie du même plan. L'ensemble des mesures sera donc constitué d'un ensemble de tranches qu'il faudra reconstituer à l'aide d'un traitement adapté.
 		
 		\para Le traitement des données LIDAR comportera les étapes suivantes:
@@ -550,13 +588,6 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	\end{enumerate}
 
 	\para Les résultats de ces différentes parties du stage sont décrits dans les chapitres suivants de ce rapport.
-	
-	\section{Récapilitation}
-	\todoCompleter{Compléter récapitulation}
-	\para Monter directement le LIDAR sur le tracteur implique que les mesures ne sont plus prises d'un endroit fixe, mais d'une plateforme mobile.
-	
-	\para l’ajout de capteurs IMU, GPS est une contrainte forte du projet qui remet en tout question . Un système embarqué nous pose une tonne de nouveaux problèmes !
-	
 				
 
 \chapter{Simulation d'un tracteur évoluant sur un chantier d'ensilage à l'aide de ROS/Gazebo}
@@ -564,11 +595,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 
 Comme indiqué dans le chapitre précédent, il a été très tôt dans le projet décidé d'utiliser l'environnement logiciel ROS pour implémenter le système Symeter V2. Il avait aussi été décidé de monter un véhicule simulé à l'aide de Gazebo afin d'effectuer le développement initial.
 
-
-
-\para Ce chapitre présente en détail l'environnement logiciel ROS et le logiciel de simulation Gazebo. Cette présentation est illustrée par la construction d'un robot virtuel simple, pour lequel un retour d'expérience est effectué en fin de chapitre suite à cette première expérience.
-
-\para L'implémentation du tracteur de test est ensuite présentée en fin de chapitre.
+\para Ce chapitre présente l'environnement logiciel ROS et le logiciel de simulation Gazebo. Cette présentation est illustrée par la mise en oeuvre d'un robot virtuel simple, pour lequel un retour d'expérience est effectué en fin de chapitre suite à cette première expérience. L'implémentation du tracteur de test est ensuite présentée en fin de chapitre.
 
 	\section{Présentation de ROS}
 	
@@ -606,26 +633,26 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 
 	\subsection{Gestion des transformations}
 		
-			\subsubsection{Poses}
-		
 		La robotique à pour enjeu de permettre la mise en oeuvre de systèmes mécaniques autonomes, mobiles ou non, qui mettent en oeuvre une série de capteurs et d'actionneurs pour agir sur leur environnement avec une interaction humaine très limitées.
 		
-		\para La capacité de représenter de manière fine la position des différents éléments d'un tel système les uns par rapport aux autres, que ce soit en position $x,y,z$, mais aussi en inclinaison - $\theta_x$ (tanguage), $\theta_y$ (roulis), $\theta_z$ (lacet) - est donc primordiale. L'état de l'élément décrit par ce vecteur $x,y,z, \theta_x, \theta_y, \theta_z$ est appelé sa \textbf{pose}.
+		\para La capacité de représenter de manière fine la position des différents éléments d'un tel système les uns par rapport aux autres, que ce soit en position $x,y,z$, mais aussi en inclinaison - $\theta_x$ (tanguage), $\theta_y$ (roulis), $\theta_z$ (lacet) - est donc primordiale. L'état de l'élément décrit par ce vecteur $x,y,z, \theta_x, \theta_y, \theta_z$ est appelé sa \textbf{pose}. 
 		
-		\missingfigure{Pose 3D d'un objet}
+		\para Les outils mathématiques de prédilection pour décrire une pose sont bien sur les transformations dans $\mathbb{R}^3$, translations et rotations. Les rotations sont gérées nativement par ROS selon 2 méthodes conventionnelles, les \textit{angles d'Euler} et les \textit{quaternions}. Une introduction de ces deux concepts est disponible en annexe \ref{app:a}.
 		
-		\para Les outils mathématiques de prédilection pour décrire une pose sont bien sur les transformations dans $\mathbb{R}^3$, translations et rotations. 
+		\para Ces poses sont utilisées de manière native par ROS pour deux choses principales. D'une part l'agencement mécanique précis des éléments constituant le robot, notamment ses actuateurs (roues, bras, etc) et ses capteurs, sachant que ces positions relatives sont succeptibles d'évoluer dans le temps. D'autre part les positions des éléments extérieurs aux robot sont décrits selon ce même cadre.
 		
+		\para ROS fourni donc un topic spécifique, le topics \verb|\tf|, dédié à la diffusion constante des transformations des éléments du robot et de la position des objets externes, selon une arborescence structurée. Un exemple de cet arbre est montré ci-dessous:\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1\linewidth]{img/framesmybot}
+			\caption[framesmybot]{Arborescence de transformations du robot mybot}
+			\label{fig:framesmybot}
+		\end{figure}
 		
-		\para ROS utilise les quaternions de manière native dans la description de ses transformations. \todoAjouterRef{Quaternion et quaternions unité}
+		\subsection{Gestion des capteurs par ROS}
+		Les capteurs sont gérés par ROS en permettant aux constructeurs de capteurs de générer simplement les drivers qui injecteront les données mesurées dans ROS. Cette injection est généralement effectuée au moyen de topics dédiés qui permettent de diffuser des messges dont le format est adapté aux grandeurs mesurées par les capteurs (scalaires, angles, distance, pose, laser scan, nuage de point, etc).
 		
+		\para Par ailleur chaque message diffusant des données mesurées doit inclure l'identifiant de la transformation du référentiel dans lequel la mesure a été prise. Cela permet de grandement simplifier le traitement des données, en permettant de projeter par exemple un mesure prise dans le référentiel d'un capteur vers un reférentiel plus global, en remontant l'arborescence de transformations diffusée par le topic \verb|\tf|. 
 		
-		
-		\todoRediger{précision d'évolution d'un plateforme robotique dépend de la prise en compte de la position relative de ses différents capteurs et actionneurs}
-		\subsection{Gestions des Capteurs}
-		
-		\todoRediger{un petit laïus surt les capteurs supportés}
-		\newpage
 	\section{Présentation de Gazebo}
 	
 	Gazebo est un logiciel qui permet de simuler un "monde" virtuel 3D, dans lequel il est possible de plonger des véhicules robotiques qui seront alors soumis aux lois physiques simulées.
@@ -639,7 +666,7 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 	
 		\subsection{Construction d'un robot virtuel}
 		
-		Un robot virtuel sous Gazebo est décrit par un fichier XML au format URDF. Ce format permet de spécifier un robot en ses éléments constitutifs simplifiés (chassis, roue, partie de bras, etc) de décrire comment ces éléments sont placés les uns par rapport au autres.
+		Un robot virtuel sous Gazebo est décrit par un fichier XML au format URDF, préconisé par l"environnement ROS. Ce format permet de spécifier un robot en ses éléments constitutifs simplifiés (chassis, roue, partie de bras, etc) de décrire comment ces éléments sont placés les uns par rapport au autres.
 		
 		\para Chaque élément  du robot doit comporter 3 parties différentes:
 		\begin{itemize}
@@ -647,12 +674,66 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 			\item un tag \verb|<visual>| qui décrit le modèle 3D de l'apparence visuelle de l'élément (pour affichage dans le simulateur),
 			\item un tag \verb|<inertial>| qui décrit les caractéristiques intertielles de l'élement.
 		\end{itemize}
+		\newpage
 		
-		\para Ce robot doit faire partie d'un monde qui est lui même décrit par un fichier URDF. 
+		\begin{lstlisting}[caption={Extrait d'une description URDF d'un robot},label={lst:urdfrobot},language=XML,captionpos=b,basicstyle=\footnotesize]
+<?xml version="1.0"?>
+<robot name="mybot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="PI" value="3.1415926535897931"/>
+  <xacro:property name="chassisHeight" value="0.1"/>
+  ...			
+  <link name='chassis'>
+    <collision> 
+      <origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/> 
+      <geometry><box size="..."/></geometry> 
+    </collision>
+    <visual> 
+      <origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/> 
+       <geometry><box size="..."/></geometry> 
+       <material name="orange"/>
+    </visual>
+    <inertial> 
+      <origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/> 
+      <mass value="${chassisMass}"/> 
+      <box_inertia .../>
+    </inertial>
+  </link>
+  ...
+  <link name="hokuyo_link">
+    <collision>...</collision>
+    <visual>...</visual>
+    <inertial>...</inertial>
+  </link>
+  ...	
+  <joint name="hokuyo_joint" type="fixed">
+    <axis xyz="1 0 0"/>
+    <origin xyz="..." rpy="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="hokuyo_link_1"/>
+  </joint>		
+</robot>
+		\end{lstlisting}
+	
 		
-		\todoTrouverRefExt{SDF}
-
-		\todoRediger{URDF et SDF, world, contrôleurs}
+		\para Les éléments sont positionnés les uns par rapport aux autres en spécifiant des commandes XML \verb|<joint>| qui indiquent comment placer un element \verb|<child>| par rapport à un element \verb|<parent| (voir listing \ref{lst:urdfrobot}). Le joint peut être de type \verb|"fixed"|, auquel cas les deux éléments sont rigidement liés dans la simulation. Où il peut être de type \verb|"revolute"|, \verb|"planar"|, \verb|"continuous|, ... pour définir une articulation mobile en un élément parent et un élément enfant.  Toute une arborescence d'éléments peut ainsi être agencée pour décrire une simulation de robot avec des parties fixes et des parties mobiles.
+		
+		\para Pour plus de détails sur les capacités de description de URDF, voir  \href{http://wiki.ros.org/urdf/XML}{http://wiki.ros.org/urdf/XML}.
+		
+		\para Le "monde" virtuel dans lequel doit évoluer le robot simulé est spécifié par un fichier de type \verb|"*.world"|, fichier qui est interprété par Gazebo pour monter la simulation. Ce fichier est lui écrit en utilisant le format SDF, préconisé par Gazebo. Un exemple d'un tel fichier est montré listing \ref{lst:sdfworld}. 
+		
+		\begin{lstlisting}[caption={Exemple d'un fichier "*.world"},label={lst:sdfworld},language=XML,captionpos=b,basicstyle=\footnotesize]
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="myworld">
+    <include><uri>model://sun</uri></include>		
+    <include><uri>model://ground_plane</uri></include>		
+    <physics name="ode_200iters" type="ode" default="true">...</physics>
+  </world>
+</sdf>
+		
+		\end{lstlisting}
+		
+		
 		
 		
 		\subsection{Vérification de disponibilité des capteurs}
@@ -698,11 +779,11 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 		
 		La mise en oeuvre du robot de base a révélé rapidement révélé que Gazebo comporte quelques problèmes  lié à la simulation de l'adhérence des roues avec les objets environnants, notamment le sol.
 		
-		\para En particulier, les roues d'un robot ROS plongé dans Gazebo n'auront aucune adhérence sur le sol au démarrage de la simulation. Si la propulsion est mise en oeuvre, nous pouvons constater que les roues tournent mais que le robot ne bouge pas, comme si les roues tournaient dans le vide, ou sur de la glace.
+		\para En particulier, les roues d'un robot ROS plongé dans Gazebo n'auront aucune adhérence sur le sol au démarrage de la simulation. Si la propulsion est mise en oeuvre, nous constatons que les roues tournent mais que le robot ne bouge pas, comme si les roues tournaient dans le vide, ou sur de la glace.
 		
 		\para Après avoir changé des réglages dans le moteur physique de Gazebo, dans le réglage du coefficient de frottement des roues et de nombreux autres paramètres sans effet sur le problème, un contournement a été mis en place pour le mitiger: un node ROS a été écrit pour forcer la position du robot à des coordonnées spatiale bien précises, en utilisant le topic \verb|/gazebo/set_model_state|.
 		
-		\para Après ce forçage, Gazebo prend ensuite bien en compte l'adhérence des roues du robot et le robot bouge quand les roues tournent. 
+		\para Après ce forçage de positin, Gazebo prend ensuite bien en compte l'adhérence des roues du robot et le robot bouge quand les roues tournent. 
 		
 		\para Cela fait que ce script, dénommé \verb|setpose|, doit être invoqué systématiquement après le démarrage de la simulation pour que l'adhérence des roues soit bien prise en compte par le moteur physique de Gazebo.
 		
@@ -727,15 +808,34 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 
 		
 	\section{Mise en Oeuvre: simulation d'un environnement de tassage de silo}
+	
+	Cette section décrit comment les différents composants de la simulation du chantier d'ensilage sont montés, notamment le tracteur qui a demandé le plus de travail.
+	  
 		\subsection{Montage d'un tracteur simulé}
-		Intérêt: simuler l'implantation physique des capteurs avec des dimensions du même ordre de grandeur que les plateformes cibles.
+		L'intérêt de modéliser un tracteur plutôt que le petit robot utilisé précédement est double. Tout d'abord cela nous permet de rapprocher la simulation du comportement dynamique du d'un vrai tracteur, ce qui nous permettra de travailler sur le module de localisation à partir d'une dynamique plus réaliste. 
+		
+		\para La deuxième raison est que ce tracteur permettra dans un étape ultérieure du projet d'étudier différente configurations d'implantation de capteurs. Il est par exemple envisagé d'équiper Symeter V2 de 2 LIDARS de manière à assurer que l'ensemble du silo sera balayé par au moins un faisceau LIDAR sans que le tracteur n'ai de manoeuvre complexe à effectuer. Ce modèle de tracteur permettra de tester de nombreuses configurations différentes, de manière reproductible et avec beaucoup de souplesse.
 		
 		\subsubsection{Modélisation du tracteur}
 			\paragraph{Modélisation physique}
-			Le tracteur virtuel été modélisé en se basant sur les dimensions générales d'un tracteur Fendt type 512, en utilisant cependant des formes géométriques simplifiées.
-			\newline
+			Le tracteur virtuel été modélisé en se basant sur les dimensions générales d'un tracteur Fendt type 512, en utilisant cependant des formes géométriques simplifiées. Le tracteur est donc composé d'un pavé en guise de chassis, d'un cube en guise de cabine, de quelques cylindres allongés en guise d'essieux, et de 4 grands cylindres applatis en guise de roues, tel qu'illustré dans la figure \ref{fig:tracteur3d}. 
 			
-			Le tracteur est donc composé d'un pavé en guise de chassis, d'un cube en guise de cabine, de quelques cylindres allongés en guise d'essieux, et de 4 grands cylindres applatis en guise de roues.
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.4\linewidth]{img/tracteur3d}
+				\caption[tracteur3d]{Modèle 3D du tracteur simulé}
+				\label{fig:tracteur3d}
+			\end{figure}
+		
+			\para L'arborescence de transformations entre les différents éléments du tracteur est illustrée figure \ref{fig:frames}
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=1\linewidth]{img/frames}
+				\caption[tracteurframes]{Arborescence de transformations du modèle de tracteur simulé}
+				\label{fig:frames}
+			\end{figure}
+			
 			
 			
 			\paragraph{Actuateurs et Contrôleurs}
@@ -744,7 +844,26 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 			
 			\para Chacune des roues motrices est commandée en vitesse par son propre topic, telle que décrit dans le tableau suivant, et l'angle de chacune des roues de direction est commandée par un topic dédié.
 			
-			\missingfigure{Tableau avec la correspondance entre vitesse roue et topic, angle direction et roue directionnelle}
+			\begin{center}
+				\begin{tabular}{|c|c|c|}
+					\hline 
+					\textbf{Nom du controleur} & \textbf{Grandeur controllée} \\ 
+					\hline 
+					\verb|left_frontwheel_velocity_controller| & Vitesse roue avant gauche \\ 
+					\hline 
+					\verb|right_frontwheel_velocity_controller| & Vitesse roue avant droite \\ 
+					\hline 
+					\verb|left_rearwheel_velocity_controller| & Vitesse roue arrière gauche \\ 
+					\hline 
+					\verb|right_rearwheel_velocity_controller| & vitesse roue arrière droite \\ 
+					\hline 
+					\verb|right_steer_controller| & Angle direction roue avant droite \\ 
+					\hline 
+					\verb|left_steer_controller| & Angle direction roue avant gauche \\ 
+					\hline 
+				\end{tabular} 
+				\captionof{table}{Liste des controlleurs du tracteur simulé}
+			\end{center}
 		\subsubsection{Propulsion et Guidage}
 		
 			Du fait des contraintes exposées dans le paragraphe \ref{conc-contrainte-gazebo}, la consigne de vitesse sur chacune des roues doit être cohérente vis-à-vis de la vitesse de consigne, vis-à-vis du rayon de chacune des roues, ainsi qu'avec le rayon de virage imposé. De plus l'angle de chacune des roues directrices doit être réglé de manière différentielle en fonction de l'angle de direction donné en consigne.
@@ -764,7 +883,7 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 			\para Les données d'entrée sont les suivantes:
 			\begin{itemize}
 				\item $L$ l'empattement du tracteur, c'est à dire la distance entre les deux essieux,
-				\item $l$ la distance entre l'axe avant/arrière du tracteur et le centre d'une roue avant (les roues sont supposées disposées de manière symétrique),
+				\item $l_f$ la distance entre l'axe avant/arrière du tracteur et le centre d'une roue avant (les roues sont supposées disposées de manière symétrique),
 				\item $\phi$ l'angle de consigne.
 			\end{itemize}
 		
@@ -785,50 +904,42 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 			
 			\begin{gather}
 			\label{eq:phi_l}
-			\tan{\phi_l} = \frac{L}{R+l} \Longleftrightarrow \phi_l = \arctan{\frac{L}{R+l}} \\[2ex]
-			\tan{\phi_r} = \frac{L}{R-l} \Longleftrightarrow \phi_r = \arctan{\frac{L}{R-l}}
+			\tan{\phi_l} = \frac{L}{R+l_f} \Longleftrightarrow \phi_l = \arctan{\frac{L}{R+l_f}} \\[2ex]
+			\tan{\phi_r} = \frac{L}{R-l_f} \Longleftrightarrow \phi_r = \arctan{\frac{L}{R-l_f}}
 			\end{gather}
 			
 			En incorporant \ref{eq:diff_r} dans \ref{eq:phi_l}, nous obtenons
 			
 			\begin{equation}
-			\phi_l = \arctan{\frac{L}{\frac{L}{\tan{\phi}} + l}} = \arctan{\frac{L}{\frac{L + l\tan{\phi}}{tan{\phi}}}} = \arctan{\frac{L \tan{\phi}}{L+l \tan{\phi}}}
+			\phi_l = \arctan{\frac{L}{\frac{L}{\tan{\phi}} + l_f}} = \arctan{\frac{L}{\frac{L + l_f\tan{\phi}}{tan{\phi}}}} = \arctan{\frac{L \tan{\phi}}{L+l_f \tan{\phi}}}
 			\end{equation}
 			
 			\para De manière équivalente, 
 			
 			\begin{equation}
-			\phi_r = \arctan{\frac{L\tan{\phi}}{L - l \tan{\phi}}}
+			\phi_r = \arctan{\frac{L\tan{\phi}}{L - l_f \tan{\phi}}}
 			\end{equation}
-			
-			\paragraph*{Réglage des vitesses de rotation:} En plus du différentiel d'angle des roues directionnelles, la vitesse de rotation de toutes les roues doit être précisément réglée lors un virage pour éviter tout dérapage.
-			
-			\para Toujours selon la figure \ref{fig:ackermann}, nous constatons que, lors d'un virage à angle constant, chacunes des roues parcourt son propre cercle de centre O. 
-			
-			\para Si la vitesse de consigne $v$ est donnée pour le milieu de l'essieu arrière (point B), quelle doit être la vitesse de rotation des roues pour que la vitesse de consigne soit suivie par le point B?
-			
 			
 			\paragraph{Implémentation sous ROS}
 			
-			L'implémentation sous ROS de cet algorithme est effectué au moyen d'un node dédié, nommé \verb|tracteur_steering.py|, qui fait partie du package \verb|tracteur_control|.
+			L'implémentation sous ROS de cet algorithme est effectué au moyen d'un node dédié, nommé \verb|tracteur_steering.py|, qui fait partie du package \verb|tracteur_control|. Ce node est implémenté en python et prend en entrée le topic \verb|/tracteur/cmd_vel| qui comporte des messages de type \verb|Twist|. Ce message contient deux informations: l'un comporte la consigne de vitesse du tracteur, et l'autre le taux de rotation à gauche ou à droite du tracteur.
 			
-			\para Le node \verb|tracteur_steering| prend en entrée le topic \verb|/tracteur/cmd_vel| qui comporte des messages de type \verb|Twist|. Ce message contient deux informations: l'un comporte la consigne de vitesse du tracteur, et l'autre le taux de rotation à gauche ou à droite du tracteur.
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.7\linewidth]{img/tracteur_steering}
+				\caption[tracteur_steering]{Topics reçus et générés par le noeud tracteur\_steering}
+				\label{fig:tracteursteering}
+			\end{figure}
 			
 			\para Le node \verb|tracteur_steering| calcule sur la base des consignes données 6 nouveau paramètres, sur la base des algorithmes exposés en \ref{algo-steering}:
 			\begin{itemize}
 				\item les 4 consignes de vitesse pour chacune des roues
 				\item les 2 consignes de direction pour chacune des roues directionnelle.
 			\end{itemize}
-		
-			\para Ces consignes sont soumises à chacun des contrôleur par l'intermediaire des topics qui leur sont dédiés \todoAjouterRef{tableau avec les topics}.
+			\newpage
 			
-			\todoCompleter{Calcul des vitesses de rotation}
-			
-			\todo{Description de l'implémentation sous ROS}
-			\missingfigure{Schéma des flux topic qui permet de transformer une commande twist en 4 commandes de velocités.}
-		
-		
-		
+			\para Ces consignes sont ensuite diffusées chacune vers les topics des controlleurs de vitesse de rotation des roues et ceux de commande de l'angle roues des roues directionnelles, selon le principe exposé en figure \ref{fig:tracteursteering}.
+					
 
 \chapter{Mise en place du processus de localisation}
 
@@ -837,7 +948,7 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 \para Ce problème est complexe et requiert d'en comprendre au moins les bases afin de permettre de configurer les composants correctement.
 
 	\section{Présentation du problème}
-	Comme indiqué dans le paragraphe \ref{intro-loc-fusion-donnees}, le but du processus de localisation est d'estimer en temps réel pour chaque instant $t_k$ le vecteur d'état 
+	Comme indiqué en introduction, le but du processus de localisation est d'estimer en temps réel pour chaque instant $t_k$ le vecteur d'état 
 	
 	\begin{equation}	
 	\bs{x}_k = \begin{bmatrix}
@@ -852,12 +963,9 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	\para Le GPS en mode RTK peut fournir une mesure de la position du véhicule dans la scène avec une précision de l'ordre de quelques centimètres, mais à un taux de rafraichissement beaucoup plus bas, de l'ordre de 2 à 5 Hz. De plus le GPS ne fournit aucune information sur l'assiette du véhicule.
 	
-	
-	\missingfigure{Représentation du vecteur d'état par rapport au chantier}
-	
 	\para Selon \cite{gustavsson_uav_2015}, il est possible de mettre en place un procédé qui maintient ce vecteur d'état sur la base de ces deux instruments, communément appelé la "fusion de capteurs". Nous mettrons en oeuvre un tel procédé.
 	
-	\textit{Note} Comme le GPS fourni une position absolue dans le référentiel de la scène nous ne sommes pas dans une problématique SLAM, où l'on tente de déterminer de manière imbriquée la position et l'environnement du véhicule. Dans notre cas, les deux problèmes sont décorrélés: d'abord nous déterminons la localisation et ensuite nous déterminons l'environnement. 
+	\para \textit{Note}: Comme le GPS fourni une position absolue dans le référentiel de la scène nous ne sommes pas dans une problématique SLAM, où l'on tente de déterminer de manière imbriquée la position et l'environnement du véhicule. Dans notre cas, les deux problèmes sont décorrélés: d'abord nous déterminons la localisation et ensuite nous déterminons l'environnement. 
 	
 	\subsection{Repères}
 	
@@ -872,22 +980,16 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	\para Selon \cite{gustavsson_uav_2015}, nous pouvons donc distinguer les 4 référentiels suivants
 	
 	\subsubsection{Repère Inertiel}
+	Le repère inertiel est dans notre cas le repère dont l'origine se trouve au centre de masse de la Terre. L'axe $z$ est aligné avec son axe de rotation et les axes $x$ et $y$ sont dans le plan équatorial de manière à ce qu'un repère direct soit formé. Ce système ne tourne pas avec la rotation de la Terre.
 	
-	\subsubsection{Repère ECEF}
+	\subsubsection{Repère Centré et Fixe par Rapport à la Terre}
+	Ce repère, aussi appelé repère ECEF (Earth-Centered, Earth-Fixed), est similaire au repère inertiel, avec la différence que le repère tourne avec la Terre. Son axe $z$ passe par le centre de masse la Terre en pointant vers le pôle Nord, l'axe $x$ passe par l'intersection de l'équateur et du méridien de la position du véhicule. L'axe $y$ complète le référentiel direct. Les coordonnées sont généralement exprimées dans ce repère par des coordonnées géodétiques, c'est à dire une longitude, une latitude et une altitude($\lambda$, $\varphi$, $h$), et servent à indiquer la position d'un point par rapport à l'ellipsoid par le standard WGS-84.
 	
 	\subsubsection{Repère de navigation local}
+	Le repère de navigation locale sert à mesurer a des axes $x$ et $y$ tangents à la surface de la Terre. Généralement ROS utilise un repère de navigation local avec l'axe $x$ pointant vers l'est, l'axe $y$ pointant vers le nord et l'axe $z$ pointant radialement vers l'espace. C'est le repère dans lequel la navigation est effectuée dans les applications de localisation où le déplacement du véhicule est négligeable par rapport à la taille de la Terre, et l'origine est placée au point de démarrage du véhicule.
 	
 	\subsubsection{Repère du véhicule}
-	
-				
-	\subsection{Système de Navigation Inertielle}
-	
-	\para Selon \cite{gustavsson_uav_2015}, les données de l'IMU peuvent être exploitée par un Système de Navigation Inertiel. Un tel 
-	
-	
-	\subsection{Transformation des coordonnées géocentriques en coordonnées locale}
-	
-
+	Quand des capteurs fixés au chassis d'un véhicule génèrent des mesures, il convéniant pour exploiter ces mesures de disposer d'un repère attaché directement à ce chassis. L'origine du repère se trouve au centre de masse, l'axe $z$ pointe vers le haut du véhicule, l'axe $x$ vers l'avant, et l'axe $y$ complète le repère direct.
 	
 	\section{Filtres de Kalman}
 	
@@ -1129,7 +1231,7 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	\end{gather}
 	
 	\subsection{navsat\_transformation\_node}
-	\todoRediger{navsat transformation node}
+	Le node \verb|navsat_transformation-node| est le node qui prend en entrée les positions fournies par le GPS dans le repère ECEF, pour les transformer en coordonnées $(x,y,z)$ dans le repère local. Il est utilisé de manière concourrante avec \verb|ekf_localization_node| lorsque des données GPS doivent être utilisées.
 	
 	\subsection{Configuration des Capteurs}
 	\missingfigure{Architecture des nodes}
@@ -1267,16 +1369,36 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 
 Les chapitres précédents ont montrés comment le système Symeter V2 a été initialement conçu et monté à l'aide d'outils de simulation. Après avoir obtenu une première série de résultat par ce biais, quelques questions ont émergé concernant la validité de certains aspects de la simulation, et de savoir si la simulation représentait un chemin réaliste de développement.
 
-\para C'est pour cela qu'une campagne d'acquisation de données réelle, à l'aide des capteurs physiques réels a été effectuée.
-
+\para C'est pour cela qu'une campagne d'acquisition de données réelles, à l'aide des capteurs physiques réels a été effectuée.
 
 	\section{Protocole de test}
-	\subsection{Instruments d'acquisition)}
-	\todoRediger{TellusCar avec Instrument montés sur l'arrière}
-	\todoRediger{données GPS, données IMU et données LIDAR, toutes acquises en même temps}
-	\missingfigure{text}
+	\subsection{Instruments d'acquisition}
+	Les capteurs (IMU, GPS, Lidar) ont été montés sur la camionnette de Tellus Environnement (affectueusement appelée "TellusCar" par l'équipe) et connectés à un ordinateur disposant de l'environnement ROS (fig. \ref{fig:telluscar} et \ref{fig:telluscardetail}).
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/telluscar}
+		\caption[telluscar]{Telluscar avec capteurs montés à l'arrière}
+		\label{fig:telluscar}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/telluscardetail}
+		\caption[telluscardetail]{Détail des capteurs monté l'arrière de la Telluscar.}
+		\label{fig:telluscardetail}
+	\end{figure}
+
+	\para Le but des tests était de faire évoluer la Telluscar ainsi équipée en vue d'enregistrer simultanéement les données générées par l'IMU, le GPS et le LIDAR, pour ensuite les rejouer à posteriori et les soumettre à l'implémentation de Symeter V2.
+	
+	\para Les données sont enregistrée en utilisant l'outil \verb|rosbag| de ROS qui permet d'enregistrer tous les topics diffusés lors d'une session de fonctionnement. L'outil \verb|rosbag| permet ensuite de rejouer ces captures et d'alimenter des nodes déployés indépendamment et ainsi les tester.
+	
+	
+
 	
 	\subsection{Exploitation}
+	
+	Les données 
 	\todoRediger{Capture Bagfile alors que la TellusCar évolue dans le parking de adjacent à TEllusEnv}
 	\todoRediger{La partie logiciel de Symeter V2 peut exploiter des rejeux des captures pour estimer l'évolution de la TellusCar, et tenter de reconstituer le parking.}
 	
@@ -1342,6 +1464,7 @@ Au cours de ce stage, nous avons pu confirmer que les outils de simulation propo
 
 \begin{appendix}
 	\chapter{Représentation de l'Attitude et des Rotations}
+	\label{app:a}
 	Selon \cite{gustavsson_uav_2015}, si nous considérons un véhicule mesurant des mouvements par rapport à son propre repère et un autre système mesurant les positions et vitesses etc du même véhicule par rapport à un repère $\{e\}$, et si la navigation est effectuée par rapport à un repère local de navigation ${n}$, il devient très vite apparent qu'un outil pour décrire l'orientation du véhicule par rapport à ces différents repères est nécessaire.
 	
 	\para Deux des manières les plus communes de représenter les attitudes et les rotations dans $\mathbb{R}^3$ sont les \textit{Angles d'Euler} et les \textit{quaternions}.
