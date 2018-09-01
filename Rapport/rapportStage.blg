@@ -3,47 +3,48 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: rapportStage.aux
 The style file: alpha.bst
 Database file #1: biblio.bib
+Warning--I didn't find a database entry for "hornung_octomap"
 Warning--empty journal in moreno_comparative_2016
 Warning--empty journal in rs-_scanning_2012
-You've used 13 entries,
+You've used 14 entries,
             2543 wiz_defined-function locations,
-            640 strings with 6914 characters,
-and the built_in function-call counts, 4746 in all, are:
-= -- 452
-> -- 236
+            647 strings with 7147 characters,
+and the built_in function-call counts, 5264 in all, are:
+= -- 502
+> -- 271
 < -- 10
-+ -- 78
-- -- 75
-* -- 310
-:= -- 805
-add.period$ -- 45
-call.type$ -- 13
-change.case$ -- 73
-chr.to.int$ -- 13
-cite$ -- 15
-duplicate$ -- 207
-empty$ -- 353
-format.name$ -- 92
-if$ -- 977
++ -- 91
+- -- 88
+* -- 360
+:= -- 896
+add.period$ -- 48
+call.type$ -- 14
+change.case$ -- 82
+chr.to.int$ -- 14
+cite$ -- 16
+duplicate$ -- 221
+empty$ -- 383
+format.name$ -- 105
+if$ -- 1075
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 71
-num.names$ -- 43
-pop$ -- 93
+missing$ -- 17
+newline$ -- 76
+num.names$ -- 46
+pop$ -- 99
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 101
 quote$ -- 0
-skip$ -- 164
+skip$ -- 174
 stack$ -- 0
-substring$ -- 155
-swap$ -- 28
+substring$ -- 187
+swap$ -- 29
 text.length$ -- 10
 text.prefix$ -- 5
 top$ -- 0
-type$ -- 76
+type$ -- 84
 warning$ -- 2
-while$ -- 42
-width$ -- 15
-write$ -- 179
-(There were 2 warnings)
+while$ -- 47
+width$ -- 17
+write$ -- 192
+(There were 3 warnings)

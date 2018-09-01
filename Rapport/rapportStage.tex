@@ -98,7 +98,7 @@
 \textsc{\LARGE Université de Rennes 1}\\[1cm] 
 \textsc{\Large }\\[0.5cm] % Major heading such as course name
 \textsc{\large Master 2 Calcul scientifique et modélisation}\\
-\textsc{Rapport de Stage - VERSION PRELIMAIRE 0.1}\\
+\textsc{Rapport de Stage}\\
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
@@ -155,9 +155,9 @@ Sébastien \textsc{Hervieu}
 \end{titlepage}
 
 
-\begin{interlude}
-\listoftodos
-\end{interlude}
+%\begin{interlude}
+%\listoftodos
+%\end{interlude}
 
 \cleardoublepage% especially in a document where chapters start at right-hand pages
 %\phantomsection% for an anchor if you use hyperref
@@ -168,21 +168,15 @@ Sébastien \textsc{Hervieu}
 \markboth{Remerciements}{Remerciements}% relevant depending on page style
 % or if it's more than one page
 
-\para Je tiens tout d'abord à remercier très sincèrement monsieur \textbf{Geoffroy ETAIX}, qui m'a accordé sa confiance pour mener ce stage, ainsi que toute l'équipe de Tellus Environment dont l'accueil et la gentillesse a été au dela de toutes mes espérances.
+\para Je tiens tout d'abord à remercier très sincèrement monsieur Geoffroy ETAIX, qui m'a accordé sa confiance pour mener ce stage, ainsi que toute l'équipe de Tellus Environment dont l'accueil et la gentillesse a été au dela de toutes mes espérances.
 
-\para J'adresse mes remerciements respectueux à messieurs \textbf{Fabrice Mahé et Eric Darrigrand} professeurs de l'Université de Rennes 1, qui m'ont permis de rejoindre cette formation et qui m'ont accompagné lors de la recherche de stage et de son  déroulement.
+\para J'adresse mes remerciements respectueux à messieurs Fabrice Mahé et Eric Darrigrand, professeurs de l'Université de Rennes 1, qui m'ont permis de rejoindre cette formation et qui m'ont accompagné lors de la recherche de stage et de son  déroulement.
 
-\para Je remercie le Fongecif Bretagne, dont le soutient m'a permis de réaliser ce congès de formation, ainsi que toute l'équipe d'IDAPPS qui m'a aidé dans le montage du dossier de financement: Stéphane RENGER, Yann GIRARDEAU et surtout Laila BENLARIBI, que je salue très chaleureusement. Qu'elle soit ici félicitée de sa redoutable efficacité! 
+\para Je remercie le Fongecif Bretagne, dont le soutient m'a permis de réaliser ce congé de formation, ainsi que toute l'équipe d'IDAPPS qui m'a aidé dans le montage du dossier de financement: Stéphane RENGER, Yann GIRARDEAU et surtout Laila BENLARIBI, que je salue très chaleureusement. Qu'elle soit ici félicitée de sa redoutable efficacité! 
 
 \para Je remercie l'équipe du service Formation Continue de l'Université Rennes I, mesdames Lisa GENDREAU et Marie-Gisèle DARAS
 
-\para Je remercie enfin ma petite famille, mon épouse Céline et mes deux filles, Clémentine et Angèle, pour leurs encouragements, leur soutien et leur patience tout au long de ces deux dernières années. Nous sommes sur un beau chemin.
-
-
-\glsaddall
-\para First use \gls{cd}\\
-subsequent \gls{cd}
-
+\para Je remercie enfin ma petite famille, mon épouse Céline et mes deux filles Clémentine et Angèle, pour leurs encouragements, leur soutien et leur patience tout au long de ces deux dernières années. Nous sommes sur un beau chemin.
 
 
 \setcounter{tocdepth}{5}
@@ -192,9 +186,9 @@ subsequent \gls{cd}
 
 \chapter{Introduction}
 
-J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au sein de Tellus Environnement, afin de mener à bien la partie etude et développement du projet appelé en interne "Symeter V2".
+J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au sein de Tellus Environnement, afin de mener à bien la partie étude et développement du projet appelé en interne "Symeter V2". Le but de ce projet est de permettre le monitoring du tassage d'un silo de maïs en temps réel en utilisant un LIDAR embarqué sur un tracteur.
 
-\para Cette introduction présente les activités de Tellus Environment et introduit le contexte du projet Symeter V2.
+\para Cette introduction présente les activités de Tellus Environment et introduit le contexte du projet Symeter V2. 
 
 	\section{Tellus Environment - Missions Principales}
 
@@ -202,15 +196,15 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	Tellus Environment a été créée en 2012 et s'est initialement spécialisée dans le traitement de données géophysiques, la cartographie haute définition des sous-sols et des fond-marins. Elle propose à ses clients une offre bout en bout d'acquisition et de traitement des données pour permettre à ses clients d'agir en fonction de ces conclusions.
 	
 	\subsection{Traitement des données}
-	Tellus Environment dispose d'une expertise particulière du traitement des données géophysiques en mettant en oeuvre le procédé MagSalia, qu'elle brevète.
+	Tellus Environment dispose d'une expertise particulière du traitement des données géophysiques et optiques en mettant en oeuvre le procédé MagSalia, procédé dont le brevet est exploité exclusivement par l'entreprise.
 	
-	\para Initialement développé par le laboratoire de Mathématiques de L'Université de Bretagne Occidentale, ce procédé peut exploiter des mesures magnétiques, sonar ou LIDAR. Lorsqu'il est appliqué à des acquisitions magnétiques, il produit une tomographie à en 3 dimensions de masses magnétiques ponctuelles et étendues jusq'à 30 mètres de profondeur.
+	\para Initialement développé par le laboratoire de Mathématiques de L'Université de Bretagne Occidentale, ce procédé peut exploiter des mesures magnétiques, sonar multibeam ou LIDAR. Lorsqu'il est appliqué à des acquisitions magnétiques, il produit une tomographie en 3 dimensions de masses magnétiques ponctuelles et étendues jusqu'à 30 mètres de profondeur.
 	
-	\para Dans se version sonar multifaisceaux ou LIDAR, il permet d'accentuer le relief du modèle numérique en mettant en évidence les anomalies du fond marin ou les perturbations de la sous-couche terrestre. Ceci est particulièrement adapté aux problématiques agricoles, archéologiques, les zones vierges (non exploitées) ou blanches (exploitées mais cartographie imprécise ou absente).
+	\para Dans sa version sonar multifaisceaux ou LIDAR, il permet d'accentuer le relief du modèle numérique en mettant en évidence les anomalies du fond marin ou les perturbations de la sous-couche terrestre. Ceci est particulièrement adapté aux problématiques agricoles, archéologiques et aux divers aménagements qui nécessitent des zones vierges (non exploitées) ou blanches (exploitées mais cartographie imprécise ou absente).
 	
-	\subsection{Collecte des données géophysique}
+	\subsection{Collecte des données géophysiques}
 	
-	\para Tellus Environment met en oeuvre également ses propres équipements géoradar et magnetomètre pour l'acquisition de données sur le sous-sol sur des surfaces de quelques mètres-carré à quelque hectares. Elle est aussi en mesure de planifier et coordonner la mise en oeuvre d'équipements plus lourds - LIDAR, géoradar (fig. \ref{fig:georadar} et \ref{fig:radargram}), magnétomètres aéroportés - pour obtenir des données sur des surfaces beaucoup plus importantes, de l'ordre du kilomètre carré.
+	\para Tellus Environment met en oeuvre également ses propres équipements géoradar et magnétomètre pour l'acquisition de données sur le sous-sol, sur des surfaces de quelques mètres-carrés à quelque hectares. Elle est aussi en mesure de planifier et coordonner la mise en oeuvre d'équipements plus lourds - LIDAR, géoradar (fig. \ref{fig:georadar} et \ref{fig:radargram}), magnétomètres aéroportés - pour obtenir des données sur des surfaces beaucoup plus importantes, de l'ordre du kilomètre carré.
 	
 	\begin{figure}
 		\centering
@@ -236,7 +230,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\label{fig:radargram}
 	\end{figure}
 	
-	\para Tellus Environment peut aussi coordonner la mise en oeuvre d'équipements d'acquisition marins - sonar (fig. \ref{fig:sonar} et \ref{fig:e1790}), multibeam, etc - pour permettre la cartographie des fonds marins et des sous-sols aquatiques, que ce soit en environnement eau douce - rivières, lacs étangs - ou marins. 
+	\para Tellus Environment peut aussi coordonner le déploiement d'équipements d'acquisition marins - sonar (fig. \ref{fig:sonar} et \ref{fig:e1790}), multibeam, etc - pour permettre la cartographie des fonds marins et des sous-sols aquatiques, que ce soit en environnement eau douce - rivières, lacs étangs - ou marins. 
 	
 	\begin{figure}
 		\centering
@@ -244,14 +238,14 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\caption[sonargramme]{Exemple d'un sonargramme généré par un sonar sub-bottom (Image Tellus Envirinment)}
 		\label{fig:e1790}
 	\end{figure}
-	
-	\para Tellus Environment a accès à de nombreuses bases cartographiques pour compléter les données acquises sous sa supervision pour aider à la mise en oeuvre des équipements ainsi qu'à compléter les données acquises en vue de leur traitement.
 
+	
+	\para Tellus Environment est spécialiste de la fusion de données (géophysiques et optiques), en ayant accès à de nombreuses bases cartographiques pour extraire l'information utile sur une zone d'intérêt.
 
 
 	\section{Activité R\&D}
 	
-	Tellus Environment comprend une activité R\&D qui met en oeuvre ses expertises en traitement de données et de mise en oeuvre de capteurs liés à la géophysique pour participer au développement de produits innovants.
+	Tellus Environment comprend une activité R\&D de cartographie qui met en oeuvre ses expertises en traitement de données, en capteurs liés à la géophysique pour participer au développement de produits innovants.
 	
 	\para Le sujet de ce stage se déroule au sein de l'activité R\&D de Tellus Environment pour participer au développement du projet Symeter V2.
 
@@ -262,7 +256,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\label{sec:symeterv1}
 		Symeter V1 est un équipement qui permet de mesurer en temps réel l'état de tassage d'un silo de fourrage (maïs, herbe, ...) en vue d'augmenter la qualité des silos générés. Il est basé sur un équipement de mesure laser, le LIDAR, qui permet de collecter très rapidement de nombreux points de mesure. 
 		
-		\para Ce LIDAR est placé à l'aplomb du silo, au sommet d'une perche de 7m de hauteur, stabilisée par un trepied (voir fig. \ref{fig:symeterv1}. La visualisation des données est transmise au moyen d'une liaison WIFI à un écran embarqué dans le tracteur de tassage (fig. \ref{fig:archigenv1}).
+		\para Ce LIDAR est placé à l'aplomb du silo, au sommet d'une perche de 7m de hauteur, stabilisée par un trépied (voir fig. \ref{fig:symeterv1}). La visualisation des données est transmise au moyen d'une liaison WIFI à un écran embarqué dans le tracteur de tassage (fig. \ref{fig:archigenv1}).
 		
 		\begin{figure}[h!]
 			\centering
@@ -282,9 +276,9 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Ce produit a été développé dans le courant de l'année 2017. Son utilisation sur des chantiers d'ensilage réel avait démontré que la mesure de tassage était possible et précise. Mais le retour d'expérience a mis en évidence des points d'amélioration.
 		
-		\para Tout d'abord, le déploiement et la configuration de l'installation est plutôt longue et complexe, ce qui n'est adapté à la contrainte de mise en oeuvre simple et rapide qui est généralement demandée pour les outils de chantiers d'ensilage.
+		\para Tout d'abord, le déploiement et la configuration de l'installation est plutôt longue et complexe, ce qui n'est adapté pas à la contrainte de mise en oeuvre simple et rapide qui est généralement demandée pour les outils de chantiers d'ensilage.
 		
-		\para Ensuite des problèmes de connectivité dans la liaison sans fil entre le module d'acquisition et de traitement d'un part, et la tablette chargée de l'affichage des informations d'autre part, induisent une fiabilité aléatoire du système.
+		\para Ensuite des problèmes de connectivité dans la liaison sans fil entre le module d'acquisition et de traitement d'une part, et la tablette chargée de l'affichage des informations d'autre part, induisent une fiabilité aléatoire du système.
 		
 		\para Enfin le positionnement du trépied au plus près du silo en vue d'en obtenir un point de vue le plus à l'aplomb possible (voir fig. \ref{fig:symeterv1}) pose un risque non négligeable de collision entre le tracteur de tassage et le trépied. Cette collision forcerait le re-déploiement du trépied.
 		
@@ -303,19 +297,23 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Le fait de monter une bonne fois pour toute l'équipement sur le tracteur permet d'avoir un déploiement sur chantier grandement simplifié, la calibration et la configuration étant effectuée en atelier lors du montage sur le tracteur. La mise en oeuvre de Symeter V2 par un simple appui sur un bouton au début du chantier d'ensilage est donc envisageable.
 		
-		\para Bien sûr le fait de monter un LIDAR sur une plateforme entraîne un besoin implicite fort: la \textit{pose} du tracteur - l'union de sa position $x,y,z$ et de son attitude $\theta_x, \theta_y, \theta_z$ - doit être connue avec une assez grande précision à chaque instant pour permettre la construction du modèle numérique 3D du chantier d'ensilage.
+		\para Bien sûr le fait de monter un LIDAR sur une plateforme entraîne un besoin implicite fort: la \textit{pose} du tracteur doit être connue avec une assez grande précision à chaque instant pour permettre la construction du modèle numérique 3D du chantier d'ensilage. (la \textit{pose} d'un object dans un référentiel donnée est l'union de ses coordonnées Cartésiennes $x,y,z$ et des coordonnées angulaires de son attitude $\theta_x, \theta_y, \theta_z$ ).
 		
 		\para Ce nouveau besoin force la mise en oeuvre de capteurs et des méthodologies associées permettant de déterminer cette pose. Ces capteurs seront un IMU - une centrale intertielle miniaturisée - et un GPS exploité en mode RTK, appelé aussi "GPS centimétrique".
 		
 		\para La mise en oeuvre de ces capteurs pour déterminer la pose du tracteur et permettre la construction du modèle numérique 3D du chantier, à partir de relevés LIDAR issus d'une plateforme mobile représente la grande difficulté de ce projet.
 		
 		\para Mais si ces difficultés peuvent être levées, il peut être envisagé que Symeter V2 soit à la fois simple d'emploi, fiable et très utile.
+		
+		\para Des outils de simulation robotique seront utilisés pour initier le développement de Symeter V2, pour démarrer rapidement l'implémentation de la chaine de traitement complète, et potentiellement tester diverses configurations de capteurs avant de monter le prototype en grandeur réelle.
+		
+		\para Le reste de ce document décrit d'abord le contexte technique du projet Symeter V2. L'implémentation des processus de localisation, de l'acquisition des données LIDAR et leur utilisation pour générer le modèle numérique 3D du chantier d'ensilage est ensuite discutée. Enfin des tests avec des données acquises en grandeur réelle sont enfin évoqués.
 
 		
 
 
 \chapter{Capteurs, Modélisation, Contraintes}
-	Ce chapitre présente dans leurs grandes lignes les capteurs cibles du projet Symeter V2, les outils de modélistation qui seront utilisés pour les mettre en oeuvre et les contraintes qui en découlent.c Les grandes étapes du projet sont enfin élaborées à la lumière de ces informations.
+	Ce chapitre présente dans leurs grandes lignes les capteurs cibles du projet Symeter V2, les outils de modélistation qui seront utilisés pour les mettre en oeuvre et les contraintes qui en découlent. Les grandes étapes du projet sont enfin élaborées à la lumière de ces informations.
 	
 	\section{Capteurs}
 		Les capteurs à mettre en oeuvre seront un ou plusieurs LIDAR, un ou plusieurs IMU et un ou plusieurs GPS, selon un flux de données illustré par la figure \ref{}.Cette section décrit les fonctionnalités de ces capteurs et les données qu'ils génèrent et comment ils sont mis en oeuvre dans le projet Symeter V2.
@@ -328,7 +326,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\end{figure}
 			
 		\subsection{LIDAR}
-		Un LIDAR est un équipement qui permet de prendre de nombreuses mesures de l'environnement à partir d'un laser. En exploitant les informations d'angle de pointage et en observant les caractéristiques du signal réfléchin tant du point de vu temporel (temps de vol, phase) que du point de vue de la forme du signal (puissance réfléchie, déphasage, distorsion, effet Doppler , ...), il est possible de mesurer de nombreuses caractéristiques de l'environnement.
+		Un LIDAR est un équipement qui permet de prendre de nombreuses mesures de l'environnement à partir d'un laser. En exploitant les informations d'angle de pointage et en observant les caractéristiques du signal réfléchi tant du point de vu temporel (temps de vol, phase) que du point de vue de la forme du signal (puissance réfléchie, déphasage, distorsion, effet Doppler , ...), il est possible de mesurer de nombreuses caractéristiques de l'environnement.
 		
 		\para Le LIDAR est utilisé par Symeter V2 pour détecter la forme précise du chantier d'ensilage.
 		
@@ -337,17 +335,17 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Ce signal incident est réfléchi par un object de l'environnement, générant un signal réfléchi qui retourne en direction du LIDAR. Ce signal réfléchi est reçu par un détecteur. 
 		
-		\para En comparant le signal émis et le signal reçu nous pouvons en déduire certaine caractéristiques de l'environnement.
+		\para En comparant le signal émis et le signal reçu nous pouvons en déduire certaines caractéristiques de l'environnement.
 		
 		\paragraph*{Différents types de mesure: } Il existe deux grands types de LIDAR: \begin{description}
 			\item[LIDAR  à "temps de vol":] les LIDARs de ce type déterminent la distance de la cible en mesurant le temps écoulé entre le moment de l'émission du pulse et la réception du signal réfléchi par la cible.
-			\item[LIDAR  "full waveform":] les LIDARs de ce type émettent un signal périodique continu et mesurent la distance de l'object détecté essentiellement par mesure de déphasage du signal réfléchi par rapport au signal émis. Les modifications de la forme du signal réfléchi et de son intensité permettent d'extraire d'autres informations à propos de la cible. 
+			\item[LIDAR  "full waveform":] les LIDARs de ce type émettent un signal périodique continu et mesurent la distance de l'objet détecté essentiellement par mesure de déphasage du signal réfléchi par rapport au signal émis. Les modifications de la forme du signal réfléchi et de son intensité permettent d'extraire d'autres informations à propos de la cible. 
 		\end{description} 
 		
 		\subsubsection{Scan de l'environnement}
 		En faisant varier la direction du bloc émetteur/récepteur du LIDAR, il est possible de faire plusieurs mesures de l'environnement. Le LIDAR mettant en oeuvre des procédés optiques, il est possbile de faire varier très rapidement son pointage et ainsi d'obtenir de très nombreux relevés de l'environnement.
 		
-		\paragraph*{Modes de scan de l'environnement:} Il existe deux grands modes de scan de l'environnement pour un LIDAR
+		\paragraph*{Modes de scan de l'environnement:} Il existe deux grands modes de scan de l'environnement pour un LIDAR:
 		
 		\begin{description}
 			\item[Mode 2D ou  "planar":] Dans ce mode le LIDAR mesure l'environnement dans un plan unique, généralement en faisant tourner le faiseau de manière circulaire autour d'un axe, comme illustré figure \ref{fig:lidar2d},
@@ -371,9 +369,9 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	
 		
 		\subsubsection{LIDAR Hokuyo UTM-30LX-EW}
-		Le projet Symeter V2 met en oeuvre un LIDAR de type Hokuyo UTM-30-LX-EW (figure), le même que celui utilisépar Symeter V1. C'est un équipement robuste et précis qui est de plus bien connu par Tellus Environment.
+		Le projet Symeter V2 met en oeuvre un LIDAR de type Hokuyo UTM-30-LX-EW (figure), le même que celui utilisé par Symeter V1. C'est un équipement robuste et précis qui est de plus bien connu par Tellus Environment.
 		
-		\para Cet équipement est comporte un laser infrarouge (longueur d'onde de 905nm) pour scanner un champ semi-circulaire de 270$\degres$. C'est un LIDAR de type "planar, temps de vol". Il mesure la distances des objets à sa portée par pas de 0,25$\degres$. La distance de détection maximale est de 30m.
+		\para Cet équipement comporte un laser infrarouge (longueur d'onde de 905nm) pour scanner un champ semi-circulaire de 270$\degres$. C'est un LIDAR de type "planar, temps de vol". Il mesure la distance des objets à sa portée par pas de 0,25$\degres$. La distance de détection maximale est de 30m.
 		\newline
 		
 		\begin{center}
@@ -397,20 +395,18 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			\caption[hokuyo]{LIDAR Hokuyo UTM-30LX-EW (roboshop.com)}
 			\label{fig:hokuyo-utm-30lx-ew-scanning-laser-rangefinder}
 		\end{figure}
-	
-		\todoRediger{Décrire les caratéristiques exactes }
 		
 		\subsection{IMU}
-		Un IMU - Inertial Mesurement Unit - est un equipement comportant plusieurs capteurs inertiels, d'accélération et d'angles qui permettent avec un traitement des données approprié d'établir de suivre la pose du véhicule sur lequel il est monté.
+		Un IMU - Inertial Mesurement Unit - est un équipement comportant plusieurs capteurs inertiels, d'accélération et d'angles qui permettent avec un traitement des données approprié d'établir de suivre la pose du véhicule sur lequel il est monté.
 		
 		\subsubsection{Les grandeurs mesurées}
-		Un IMU comporte généralement 3 accéléromètres linéaires et un gyroscope, et souvent un magnétometre.
+		Un IMU comporte généralement 3 accéléromètres linéaires et un gyroscope, et souvent un magnétomètre.
 		
 		\para Le \textbf{gyroscope} permet de mesurer, avec précision et en continu, l'inclinaison du véhicule en terme de \textbf{roulis, tanguage et lacet}. 
 		
 		\para Les \textbf{accéléromètres} mesurent en continu les accélérations linéaires de la partie du véhicule sur lequel l'IMU est fixé, dans trois directions différentes. Ces directions sont généralement dénotées $x,y,z$, par analogie avec le repère cartésien. Simplement, les accélérations sont mesurées dans le repère du véhicule, mobile et variable et non dans un repère absolu immobile.
 		
-		\para En combinant les variations d'inclinaison et les mesures d'accélérations linéaires dans le repère mobile du véhicule, il est possible de reconstruire avec une certaine certitude la trajectoire du véhicule dans le repère absolu, en utilisant les équations de dynamique Newtonnienne (fing \ref{fig:navinertial}).
+		\para En combinant les variations d'inclinaison et les mesures d'accélérations linéaires dans le repère mobile du véhicule, il est possible de reconstruire avec une certaine certitude la trajectoire du véhicule dans le repère absolu, en utilisant les équations de dynamique Newtonnienne (fig \ref{fig:navinertial}).
 		
 		\begin{figure}[h!]
 			\centering
@@ -422,14 +418,14 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Comme indiqué ci-dessus, un IMU possède souvent un \textbf{magnétomètre}. Celui-ci permet de mesurer la direction et l'intensité du champ magnétique terrestre par rapport à l'IMU et permet d'en dériver le cap, la direction vers lequel le véhicule pointe sur la surface de la Terre. 
 		
-		\para Ce permet, en démarrant l'IMU alors que le véhicule est parfaitement immobile, d'obtenir les conditions initiales du vecteur d'état du véhicule, par rapport au repère odométrique.
+		\para Ceci permet, en démarrant l'IMU alors que le véhicule est parfaitement immobile, d'obtenir les conditions initiales du vecteur d'état du véhicule, par rapport au repère odométrique.
 		
-		\para Par ailleur, reconstituer une position à partir d'informations d'accélération implique mathématiquement de procéder à une double intégration numérique. Ce procédé est donc sujet à une dérive dans le temps et doit donc être recalé par une mesure de pose issue d'un autre capteur.
+		\para Par ailleurs, reconstituer une position à partir d'informations d'accélération implique mathématiquement de procéder à une double intégration numérique. Ce procédé est donc sujet à une dérive dans le temps et doit donc être recalé par une mesure de pose issue d'un autre capteur.
 		
-		\para Par contre, un IMU peut fournir ses informations avec un très haut taux de rafraichissement, sans nécessiter d'information extérieure au véhicule. Il peut donc se révéler indispensable lorsqu'aucune autre nouvelle information sur la position du véhicule n'est disponible sur des périodes de temps plus ou moins longue.
+		\para Par contre, un IMU peut fournir des informations avec un très haut taux de rafraichissement, sans nécessiter d'information extérieure au véhicule. Il peut donc se révéler indispensable lorsqu'aucune autre nouvelle information sur la position du véhicule n'est disponible sur des périodes de temps plus ou moins longues.
 		
 		\subsubsection{IMU XSense MTi 28A53G35}
-		\todoRediger{données générées par un IMU}
+		Le module IMU utilisé par Symeter V2 sera le XSense MTi-28153G35, dont un représentation est montrée figure \ref{fig:150px-mti}. Il peut être branché à une unité de calcul par l'intermédiaire d'une liaison série de type USB.
 		
 		\begin{figure}[h!]
 			\centering
@@ -441,7 +437,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\subsection{GPS en mode RTK}
 		
-		Le système Symeter V2 ayant besoin d'une précision centimétrique pour permettre la mesure du tas d'ensilage avec précision du même ordre de grandeur, il mettra en oeuvre d'un GPS en mode RTK. Ce mode fonctionnement particulier du système GPS est en mesure de fournir position centimétrique du véhicule relativement à une borne GPS (base) situé à proximité du chantier.
+		Le système Symeter V2 ayant besoin d'une précision centimétrique pour permettre la mesure du tas d'ensilage avec précision du même ordre de grandeur, il mettra en oeuvre d'un GPS en mode RTK. Ce mode fonctionnement particulier du système GPS est en mesure de fournir un position centimétrique du véhicule relativement à une borne GPS (base) située à proximité du chantier.
 		
 		\subsubsection{GPS simple}
 		Pour expliquer le principe du GPS en mode RTK, il est nécessaire de comprendre comment le système GPS "simple" fonctionne. 
@@ -450,7 +446,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		
 		\para Le principe de base est celui de la triangulation: les satellites GPS émettent en permanence un signal comportant une horloge (temps GPS). En connaissant les éphémérides des satellites et en écoutant les signaux de plusieurs de ces satellites, notamment leur signal d'horloge respectif, un récepteur GPS peut calculer avec une grande précision la position de chacun des satellites émetteurs dans le référentiel géocentrique.
 		
-		\para Une fois le positionnement des satellites établi, une simple triangulation permet de calculer avec une grande précision du récepteur sur la surface de la Terre (voir \ref{fig:gnss}).
+		\para Une fois le positionnement des satellites établi, une simple triangulation permet de calculer avec une grande précision du récepteur sur la surface de la Terre (voir figure \ref{fig:gnss}).
 		
 		\para Pour obtenir une précision suffisante, un récepteur doit écouter au moins 4 satellites en même temps.
 		
@@ -462,7 +458,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 		\end{figure}
 		
 		\subsubsection{Principe du mode RTK}
-		Le mode RTK du système GPS est un mode de fonctionnement qui permet de mesurer avec une très grande précision la position relative de deux récepteurs GPS distincts. L'un, dénommé \textbf{la base} est un récepteur fixe, dont la position GPS est connue avec une grande précision. L'autre dénommé \textbf{le rover} est en communication constante avec la base au moyen d'un liaison radio adaptée (voir \ref{fig:rtk})
+		Le mode RTK du système GPS est un mode de fonctionnement qui permet de mesurer avec une très grande précision la position relative de deux récepteurs GPS distincts. L'un, dénommé \textbf{la base} est un récepteur fixe, dont la position GPS est connue avec une grande précision. L'autre dénommé \textbf{le rover} est en communication constante avec la base au moyen d'un liaison radio adaptée (voir figure \ref{fig:rtk})
 		
 		\begin{figure}[h!]
 			\centering
@@ -471,71 +467,61 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			\label{fig:rtk}
 		\end{figure}
 	
-		\para Les deux récepteurs étant présents sur le même site à la surface de la Terre, ils seront à l'écoute tous les deux mêmes satellites. En comparant les signaux reçus d'un même satellite par la base et le rover, le rover est en mesure de calculer avec une très grande précision - de l'ordre du centimetre - la différence de distante entre la base et le satellite d'une part, et le rover et le satellite de l'autre part. 
+		\para Les deux récepteurs étant présents sur le même site à la surface de la Terre, ils seront à l'écoute tous les deux des mêmes satellites. En comparant les signaux reçus d'un même satellite par la base et le rover, le rover est en mesure de calculer avec une très grande précision - de l'ordre du centime-ètre - la différence de distante entre la base et le satellite d'une part, et le rover et le satellite de l'autre part. 
 		
 
 		\para En combinant ces différences de distance à partir de plusieurs satellites, le rover est donc capable de calculer très précisément sa position relativement à la base.
-		\newpage
+		
+		\subsection{Intérêt du couplage IMU/GPS}
+		L'intérêt du couplage entre le GPS et l'IMU est multiple.
+		
+		\para Le GPS en mode RTK est très précis dans le positionnement du véhicule, comme indiqué ci-dessus, de l'ordre de quelques centimètres. Cependant il ne peut mettre à jour cette position qu'à un taux de quelques données par secondes, ce qui est insuffisant pour les besoins du projet Symeter V2. De plus le GPS ne fourni aucune information sur l'attitude du véhicule, alors que cette donnée est indispensable pour Symeter V2. Par ailleurs, il peut arriver que le signal GPS ne soit temporairement pas disponible ou dégradé, soit par indisponibilité temporaire de signal satellite, soit par une perte de connexion entre la base et le rover, généralement par un éloignement excessif. Dans ces cas la fiabilité du GPS se dégraderait considérablement.
+		
+		\para De son côté l'IMU fourni bien des informations fiables sur l'attitude du véhicule, peut générer des données à un taux bien plus élevé que le GPS, mais leur exploitation par un module de navigation inertiel (INS) ne permet d'obtenir une position fiable que pour un temps relativement court. Au dela de ce temps, le module INS doit recaler son estimation de position avec une source extérieure. Un autre point fort de l'IMU est que c'est un système très robuste dont la disponibilité est généralement excellente.
+		
+		\para Le couplage des deux systèmes, GPS et IMU permettrait donc d'obtenir le meilleur de deux équipements, tout en compensant leur faiblesses respectives: le GPS permet de recaler en permanence la position du véhicule issue des données IMU, l'IMU fourni l'attitude du véhicule et peut prendre en charge la navigation à court terme en cas d'indisponibilité ou de mode dégradé du GPS.
+	
 		
 		
 	\section{Environnement de programmation: ROS}
-	Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnment logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
+	Du fait de son utilisation dans la première version de Symeter, et du fait de ses qualités en terme de modularité, de disponibilité des drivers pour les capteurs et actionneurs, l'environnement logiciel ROS a été choisi avant même le début du stage pour être la base de la partie logicielle de Symeter V2.
 
-	
-	
 		
 	\section{Modélisation}
 	
 	\para Comme indiqué en introduction, le système Symeter V2 sera une plateforme semi-autonome, qui devra être en mesure de fournir une aide à la décision à partir de mesures effectuées depuis une plateforme mobile, et ceux avec une intervention humaine minimale.
 	
-	\para Symeter V2 devra donc estimer en temps réel sa pose, afin de pouvoir intégrer une représentation 3D du chantier afin de pouvoir effectuer son service.
+	\para Symeter V2 devra donc estimer en temps réel sa pose, afin de pouvoir intégrer une représentation 3D du chantier et effectuer son service.
 	
-	\para Les outils de modélisation qui devront être mis en oeuvres sont essentiellement ceux mis en oeuvre dans les systèmes robotiques:
+	\para Les outils de modélisation qui devront être mis en oeuvre sont essentiellement ceux mis en oeuvre dans les systèmes robotiques:
 	 \begin{itemize}
-	 	\item Les \textit{poses}et les \textit{transformation}: La pose des capteurs et des éléments mécaniques du véhicule les uns par rapport aux autres, et celle du véhicule par rapport à son environnement.
+	 	\item Les \textit{poses} et les \textit{transformations}: La pose des capteurs et des éléments mécaniques du véhicule les uns par rapport aux autres, et celle du véhicule par rapport à son environnement.
 	 	\item L'estimation de paramètres à partir d'un ensemble de mesures issues de différents capteurs, au moyen de la \textit{fusion de données}
 	 	\item Reconstruction d'une scène 3D à partir de \textit{nuages de points}.
 	 \end{itemize} 
  
    \para Ces outils sont décrits plus en détail dans les chapitres suivants.
 			
-		\subsection{Traitement des nuages de points}
-		
-		\todoARevoir{Virer cette partie, pas à cet endroit}
-		
-		Le LIDAR utilisé par le système Symeter V2 étant de type "2D planar", les points retournés lors d'une unique mesure feront tous partie du même plan. L'ensemble des mesures sera donc constitué d'un ensemble de tranches qu'il faudra reconstituer à l'aide d'un traitement adapté.
-		
-		\para Le traitement des données LIDAR comportera les étapes suivantes:
-		\begin{enumerate}
-			\item Filtrage des données pour une obtenir une densité de points de mesure qui soient suffisament espacés
-			\item Convertion des données LIDAR (direction / distance) en un nuage de points (liste de point $P_n$ avec chacun des coordonnées $x_n, y_n, z_n$
-			\item Stockage de ces points dans une structure de données capable d'accumuler les nouveaux points mesurés au cours du temps, et constituer une carte 3D d'occupation.
- 		\end{enumerate}
- 	
- 		\para La plupart de ces traitements seront implémentés en utilisant le Point Cloud Library qui offre de nombreux composants logiciels intégrés directement dans ROS.
-
-		\missingfigure{Architecture de traitement des nuages de points}
-			
+	
 	\section{Contraintes de développement}
-		Le système Symeter V2 st destiné à évoluer sur un véhicule de type tracteur agricole. Il est de plus destiné à construire une représentation 3D d'un chantier d'ensilage, partir de positions qui vont varier non seulement en $x$ et en $y$, mais aussi et surtout en $z$.
+		Le système Symeter V2 est destiné à évoluer sur un véhicule de type tracteur agricole. Il est de plus destiné à construire une représentation 3D d'un chantier d'ensilage à partir de positions qui vont varier non seulement en $x$ et en $y$, mais aussi et surtout en $z$.
 		
-		\subsection{Capacités de tests en grandeur limitées}
-		Pour développer et tester le système Symeter V2, le développeur ne disposera pas de tracteur en grandeur réelle, ni de chantier d'ensilage, ceux-ci étant des chantiers annuels se déroulant à des moments bien défini dans l'année (printemps et automne).
-		
+		\subsection{Capacités de tests en grandeur réelle limitées}
+		Pour développer et tester le système Symeter V2, le développeur ne disposera pas de tracteur en grandeur réelle, ni de chantier d'ensilage, ceux-ci étant des chantiers annuels se déroulant à des moments bien définis dans l'année (printemps et automne).
 		
 		\para Par ailleurs, au début du stage il n'est pas encore tout à fait décidé de combien de LIDAR seront nécessaires pour que le système puisse assurer une couverture complète depuis des équipements embarqués sur le tracteur.
 		
-		\para Les équipements à mettre en oeuvre sont relativement couteux et leur mise en oeuvre requiert une certaine expertise. Il est donc nécessaire de pouvoir mettre en oeuvre le développement du système par le biais de mises en oeuvre alternatives.
+		\para Les équipements à intégrer sont relativement couteux et leur mise en oeuvre requiert une certaine expertise. Il est donc nécessaire de pouvoir démarrer le développement du système par le biais de moyens alternatifs.
 		
-		\para Ces possibilités sont au nombre de 2: la simulation et la mise en oeuvre en grandeur des équipements sur une camionnette pour effectuer des tests simples de reconstitution du terrain.
+		\para Ces possibilités sont au nombre de 2: la simulation d'une part et l'utilisation en grandeur réelle des équipements sur une camionnette pour effectuer des tests simples de reconstitution du terrain.
 		
 		\subsection{Plateformes de test disponibles}
 			
 			\subsubsection{Environnement de simulation Gazebo}
 			
-			Gazebo est un environnement de simulation très complet, qui permet de simuler un environnement physique dans lequel une plateforme semi-robotique simulée peut évoluer. 
+			Gazebo est un environnement de simulation très complet qui permet de simuler un environnement physique dans lequel une plateforme semi-robotique simulée peut évoluer. 
 			
-			\para Cette plateforme simulée peut mettre en oeuvre un grand nombre de capteurs et actuateurs virtuel et ainsi offrir une grande fidélité dans le mise en oeuvre logicielle de la plateforme robotique.
+			\para Cette plateforme simulée peut comporter un grand nombre de capteurs et actuateurs virtuels et ainsi offrir une grande fidélité dans la mise en oeuvre logicielle de la plateforme robotique.
 			
 			\para Gazebo est un logiciel intégré à ROS. Sa mise en oeuvre requiert de programmer un véhicule virtuel similaire à la plateforme cible du système (dans notre cas un tracteur avec les capteurs listés dans les sections précédentes), puis de déployer le logiciel ROS pour Symeter V2 sur ce véhicule simulé. 
 			
@@ -546,7 +532,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			
 			\subsubsection{Prototype monté sur Camionnette}
 			
-			Une simulation n'étant jamais parfaite (comme nous le verrons par la suite), il est quand même nécessaire d'effectuer des certains tests avec des instruments réels, lors de tests en grandeur.
+			Une simulation n'étant jamais parfaite (comme nous le verrons par la suite), il est quand même nécessaire d'effectuer certains tests avec des instruments réels, lors de tests en grandeur réelle.
 		
 			\para Pour la mise en oeuvre en grandeur, un prototype de l'équipement a été monté sur la camionnette de Tellus Environnement, la "Tellus Car".
 			
@@ -554,7 +540,7 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 			\begin{itemize}
 				\item Une unité de calcul
 				\item Un GPS en mode RTK
-				\item Un LIDAR de type Hkuyo UTM-30LX-EW
+				\item Un LIDAR de type Hokuyo UTM-30LX-EW
 				\item Un IMU de type XSense
 			\end{itemize}
 		
@@ -588,6 +574,11 @@ J'effectue depuis le 3 avril 2018 mon stage de fin d'étude de Master 2 CSM au s
 	\end{enumerate}
 
 	\para Les résultats de ces différentes parties du stage sont décrits dans les chapitres suivants de ce rapport.
+	
+	\section{Synthèse des outils}
+	Monter directement le LIDAR sur le tracteur implique que les mesures ne sont pas prises d'un endroit fixe mais d'une plateforme mobile. Reconstituer un modèle numérique 3D d'un chantier d'ensilage requiert de calculer en permanence la pose précise du tracteur grâce à l'ajout de capteur GPS et IMU.
+	
+	\para Cet ajout est une contrainte forte du projet qui remet tout en question. Un système embarqué nous pouse une multitude de nouveaux problèmes!
 				
 
 \chapter{Simulation d'un tracteur évoluant sur un chantier d'ensilage à l'aide de ROS/Gazebo}
@@ -738,7 +729,7 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 		
 		\subsection{Vérification de disponibilité des capteurs}
 		
-		Gazebo propose tout une série de capteurs simulés, disponible nativement ou par l'intermédiaire de module tiers. Ces capteurs simulés génére une donnée en cohérence avec l'environnement simulé qui peut être rendu disponible aux modules ROS par l'intermédiaire de plugins adaptés.
+		Gazebo propose toute une série de capteurs simulés, disponibles nativement ou par l'intermédiaire de modulesnt tiers. Ces capteurs simulés génére des données en cohérence avec l'environnement simulé qui peut être rendu disponible aux modules ROS par l'intermédiaire de plugins adaptés.
 		
 		\para Pour les besoins du projet Symeter V2, nous avons vérifié et testé la disponibilité des types de capteurs tels que listés dans le tableau suivant.
 		\newline
@@ -781,15 +772,15 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 		
 		\para En particulier, les roues d'un robot ROS plongé dans Gazebo n'auront aucune adhérence sur le sol au démarrage de la simulation. Si la propulsion est mise en oeuvre, nous constatons que les roues tournent mais que le robot ne bouge pas, comme si les roues tournaient dans le vide, ou sur de la glace.
 		
-		\para Après avoir changé des réglages dans le moteur physique de Gazebo, dans le réglage du coefficient de frottement des roues et de nombreux autres paramètres sans effet sur le problème, un contournement a été mis en place pour le mitiger: un node ROS a été écrit pour forcer la position du robot à des coordonnées spatiale bien précises, en utilisant le topic \verb|/gazebo/set_model_state|.
+		\para Après avoir changé des réglages dans le moteur physique de Gazebo, dans le réglage du coefficient de frottement des roues et de nombreux autres paramètres sans effet sur le problème, un contournement a été mis en place pour le mitiger: un node ROS a été écrit pour forcer la position du robot à des coordonnées spatiales bien précises, en utilisant le topic \verb|/gazebo/set_model_state|.
 		
-		\para Après ce forçage de positin, Gazebo prend ensuite bien en compte l'adhérence des roues du robot et le robot bouge quand les roues tournent. 
+		\para Après ce forçage de position, Gazebo prend ensuite bien en compte l'adhérence des roues du robot et le robot bouge quand les roues tournent. 
 		
 		\para Cela fait que ce script, dénommé \verb|setpose|, doit être invoqué systématiquement après le démarrage de la simulation pour que l'adhérence des roues soit bien prise en compte par le moteur physique de Gazebo.
 		
 		\subsection{Simulation mécanique, frottements, adhérence}
 		
-		Simuler un robot avec des points de contact multiples dans Gazebo peut poser parfois problème si les points multiples dérapent. Dans ce cas il est rare que L'adhérence soit récupérée.
+		Simuler un robot avec des points de contact multiples dans Gazebo peut poser parfois problème si les points multiples dérapent. Dans ce cas il est rare que l'adhérence soit récupérée.
 		
 		\para Ceci est exacerbé par le fait que les matériaux simulés par Gazebo sont par défaut infiniment rigides et que le moindre choc se répercute dans les points de contact avec le sol. 
 
@@ -798,7 +789,7 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 		\label{conc-contrainte-gazebo}
 		Pour conclure avec les limitations et contraintes de Gazebo, la leçon principale est qu'il faut au maximul éviter que le véhicule entre en dérapage: il ne récupère généralement pas, et devient inutilisable: il faut relancer la simulation.
 		
-		\para Les raisons pour lesquelles le véhicule peut entrer en dérapage sont nombreuse:
+		\para Les raisons pour lesquelles le véhicule peut entrer en dérapage sont nombreuses:
 		\begin{itemize}
 			\item Mauvaise configuration des paramètres de frottement des éléments en contact avec le sol.
 			\item  Vitesses de rotation différentes des roues, soit par une mauvaise consigne de vitesse sur l'une des roues, soit une non prise en compte du différentiel de vitesse entre roues intérieur et extérieur dans un virage, etc
@@ -812,7 +803,7 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 	Cette section décrit comment les différents composants de la simulation du chantier d'ensilage sont montés, notamment le tracteur qui a demandé le plus de travail.
 	  
 		\subsection{Montage d'un tracteur simulé}
-		L'intérêt de modéliser un tracteur plutôt que le petit robot utilisé précédement est double. Tout d'abord cela nous permet de rapprocher la simulation du comportement dynamique du d'un vrai tracteur, ce qui nous permettra de travailler sur le module de localisation à partir d'une dynamique plus réaliste. 
+		L'intérêt de modéliser un tracteur plutôt que le petit robot utilisé précédement est double. Tout d'abord cela nous permet de rapprocher la simulation du comportement dynamique d'un vrai tracteur, ce qui nous permettra de travailler sur le module de localisation à partir d'une dynamique plus réaliste. 
 		
 		\para La deuxième raison est que ce tracteur permettra dans un étape ultérieure du projet d'étudier différente configurations d'implantation de capteurs. Il est par exemple envisagé d'équiper Symeter V2 de 2 LIDARS de manière à assurer que l'ensemble du silo sera balayé par au moins un faisceau LIDAR sans que le tracteur n'ai de manoeuvre complexe à effectuer. Ce modèle de tracteur permettra de tester de nombreuses configurations différentes, de manière reproductible et avec beaucoup de souplesse.
 		
@@ -943,9 +934,9 @@ Comme indiqué dans le chapitre précédent, il a été très tôt dans le proje
 
 \chapter{Mise en place du processus de localisation}
 
-Ce chapitre présente la problématique de localisation par fusion de données IMU et GPS. Malgrè l'objectif de mettre en oeuvre des composants disponibles "sur étagère" pour monter la version initiale de Symeter V2, il est quand même nécessaire de comprendre en détail les tenants et les aboutissants du problème de la localisation.
+Ce chapitre présente la problématique de localisation par fusion de données IMU et GPS. Malgré l'objectif de mettre en oeuvre des composants disponibles "sur étagère" pour monter la version initiale de Symeter V2, il est quand même nécessaire de comprendre en détail les tenants et les aboutissants du problème de la localisation.
 
-\para Ce problème est complexe et requiert d'en comprendre au moins les bases afin de permettre de configurer les composants correctement.
+\para Ce problème est complexe et requiert d'en comprendre au moins les bases afin de permettre la configuration correcte des composants.
 
 	\section{Présentation du problème}
 	Comme indiqué en introduction, le but du processus de localisation est d'estimer en temps réel pour chaque instant $t_k$ le vecteur d'état 
@@ -959,13 +950,13 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	sur la base d'informations fournies par l'IMU et le GPS en mode RTK, ce vecteur d'état étant exprimé dans un référentiel fixe par rapport au chantier.
 	
-	\para L'IMU fourni des informations sur l'inclinaison du véhicule, ainsi que les accélérations linéaires qu'il subit à une fréquence de l'ordre de 30 Hz. Cependant comme indiqué ci-dessus, calculer la position du véhicule à partir de la mesure des accélérations subies requiert une double intégration, sur un signal d'accélération qui estgénéralement très biruité. Ces éléments impliquent une forte probabilité de dérive dans le temps.
+	\para L'IMU fourni des informations sur l'inclinaison du véhicule, ainsi que les accélérations linéaires qu'il subit à une fréquence de l'ordre de 30 Hz. Cependant comme indiqué ci-dessus, calculer la position du véhicule à partir de la mesure des accélérations subies requiert une double intégration, sur un signal d'accélération qui est généralement très bruité. Ces éléments impliquent une forte probabilité de dérive dans le temps.
 	
 	\para Le GPS en mode RTK peut fournir une mesure de la position du véhicule dans la scène avec une précision de l'ordre de quelques centimètres, mais à un taux de rafraichissement beaucoup plus bas, de l'ordre de 2 à 5 Hz. De plus le GPS ne fournit aucune information sur l'assiette du véhicule.
 	
 	\para Selon \cite{gustavsson_uav_2015}, il est possible de mettre en place un procédé qui maintient ce vecteur d'état sur la base de ces deux instruments, communément appelé la "fusion de capteurs". Nous mettrons en oeuvre un tel procédé.
 	
-	\para \textit{Note}: Comme le GPS fourni une position absolue dans le référentiel de la scène nous ne sommes pas dans une problématique SLAM, où l'on tente de déterminer de manière imbriquée la position et l'environnement du véhicule. Dans notre cas, les deux problèmes sont décorrélés: d'abord nous déterminons la localisation et ensuite nous déterminons l'environnement. 
+	\para \textit{Note}: Comme le GPS fourni une position absolue dans le référentiel de la scène nous ne sommes pas dans une problématique SLAM (Simultaneous Localization And Mapping), où l'on tente de déterminer de manière imbriquée la position et l'environnement du véhicule. Dans notre cas, les deux problèmes sont décorrélés: d'abord nous déterminons la localisation et ensuite nous mesurons l'environnement. 
 	
 	\subsection{Repères}
 	
@@ -995,7 +986,7 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	Selon \cite{gustavsson_uav_2015} et \cite{menegatti_generalized_2016}, a fusion de données IMU et GPS peut être effectuée sur la base d'un filtre de Kalman. Cette section s'attache a décrire les principes de fonctionnement d'un tel filtre pour en permettre l'utilisation pour le projet Symeter V2.
 	
-	\para Un filtre de Kalman est un algortihme qui permet d'estimer les états d'un système dynamique sur la base  de mesures incomplètes ou bruitée. Il a été développé à la fin des années 50 et comprend de très nombreuses applications dans tous les domaines liés à l'instrumentation.
+	\para Un filtre de Kalman est un algortihme qui permet d'estimer les états d'un système dynamique sur la base  de mesures incomplètes ou bruitées. Il a été développé à la fin des années 50 et comprend de très nombreuses applications dans tous les domaines liés à l'instrumentation.
 	
 	\subsection{Filtres de Kalman Linéaires}
 	Selon \cite{zarchan_fundamentals_2009}, les filtres de Kalman sont applicables sur des systèmes dynamiques linéaires modélisés par un ensemble d'équations différentielles, décrites par la relation suivante:
@@ -1161,7 +1152,9 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	
 	Dans la plupart des applications d'estimation d'état, la dynamique des systèmes à estimer n'est pas linéaire et le filtre de Kalman ne peut pas être appliqué en l'état car toute sa formulation se base sur des hypothèses de linéarités fortes.
 	
-	\para Selon \cite{menegatti_generalized_2016} et \cite{zarchan_fundamentals_2009}, il est possible de de généraliser les filtres de Kalman pour estimer des systèmes dont la dynamique est non-linéaire.
+	\para En particulier dans le cas de Symeter V2, les capteurs IMU et GPS ne peuvent pas être placés au centre de masse du véhicule et le modèle Newtonnien dérivé de ce placement introduit immédiatement des non-linéarités dans la dynamique.
+	
+	\para Selon \cite{menegatti_generalized_2016} et \cite{zarchan_fundamentals_2009}, il est possible de de généraliser les filtres de Kalman pour estimer des systèmes dont la dynamique est non-linéaire et dont la trajectoire n'est pas connue à l'avance.
 	
 	\para Selon \cite{menegatti_generalized_2016}, un tel procédé non linéaire peut être décrit par l'équation \ref{eq:nonlinkalman_xk} suivante
 	
@@ -1198,7 +1191,7 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 	La boucle de Kalman telle que décrite dans \ref{sec:boucledekalman} peut ensuite être utilisée en remplaçant $\bs{\Phi}$ par $\bs{\Phi}_k$ la matrice fondamentale du jacobien de $f$.
 
 	
-	\section{Mise en oeuvre sous ROS.} Comme les sections précédentes le montrent, l'implementation d'un système de localisation sur la base mesure par IMU et GPS ne sont pas une mince affaire et est plus un sujet de thèse qu'une sous partie de stage. 
+	\section{Mise en oeuvre sous ROS.} Comme les sections précédentes le montrent, l'implémentation d'un système de localisation sur la base mesures par IMU et GPS n'est pas une mince affaire et est plus un sujet de thèse qu'une sous-partie de stage. 
 	
 	\para L'environnement ROS propose des modules prêts à l'emploi pour implémenter un processus de localisation pour les systèmes de robotique mobile. L'offre est cependant nombreuse et il a fallu vérifier que les solutions proposées répondent bien aux besoins de Symeter V2.
 	
@@ -1230,15 +1223,69 @@ Ce chapitre présente la problématique de localisation par fusion de données I
 		\end{bmatrix}
 	\end{gather}
 	
+	\para pour générer le vecteur d'état de sortie à 6 degrés de liberté, sous la forme d'une transformation entre le référentiel de navigation local et le référentiel du véhicule, ayant les coordonnées $\begin{bmatrix}
+	x&y&z&\theta_x&\theta_y&\theta_z \end{bmatrix}$, selon le schéma de principe décrit dans la figure \ref{fig:archilocalisation}.
+
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=1\linewidth]{img/archilocalisation}
+		\caption[archilocalisation]{Architecture de la fonction Localisation de Symeter V2}
+		\label{fig:archilocalisation}
+	\end{figure}
+
+	\para L'une des caractéristiques très utiles de \verb|ekf_localization_node| est qu'il est capable de recevoir et traiter des vecteurs de mesure $z_k$ partielles. Ceci lui permet de prendre en charge de très nombreux types de capteurs, avec des fréquences de mesures très variées, ce qui est un pré-requis dans notre cas l'IMU générant des données à environ 100Hz, alors que le GPS fonctionne à 5 Hz au grand maximum. 
+	
+	\para Cette caractéristique permet d'envisager l'ajout de capteurs supplémentaires, voir d'un nouveau type (odométrie, triangulation par vision artificielle,...) si nécessaire.
+	
 	\subsection{navsat\_transformation\_node}
-	Le node \verb|navsat_transformation-node| est le node qui prend en entrée les positions fournies par le GPS dans le repère ECEF, pour les transformer en coordonnées $(x,y,z)$ dans le repère local. Il est utilisé de manière concourrante avec \verb|ekf_localization_node| lorsque des données GPS doivent être utilisées.
+	Le node \verb|navsat_transformation_node| est le node qui prend en entrée les positions fournies par le GPS dans le repère ECEF, pour les transformer en coordonnées $(x,y,z)$ dans le repère local. Il est utilisé de manière concourrante avec \verb|ekf_localization_node| lorsque des données GPS doivent être utilisées.
 	
 	\subsection{Configuration des Capteurs}
-	\missingfigure{Architecture des nodes}
-	\todoRediger{Les variables d'état influencées par IMU}
-	\todoRediger{les variables d'état influencées par le GPS}
+	Pour que \verb|ekf_localization_node| puisse utiliser les données des capteurs à disposition, il faut indiquer pour chacun le topic sur lequel les données sont diffusées, et indiquer quelles grandeurs du vecteur d'état sont succeptible d'être influencées par leurs informations. Ceci permet au node de pouvoir déterminer à chaque nouvelle mesure les grandeurs à soumettre au gain de Kalman quand leur mesure est disponible, et celles qui ne seront gérées que par la prédiction du modèle dynamique.
 	
-	\subsection{Quelques tests}
+	\para L'IMU fourni à chaque mesure les informations suivantes:
+	\begin{itemize}
+		\item Attitude du véhicule par rapport au référentiel de navigation local: $\theta_x, \theta_y, \theta_z$,
+		\item Vitesse angulaire de variation de l'attitude par rapport au référentiel local:
+		$\dot{\theta}_x, \dot{\theta}_y, \dot{\theta}_z$ 
+		\item Accélérations linéaires par rapport au référentiel du véhicule: $\ddot{x}, \ddot{y},\ddot{z}$.
+	\end{itemize}
+
+	\para La sortie du node \verb|navsat_tranformation_node| fourni les coordonnées $x_{gps},y_{gps},z_{gps}$ du capteur GPS par rapport au référentiel de navigation local. Le node \verb|ekf_localization-node| utilise ensuite les transformations internes diffusées par le topic \verb|\tf| ainsi que l'estimation de l'attitude du véhicule pour estimer la position du centre de masse du véhicule par rapport au référentiel de navigation local.
+	
+	\para Le node \verb|ekf_localization_node| repose aussi fortement sur la valeur de la matrice de bruit de processus $\bs{Q}$ dont la valeur doit être configurée en fonction des caractéristiques des capteurs.
+	
+	\subsection{Tests de localisation sous Gazebo}
+	
+	Les tests de l'implémentation de la fonction de localisation ont été dans un premier temps effectué uniquement en simulation en utilisant Gazebo. Gazebo permet en effet de fournir nativement les valeurs non-estimées, "réelles" du point de vue de la simulation, du vecteur d'état du véhicule, et donc permet de comparer les valeurs estimées avec ces valeurs "réelles" au sens de la simulation.
+	
+	\para Après de nombreux tests, il apparait que l'estimation de l'attitude du véhicule fonctionne très bien lorsque que seules les informations d'attitudes instantanées de l'IMU simulé sont utilisées (voir fig. \ref{fig:orreelles} et \ref{fig:orest}).
+	
+	\begin{figure}[h!]
+		\centering
+		
+		\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/orientations-reelles.png}
+			\caption[orrelles]{Orientations Réelles}
+			\label{fig:orreelles}
+		\end{minipage}%
+		\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/orientations-estimees.png}
+			\caption[orest]{Orientation estimées}
+			\label{fig:orest}
+		\end{minipage}
+	\end{figure}
+	
+	
+	\para De même, l'estimateur ne donne des résultats cohérents en position ($x,y,z$) qui si on ignore les accélérations linéaires pour ne prendre en compte que les donnnées GPS pour estimer la position.
+	
+	\para Il apparaitra plus tard que l'IMU simulé utilisé est de très mauvaise qualité au regard des données d'accélération linéaires et des vitesses angulaires. Le module de localisation devra donc être testé avec des données réelles, non simulées pour une mise au point fine. Ceci sera couvert chapitre \ref{chap-mesuresreelles} quand nous tenterons d'exploiter des données issues d'une mesure réelle.
+	
+	\para Lorsque le node \verb|ekf_localization_node| est configuré, dans une simulaition Gazebo, pour ne prendre en compte que les angles d'attitude issus de l'IMU d'une part, et les coordonnées du capteur GPS dans le référentiel local de navigation d'autre part, le vecteur d'état estimé est suffisamment précis pour tenter de construire un modèle numérique 3D du chantier à partir des données LIDAR, ce que nous allons évoquer dans le chapitre suivant.
+
 	
 	
 \chapter{Exploitation des données LIDAR}
@@ -1248,8 +1295,9 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 \para Nous nous attachons à mettre en place les principes de traitement des données LIDAR en vue de construire une représentation 3D du chantier, d'abord en montant le pipeline de traitement du flux de données LIDAR, puis en mettant en oeuvre une structure de données adaptée au stockage d'une scène 3D.
 
 	\section{Présentation de la chaine de traitement des données LIDAR}
+	Le LIDAR utilisé par le système Symeter V2 étant de type "2D planar", les points retournés lors d'une unique mesure feront tous partie d'un même plan. L'ensemble des mesures sera donc constitué d'un ensemble de tranches qu'il faudra reconstituer à l'aide d'un traitement adapté.
 	
-	La chaîne de traitement des données LIDAR est représentée dans la figure \todoAjouterRef{figure} et comporte les éléments suivants:
+	La chaîne de traitement des données LIDAR est représentée dans la figure \ref{fig:architraitlidar} et comporte les éléments suivants:
 	\begin{itemize}
 		\item Une source de données de type \verb|laser|, issue des drivers ROS qui pilotent l'équipement LIDAR
 		
@@ -1257,20 +1305,26 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 		
 		\item Un module d'accumulation de nuages de points, qui prend en entrée les nuages de points issus du module de mise en forme en vue de les aggréger et reconstruire la chaine.
 	\end{itemize}
-	
-	\missingfigure{Chaine de traitement LIDAR --> Nuage de Point}
-	\missingfigure{Transformer un ensemble de lignes en un nuage de points cohérent}
-	
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{img/architraitlidar}
+	\caption[architraitlidat]{Chaine de traitement des données LIDAR}
+	\label{fig:architraitlidar}
+\end{figure}
+
 	\section{Acquisition et mise en forme des données LIDAR}
 	L'acquisistion initiale des données LIDAR est effectuée par un driver approprié, généralement fourni par le constructeur de l'équipement. Les données sont structurée selon un format comportant la distance mesurée jusqu'au premier obstacle pour chaque incrément d'angle du LIDAR.
 
 	
 		\subsection{Transformation trame LIDAR en un nuage de points}
 	
-		\para La première étape du traitement est donc de transformer ces données de type \verb|laser| (au sens de l'environnement ROS) pour générer un nuage de points dans le référentiel du chantier.
-	
-		\todoRediger{LIDAR: ensemble d'angles, temps de vol, puissance reçue}
-		\todoRediger{Nuage de points: positionnement x,y,z dans la scène}
+		\para La première étape du traitement est donc de transformer ces données de type \verb|laser| (au sens de l'environnement ROS) pour générer un nuage de points dans le référentiel du véhicule.
+		
+		\para Une trame LIDAR de type planar comporte essentiellement des couples (Angle/Distance) à propos d'une série de point de mesure. Si on connait la pose du LIDAR dans le repère du véhicule, il est possible de calculer pour chaque couple (Angle,Distance) les coordonnées $x_p,y_p,z_p$ du point détecté, dans le référentiel du véhicule.
+		
+		\para Cette conversion a été implémentée sous ROS en écrivant un node dédié en C++ dénommé \verb|laserscan_filter_node|. 
+		
 	
 		\subsection{Filtrage de la ligne de point par downsampling}
 	
@@ -1278,20 +1332,35 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 	
 		\para De plus, du fait que la hauteur du LIDAR monté sur un tracteur sera au maximum d'environ 3 à 4 mètres de hauteur, et que l'acquisition des mesures est effectué sur la base d'un incrément d'angles, la densité des points de mesure sera beaucoup plus hétérogène que pour Symeter V1. Cela veut dire que nous aurons beaucoup plus de points de mesure directement sous le LIDAR que sur les côtés.
 	
-		\para Nous allons donc effectuer un traitement qui permettra de moyenner les mesures de points autour de positions régulièrement réparties tous les 5 cm (par exemple). Cela permettra de réduire le nombre de points à incorporer dans la scène,  tout en régularisant la répartition des points dans l'espace.
+		\para Nous allons donc effectuer un traitement qui permettra de moyenner les mesures de points autour de positions régulièrement réparties tous les 5 cm (par exemple). Cela permettra de réduire le nombre de points à incorporer dans le modèle numérique,  tout en régularisant la répartition des points dans l'espace.
 		
 		\para D'aprés \cite{moreno_comparative_2016}, il existe plusieurs méthodes de filtrage de nuages de points. Ceci est effectué en utilisant un procedé basé sur les Voxels
 	
-		\todoCompleter{principe de fonctionnement des Voxels} 
-
-		\para Le résultat final de ce traitement est que d'un nuage de points irrégulièrement espacé et avec beaucoup de bande passante nous obtenons un nombre réduit de points régulièrement espacés, idéalement conditionné pour être pris en compte de manière fiable par l'accumulateur.
-	
-
-		\todoRediger{Il est nécessaire de connaitre précisement la pose du LIDAR pour générer le nuage de points.}
+		\para Le principe des Voxels revient à subdiviser le volume contenant un modèle numérique 3D (par exemple, un volume contenant un nuage de point) en cubes de petite taille, constituant chacun un "élément de volume", un "Volume Element" en anglais, contracté en "Voxel" (par analogie à "Pixel" pour "Picture Element"). 
 		
-		\missingfigure{Illustration nature donnée LIDAR}
-		\missingfigure{Illustration nature donnée Nuage de Point}
-		\missingfigure{Diagramme fonctionnel LIDAR --> Nuage de Point}
+		\para Le filtrage consiste donc à considérer le sous-ensemble de points du nuage contenus dans l'un de ces voxel, et de calculer le point moyen de ce sous ensemble. Ce point sera le résultat du filtrage, et le nuage filtré sera l'ensemble des points moyens du nuage, un par Voxel. Les voxels ne comportant aucun point du nuage originel restent vides.
+	
+		
+		\para Le résultat final de ce traitement est que d'un nuage de points irrégulièrement espacé et avec beaucoup de bande passante nous obtenons un nombre réduit de points régulièrement espacés, idéalement conditionné pour être pris en compte de manière fiable par l'accumulateur.
+		
+		\para Traitement a été implémenté pour Symeter V2 en utilisant un node fourni par la Point Cloud Library, le node \verb|voxel_grid|
+		
+		\para Le traitement est illustré par les captures d'écran ci-dessous. La figure \ref{fig:pointcloud-unfiltered} représente le nuage d'acquisition non filtré (ligne derrière le tracteur), alors que la figure \ref{fig:cloudback-filtered} représente le nuage filtré. Ce nuage est beaucoup moins dense et régulièrement espacé.
+				
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/pointcloud-unfiltered}
+	\caption[pointcloud-unfiltered]{Représentation du nuage de points non filtré}
+	\label{fig:pointcloud-unfiltered}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/cloudback-filtered}
+	\caption[pointcloud_filtered]{Nuage de point filtré par downsampling à base de Voxel Grid.}
+	\label{fig:cloudback-filtered}
+\end{figure}
+
 
 		
 	\section{Accumulation des nuages de points}
@@ -1299,73 +1368,71 @@ Ce chapitre présente la fonction acquisition et exploitation des données LIDAR
 	Une fois les données LIDAR mises en forme, il convient maintenant de les exploiter pour reconstituer la représentation 3D du chantier. Cette tâche est effectuée par un module que l'on appelle le \verb|point_cloud_aggregator|. Comme son nom l'indique ce module aggrège et accumule les nuages de points issus de l'aquisition pour générer la représentation 3D du chantier.
 	
 		\subsection{Spécifications pour le point\_cloud\_aggregator}
-		Le \verb|point_cloud_aggregator| dans un premier temps agrège les nuages de points, c'est à dire qu'il prend un nuage de point en entrée, et tente de les ajouter au nuages de points qu'il a déjà en mémoire. 
+		Le \verb|point_cloud_aggregator| dans un premier temps agrège les nuages de points, c'est à dire qu'il prend un nuage de point en entrée, et tente de les ajouter au nuages de points qu'il a déjà en mémoire. Les points sont d'abord transformés du référentiel du véhicule au référentiel local de navigation. 
 		
 		\para S'il tente d'ajouter un point à une position dans l'espace pour laquelle un point existe déjà en mémoire (collision), ce nouveau point n'est pas ajouté. Cela évite ainsi les points doubles.
 		
 		\para Cela met cependant une contrainte forte sur la structure de données stockant les points déjà accumulés: il faut pouvoir identifier de manière unique tous les éléments de volume inclus dans la représentation de la scène afin de pouvoir détecter les collisions.
 		
-		\cite{shekhar_encyclopedia_2017}
+
 		
 		\subsection{Principe de stockage des données 3D}
-		\todoRediger{les structures de données de stockage de l'information 3D}
-		\todoTrouverRefExt{les structures de données 3D}
+		Il existe des structures de données optimisées qui permettent de stocker des données selon une indexation spatiale 3D. Ces structures reposent toujours sur une discretisation du volume considéré sous forme de volumes élémentaires (les Voxels), mais permettent en plus de naviguer d'un élément de volume à l'autre de manière relativement simple, et surtout permettent d'ajouter des métadonnées à un élément donné, par exemple pour indiquer la présence ou non d'un objet dans le volume concerné.
 		
-		\subsubsection{Les B-Trees}
-		\todoRediger{Les b-trees, principes}
-		\todoRediger{Point forts: calculs performants}
-		\todoRediger{points faible: arbre équilibrés --> difficile d'ajouter de nouveaux points.}
+		\para La Point Cloud Librairie propose nativement deux structures de données spatiale pour les espaces 3D: les B-trees, qui sont des arbres auto-équilibrés, et les Octrees. Les B-trees sont très adaptés à des structures statiques. L'ajout d'un nouveau point dans un B-tree est très couteux car le ré-équilibrage de l'arborescence de données est complexe.
 		
-		\subsubsection{Les Octrees}
-		\todoRediger{Octree, principes}
-		\todoRediger{points forts: structure déséquilibrées sans problème, possibilité d'ajouter de nouveau points avec une bonne performance}
-		\todoRediger{point faible: beaucoup d'overhead de memoire si pas implémenté correctement.}
-		
-		\subsubsection{Le choix: octree correspond à notre besoin.}
+		\para Les octrees sont eux beaucoup plus souple d'emploi lorsqu'on doit ajouter des données dynamiques. Pour plus de détail sur ces structures de données spatiales, voir \cite{shekhar_encyclopedia_2017}.
 		
 		\subsection{Mise en oeuvre: octomap}
-		\todoRediger{Utilisation d'octomap car composant sur étagère}
-		\todoRediger{permet d'implémenter rapidement la chaine de traitement pour vérifier la validité de la faisaibilité}
+		L'implémentation initiale de ce module d'acculumation et de stockage a été effectuée en utilisant un module open source dénommé \verb|octomap|. Ce module implémente un algorithme de gestion de grille d'occupation 3D. Symeter V2 alimente ce module \verb|octomap| avec les trames de nuages de point issues de l'acquisition LIDAR, et peut ainsi accumuler le modèle numérique 3D du chantier. Pour de plus amples informations sur \verb|octomap|, voir \cite{hornung_octomap:_2013}.
 		
 	\section{Mise en oeuvre sous Gazebo}
 	
 	La section précédente décrivait les principes de traitement des données LIDAR en vu de construire une représentation 3D d'un chantier d'ensilage. La présente section va illustrer la mise en oeuvre de ces principes à l'aide la plateforme de simluation décrite dans le chapitre \ref{chap-simu-ros-gazebo} évoluant dans un chantier d'ensilage simulé.
 	
 		\subsection{Modélisation d'un chantier d'ensilage}
-		Le modèle simulé du chantier d'ensilage est représenté pour 2 murs chacun long de 10 mètres, haut de 3 mètres et d'épaisseur 0,2 mètre, espacés de 9 mètres. Ce modèle est créé en utilisant les primitives XML fournies par le logiciel Gazebo.
+		Le modèle simulé du chantier d'ensilage est représenté pour 2 murs chacun long de 10 mètres, haut de 3 mètres et d'épaisseur 0,2 mètre, espacés de 9 mètres. Ce modèle est créé en utilisant les primitives XML fournies par le logiciel Gazebo. Le résultat peut être vu figure \ref{fig:silovide-gazebo}.
 		
-		\missingfigure{Capture d'écran représentant le mur sous Gazebo.}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/silovide-gazebo}
+			\caption[silovide]{Simulation sous Gazebo avec tracteur et silo vide.}
+			\label{fig:silovide-gazebo}
+		\end{figure}
 		
-		\para Un tas d'ensilage peut aussi être ajouté au chantier. Ce modèle de tas d'ensilage a été contruit en utilisant dans un premier temps le logiciel de modélisation 3D \verb|blender|. Ce modèle 3D est ensuite incorporé dans le chantier simulé en l'important dans la description du world 3D de manière appropriée.
-		
-		\missingfigure{Capture d'écran modèle d'ensilage sous blender + capture d'écran mur et ensilage dans Gazebo}
-		
+		\para Un tas d'ensilage peut aussi être ajouté au chantier. Ce modèle de tas d'ensilage a été contruit en utilisant dans un premier temps le logiciel de modélisation 3D \verb|blender|. Ce modèle 3D est ensuite incorporé dans le chantier simulé en l'important dans la description du world 3D de manière appropriée, tel que montré dans la figure \ref{fig:silorempli-gazebo}.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/silorempli-gazebo}
+		\caption[silorempli]{Simulation sous Gazebo avec silo rempli.}
+		\label{fig:silorempli-gazebo}
+	\end{figure}
 	
 	
 		\subsection{Test sous gazebo}
-		Une fois la simulation de chantier montée, il est possible de faire évoluer le tracteur simulé dans le chantier. L'opérateur peut ainsi diriger le tracteur de manière à ce que le LIDAR monté à l'arrière du tracteur puisse scanner séquentiellement dans son ensemble le silo.
+		Une fois la simulation de chantier montée, il est possible de faire évoluer le tracteur simulé dans le chantier. L'opérateur peut ainsi diriger le tracteur de manière à ce que le LIDAR monté à l'arrière du tracteur puisse scanner séquentiellement dans son ensemble le silo (voir figure \ref{fig:tracteurfinscan}).
 		
-		\missingfigure{Capture Gazebo du chantier avec tracteur et mur}
-
-		\todoRediger{Une fois l'acquisition effectuer, on invoque le node de sauvegarde de nuage, qui le sauve dans un fichier}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.7\linewidth]{img/tracteurfinscan}
+			\caption[tracteurfinscan]{Tracteur en train de scanner le silo (vue Gazebo)}
+			\label{fig:tracteurfinscan}
+		\end{figure}
 		
-		\subsection{Analyse du nuage de point généré}
-		\subsubsection{Outil pour l'analyse de nuage de points: Paraview}
-		\todoRediger{Outil de visualisation utilisé: Paraview}
-		\todoRediger{besoin de convertir pcd en vtk à l'aide de l'outil approprié}
-		\todoRediger{permet de naviguer de manière efficasse dans le nuage de point, d'effectuer des projections, etc, etc}
+		Une fois que le tracteur a manoeuvré de manière à permettre le  faisceau du LIDAR de peindre la surface du silo dans son ensemble, le modèle numérique 3D du chantier est disponible (voir figure \ref{fig:scanchantier}).
 		
-		\subsubsection{Points à améliorer sur le nuage de points}
-		\todoRediger{Le nuage est épais}
+		\begin{figure}
+			\centering
+			\includegraphics[width=1\linewidth]{img/scanchantier}
+			\caption[modelnum]{Affichage du modèle numérique 3D reconstitué par Symeter V2}
+			\label{fig:scanchantier}
+		\end{figure}
 		
-		\todoRediger{octomap génère un nuage de point basé sur le centre des voxel occupés --> problème de quantification volumique implique perte de précision de la mesure}
 		
-		\todoRediger{Soit réduire la taille du voxel --> augmentation de la taille}
-		
-		\todoRediger{Soit retourne le point moyen de chaque voxel --> non supporté par octomap --> à implémenter nous même.}
-		
-		\todoAjouterRef{octomap}
+	
 \chapter{Mise en oeuvre à partir de mesures réelles}
+\label{chap-mesuresreelles}
 
 Les chapitres précédents ont montrés comment le système Symeter V2 a été initialement conçu et monté à l'aide d'outils de simulation. Après avoir obtenu une première série de résultat par ce biais, quelques questions ont émergé concernant la validité de certains aspects de la simulation, et de savoir si la simulation représentait un chemin réaliste de développement.
 
@@ -1391,53 +1458,64 @@ Les chapitres précédents ont montrés comment le système Symeter V2 a été i
 
 	\para Le but des tests était de faire évoluer la Telluscar ainsi équipée en vue d'enregistrer simultanéement les données générées par l'IMU, le GPS et le LIDAR, pour ensuite les rejouer à posteriori et les soumettre à l'implémentation de Symeter V2.
 	
+	\subsection{Exploitation}
 	\para Les données sont enregistrée en utilisant l'outil \verb|rosbag| de ROS qui permet d'enregistrer tous les topics diffusés lors d'une session de fonctionnement. L'outil \verb|rosbag| permet ensuite de rejouer ces captures et d'alimenter des nodes déployés indépendamment et ainsi les tester.
 	
-	
+	\para C'est ainsi que l'on peut retrouver la trace des données GPS brutes extraites des captures (figure \ref{fig:trajectoire}), les données générées par l'IMU (figure \ref{fig:imelinacctine}), entre autre.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{img/trajectoire}
+	\caption[trajectoire]{Exemple de trajectoire capturée par le GPS lors d'une capture de données}
+	\label{fig:trajectoire}
+\end{figure}
 
-	
-	\subsection{Exploitation}
-	
-	Les données 
-	\todoRediger{Capture Bagfile alors que la TellusCar évolue dans le parking de adjacent à TEllusEnv}
-	\todoRediger{La partie logiciel de Symeter V2 peut exploiter des rejeux des captures pour estimer l'évolution de la TellusCar, et tenter de reconstituer le parking.}
-	
-	\section{Données générée - visualisation sous google maps}
-	En rejouant le bagfile nous pouvons extraire et visualiser les données brutes.
-	\missingfigure{trajectoire sous Googlemap}
-	\missingfigure{graphe des accélerations et de l'assiette issues de l'IMU}
-	\missingfigure{données LIDAR brutes}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/imeLinAccTine}
+	\caption[acclin]{Captures des accélérations linéaires issues de l'IMU XSens.}
+	\label{fig:imelinacctine}
+\end{figure}
+
 	
 	\section{Exploitation des données}
-	\subsection{Configuration: description des poses des instruments par rapport au repère du véhicule}
+	\label{expdonnees}
+	L'exploitation des données en vue de faire fonctionner le logiciel Symeter V2 à partir de données GPS, IMU et LIDAR enregistrées est en cours et n'a pas encore donné de résultat concluant.
 	
-	\subsection{Intégration des données GPS et IMU pour localisation}
-	\todoRediger{Il a été compliqué de faire fonctionner la partie localisation de Symeter V2 avec les données réelle}
-	\todoRediger{grande sensibilité des données IMU si la pose de l'IMU n'est pas rigoureusement décrite dans la configuration de symeter V2}
-	\todoRediger{Obligé de traiter les données IMU pour rétablir la bonne orientation}
-	\todoRediger{L'imu mesure le cap avec 0 au nord alors que robot\_localization s'attend à un 0 pour un cap à l'Est}
+	\para Deux difficultés sont rencontrées qui devront être levées pour permettre de reconstituer le trajet et l'évolution de la pose du véhicule dans le temps. Tout d'abord la pose de l'IMU par rapport au véhicule à l'air d'avoir une influence très importante sur le comportement du \verb|ekf_localization_node|. Si cette pose n'est pas exactement connue par le système Symeter V2, il est difficile de conserver une estimation fiable de la localisation. Ce problème n'était pas apparu dans la simulation car dans ce cas la pose du l'IMU simulé est implicitement connue avec précision.
 	
-	\subsection{Reconstitution du parking}
+	\para Le deuxième problème est que les données d'accélérations générées par l'IMU le sont selon un référentiel qui n'a pas l'air d'être celui attendu par \verb|ekf_localization_node|. Il faut donc rechercher quel référentiel est effectivement utilisé par l'IMU, corriger les données enregistrées de manière à compenser les incohérences d'orientation.
 	
-	\todoRediger{une fois le système de localisation OK, pb avec Octomap qui n'a pas l'air de fonctionner au dela d'une certaine distante}
-	
-	\section{Récapitulation}
-	
-	\todoRediger{Illustre les problématiques du passage de la simulation à un integration en grandeur}
-	\todoRediger{IMU simulé n'est pas fiable: il faudra en trouver un autre}
-	\todoRediger{A l'heure actuelle pas encore terminé}
+	\para Ce travail d'exploitation est donc encore en cours, mais une fois que ces problèmes auront été contournés, nous avons bon espoir de pouvoir générer un modèle 3D du parking à partir des captures LIDAR.
+	 
+\chapter{Perspectives}
 
-\chapter{Reste à faire et Axes Améliorations}
+Ce chapitre présente les perspectives d'évolution qui pourront être appliquées au projet Symeter V2. 
 
-\todoPeutEtre{caméra video pour odométrie visuelle}
+\section{Amélioration de l'utilisation de l'IMU}
+Comme indiqué dans les chapitres précédents, le processus de localisation n'exploite pas encore pleinement les données d'accélération de l'IMU. L'intégration de ces données dans le \verb|ekf_localization_node| s'avère complexe et requiert une procédure d'exploitation particulière. 
 
-\section{Difficulté de Simulation de l'action de tassage}
-La simulation peut permettre la mise au point de la localization, de l'acquisition initiale du chantier d'ensilage. Mais elle n'est pas directement utilisable pour simuler l'opération du tracteur dans le chantier d'ensilage. En effet pas possible de simuler physiquement le tassage à l'aide de Gazebo.
+\para L'une des pistes à explorer sera d'intégrer un module INS ("Inertial Navigation System", système de navigation inertiel) qui prendra en compte uniquement les données IMU pour générer son estimation propre de la pose. Cette pose serait ensuite soumise au \verb|ekf_localization_node| pour être fusionnée avec les informations GPS. Cela permettrait de séparer complètement la gestion de l'IMU de la fusion de données, et donc d'y voir plus clair quand à l'état de la localisation.
 
-\para Il est cependant possible de mettre en oeuvre nos outils de manière à simuler logiquement l'évolution du chantier en implémentant un mécanisme de sauvegarde / restauration de l'état du chantier
+\section{Developpement d'un module d'accumulation propre à Symeter V2} 
+Si le module \verb|octomap| a permis de monter le prototype initial de Symeter V2 pour la simulation sous Gazebo, et de démontrer la possibilité de faire l'acquisition d'un modèle numérique 3D d'un silo à partir d'un LIDAR mobile, ce module comporte quelques caractéristiques qui font qu'il n'est pas complètement adapté aux besoins de Symeter V2.
 
-\todoRediger{Decrire le cycle de simulation}
-\missingfigure{Diagramme d'état simulation de l'acte de tassage.}
+\para Notamment, le nuage de point généré par \verb|octomap| représente un information de présence de donnée dans un Voxel de 10x10cm, et le point généré est le barycentre du cube du voxel. Nous perdons donc de la précision dans la mesure d'altitude du tas d'ensilage.
+
+\para Ceci nous forcera a développer un module d'accumulation et de stockage du modèle numérique 3D qui soit complètement adapté aux besoins de Symeter V2. 
+
+
+\section{Simulation de l'action de tassage}
+La simulation peut permettre la mise au point de la localisation, de l'acquisition initiale du chantier d'ensilage. Mais elle n'est pas directement utilisable pour simuler l'opération du tracteur dans le chantier d'ensilage. En effet il n'est pas possible de simuler physiquement le tassage à l'aide de Gazebo.
+
+\para Il est cependant possible de mettre en oeuvre nos outils de manière à simuler logiquement l'évolution du chantier en implémentant un mécanisme de sauvegarde / restauration de l'état du chantier d'une session de fonctionnement à l'autre. En faisant varier la forme du tas d'ensilage simulé entre deux sessions, il sera possible d'émuler une action de tassage.
+
+\section{Développement des outils de détection de monitoring de tassage}
+Une fois les procédés d'acquisition d'un modèle numérique 3D à partir d'un LIDAR mobile finalisés, nous pourrons commencer à mettre en place le monitoring du tassage lui-même.
+
+\para Ce monitoring devra comparer les modifications du modèle numérique au fur-et-à-mesure de la progression du chantier, enregistrer l'évolution au cours du temps du silo, générer les données d'aide à la décision.
+
+\para Une interface homme/machine permettant de piloter l'intervention du système Symeter V2 sur le chantier devra aussi être développée. 
 
 
 \chapter{Conclusion}
@@ -1448,17 +1526,19 @@ Au cours de ce stage, nous avons pu confirmer que les outils de simulation propo
 
 \para Nous avons mis en place le système de localisation en mettant en oeuvre un composant pré-éxistant de fusion de capteurs, \verb|ekf_robot_localization|, et ainsi exploiter des signaux de l'IMU et du GPS. Ceci nous permet d'obtenir la pose du véhicule avec une précision compatible avec un reconstitution qualitative du chantier simulé. Nous avons aussi développé les scripts permettant de vérifier le bon fonctionnement de ce procédé.
 
-\para Nous avons mis en place la chaine de d'acquisition des données Lidar en utilisant principalement les composants "sur étagère" Point Cloud Library. Nous avons prétraité ces données en convertissant le format angles/distance en un nuage de points préliminaire, et nous avons filtré ce nuage de points de manière à répartir régulièrement les points de mesure et réduire le flot de données à traiter.
+\para Nous avons mis en place la chaine d'acquisition des données Lidar en utilisant principalement les composants disponibles dans Point Cloud Library. Nous avons prétraité ces données en convertissant le format angles/distance en un nuage de points préliminaire, et nous avons filtré ce nuage de points de manière à répartir régulièrement les points de mesure et réduire le flot de données à traiter.
 
 \para Nous avons enfin mis en oeuvre le composant \verb|OctoMap| pour effectuer l'accumulation des données LIDAR acquises. Nous générons ainsi un nuage de points 3D représentant notre chantier d'ensilage simulé. Nous validons ainsi la faisabilité de Symeter V2.
 
 \para Nous avons aussi tenté d'utiliser le prototype de Symeter V2 pour exploiter des captures réelles. Ce travail est encore en cours.
 
-\para Nous avons pu dégager des axes d'améliorations pour augmenter la précision de la localisation, obtenir nuage de point représentant plus fidèlement le chantier. L'objectif de ces améliorations est d'accéder à un niveau de qualité du procédé qui permette des mesures précises du tassage et du volume.
+\para Nous avons pu dégager des axes d'amélioration pour augmenter la précision de la localisation, obtenir un nuage de points représentant plus fidèlement le chantier. L'objectif de ces améliorations est d'accéder à un niveau de qualité du procédé qui permette des mesures précises du tassage et du volume.
 
 \para Nous avons donc à l'issue de ce stage une plateforme fondamentale de simulation qui va permettre à Tellus Environment de développer les fonctionnalités de mesures du tassage de silo et de mesure de volume du système Symeter V2. 
 
-\para Cette plateforme simulée va aussi permettre à Tellus Environment de tester virtuellement diverses configurations de capteurs et ainsi permettre de mieux définir le contour du produit. Cela permet à Tellus Environment d'envisager que les premiers tests en grandeur du système Symeter V2, au cours de vrai chantier d'ensilage, se dérouleront de manière productive.
+\para Cette plateforme simulée va aussi permettre à Tellus Environment de tester virtuellement diverses configurations de capteurs et ainsi permettre de mieux définir le contour du produit. Cela permet à Tellus Environment d'envisager que les premiers tests en grandeur du système Symeter V2, au cours de vrais chantiers d'ensilage, se dérouleront de manière productive.
+
+\para L'avenir du projet Symeter V2 est en cours de détermination par ses commenditaires, avec une forte probabilité de continuer pour au moins un an supplémentaire. Cette année sera consacrée au montage d'un prototype fonctionnel et de la conduite des tests en grandeur. Tellus Environment m'a proposé de continuer l'aventure, et nous sommes tombés d'accord pour mener à bien ensemble ce projet dans le cadre d'un CDD d'un an.
 
 
 

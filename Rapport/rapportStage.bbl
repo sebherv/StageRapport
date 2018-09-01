@@ -1,10 +1,17 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{YSA{\etalchar{+}}13}
+\begin{thebibliography}{HWB{\etalchar{+}}13}
 
 \bibitem[Gus15]{gustavsson_uav_2015}
 Kenneth Gustavsson.
 \newblock {UAV} {Pose} {Estimation} using {Sensor} {Fusion} of {Inertial},
   {Sonar} and {Satellite} {Signals}, 2015.
+
+\bibitem[HWB{\etalchar{+}}13]{hornung_octomap:_2013}
+Armin Hornung, Kai~M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram
+  Burgard.
+\newblock {OctoMap}: an efficient probabilistic 3d mapping framework based on
+  octrees.
+\newblock {\em Autonomous Robots}, 34(3):189--206, April 2013.
 
 \bibitem[Jef10]{jeffrey_introduction_2010}
 Charles Jeffrey.

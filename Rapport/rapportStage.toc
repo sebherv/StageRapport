@@ -1,10 +1,10 @@
 \select@language {french}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciements}{1}{chapter*.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciements}{1}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
 \contentsline {section}{\numberline {1.1}Tellus Environment - Missions Principales}{5}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}G\IeC {\'e}ophysique et cartographie haute-d\IeC {\'e}finition}{5}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Traitement des donn\IeC {\'e}es}{5}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Collecte des donn\IeC {\'e}es g\IeC {\'e}ophysique}{6}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.3}Collecte des donn\IeC {\'e}es g\IeC {\'e}ophysiques}{6}{subsection.1.1.3}
 \contentsline {section}{\numberline {1.2}Activit\IeC {\'e} R\&D}{7}{section.1.2}
 \contentsline {section}{\numberline {1.3}Projet Symeter V2}{7}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Symeter V1}{7}{subsection.1.3.1}
@@ -21,15 +21,16 @@
 \contentsline {subsection}{\numberline {2.1.3}GPS en mode RTK}{15}{subsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.3.1}GPS simple}{15}{subsubsection.2.1.3.1}
 \contentsline {subsubsection}{\numberline {2.1.3.2}Principe du mode RTK}{16}{subsubsection.2.1.3.2}
+\contentsline {subsection}{\numberline {2.1.4}Int\IeC {\'e}r\IeC {\^e}t du couplage IMU/GPS}{17}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Environnement de programmation: ROS}{18}{section.2.2}
 \contentsline {section}{\numberline {2.3}Mod\IeC {\'e}lisation}{18}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Traitement des nuages de points}{18}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Contraintes de d\IeC {\'e}veloppement}{19}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Capacit\IeC {\'e}s de tests en grandeur limit\IeC {\'e}es}{19}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.4}Contraintes de d\IeC {\'e}veloppement}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Capacit\IeC {\'e}s de tests en grandeur r\IeC {\'e}elle limit\IeC {\'e}es}{18}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Plateformes de test disponibles}{19}{subsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Environnement de simulation Gazebo}{19}{subsubsection.2.4.2.1}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Prototype mont\IeC {\'e} sur Camionnette}{20}{subsubsection.2.4.2.2}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Prototype mont\IeC {\'e} sur Camionnette}{19}{subsubsection.2.4.2.2}
 \contentsline {section}{\numberline {2.5}Les grandes phases du stage}{20}{section.2.5}
+\contentsline {section}{\numberline {2.6}Synth\IeC {\`e}se des outils}{21}{section.2.6}
 \contentsline {chapter}{\numberline {3}Simulation d'un tracteur \IeC {\'e}voluant sur un chantier d'ensilage \IeC {\`a} l'aide de ROS/Gazebo}{22}{chapter.3}
 \contentsline {section}{\numberline {3.1}Pr\IeC {\'e}sentation de ROS}{22}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Gestion des transformations}{23}{subsection.3.1.1}
@@ -47,7 +48,7 @@
 \contentsline {paragraph}{\numberline {3.4.1.1.1}Mod\IeC {\'e}lisation physique}{29}{paragraph.3.4.1.1.1}
 \contentsline {paragraph}{\numberline {3.4.1.1.2}Actuateurs et Contr\IeC {\^o}leurs}{29}{paragraph.3.4.1.1.2}
 \contentsline {subsubsection}{\numberline {3.4.1.2}Propulsion et Guidage}{30}{subsubsection.3.4.1.2}
-\contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{31}{figure.caption.124}
+\contentsline {paragraph}{\numberline {3.4.1.2.1}Algorithme}{31}{figure.caption.123}
 \contentsline {paragraph}{\numberline {3.4.1.2.2}Impl\IeC {\'e}mentation sous ROS}{32}{paragraph.3.4.1.2.2}
 \contentsline {chapter}{\numberline {4}Mise en place du processus de localisation}{34}{chapter.4}
 \contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation du probl\IeC {\`e}me}{34}{section.4.1}
@@ -64,41 +65,33 @@
 \contentsline {subsection}{\numberline {4.2.2}Estimation de Pose 3D: Filtres de Kalman Etendus}{39}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Mise en oeuvre sous ROS.}{40}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Module robot\_localisation}{40}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}navsat\_transformation\_node}{41}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Configuration des Capteurs}{41}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Quelques tests}{41}{subsection.4.3.4}
-\contentsline {chapter}{\numberline {5}Exploitation des donn\IeC {\'e}es LIDAR}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation de la chaine de traitement des donn\IeC {\'e}es LIDAR}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Acquisition et mise en forme des donn\IeC {\'e}es LIDAR}{43}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Transformation trame LIDAR en un nuage de points}{43}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Filtrage de la ligne de point par downsampling}{43}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Accumulation des nuages de points}{44}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sp\IeC {\'e}cifications pour le point\_cloud\_aggregator}{44}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Principe de stockage des donn\IeC {\'e}es 3D}{45}{subsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Les B-Trees}{45}{subsubsection.5.3.2.1}
-\contentsline {subsubsection}{\numberline {5.3.2.2}Les Octrees}{45}{subsubsection.5.3.2.2}
-\contentsline {subsubsection}{\numberline {5.3.2.3}Le choix: octree correspond \IeC {\`a} notre besoin.}{45}{subsubsection.5.3.2.3}
-\contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{45}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{45}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Mod\IeC {\'e}lisation d'un chantier d'ensilage}{46}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Test sous gazebo}{46}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Analyse du nuage de point g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}}{47}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Outil pour l'analyse de nuage de points: Paraview}{47}{subsubsection.5.4.3.1}
-\contentsline {subsubsection}{\numberline {5.4.3.2}Points \IeC {\`a} am\IeC {\'e}liorer sur le nuage de points}{47}{subsubsection.5.4.3.2}
-\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{48}{chapter.6}
-\contentsline {section}{\numberline {6.1}Protocole de test}{48}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Instruments d'acquisition}{48}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Exploitation}{48}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Donn\IeC {\'e}es g\IeC {\'e}n\IeC {\'e}r\IeC {\'e}e - visualisation sous google maps}{49}{section.6.2}
-\contentsline {section}{\numberline {6.3}Exploitation des donn\IeC {\'e}es}{50}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Configuration: description des poses des instruments par rapport au rep\IeC {\`e}re du v\IeC {\'e}hicule}{50}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Int\IeC {\'e}gration des donn\IeC {\'e}es GPS et IMU pour localisation}{50}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Reconstitution du parking}{50}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}R\IeC {\'e}capitulation}{50}{section.6.4}
-\contentsline {chapter}{\numberline {7}Reste \IeC {\`a} faire et Axes Am\IeC {\'e}liorations}{52}{chapter.7}
-\contentsline {section}{\numberline {7.1}Difficult\IeC {\'e} de Simulation de l'action de tassage}{52}{section.7.1}
-\contentsline {chapter}{\numberline {8}Conclusion}{53}{chapter.8}
-\contentsline {chapter}{\numberline {A}Repr\IeC {\'e}sentation de l'Attitude et des Rotations}{55}{appendix.A}
-\contentsline {section}{\numberline {A.1}Angles d'Euler}{55}{section.A.1}
-\contentsline {section}{\numberline {A.2}Quaternions Unitaires}{56}{section.A.2}
-\contentsline {chapter}{Bibliographie}{58}{appendix*.250}
+\contentsline {subsection}{\numberline {4.3.2}navsat\_transformation\_node}{42}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Configuration des Capteurs}{42}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Tests de localisation sous Gazebo}{42}{subsection.4.3.4}
+\contentsline {chapter}{\numberline {5}Exploitation des donn\IeC {\'e}es LIDAR}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}Pr\IeC {\'e}sentation de la chaine de traitement des donn\IeC {\'e}es LIDAR}{44}{section.5.1}
+\contentsline {section}{\numberline {5.2}Acquisition et mise en forme des donn\IeC {\'e}es LIDAR}{44}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Transformation trame LIDAR en un nuage de points}{45}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Filtrage de la ligne de point par downsampling}{45}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Accumulation des nuages de points}{47}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sp\IeC {\'e}cifications pour le point\_cloud\_aggregator}{47}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Principe de stockage des donn\IeC {\'e}es 3D}{47}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Mise en oeuvre: octomap}{48}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Mise en oeuvre sous Gazebo}{48}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Mod\IeC {\'e}lisation d'un chantier d'ensilage}{48}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Test sous gazebo}{49}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6}Mise en oeuvre \IeC {\`a} partir de mesures r\IeC {\'e}elles}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Protocole de test}{51}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Instruments d'acquisition}{51}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Exploitation}{51}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Exploitation des donn\IeC {\'e}es}{53}{section.6.2}
+\contentsline {chapter}{\numberline {7}Perspectives}{54}{chapter.7}
+\contentsline {section}{\numberline {7.1}Am\IeC {\'e}lioration de l'utilisation de l'IMU}{54}{section.7.1}
+\contentsline {section}{\numberline {7.2}Developpement d'un module d'accumulation propre \IeC {\`a} Symeter V2}{54}{section.7.2}
+\contentsline {section}{\numberline {7.3}Simulation de l'action de tassage}{55}{section.7.3}
+\contentsline {section}{\numberline {7.4}D\IeC {\'e}veloppement des outils de d\IeC {\'e}tection de monitoring de tassage}{55}{section.7.4}
+\contentsline {chapter}{\numberline {8}Conclusion}{56}{chapter.8}
+\contentsline {chapter}{\numberline {A}Repr\IeC {\'e}sentation de l'Attitude et des Rotations}{58}{appendix.A}
+\contentsline {section}{\numberline {A.1}Angles d'Euler}{58}{section.A.1}
+\contentsline {section}{\numberline {A.2}Quaternions Unitaires}{59}{section.A.2}
+\contentsline {chapter}{Bibliographie}{61}{appendix*.251}
